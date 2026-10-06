@@ -1,0 +1,162 @@
+---
+id: 2026-04_project-coordinator_detail-oriented_v3
+role_target: project-coordinator
+company_target: general
+date: 2026-04
+date_confidence: content
+version_group: project-coordinator-detail-oriented
+version_no: 3
+status: archived
+source_original: _raw/24.md
+notes: export defect: all job bullets under NCMW heading; date is a lower bound from content (after 2026-04-22 publication); order within group is tentative
+archive_reason: merged: all bullets under NCMW; later roles empty
+keywords: merged; project-coordinator
+---
+
+# Tab 1
+
+DEVIKA C. DIXIT
+
+Dallas–Fort Worth, TX | (925) 719 8412 | devikadixit25@gmail.com| [LinkedIn](https://www.linkedin.com/in/devikadixittexas/)
+
+SUMMARY
+
+Detail-oriented Project Coordinator with hands-on experience managing schedules, project documentation, and cross-functional stakeholder communications across 6+ concurrent workstreams in fast-paced, regulated, grant-funded environments. Skilled at maintaining project plans, milestone trackers, and deliverable registries; organizing and facilitating meetings with structured agendas, same-day notes, and action-item follow-through; tracking progress against deadlines and escalating risks to project leadership; and producing accurate, audit-ready documentation to keep cross-functional teams aligned. Experienced in developing standardized workflows, building centralized documentation systems, and implementing process improvements that reduce turnaround time and improve consistency across concurrent deliverables. Proficient in Microsoft Office 365 (Word, Excel, PowerPoint, Teams) and project management tools including Asana and Airtable. Motivated by the opportunity to contribute to programs and organizations committed to advancing equitable access and improved quality of care through the development of innovative therapies and solutions.
+
+WORK EXPERIENCE
+
+**National Council For Mental Wellbeing** Remote, DC
+
+Junior Project Coordinator, Substance Use Strategy &amp; Growth Continuum 	Oct 2025– Apr 2026
+
+The National Council for Mental Wellbeing (NCMW) is the nation's leading nonprofit membership association for mental health and substance use care, representing 3,200+ member organizations serving 10M+ people annually. This role sat within the Substance Use Continuum (SUC) program under the newly formed Growth &amp; Strategy team, responsible for federal grant-funded program development, policy research, conference programming, e-learning product development, and cross-sector field-building.
+
+- Managed day-to-day operations across 6+ concurrent grant-funded workstreams for the Growth team, ensuring alignment with federal, internal, partner, and member stakeholder requirements.
+- Maintained comprehensive milestone tracking, deliverable logs, and project documentation across all active workstreams using Asana, Excel, and Airtable, ensuring on-time execution against federal funder timelines.
+- Designed and implemented program evaluation metrics for grant-funded behavioral health initiatives; built structured trackers for milestones, deliverables, and reporting deadlines across concurrent workstreams, measuring efficacy and enhancing beneficiary outcomes.
+- Standardized workflows and cross-team documentation across the Growth team to improve handoffs among the Business &amp; Strategy (B&amp;S), Policy and Initiatives Center (PIC), MHFA Sales, and Substance Use Continuum teams.
+- Participated in strategy and planning meetings across B&amp;S, Policy, and program teams, contributing to policy priority-setting, member resource development, performance metric design, and product development ideation.
+- Built and maintained a centralized content library encompassing grant boilerplate, SOPs, and reusable narrative sections, reducing turnaround time for recurring submissions and reporting cycles.
+- Coordinated end-to-end logistics for 18 national conference sessions at NatCon26 (National Council Annual Conference, Denver CO, April 2026), serving 6,000+ behavioral health sector attendees.
+- Managed full lifecycle for each session: presenter outreach and contracting, scheduling, prep calls, virtual platform setup, technical assistance, and post-event follow-up across 15+ organizations.
+- Participants included healthcare executives, clinicians, policymakers, and federal officials. Sessions coordinated included: New Cool Stuff in SUD: Digital Devices &amp; Interventions; Co-Creating Pathways from the Criminal Legal System to Recovery; GLP-1s and Addictive Behaviors: Emerging Evidence and Practice Insights for Clinicians; Getting Payers to Play Ball: Leveraging Value-Based Payments to Improve SUD Outcomes; SUD State of the Union.
+- Served as sole post-meeting communications owner for all internal and external stakeholder meetings, producing structured agendas, distributing same-day meeting notes, and tracking action items to completion across federal officials, clinicians, and executive leadership.
+- Coordinated cross-sector public health initiatives alongside SAMHSA, CDC, and federal partners, managing stakeholder scheduling, communications, and follow-through across concurrent deliverables.
+- Managed multi-stakeholder outreach and follow-through across healthcare executives, policymakers, 15+ partner organizations, and federal agencies.
+- Processed and tracked expenses across 5–7 vendors; produced compliance checklists, procurement recommendation memos, and budget audit reports submitted to senior directors to directly inform vendor selection decisions.
+- Conducted formal compliance assessments of edtech and AI vendor platforms (Articulate Rise 360, LearnWorlds LMS, HeyGen, Synthesia, Mindsmith) against all applicable federal requirements across five regulatory domains:
+- Grants Administration: 2 CFR Part 200 (Uniform Guidance), HHS Grants Policy Statement (GPS v2.0, October 2025), procurement standards (2 CFR 200.318 et seq.), internal controls (200.303), records retention (200.333–.334), subrecipient classification (200.331), IP handling.
+- Privacy &amp; Student Data: FERPA (34 CFR Part 99), COPPA (16 CFR Part 312), OMB Circular A-130, HHS OCR Section 1557 (language access, December 2024).
+- Accessibility: Section 508 (29 U.S.C. §794d) / WCAG 2.0 A/AA (federal floor); WCAG 2.1 AA (target); WCAG 2.2 (planning); captions, transcripts, audio description requirements.
+- AI Governance: OMB M-25-21 (Responsible AI, April 2025), OMB M-25-22 (AI Acquisition), NIST AI RMF 1.0 and Generative AI Profile (NIST.AI.600-1), U.S. Department of Education Dear Colleague Letter on AI in education funding (July 2025).
+- Security &amp; Interoperability: SOC 2 Type II, ISO/IEC 27001, FedRAMP, NIST SP 800-53 Rev. 5, FIPS 140-3, SAML 2.0/OIDC, SCORM 2004 4th Ed., xAPI (IEEE 9274.1.1-2023), cmi5, LTI 1.3 Advantage, Common Cartridge 1.3+, EU-U.S. Data Privacy Framework, GDPR Art. 28 and Art. 46 SCCs, CCPA/CPRA.
+- Produced a comprehensive vendor compliance checklist documenting platform-by-platform status against all applicable federal requirements; submitted as audit-ready grant compliance documentation.
+- Served as sole instructional designer, content author, and project manager for Recovery Ready, a 12-module foundational e-learning course covering substance use, SUD, overdose response, and recovery support — designed for universal access across personal, professional, and community settings.
+- Architected and authored all 12 modules in Articulate Rise 360, covering: Orientation and Mindset; Foundations of Substance Use and SUD (DSM-5 criteria, brain physiology, dependence vs. problematic use); Signs, Symptoms, and Stages of Change; Language, Stigma, and Bias; Substance Use Isn't One Thing; Prevention and Continuum Capital; The Trajectory of Recovery; Crisis Readiness and Overdose Response; Treatment and Recovery Pathways (CBT, DBT, ACT, MI, CM, MAT); Non-Clinical Pathways; Other Pathways (natural recovery, digital therapeutics, telehealth); Course Conclusion.
+- Built interactive components throughout: flashcard activities for terminology, knowledge checks and module assessments, an interactive DSM-5 criteria explorer (Module 2), scenario-based and reflective prompts, and continuum/staging visuals.
+- Produced and directed an animated instructional video for the naloxone overdose reversal sequence in Module 8.
+- Configured and produced AI avatar narration across all modules using Synthesia, selecting and directing avatars aligned with the course's inclusive, person-centered values.
+- Designed all visual assets in Canva, applying NCMW brand standards (color scheme, typography, graphic style) across all lesson graphics, icons, layouts, and imagery.
+- Hosted and administered the course on LearnWorlds LMS, managing learner enrollment infrastructure, progress tracking, assessment performance reporting, completion certificates, and administrative setup.
+- Developed a companion federal compliance tracker mapping the course and all platform vendors against applicable requirements — submitted as a formal project deliverable.
+- Conducted a comprehensive environmental scan of the emerging ibogaine treatment landscape, reviewing 12 peer-reviewed publications and one active clinical trial (NCT05029401). Mapped federal agency contacts (CDC, SAMHSA, FDA, NIAAA, NIH/NIDA, DEA); leading researchers and pharmaceutical affiliations (Dr. Deborah Mash / DemeRx / ATAI; Dr. Dali Sames / Gilgamesh Pharmaceuticals; Dr. David Olsen / Delix Therapeutics; Dr. Nolan Williams / Stanford; Dr. Greg Fonzo / UT Austin); active NIH-funded grants; clinical trial landscape; advocacy organizations; and active treatment providers in Mexico. Findings informed NCMW team strategy and leadership briefings.
+- Researched and mapped SUD-related involuntary commitment laws across U.S. states, ranked by severity of commitment criteria, producing findings used to inform policy strategy and member resources.
+- Conducted policy research synthesis on Recovery Ready Families frameworks.
+- Developed a full Behavioral Healthtech Consulting Proposal for NCMW leadership, designing two complete operating models — a full-scale consulting arm (8.5 FTEs; projected Year 2 revenue $2.875M) and a bootstrapped model (2 FTEs + contractors; projected Year 1 revenue $500K at ~40% margin) — including service domain definitions, tiered pricing structures, staffing plans, and multi-year financial projections.
+- Produced and managed the monthly Substance Use Monthly newsletter for 6,000+ subscribers, curating content by monitoring federal agency actions (SAMHSA, CMS, CDC), clinical research publications, and behavioral health field developments.
+- Co-authored published article: Plante, A., &amp; Dixit, D.C. (2026, April 22). Chasing the High: Why Gambling Disorder Belongs in the Addiction Conversation. National Council for Mental Wellbeing. thenationalcouncil.org/gambling-disorder-and-addiction/ — synthesized peer-reviewed literature on neurobiological overlap, epidemiology, treatment modalities, and policy recommendations for gambling disorder.
+- Co-authored additional published content on neuroplastogens and Recovery Ready Families frameworks for NCMW's national platform.
+- Authored LinkedIn posts translating peer-reviewed SUD research for professional and public audiences, covering stigma research, tobacco and recovery outcomes (JAMA Psychiatry, 2025), social determinants of opioid use, and related field developments.
+- Developed and executed multi-channel communications plans spanning LinkedIn, X (Twitter), organizational website, and partner networks; maintained content calendars for executive profiles and organizational channels.
+- Maintained content and asset libraries on SharePoint and OneDrive for cross-team access.
+- Leveraged AI tools (Perplexity AI, LLMs, Synthesia, HeyGen) for research synthesis, content drafting, AI avatar video production, and workflow optimization across project outputs.
+- Developed internal expertise in AI compliance evaluation, assessing vendor platforms against OMB M-25-21, OMB M-25-22, NIST AI RMF 1.0, and ED Dear Colleague Letter (July 2025) requirements.
+- Applied prompt engineering techniques to increase consistency, efficiency, and quality of recurring deliverables.
+- Coordinated research operations across three concurrent communication research labs, managing full project lifecycles from participant recruitment and IRB-compliant data collection through analysis, manuscript preparation, and publication, contributing to three peer-reviewed published studies.
+- Maintained cross-lab project tracking systems, recruitment databases, and data integrity protocols across concurrent studies, improving timeline visibility and coordination for project managers and principal investigators while ensuring on-time completion of research deliverables.
+- Served as primary participant liaison across the full study lifecycle, managing screening, scheduling, pre-study communications, and post-study follow-up across studies examining family mental health communication, health-adjacent behaviors, and communication patterns.
+- Conducted qualitative data collection and analysis across multiple concurrent studies, facilitating observed parent-child and couples dyadic interaction tasks, conducting semi-structured interviews, and applying thematic analysis, phronetic iterative coding, and observational coding to produce structured datasets used in peer-reviewed analyses.
+- Supported IRB protocol development, grant proposal writing, and compliance documentation, ensuring adherence to human subjects research standards and contributing to audit-ready research administration across concurrent projects.
+- Developed PowerPoint presentations synthesizing study findings for lab meetings and external stakeholder briefings, translating complex research outcomes into accessible structured materials for academic and non-specialist audiences.
+- Prepared meeting agendas, recorded minutes, and tracked action items for recurring lab and stakeholder meetings, strengthening communication between project managers, faculty leads, and cross-functional research teams.
+- Applied technical writing skills to draft and revise study protocols, documentation templates, and participant-facing materials, improving clarity, consistency, and timely access to project records.
+- Managed a concurrent caseload of 20-30 adults with serious mental illness, co-occurring substance use disorders, and complex trauma histories, coordinating all housing placement activities simultaneously from intake and assessment through subsidy application, landlord negotiation, document procurement, and lease execution across multiple federal, state, and local housing programs.
+- Served as primary liaison among clients, landlords, internal clinical teams, and 5+ external partner agencies including local and state housing authorities, Coordinated Entry System personnel, CenCal Health, and county behavioral health agencies, managing multi-stakeholder communications and ensuring timely follow-through on action items across the full concurrent caseload.
+- Navigated multiple concurrent federal and state housing funding streams on behalf of clients simultaneously, including Section 8 Housing Choice Vouchers, Project-Based Vouchers, HUD-VASH, and Emergency Housing Vouchers, managing the distinct documentation requirements, timelines, and eligibility criteria of each program across a full caseload.
+- Designed and implemented a standardized document checklist system tied to individual subsidy program requirements, enabling parallel document procurement across multiple simultaneous cases and allowing early identification of documentation gaps, reducing application submission delays across the intake team during high-volume periods.
+- Identified and resolved additional workflow bottlenecks across intake and placement coordination, implementing process improvements that increased team efficiency and reduced processing delays during periods of high case volume.
+- Maintained real-time HMIS documentation and outcome tracking across the full concurrent caseload in compliance with HUD, Santa Barbara County, CenCal Health Medi-Cal managed care, and program grant reporting requirements, producing progress notes, housing stability documentation, and goal-tracking records aligned with multi-funder reporting cycles.
+- Participated in multidisciplinary case conferences with therapists, psychiatrists, medical staff, and vocational specialists, contributing housing-side observations to integrated treatment planning, and facilitated case conference scheduling, agenda preparation, structured notetaking, and post-meeting action-item follow-through across the interdisciplinary team.
+- Co-facilitated HMIS open-house events enrolling 10-20 additional clients per session into the Coordinated Entry System, managing end-to-end event logistics including outreach, scheduling, on-site coordination, and post-event debrief documentation, and recruiting and directing 10-15 volunteers and interns per event.
+- Partnered with UCSB leadership to co-create two new HMIS and Coordinated Entry System access locations, expanding intake infrastructure and enabling enrollment of 10-20 additional clients per open house session, reducing barriers to program participation across the service population.
+- Managed multi-agency crisis response during a post-COVID voucher shortage, rapidly triaging all affected clients across the caseload, coordinating with partner agencies and housing authorities, and securing temporary housing and basic needs resources for every affected client with zero housing losses.
+- Achieved 100% housing retention for all clients placed in subsidized supportive housing programs throughout tenure, and secured permanent or semi-permanent placements for approximately 40% of emergent clients through rapid triage, coordinated logistics, and sustained multi-agency coordination under constrained housing market conditions.
+- Served as sole communications and project owner for a national nonprofit professional organization, independently managing all digital channels, branded outputs, content production, campaign coordination, and promotional deliverables across concurrent timelines without dedicated support staff.
+- Developed and executed integrated multi-channel content strategies across 6+ digital platforms simultaneously, coordinating production schedules, deadlines, and deliverable quality across LinkedIn, Facebook, Instagram, Twitter/X, and the organizational website.
+- Conceptualized, planned, and executed the Member Spotlight series from end to end, featuring 20+ South Asian women engineers, managing all phases from sourcing and research through editorial production and publication, driving a 35% increase in female membership applications, 50% increase in member-generated content, and 45% community growth, with Google Analytics directly attributing Spotlight content to website traffic spikes and application activity.
+- Coordinated promotional campaigns and event logistics for flagship national events, partnering with program managers to align messaging, outreach timelines, stakeholder engagement, and production of promotional materials across concurrent event schedules.
+- Executed a full visual brand identity refresh using Adobe Creative Suite, building a centralized template library and documented brand style guidance that standardized outputs and reduced design production time across all organizational materials.
+- Created and maintained standardized templates, content calendars, and workflow systems across all communications functions, implementing process improvements that increased consistency and reduced turnaround time on recurring deliverables.
+- Managed web content creation and updates within CMS platforms, producing SEO-optimized copy and maintaining asset libraries to support organizational communications and member engagement goals.
+- Managed audience-segmented email marketing campaigns and distribution lists in Mailchimp, tracked cross-platform performance in Hootsuite and Sprout Social, and leveraged Google Analytics to translate content performance data into ongoing strategy adjustments.
+- Implemented ADA and WCAG accessibility standards across all digital assets and the existing asset library, including contrast ratios, alt-text, and screen reader compatibility, ensuring organizational compliance across all digital outputs.
+- Provided direct care and milieu management for 20-25 women with co-occurring substance use and mental health disorders across medically supervised detoxification and residential treatment, operating primarily on PM and overnight shifts as the sole staff member responsible for resident safety, program stability, and clinical documentation without on-site clinical backup.
+- Independently conducted CIWA-Ar and SOWS withdrawal screenings, facilitated self-administered medication observation, performed regular safety and facility rounds, and administered urinalysis drug screenings three times per week using chain-of-custody protocols, maintaining strict procedural adherence across all clinical monitoring functions.
+- Served as primary liaison between residents and an interdisciplinary care team including therapists, psychiatrists, medical staff, and vocational specialists, participating in weekly treatment team meetings, contributing real-time behavioral observations to individualized treatment plans, and coordinating discharge planning and community linkage with accurate handover documentation.
+- Facilitated therapeutic group sessions and supported program scheduling, logistics, and daily operational coordination within a structured residential treatment environment, managing competing priorities across concurrent resident needs during PM and overnight coverage.
+- Served as sole first responder during acute behavioral crises, simultaneously de-escalating individuals in active crisis and managing the broader residential milieu to prevent distress contagion, with all situations stabilized, fully documented in the EHR, and briefed to clinical staff at shift handover.
+- Maintained comprehensive EHR documentation across all clinical functions including behavioral progress notes, withdrawal screening logs, medication observation records, urinalysis results, and incident reports in compliance with HIPAA and 42 CFR Part 2, sustaining audit-ready recordkeeping standards throughout the tenure.
+
+**UC Santa Barbara** Goleta, CA
+
+Clinical Research Project Coordinator	Jun 2021– Jan 2025
+
+[**SANCTUARY CENTERS**](https://sanctuarycenters.org/) Santa Barbara, CA
+
+Housing &amp; Basic Needs Services Coordinator	Sep 2022 – Nov 2023
+
+**American Society Of Engineers Of Indian Origin (ASEI)** Remote, TX
+
+Marketing Specialist	Jan 2021 – Sep 2022
+
+**Casa Serena Treatment Centers** Santa Barbara, CA
+
+Program Assistant	Jun 2021– Sep 2022
+
+PUBLICATIONS
+
+Plante, A., &amp; Dixit, D. C. (2026, April 22). Chasing the High Why Gambling Disorder Belongs in the Addiction Conversation. National Council for Mental Wellbeing. [https//www.thenationalcouncil.org/gambling-disorder-and-addiction/](https://www.thenationalcouncil.org/gambling-disorder-and-addiction/)
+
+EDUCATION
+
+**University Of California, Santa Barbara** Goleta **,** CA
+
+Bachelor of Arts in Communications	2025
+
+**Santa Barbara City College** Santa Barbara, CA
+
+Associates in Political Science &amp; Communications	2022
+
+CERTIFICATIONS &amp; SKILLS
+
+**Certifications &amp; Training:** [Google Project Management Certificate](http://coursera.org/share/725f873f1badc0632dddbc2eb03e95df) , [Google Data Analytics Certificate](http://coursera.org/share/94d29198d985bf2bc01133e7b67e8b57) , [Adult Mental Health First Aid](https://drive.google.com/file/d/1OcuHrlRCkyWX_vSusHahJij7S-zzs_pg/view?usp=sharing) , Motivational Interviewing (OARS)
+
+**Project &amp; Program Management** : Multi-workstream project coordination (6+ concurrent), project lifecycle management from initiation through closeout, project plan and schedule development and maintenance, milestone and deliverable tracking, scope definition and management, risk monitoring, assessment, and escalation to project leadership, quality control and deliverable review, SOP development and documentation, process and workflow design, standardization, and improvement, template development and version control, centralized asset and content library management, cross-functional team coordination and handoff management, program evaluation framework design, performance metrics identification, structuring, and tracking, status reporting on structured cadence
+
+**Meeting &amp; Event Operations** : Virtual and in-person meeting facilitation, structured agenda preparation, same-day meeting notes and documentation, post-meeting action-item tracking and follow-through to completion, multi-stakeholder scheduling and calendar management, end-to-end conference and event logistics (national scale, 18 sessions, 6,000+ attendees, 15+ organizations), presenter outreach, contracting, and preparation coordination, virtual platform setup and technical support, volunteer and intern recruitment, training, scheduling, and on-site coordination, work group, focus group, and committee facilitation
+
+**Stakeholder &amp; Partner Coordination** : Multi-sector stakeholder management (federal agencies, healthcare executives, clinicians, policymakers, nonprofits, academic institutions, community organizations), primary liaison functions across complex multi-stakeholder environments (15+ concurrent partner organizations), cross-sector partnership coordination and follow-through, member-facing communications and technical assistance, multi-agency coordination, culturally responsive outreach and engagement, constituent and member services
+
+**Documentation &amp; Records Management** : Comprehensive project documentation across concurrent workstreams, deliverable logs and deliverable registries, SOP libraries and operational documentation, vendor invoice reconciliation records, version control and timely stakeholder access, audit-ready documentation standards, centralized content and proposal library management, SharePoint and OneDrive asset library administration, EHR documentation (HIPAA, 42 CFR Part 2), HMIS documentation and outcome tracking, progress notes and goal-tracking records aligned with multi-funder reporting cycles
+
+**Grant Administration &amp; Compliance** : Federal grant lifecycle management (pre-award through closeout), 2 CFR Part 200 Uniform Guidance, SF-424A and SF-425 financial reporting, HHS Grants Policy Statement GPS v2.0, procurement standards (200.318 et seq.), records retention (200.333–334), grant renewal response coordination, grant boilerplate and narrative development, progress and final report preparation, deliverable and expenditure tracking, invoice processing and expenditure reconciliation, multi-vendor expense tracking (5–7 concurrent vendors), vendor compliance assessment and procurement recommendation documentation
+
+**Regulatory Compliance** : Section 508 and WCAG 2.0/2.1/2.2 accessibility standards, HIPAA Privacy and Security Rules, 42 CFR Part 2, IRB protocol development and human subjects compliance, chain-of-custody protocols, FERPA, COPPA, ADA digital compliance, HMIS and HUD reporting requirements, CenCal Health Medi-Cal managed care reporting, audit-ready recordkeeping across regulated environments
+
+**Research &amp; Analysis** : Environmental scanning and horizon scanning; peer-reviewed literature review and synthesis; policy research and synthesis; state-by-state policy mapping and comparative analysis; federal agency action monitoring; stakeholder ecosystem mapping; trend identification and field monitoring; findings translation for leadership decision-making; survey development and administration; data collection and interpretation; mixed-methods research support
+
+**Communications &amp; Writing** : Technical writing and documentation deliverables, policy briefs and stakeholder reports, grant boilerplate and narrative writing, SOP documentation, meeting agendas and structured notes, stakeholder and executive communications, professional correspondence, research dissemination and findings translation, newsletter production and editorial management (6,000+ subscriber audience), blog and article authorship, published co-author, social media copy, accessible and plain-language writing, SEO-optimized copywriting, multi-channel content strategy and execution
+
+**Process Improvement &amp; Systems Thinking** : Workflow standardization reducing deliverable turnaround time and revision cycles, centralized content library reducing submission assembly time by approximately half, standardized document checklist systems enabling parallel processing and early gap identification, recruitment database and tracking system design, cross-team documentation systems improving handoff consistency, template library development reducing design production time
+
+**Tools &amp; Technology** : Microsoft Office 365 (Word, Excel, Outlook, PowerPoint, Teams), Google Workspace (Docs, Sheets, Slides, Drive, Calendar, Forms), Asana, Airtable, SharePoint, OneDrive, Zoom, Canva, Adobe Creative Suite (Photoshop, Illustrator, InDesign), Articulate Rise 360, LearnWorlds LMS, Mailchimp, Google Analytics, Hootsuite, Sprout Social, Synthesia, HeyGen, Perplexity AI, LLMs, HMIS, EHR platforms, SPSS, R, Wix, Squarespace, SurveyMonkey
