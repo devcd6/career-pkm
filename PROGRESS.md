@@ -6,12 +6,12 @@
 - [x] Phase 3 frontmatter tagging
 - [x] Phase 4 KB extraction
 - [x] Phase 5 conflicts (63 logged: 11 resolved by Gate 1 decisions, 52 open)
-- [ ] GATE 3 conflicts resolved (in progress: 19 of 63 resolved, 44 open)
-- [ ] Phase 6 index and verification
+- [x] GATE 3 conflicts resolved (all 64 resolved; 0 open)
+- [x] Phase 6 index and verification (2026-10-06: lint 0 problems; 33 resumes, 208 achievements, 0 open conflicts)
 
 ## Added 2026-10-06: TA4, TA6, TA7, TA8
 - [x] copied to _raw, plan applied (user approved), frontmatter tagged, merged into kb/roles, conflicts and summaries/education/skills updated, index rebuilt (0 lint problems)
-- [ ] open for user: C-S12 (TA6 Sanctuary section holds Casa Serena bullets), telemedicine claim in A-ncmw-project-coordinator-90 (single-source, unverified), AI agent development / iSpring skills (listed-only), TA8 same lineage as 3.md?, Target fields in CLAUDE.md
+- [x] resolved 2026-10-06: C-S12 and mismatched bullets fixed, telemedicine claim verified, AI agent development / iSpring skills user-confirmed. Still open for user: TA8 same lineage as 3.md?, Target fields in CLAUDE.md
 
 
 ## Added 2026-10-06: archive pass
