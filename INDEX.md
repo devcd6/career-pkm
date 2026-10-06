@@ -44,16 +44,16 @@ Generated 2026-10-06 by scripts/build_index.py. Do not edit by hand.
 
 | role | employer | dates | achievements | open conflicts |
 |------|----------|-------|--------------|----------------|
-| [Project Coordinator](kb/roles/ncmw-project-coordinator.md) | National Council for Mental Wellbeing | 2025-10 to 2026-05 | 91 | 3 |
-| [Housing Case Manager | Housing & Basic Needs Services Coordinator](kb/roles/sanctuary-centers-housing-coordinator.md) | Sanctuary Centers (via United Way) | 2022-09 to 2023-11 | 30 | 3 |
-| [Residential Behavioral Health Technician | Program Assistant | Behavioral Health Program Assistant](kb/roles/casa-serena-program-assistant.md) | Casa Serena Treatment Centers | 2021-09 to 2022-08 | 28 | 2 |
-| [Research Assistant | Research Project Coordinator | Clinical Research Project Coordinator](kb/roles/ucsb-research-assistant.md) | UC Santa Barbara | 2021-06 to 2025-01 | 31 | 2 |
-| [Marketing Specialist | Digital Content & Outreach Coordinator | Communications & Outreach Coordinator](kb/roles/asei-marketing-specialist.md) | American Society of Engineers of Indian Origin (ASEI) | 2021-01 to 2022-09 | 29 | 2 |
+| [Project Coordinator](kb/roles/ncmw-project-coordinator.md) | National Council for Mental Wellbeing | 2025-10 to 2026-05 | 91 | 0 |
+| [Housing Case Manager | Housing & Basic Needs Services Coordinator](kb/roles/sanctuary-centers-housing-coordinator.md) | Sanctuary Centers (via United Way) | 2022-09 to 2023-11 | 30 | 0 |
+| [Residential Behavioral Health Technician | Program Assistant | Behavioral Health Program Assistant](kb/roles/casa-serena-program-assistant.md) | Casa Serena Treatment Centers | 2021-09 to 2022-08 | 28 | 0 |
+| [Research Assistant | Research Project Coordinator | Clinical Research Project Coordinator](kb/roles/ucsb-research-assistant.md) | UC Santa Barbara | 2021-06 to 2025-01 | 30 | 0 |
+| [Marketing Specialist | Digital Content & Outreach Coordinator | Communications & Outreach Coordinator](kb/roles/asei-marketing-specialist.md) | American Society of Engineers of Indian Origin (ASEI) | 2021-01 to 2022-09 | 29 | 0 |
 
 ## Status
 
 - Resume versions organized: 33
 - Roles in KB: 5
-- Achievements: 209
-- Open conflicts: 15 (see [kb/_conflicts.md](kb/_conflicts.md))
+- Achievements: 208
+- Open conflicts: 0 (see [kb/_conflicts.md](kb/_conflicts.md))
 - Lint problems: 0
