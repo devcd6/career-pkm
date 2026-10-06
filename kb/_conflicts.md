@@ -115,7 +115,7 @@ resolution: user 2026-10-06: "all others accurate metrics (tailoring variations-
 note: Scope wording only grows in later versions (tentative order). Which is accurate?
 
 ## C-N10
-status: open
+status: resolved
 role: ncmw-project-coordinator
 field: achievement additional articles (neuroplastogens, recovery-ready families), status
 values:
@@ -123,7 +123,7 @@ values:
 - "approved and pending publication by the NCMW marketing and editorial team" (resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/_archive/2026-04_master-versions_long-master-drafts_v2.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v3.md)
 - "Co-authored published blog articles on neuroplastogens, recovery-ready families frameworks, and gambling disorder" (resumes/master-versions/bullet-bank/2026-04_master-versions_bullet-bank_v1.md, resumes/tailored-generalist-project-coordinator/2026-04_tailored-generalist-project-coordinator_general_v1.md, resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md)
 - "Developed first drafts ... research and drafting of content for related blogs" (resumes/master-versions/bullet-bank/2026-04_master-versions_bullet-bank_v1.md)
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 note: Published vs pending vs drafted. Which is accurate?
 
 ## C-N11
@@ -178,7 +178,7 @@ resolution: user 2026-10-06: "all others accurate metrics (tailoring variations-
 note: Minor wording difference; confirm whether "six" and "6+" mean the same.
 
 ## C-N15
-status: open
+status: resolved
 role: ncmw-project-coordinator
 field: employer division / team name
 values:
@@ -186,11 +186,11 @@ values:
 - "Growth team" (resumes/master-versions/bullet-bank/2026-04_master-versions_bullet-bank_v1.md, resumes/project-coordinator/mission-driven/2026-04_project-coordinator_mission-driven_v1.md, resumes/_archive/2026-04_project-coordinator_detail-oriented_v3.md, resumes/_archive/2026-04_project-coordinator_condensed-ats_v1.md, resumes/_archive/2026-06_project-coordinator_grants_v1.md)
 - "Strategy and Growth Office" (resumes/_archive/2026-04_tailored-policy-analyst_general_v1.md)
 - "newly formed program team / program office" (resumes/_archive/2026-05_tailored-public-health-grants-ccbhc_general_v1.md, resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md)
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 note: Naming of the organizational unit differs; confirm the correct unit name.
 
 ## C-N16
-status: open
+status: resolved
 role: ncmw-project-coordinator
 field: achievement standardized workflows, departments named
 values:
@@ -198,7 +198,7 @@ values:
 - Business & Strategy, Policy, MHFA Sales, "Technical Teams" (resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v3.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v4.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v5.md)
 - Business & Strategy, MHFA Sales, Policy (three teams) (resumes/master-versions/bullet-bank/2026-04_master-versions_bullet-bank_v1.md, resumes/tailored-generalist-project-coordinator/2026-04_tailored-generalist-project-coordinator_general_v1.md)
 - "4 internal departments/teams" via Slack channels (resumes/_archive/2026-05_tailored-public-health-grants-ccbhc_general_v1.md, resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md)
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 note: Fourth department differs (Substance Use Continuum vs Technical Teams). Which is accurate?
 
 ## C-N17
@@ -264,7 +264,7 @@ note: Same-version-lineage files disagree (hie-ehr_v1-v5 say two; detail-oriente
 resolution: user decision at Gate 3 (2026-10-05): "3" (UCSB labs)
 
 ## C-U03
-status: open
+status: resolved
 role: ucsb-research-assistant
 field: duration / 'concurrent' appointment wording (3.5-year concurrent appointment)
 values:
@@ -274,7 +274,7 @@ values:
 - "Long-term concurrent appointment spanning undergraduate and post-undergraduate period" (no number) (resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/_archive/2026-04_master-versions_long-master-drafts_v2.md, resumes/project-coordinator/mission-driven/2026-04_project-coordinator_mission-driven_v1.md)
 - dates Jun 2021 - Jan 2025 (3 years 7 months by calendar); no duration stated (resumes/master-versions/bullet-bank/2026-04_master-versions_bullet-bank_v1.md, resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v1.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v2.md, resumes/_archive/2026-04_project-coordinator_detail-oriented_v3.md, resumes/_archive/2026-06_project-coordinator_grants_v1.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v2.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v3.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v4.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v5.md, resumes/_archive/2026-04_tailored-development-coordinator_general_v1.md, resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md, resumes/tailored-generalist-project-coordinator/2026-04_tailored-generalist-project-coordinator_general_v1.md, resumes/_archive/2026-04_tailored-policy-analyst_general_v1.md, resumes/tailored-public-health-policy-research/2026-05_tailored-public-health-policy-research_general_v1.md, resumes/_archive/2026-05_tailored-strategic-operations_general_v1.md)
 note: The 3.5-year figure appears in only 6 files and is not stated in the dates. It is unclear what 'concurrent' means (concurrent with other jobs such as Casa Serena and ASEI, or concurrent labs). Is 3.5 years accurate, and what was the appointment concurrent with? The education entries (BA 2025, SBCC associate 2022) are noted in the role file only.
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 
 ## C-U04
 status: resolved
@@ -348,14 +348,14 @@ note: 'Intake teams' and 'document checklist' match the Sanctuary housing contex
 resolution: user 2026-10-06: "c-u09 standardized checkist belongs to sanctuary centers role." Checklist wording reassigned to A-sanctuary-centers-housing-coordinator-16.
 
 ## C-U10
-status: open
+status: resolved
 role: ucsb-research-assistant
 field: achievement A-ucsb-research-assistant-31 job attribution of multidisciplinary case conferences bullet
 values:
 - listed under UCSB Research Assistant: Facilitated scheduling, agenda preparation, structured notetaking, and action-item follow-through for multidisciplinary case conferences spanning clinical, research, and administrative stakeholders (resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md)
 - listed under Sanctuary Centers (other role file): Participated in multidisciplinary case conferences with therapists, psychiatrists, medical staff, and vocational specialists, preparing agendas, recording notes, tracking action items (resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v3.md, resumes/_archive/2026-04_project-coordinator_detail-oriented_v3.md, resumes/_archive/2026-06_project-coordinator_grants_v1.md, resumes/_archive/2026-04_project-coordinator_mission-driven_v4.md)
 note: Clinical case conferences are not described anywhere else in the UCSB research role. Is this a UCSB bullet or a Sanctuary bullet reused in the executive-operations tailoring?
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants). Mismatched bullet fixed: moved to A-sanctuary-centers-housing-coordinator-12 (variants); removed from the UCSB role. (user 2026-10-06: "fix mismatched bullets")
 
 
 Version order is tentative. Values differ across versions; which is accurate?
@@ -372,13 +372,13 @@ values:
 resolution: user decision at Gate 1 (2026-10-05): "add both written 'Job Title 1 | Job Title 2'". Role title written as "Housing Case Manager | Housing & Basic Needs Services Coordinator".
 
 ## C-S02
-status: open
+status: resolved
 role: sanctuary-centers-housing-coordinator
 field: employer name / parent organization
 values:
 - Sanctuary Centers (via United Way) (resumes/tailored-generalist-project-coordinator/2026-04_tailored-generalist-project-coordinator_general_v1.md, resumes/_archive/2026-04_tailored-policy-analyst_general_v1.md, resumes/_archive/2026-05_project-coordinator_hie-ehr_v1.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v3.md, resumes/master-versions/bullet-bank/2026-04_master-versions_bullet-bank_v1.md, resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v2.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v4.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v5.md, resumes/project-coordinator/mission-driven/2026-04_project-coordinator_mission-driven_v1.md, resumes/_archive/2026-04_tailored-development-coordinator_general_v1.md, resumes/_archive/2026-05_tailored-public-health-grants-ccbhc_general_v1.md)
 - Sanctuary Centers (no United Way mention in the header; bullets or intro in some of these say "via United Way of Northern Santa Barbara County") (resumes/tailored-public-health-policy-research/2026-05_tailored-public-health-policy-research_general_v1.md, resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md, resumes/_archive/2026-05_tailored-strategic-operations_general_v1.md, resumes/_archive/2026-04_tailored-research-coordinator_general_v1.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v1.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v2.md, resumes/_archive/2026-04_project-coordinator_detail-oriented_v3.md, resumes/_archive/2026-04_project-coordinator_mission-driven_v2.md, resumes/project-coordinator/mission-driven/2026-04_project-coordinator_mission-driven_v3.md, resumes/_archive/2026-04_project-coordinator_mission-driven_v4.md, resumes/_archive/2026-04_project-coordinator_condensed-ats_v1.md, resumes/_archive/2026-06_project-coordinator_grants_v1.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/_archive/2026-04_master-versions_long-master-drafts_v2.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v3.md)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 
 ## C-S03
 status: resolved
@@ -432,7 +432,7 @@ values:
 resolution: user 2026-10-06: "all others accurate metrics (tailoring variations-unproblematic to accuracy)". Every stated value accepted; canonical carries one value with the others in brackets, all originals in variants.
 
 ## C-S08
-status: open
+status: resolved
 role: sanctuary-centers-housing-coordinator
 field: achievement A-sanctuary-centers-housing-coordinator-19 scope: partner(s) in co-creating access locations
 values:
@@ -440,7 +440,7 @@ values:
 - university leadership (resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md)
 - university and local leadership (resumes/tailored-public-health-policy-research/2026-05_tailored-public-health-policy-research_general_v1.md)
 - UC Santa Barbara and United Way (resumes/_archive/2026-05_project-coordinator_hie-ehr_v1.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v2.md)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 
 ## C-S09
 status: resolved
@@ -528,7 +528,7 @@ resolution: user decision at Gate 3 (2026-10-05): "6+" (ASEI platforms)
 note: These values differ across versions. Which is accurate: 4+ or 6+? The "6+" bullets name only five platforms.
 
 ## C-A05
-status: open
+status: resolved
 role: asei-marketing-specialist
 field: achievement A-asei-marketing-specialist-03 (also A-14) donor / community outreach wording
 values:
@@ -536,7 +536,7 @@ values:
 - "sponsor and distribution list tracking via Mailchimp" (resumes/_archive/2026-04_tailored-development-coordinator_general_v1.md)
 - "multi-channel content strategies" / "content and outreach strategies tailored to engineering and South Asian professional audiences" / "outreach strategies" with no donor, sponsor, or fundraising mention (resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v3.md, resumes/_archive/2026-04_tailored-policy-analyst_general_v1.md)
 - "audience-segmented email marketing ... to target different membership cohorts" (no sponsor list) (resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 note: Did the ASEI role include donor or sponsor outreach, or is this wording added for development-focused resumes? Both files that carry it are tailored for development/ATS targets.
 
 ## C-A06
@@ -574,13 +574,13 @@ resolution: user 2026-10-06: "all others accurate metrics (tailoring variations-
 note: These values differ across versions. Which is accurate: a count of 3+ projects and "hundreds of members", or no stated count?
 
 ## C-A09
-status: open
+status: resolved
 role: asei-marketing-specialist
 field: concurrency with other roles
 values:
 - ran concurrently with the UCSB Research Assistant role and "early Casa Serena roles" (resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/_archive/2026-04_master-versions_long-master-drafts_v2.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v3.md)
 - ran concurrently with UCSB Research Assistant and Casa Serena "tenures" (resumes/_archive/2026-04_project-coordinator_condensed-ats_v1.md); Casa Serena bullets in the long drafts say it ran concurrently "throughout the tenure" with ASEI (resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 note: Low priority. ASEI dates are Jan 2021 - Sep 2022 in every version; Casa Serena is Jun 2021 - Sep 2022 or Sept 2021 - Aug 2022 depending on the version (owned by the Casa Serena role file). Wording only; confirm the overlap description if it matters.
 
 
@@ -645,7 +645,7 @@ values:
 resolution: user decision at Gate 3 (2026-10-05): "Jun 2021–Sep 2022" (Casa Serena dates) [2026-10-06 user: "Sept 2021- Aug 2022" and "All dates reflected in them [TA4/TA6/TA7/TA8] are the most accurate". This supersedes the Gate 3 answer "Jun 2021-Sep 2022". Canonical start 2021-09, end 2022-08.]
 
 ## C-K06
-status: open
+status: resolved
 role: casa-serena-program-assistant
 field: achievements A-casa-serena-program-assistant-07, A-casa-serena-program-assistant-08, A-casa-serena-program-assistant-22 documentation and compliance claims, and '15-month tenure' wording
 values:
@@ -654,10 +654,10 @@ values:
 - 'sustaining audit-ready recordkeeping standards throughout the tenure': resumes/_archive/2026-04_project-coordinator_mission-driven_v2.md, resumes/project-coordinator/mission-driven/2026-04_project-coordinator_mission-driven_v3.md, resumes/_archive/2026-04_project-coordinator_mission-driven_v4.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v1.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v2.md, resumes/_archive/2026-04_project-coordinator_detail-oriented_v3.md, resumes/_archive/2026-06_project-coordinator_grants_v1.md, resumes/_archive/2026-04_tailored-research-coordinator_general_v1.md, resumes/_archive/2026-05_tailored-strategic-operations_general_v1.md
 - 'maintaining audit-ready documentation standards across all clinical monitoring functions with zero procedural lapses' and 'sustaining audit-ready recordkeeping standards across a 15-month tenure with no compliance deficiencies': resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md
 - Tenure length implied by the two date ranges: Jun 2021 - Sep 2022 is 15 months by month difference; Sept 2021 - Aug 2022 is 11 months by month difference (12 counting both end months). The '15-month tenure' wording matches only the first range (see C-K05).
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 
 ## C-K07
-status: open
+status: resolved
 role: casa-serena-program-assistant
 field: achievements A-casa-serena-program-assistant-23, A-casa-serena-program-assistant-24, A-casa-serena-program-assistant-25 credentials held during the Casa tenure (RADT, CIWA-Ar/SOWS, Motivational Interviewing, Adult Mental Health First Aid)
 values:
@@ -666,7 +666,7 @@ values:
 - 'Held Motivational Interviewing certification [and Adult Mental Health First Aid certification] through CDC Training accreditation' (long-master-drafts: 'throughout the tenure'): resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/_archive/2026-04_master-versions_long-master-drafts_v2.md, resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v3.md, resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md
 - No credential statement in the Casa bullets: resumes/tailored-public-health-policy-research/2026-05_tailored-public-health-policy-research_general_v1.md, resumes/_archive/2026-05_tailored-public-health-grants-ccbhc_general_v1.md, resumes/_archive/2026-04_tailored-development-coordinator_general_v1.md, resumes/_archive/2026-05_tailored-strategic-operations_general_v1.md, resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md, resumes/_archive/2026-04_tailored-research-coordinator_general_v1.md, resumes/_archive/2026-05_project-coordinator_hie-ehr_v1.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v2.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v3.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v4.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v5.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v1.md, resumes/project-coordinator/detail-oriented/2026-04_project-coordinator_detail-oriented_v2.md, resumes/_archive/2026-04_project-coordinator_detail-oriented_v3.md, resumes/_archive/2026-06_project-coordinator_grants_v1.md
 - No version dates or sources RADT or CIWA-Ar/SOWS (neither appears in any Certifications & Training section); Motivational Interviewing (OARS) and Adult Mental Health First Aid are listed there without dates or any link to the Casa tenure: resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md, resumes/_archive/2026-05_project-coordinator_hie-ehr_v1.md, resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v3.md, resumes/_archive/2026-05_tailored-public-health-grants-ccbhc_general_v1.md, resumes/tailored-public-health-policy-research/2026-05_tailored-public-health-policy-research_general_v1.md
-resolution: 
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 
 ## C-K08
 status: resolved
@@ -694,7 +694,7 @@ resolution: user decision at Gate 3 (2026-10-05): "CAPM in-progress"
 notes: These values differ across versions (version order tentative). Expected completion 05/2026 is before today (2026-10-05) and no resume says it was completed. Which is accurate: completed (date?), still in progress, or dropped?
 
 ## C-E02
-status: open
+status: resolved
 role: education
 field: certification CERT-05 CDC federal grants training: name, issuer, and completion date
 values:
@@ -702,11 +702,11 @@ values:
 - "CDC Federal Grants Training Certifcation" (typo variant of the same wording) (resumes/master-versions/long-master-drafts/2026-04_master-versions_long-master-drafts_v1.md, resumes/_archive/2026-04_tailored-executive-operations-support_general_v1.md)
 - "CDC Federal Grants Management Training Series" in the summary paragraph (resumes/_archive/2026-04_project-coordinator_condensed-ats_v1.md)
 - "CDC Foundation Federal Grants Management Training Series (Modules 1-3, June 2026)" in the summary paragraph; not in its certification list (resumes/_archive/2026-06_project-coordinator_grants_v1.md)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 notes: Differences are the issuer (CDC vs CDC Foundation), the form (Certification vs Series, Modules 1-3) and the date: only grants_v1 gives a date (June 2026), while files dated 2026-04 (long-master-drafts_v2, condensed-ats_v1) already list it (file dates are content-based lower bounds; order tentative). Which name, issuer, and completion date are accurate?
 
 ## C-T01
-status: open
+status: resolved
 role: skills
 field: skill Salesforce: level or status
 values:
@@ -717,11 +717,11 @@ values:
 - "Salesforce (Nonprofit Success Pack)" (resumes/project-coordinator/hie-ehr/2026-05_project-coordinator_hie-ehr_v5.md)
 - "Salesforce (including Nonprofit Success Pack)", plus NCMW bullets naming Salesforce NPSP and Salesforce Campaign IDs (resumes/master-versions/master-resumes/2026-08_master-versions_master-resumes_v1.md, resumes/master-versions/master-resumes/2026-09_master-versions_master-resumes_v2.md)
 - not listed (all other versions)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 notes: These values differ across versions (version order tentative). The wording runs from learning / familiarity / preferred to a named Nonprofit Success Pack skill with bullet evidence only in the two master versions. Which is accurate: still learning, working familiarity, or hands-on use of Salesforce NPSP, and in which role?
 
 ## C-T02
-status: open
+status: resolved
 role: skills
 field: EHR/EMR platform(s) used (Casa Serena) and EPIC EHR
 values:
@@ -735,7 +735,7 @@ values:
 - Kipu and Alleva (TA6) (resumes/tailored-cme-program-coordinator/2026-05_tailored-cme-program-coordinator_general_v1.md)
 - Alleva only (TA7, TA8) (resumes/tailored-human-services-public-health-coordinator/2026-05_tailored-human-services-public-health-coordinator_general_v1.md, resumes/tailored-public-health-grants-ccbhc/2026-05_tailored-public-health-grants-ccbhc_general_v2.md)
 - no platform named (TA4) (resumes/tailored-administrative-program-coordinator/2026-05_tailored-administrative-program-coordinator_general_v1.md)
-resolution:
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants).
 notes: These values differ across versions (version order tentative). EPIC EHR is named only in skills lists and in no role bullet. Which EHR/EMR system(s) were actually used, at which employer, and was EPIC EHR used at all?
 
 ## C-T03
@@ -760,11 +760,10 @@ resolution: user decision at Gate 1 (2026-10-05): "Newsletter subscribers: '8,00
 notes: The skill phrase never states 8,000+ in any version; V27/V28 drop the audience size from the skill line.
 
 ## C-S12
-status: open
+status: resolved
 role: sanctuary-centers-housing-coordinator
 field: content of the Sanctuary Centers section in the CME-targeted version (job attribution)
 values:
 - Sanctuary Centers section holds eight Casa Serena clinical bullets (20 to 25 women, CIWA-Ar/SOWS, urinalysis, first responder) identical to the Casa Serena section (resumes/tailored-cme-program-coordinator/2026-05_tailored-cme-program-coordinator_general_v1.md)
 - Sanctuary Centers section holds Housing First case management bullets (all other versions)
-resolution:
-
+resolution: user 2026-10-06: "mark all as approved-tailoring variation not inaccurate. Status is published and names are all longer/shortened/alternative names that are accurate. Credentials are all accurate". Approved as tailoring variation, not inaccurate; accepted values kept in the KB (bracketed or in variants). Mismatched bullets fixed: the eight Casa Serena bullets found under the Sanctuary heading are credited to Casa Serena only. (user 2026-10-06: "fix mismatched bullets")
