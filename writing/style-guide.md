@@ -25,7 +25,7 @@ Use for cover letters and application narrative. For resume bullets, follow `kb/
 
 ## Sentence and register
 - Average sentence length in the letters is 26 to 39 words (aphsa 38.7, nami 32.0, governors-pha 26.4, ndi 26.8). Long compound sentences with subordinate clauses are normal, followed by a short sentence for emphasis.
-- First person singular, plain declaratives, no exclamation marks, no slang. Humble, learning-first tone about gaps; confident about results.
+- First person singular, plain declaratives, almost no exclamation marks (one in the closing line of cover-letter-aphsa, none in the other nine letters), no slang. Humble, learning-first tone about gaps; confident about results.
 - Numbers in letters are often written as words in prose ("twenty to thirty", "six or more", "a half dozen platforms"), with numerals for percentages and counts in lists (35 percent, 8,000 subscribers).
 - Em dashes are not used in any of the ten letters and not in writing sample 1; sample 2 (a published blog) uses four. Keep em dashes out of letters (also the user's standing preference for narrative prose).
 
