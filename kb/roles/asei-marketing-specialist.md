@@ -421,7 +421,7 @@ notes: Single-source: appears only in this version; no match in the other versio
 
 ### A-asei-marketing-specialist-30
 canonical: Deployed digital tracking instruments and structured data collection tools to monitor visitor engagement, applying statistical trend analysis to optimize future campaign landing pages and frontend performance.
-tier: single-source
+tier: verified
 sources: [_raw/notion/responsibilities-database.md]
 variants:
 - (notion Responsibilities #51) Deployed digital tracking instruments and structured data collection tools to monitor visitor engagement, applying statistical trend analysis to optimize future campaign landing pages and frontend performance.
@@ -429,7 +429,7 @@ notes: Notion Responsibilities #51: digital tracking and data collection tools t
 
 ### A-asei-marketing-specialist-31
 canonical: Directed regular editorial updates and implemented campaign landing pages via CMS platforms (Wix, Hubspot, Squarespace), applying HTML, CSS, and WCAG accessibility standards to optimize visitor engagement and frontend performance.
-tier: single-source
+tier: verified
 sources: [_raw/notion/responsibilities-database.md]
 variants:
 - (notion Responsibilities #52) Directed regular editorial updates and implemented campaign landing pages via CMS platforms (Wix, Hubspot, Squarespace), applying HTML, CSS, and WCAG accessibility standards to optimize visitor engagement and frontend performance.

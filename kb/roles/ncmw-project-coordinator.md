@@ -1290,7 +1290,7 @@ notes: Single-source: appears only in this version; no match in the other versio
 
 ### A-ncmw-project-coordinator-92
 canonical: Developed and published public-facing resources across various digital content platforms (website, LinkedIn, National Conference landing page) and spanning modalities (social media posts, blogs, toolkits, reports, guidelines), ensuring accurate translation of complex research, health policy, and clinical guidelines across national practitioner and non-practioner audiences while ensuring accessibility and compliance with federal plain-writing and clear communication standards
-tier: single-source
+tier: verified
 sources: [_raw/notion/responsibilities-database.md]
 variants:
 - (notion Responsibilities #55) Developed and published public-facing resources across various digital content platforms (website, LinkedIn, National Conference landing page) and spanning modalities (social media posts, blogs, toolkits, reports, guidelines), ensuring accurate translation of complex research, health policy, and clinical guidelines across national practitioner and non-practioner audiences while ensuring accessibility and compliance with federal plain-writing and clear communication standards
