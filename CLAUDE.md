@@ -64,8 +64,12 @@ These govern building and editing the knowledge base.
 5. Only the user can mark a claim `verified`.
 6. Stop at every human gate listed in `PROGRESS.md` and wait for the user.
 7. Commit to git after each phase with a message naming the phase.
-8. Resumes contain personal data. Do not push this repo to a remote, and do
-   not paste file contents into web searches or external tools.
+8. Resumes contain personal data. This repo may be pushed only to the owner's
+   private GitHub repository (devcd6/career-pkm), on feature branches, never to
+   main without the owner's approval. Do not push to any other remote, and do
+   not paste file contents into web searches or external tools. In application
+   sessions, only company and role text from the job description may leave the
+   repo.
 
 ## Application mode (job applications)
 
