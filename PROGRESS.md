@@ -21,5 +21,8 @@
 - [x] read-only snapshots in _raw/notion (master pages, writing samples, Job History, Responsibilities, Achievements, Skills, STAR Story Bank)
 - [x] merged into kb/roles (56 responsibilities, 18 achievements; 3 unmatched rows added as single-source blocks), kb/stories.md, kb/skills.md; user rulings in kb/_user_decisions.md
 - [ ] NOT imported by instruction: Documents & Application Material, Notes, application tracker
-- [ ] Not yet merged line by line: Master Career Profile sections 3 to 7 (projects, skills index) and the Master Career Record page (not yet snapshotted)
+- [x] user ruled: do not merge Master Career Profile or Record
 - [ ] Push decision pending: CLAUDE.md rule 8 forbids pushing this repo; commits are local only
+- [x] Notion Documents import approved and applied 2026-10-08: 10 new tailored resumes in resumes/, 10 cover letters in writing/samples/, 5 duplicates of TA4/TA6/TA7/TA8 skipped; 367 bullet wordings added as variants and 41 new verified claims in kb/roles
+- [ ] writing/style-guide.md to draft from the cover letters and writing samples, then user approval
+- [x] user ruled: leave Education/Certifications database, Deep Dive, company-title strings and Insights Discovery Profile out
