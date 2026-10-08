@@ -1,12 +1,12 @@
 ---
 id: style-guide
-status: draft
-approved_by_user: false
+status: approved
+approved_by_user: true
 sources: [writing/samples/cover-letter-aphsa.md, writing/samples/cover-letter-governors-pha.md, writing/samples/cover-letter-partners-in-health.md, writing/samples/cover-letter-ndi.md, writing/samples/cover-letter-phi.md, writing/samples/cover-letter-nami.md, writing/samples/cover-letter-asam.md, writing/samples/cover-letter-amga.md, writing/samples/cover-letter-mcd-global-health.md, writing/samples/cover-letter-sostento.md, _raw/notion/writing-sample-1-recovery-ready-families.md, _raw/notion/writing-sample-2-gambling-use-disorder-blog.md]
-notes: Descriptive record of how the owner writes, drafted 2026-10-08 from 10 cover letters and 2 writing samples, and revised the same day after the owner reviewed an earlier claude.ai analysis of three letters. Counts were measured by script over all ten letters; patterns were read in full from four letters (APHSA, Governors PHA, Partners in Health, NDI) and checked by phrase search across all ten. This file describes; it does not instruct. DRAFT until the owner approves it.
+notes: Descriptive record of how the owner writes, drafted 2026-10-08 from 10 cover letters and 2 writing samples, and revised the same day after the owner reviewed an earlier claude.ai analysis of three letters. Counts were measured by script over all ten letters; patterns were read in full from four letters (APHSA, Governors PHA, Partners in Health, NDI) and checked by phrase search across all ten. This file describes; it does not instruct. Approved by the owner on 2026-10-08.
 ---
 
-# How the owner writes (draft, awaiting owner approval)
+# How the owner writes (approved by the owner 2026-10-08)
 
 This file records observed patterns in the owner's cover letters and longer writing. Facts about roles, dates and numbers live in `kb/roles/*`; this file does not hold facts about the career. For resume bullets, the wording is in `kb/roles/*` canonical lines and their bracketed alternatives.
 

@@ -24,6 +24,6 @@
 - [x] user ruled: do not merge Master Career Profile or Record
 - [ ] Push decision pending: CLAUDE.md rule 8 forbids pushing this repo; commits are local only
 - [x] Notion Documents import approved and applied 2026-10-08: 10 new tailored resumes in resumes/, 10 cover letters in writing/samples/, 5 duplicates of TA4/TA6/TA7/TA8 skipped; 367 bullet wordings added as variants and 41 new verified claims in kb/roles
-- [ ] writing/style-guide.md to draft from the cover letters and writing samples, then user approval
+- [x] writing/style-guide.md approved by the user 2026-10-08
 - [x] user ruled: leave Education/Certifications database, Deep Dive, company-title strings and Insights Discovery Profile out
 - [x] writing/style-guide.md rewritten as a descriptive record (still draft, awaiting owner approval); no generation prompt kept in repo

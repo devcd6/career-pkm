@@ -74,3 +74,6 @@ Not yet answered at Gate 1: which of 10/20 to keep; whether 26 is archived; whet
 
 # Push authorization (2026-10-08), user's word
 - "push" -> The user authorized pushing branch claude/compassionate-faraday-kw5tuy to the remote, overriding CLAUDE.md hard rule 8 (no remote push) for this push only. The push includes personal data (contact details, resumes, cover letters, career profile) in resumes/, writing/, _raw/ and kb/. The rule itself is unchanged in CLAUDE.md; later pushes need a fresh instruction.
+
+# Style guide approval and push to main (2026-10-08), user's words
+- "approve writing style guide and push to main" -> writing/style-guide.md approved (status: approved, approved_by_user: true). The user explicitly authorized pushing to main, overriding CLAUDE.md rule 8 and the branch-only default for this push.
