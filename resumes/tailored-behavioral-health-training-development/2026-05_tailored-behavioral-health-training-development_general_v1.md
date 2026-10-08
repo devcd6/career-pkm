@@ -1,19 +1,17 @@
 ---
-id: 2026-05_tailored-behavioral-health-training-specialist_altarum_v1
-role_target: behavioral-health-training-specialist
-company_target: altarum
+id: 2026-05_tailored-behavioral-health-training-development_general_v1
+role_target: behavioral-health-training-development
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-behavioral-health-training-specialist
+version_group: tailored-behavioral-health-training-development
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-altarum.md
-notes: Notion tailored resume for Altarum (Behavioral Health Training Specialist, Recovery and Community Supports); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Behavioral Health Training Specialist, Recovery and Community Supports; tailored to Altarum; Notion export
+source_original: _raw/notion/documents/N-R04.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: behavioral health training and technical assistance; federally funded behavioral health; curriculum development with adult learning principles, SSI/SSDI benefits navigation, feedback-driven quality improvement
 ---
 
- (../Job%20opportunities%20and%20applications/Altarum%20-%20Behavioral%20Health%20Training%20Specialist,%20R%203d10f51dc62580568c63dc858f6230fe.md)
- (../Job%20opportunities%20and%20applications/Altarum%20-%20Behavioral%20Health%20Training%20Specialist,%20R%203d10f51dc62580568c63dc858f6230fe.md)
 
 ## **Devika C. Dixit**
 

@@ -1,12 +1,12 @@
 ---
-id: cover-letter-sostento
+id: cover-letter_public-health-grants-ccbhc
 type: cover-letter
-company_target: sostento
+role_angle: public-health-grants-ccbhc
 date: 2026-09
 date_confidence: content
 status: active
-source_original: _raw/notion/documents/cover-letter-sostento.md
-notes: Notion cover letter, kept verbatim except the Notion property lines (Role, Tailored, Type, Used For) and the page title; writing-style sample; date is a lower bound
+source_original: _raw/notion/documents/N-L09.md
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
 ---
 
 ### **Devika C. Dixit**

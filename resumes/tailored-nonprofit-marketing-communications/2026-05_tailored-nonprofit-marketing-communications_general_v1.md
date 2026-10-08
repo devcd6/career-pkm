@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-marketing-communications-coordinator_partners-in-health_v1
-role_target: marketing-communications-coordinator
-company_target: partners-in-health
+id: 2026-05_tailored-nonprofit-marketing-communications_general_v1
+role_target: nonprofit-marketing-communications
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-marketing-communications-coordinator
+version_group: tailored-nonprofit-marketing-communications
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-partners-in-health.md
-notes: Notion tailored resume for Partners in Health (Coordinator, Marketing and Communications); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Coordinator, Marketing and Communications; tailored to Partners in Health; Notion export
+source_original: _raw/notion/documents/N-R10.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: nonprofit marketing and communications; nonprofit, healthcare and grant-funded; storytelling and editorial content, multi-platform communications, centralized deliverable tracking
 ---
 
 ## **Devika C. Dixit**

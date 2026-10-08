@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-senior-administrative-coordinator_nami_v1
-role_target: senior-administrative-coordinator
-company_target: nami
+id: 2026-05_tailored-executive-administrative-support_general_v1
+role_target: executive-administrative-support
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-senior-administrative-coordinator
+version_group: tailored-executive-administrative-support
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-nami.md
-notes: Notion tailored resume for NAMI (Senior Administrative Coordinator, Programs & Services); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Senior Administrative Coordinator, Programs & Services; tailored to NAMI; Notion export
+source_original: _raw/notion/documents/N-R08.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: executive and administrative operations; grant-funded behavioral health and nonprofit; executive calendar and correspondence, gatekeeping and priority triage, meeting facilitation, grant timeline tracking
 ---
 
 ## **Devika C. Dixit**

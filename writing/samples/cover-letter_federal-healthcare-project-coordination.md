@@ -1,12 +1,12 @@
 ---
-id: cover-letter-mcd-global-health
+id: cover-letter_federal-healthcare-project-coordination
 type: cover-letter
-company_target: mcd-global-health
+role_angle: federal-healthcare-project-coordination
 date: 2026-09
 date_confidence: content
 status: active
-source_original: _raw/notion/documents/cover-letter-mcd-global-health.md
-notes: Notion cover letter, kept verbatim except the Notion property lines (Role, Tailored, Type, Used For) and the page title; writing-style sample; date is a lower bound
+source_original: _raw/notion/documents/N-L04.md
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
 ---
 
 ## **Devika C. Dixit**

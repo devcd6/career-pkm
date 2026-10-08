@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-project-assistant-healthcare-transformations_air_v1
-role_target: project-assistant-healthcare-transformations
-company_target: air
+id: 2026-05_tailored-client-service-project-support_general_v1
+role_target: client-service-project-support
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-project-assistant-healthcare-transformations
+version_group: tailored-client-service-project-support
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-air.md
-notes: Notion tailored resume for AIR (American Institutes for Research) (Project Assistant, Healthcare Transformations); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Project Assistant, Healthcare Transformations; tailored to AIR (American Institutes for Research); Notion export
+source_original: _raw/notion/documents/N-R01.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: client-service project support; federally funded health and human services; scheduling, deliverable tracking, documentation and version control; benefits and housing-subsidy client intake
 ---
 
 ## **Devika C. Dixit**

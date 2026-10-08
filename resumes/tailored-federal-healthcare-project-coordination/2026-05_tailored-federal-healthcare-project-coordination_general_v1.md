@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-emr-modernization-coordinator_mcd-global-health_v1
-role_target: emr-modernization-coordinator
-company_target: mcd-global-health
+id: 2026-05_tailored-federal-healthcare-project-coordination_general_v1
+role_target: federal-healthcare-project-coordination
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-emr-modernization-coordinator
+version_group: tailored-federal-healthcare-project-coordination
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-mcd-global-health.md
-notes: Notion tailored resume for MCD Global Health (Project Coordinator, EMR Modernization); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Project Coordinator, EMR Modernization; tailored to MCD Global Health; Notion export
+source_original: _raw/notion/documents/N-R06.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: healthcare project coordination; federally funded healthcare initiatives; leadership-team operations, agenda and action-item tracking, documentation control, 2 CFR 200 and SF-424A/425 reporting
 ---
 
 # **Devika C. Dixit**

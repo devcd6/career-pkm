@@ -1,12 +1,12 @@
 ---
-id: cover-letter-nami
+id: cover-letter_executive-administrative-support
 type: cover-letter
-company_target: nami
+role_angle: executive-administrative-support
 date: 2026-09
 date_confidence: content
 status: active
-source_original: _raw/notion/documents/cover-letter-nami.md
-notes: Notion cover letter, kept verbatim except the Notion property lines (Role, Tailored, Type, Used For) and the page title; writing-style sample; date is a lower bound
+source_original: _raw/notion/documents/N-L05.md
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
 ---
 
 National Alliance on Mental Illness

@@ -28,3 +28,4 @@
 - [x] writing/style-guide.md approved by the user 2026-10-08
 - [x] user ruled: leave Education/Certifications database, Deep Dive, company-title strings and Insights Discovery Profile out
 - [x] writing/style-guide.md rewritten as a descriptive record (still draft, awaiting owner approval); no generation prompt kept in repo
+- [x] index review 2026-10-08: INDEX.md regenerated and checked (43 resume versions, 5 roles, 252 claims, 0 open conflicts, 0 lint problems); Notion resumes and letters renamed to role/industry/angle names; raw staging copies renamed N-R##/N-L##; build_index.py extended (categories, KB, writing, Notion sections, pipe-safe cells)

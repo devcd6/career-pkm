@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-program-associate_governors-pha_v1
-role_target: program-associate
-company_target: governors-pha
+id: 2026-05_tailored-public-health-multistakeholder-coordination_general_v1
+role_target: public-health-multistakeholder-coordination
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-program-associate
+version_group: tailored-public-health-multistakeholder-coordination
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-governors-pha.md
-notes: Notion tailored resume for Governors Public Health Alliance (Program Associate); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Program Associate; tailored to Governors Public Health Alliance; Notion export
+source_original: _raw/notion/documents/N-R05.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: public health program coordination; national, state and community public health and nonprofit; executive calendar, meeting documentation, newsletters and briefs for federal agencies and funders
 ---
 
 ## **Devika C. Dixit**

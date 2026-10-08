@@ -157,14 +157,42 @@ def main() -> int:
     lines = [f"# Career knowledge base index", "",
              f"Generated {date.today().isoformat()} by scripts/build_index.py. Do not edit by hand.", ""]
 
+    def cell(s):
+        return str(s).replace("|", "/").replace("\n", " ")
+
+    def kind_of(group):
+        if group.startswith("master-versions"):
+            return "master"
+        if group.startswith("project-coordinator"):
+            return "project coordinator"
+        if group.startswith("tailored-"):
+            return "tailored"
+        return "other"
+
+    groups = {}
+    for rel, fm in resumes:
+        g = groups.setdefault(fm.get("version_group", ""), {"active": 0, "archived": 0, "role": fm.get("role_target", ""), "angle": ""})
+        g[fm.get("status", "active") if fm.get("status") in ("active", "archived") else "active"] += 1
+        if fm.get("status") != "archived" and (not g["angle"] or g["angle"].startswith("(archived only)")):
+            g["angle"] = fm.get("keywords", "")
+        elif fm.get("status") == "archived" and not g["angle"]:
+            g["angle"] = "(archived only) " + fm.get("keywords", "")
+    lines += ["## Resume categories", "",
+              "Resumes are grouped by role family and content angle (role, industry, emphasis), never by employer or opening. Every active resume carries equal weight.", "",
+              "| kind | group | role target | active | archived | role / industry / angle (from the first active file) |",
+              "|------|-------|-------------|--------|----------|------------------------------------------------------|"]
+    for g, v in sorted(groups.items(), key=lambda x: (kind_of(x[0]), x[0])):
+        lines.append(f"| {kind_of(g)} | {g} | {cell(v['role'])} | {v['active']} | {v['archived']} | {cell(v['angle'])[:170]} |")
+    lines.append("")
+
     lines += ["## Resume versions", "",
               "| raw | file | target role | date | keywords / unique angle | status |",
               "|-----|------|-------------|------|-------------------------|--------|"]
-    for rel, fm in sorted(resumes, key=lambda r: (r[1].get("status", "") == "archived", r[1].get("version_group", ""), str(r[1].get("version_no", "")))):
+    for rel, fm in sorted(resumes, key=lambda r: (r[1].get("status", "") == "archived", kind_of(r[1].get("version_group", "")), r[1].get("version_group", ""), str(r[1].get("version_no", "")))):
         raw = fm.get("source_original", "").replace("_raw/", "")
         kw = fm.get("keywords", "") + (f" ({fm['archive_reason']})" if fm.get("archive_reason") else "")
-        lines.append(f"| {raw} | [{Path(rel).name}]({rel}) | {fm.get('role_target', '')} | "
-                     f"{fm.get('date', '')} | {kw} | {fm.get('status', '')} |")
+        lines.append(f"| {cell(raw)} | [{Path(rel).name}]({rel}) | {cell(fm.get('role_target', ''))} | "
+                     f"{fm.get('date', '')} | {cell(kw)} | {fm.get('status', '')} |")
     lines.append("")
 
     lines += ["## Roles", "",
@@ -172,9 +200,46 @@ def main() -> int:
               "|------|----------|-------|--------------|----------------|"]
     for rel, fm, n_ach in sorted(roles, key=lambda r: str(r[1].get("start", "")), reverse=True):
         rid = fm.get("id", "")
-        lines.append(f"| [{fm.get('title', Path(rel).stem)}]({rel}) | {fm.get('employer', '')} | "
+        lines.append(f"| [{cell(fm.get('title', Path(rel).stem))}]({rel}) | {cell(fm.get('employer', ''))} | "
                      f"{fm.get('start', '')} to {fm.get('end', '')} | {n_ach} | {open_by_role.get(rid, 0)} |")
     lines.append("")
+
+    def count(path, pattern):
+        pp = root / path
+        return len(re.findall(pattern, pp.read_text(encoding="utf-8", errors="replace"), re.M)) if pp.exists() else 0
+
+    n_conf = len(conflicts)
+    n_res = sum(1 for c in conflicts if c.get("status") == "resolved")
+    lines += ["## Knowledge files", "",
+              "| file | contents | size |",
+              "|------|----------|------|",
+              f"| [kb/roles/](kb/roles/) | one file per employer role, achievement blocks | {sum(r[2] for r in roles)} claims |",
+              f"| [kb/skills.md](kb/skills.md) | skills, tools, certifications by category, plus Notion skills | {count('kb/skills.md', r'^## ')} sections |",
+              f"| [kb/education.md](kb/education.md) | degrees, publication, certifications | {count('kb/education.md', r'^### (EDU|PUB|CERT)')} items |",
+              f"| [kb/summaries.md](kb/summaries.md) | every distinct summary paragraph | {count('kb/summaries.md', r'^## S-')} summaries |",
+              f"| [kb/stories.md](kb/stories.md) | STAR stories (single-source, user-confirmed) | {count('kb/stories.md', r'^### S\d+')} stories |",
+              f"| [kb/_conflicts.md](kb/_conflicts.md) | disagreements and their resolutions | {n_conf} entries, {n_res} resolved |",
+              "| [kb/_user_decisions.md](kb/_user_decisions.md) | the owner's own rulings, dated | log |", ""]
+
+    samples = sorted((root / "writing" / "samples").glob("*.md")) if (root / "writing" / "samples").is_dir() else []
+    guide = root / "writing" / "style-guide.md"
+    if samples or guide.exists():
+        lines += ["## Writing", ""]
+        if guide.exists():
+            gfm = parse_fm(guide.read_text(encoding="utf-8", errors="replace"))
+            lines += [f"- [Style guide](writing/style-guide.md): descriptive record of how the owner writes; status {gfm.get('status', '?')}."]
+        if samples:
+            lines += ["", "| cover letter sample | role / angle | date |", "|---------------------|--------------|------|"]
+            for sp in samples:
+                sfm = parse_fm(sp.read_text(encoding="utf-8", errors="replace"))
+                lines.append(f"| [{sp.name}]({sp.relative_to(root).as_posix()}) | {cell(sfm.get('role_angle', ''))} | {sfm.get('date', '')} |")
+        lines.append("")
+
+    nraw = root / "_raw" / "notion"
+    if nraw.is_dir():
+        docs = list((nraw / "documents").glob("*.md")) if (nraw / "documents").is_dir() else []
+        lines += ["## Notion snapshots (reference, read-only)", "",
+                  f"- `_raw/notion/`: {len(list(nraw.glob('*.md')))} page and database snapshots (master career pages kept as reference only, not merged) and `documents/` with {len(docs)} resume and cover-letter copies (`N-R##` resumes, `N-L##` letters).", ""]
 
     n_open = sum(1 for c in conflicts if c.get("status") == "open")
     lines += ["## Status", "",

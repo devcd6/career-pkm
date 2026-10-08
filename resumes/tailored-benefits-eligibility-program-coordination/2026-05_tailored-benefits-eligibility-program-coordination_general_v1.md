@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-financial-empowerment-coordinator_ndi_v1
-role_target: financial-empowerment-coordinator
-company_target: ndi
+id: 2026-05_tailored-benefits-eligibility-program-coordination_general_v1
+role_target: benefits-eligibility-program-coordination
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-financial-empowerment-coordinator
+version_group: tailored-benefits-eligibility-program-coordination
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-ndi.md
-notes: Notion tailored resume for NDI (National Disabilities Institute) (Project Coordinator, Financial Empowerment); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Project Coordinator, Financial Empowerment; tailored to NDI (National Disabilities Institute); Notion export
+source_original: _raw/notion/documents/N-R09.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: benefits and eligibility program coordination; nonprofit, academic and behavioral health; SSDI/SSI/state disability and housing-subsidy navigation, grant compliance reporting, event and training logistics
 ---
 
 ## **Devika C. Dixit**

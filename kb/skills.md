@@ -1435,250 +1435,250 @@ Microsoft Office 365 | 2026-05_tailored-public-health-grants-ccbhc_general_v2 | 
 
 Line format: `skill | category | resumes`. Items are split on commas/semicolons outside parentheses and matched literally against the lines above, so a reworded skill can appear as new here. User-confirmed accurate (2026-10-08).
 
-SSI/SSDI application support and appeals advocacy | Disability Benefits & Recovery Systems | altarum
-disability-determination process navigation | Disability Benefits & Recovery Systems | altarum
-Social Security Administration eligibility criteria | Disability Benefits & Recovery Systems | altarum
-psychiatric and medical evidence coordination for benefits claims | Disability Benefits & Recovery Systems | altarum
-recovery-oriented and person-centered service delivery | Disability Benefits & Recovery Systems | altarum
-Curriculum and training material development using adult learning principles | Training & Technical Assistance | altarum
-e-learning course design (Articulate Rise 360) | Training & Technical Assistance | altarum
-coaching and technical assistance to provider agencies | Training & Technical Assistance | altarum
-webinar and community-of-practice facilitation | Training & Technical Assistance | altarum
-continuing-education compliance tracking | Training & Technical Assistance | altarum
-feedback collection and curriculum refinement | Training & Technical Assistance | altarum
-toolkit and resource development | Training & Technical Assistance | altarum
-trauma-informed care and harm reduction | Behavioral Health & Clinical Practice | altarum
-co-occurring disorders and person-first language | Behavioral Health & Clinical Practice | altarum
-acute crisis de-escalation | Behavioral Health & Clinical Practice | altarum
-EHR documentation (Kipu, Alleva) Program | Behavioral Health & Clinical Practice | altarum
-2 CFR Part 200 and HHS Grants Policy Statement | Program Evaluation & Compliance | altarum
-Section 508/WCAG 2.0/2.1/2.2 accessibility standards | Program Evaluation & Compliance | altarum
-quality improvement processes | Program Evaluation & Compliance | altarum
-Multi-sector stakeholder engagement (federal, healthcare, nonprofit, community) | Stakeholder & Partnership Management | altarum
-provider and agency liaison functions | Stakeholder & Partnership Management | altarum
-Technical writing for clinical and non-clinical audiences | Communication & Content | altarum
-multi-workstream coordination (6+ concurrent) | Project & Program Management | mcd-global-health
-KPI and performance metrics identification and tracking | Project & Program Management | mcd-global-health
-structured status reporting | Project & Program Management | mcd-global-health
-grant renewal coordination | Grant Administration & Federal Compliance | mcd-global-health
-invoice processing and multi-vendor expense tracking (5-7 concurrent vendors) | Grant Administration & Federal Compliance | mcd-global-health
-Section 508 and WCAG 2.0-2.2 accessibility standards | Regulatory & Privacy Compliance | mcd-global-health
-NIST AI RMF 1.0 and Generative AI Profile | AI Governance & Emerging Technology | mcd-global-health
-Structured agenda preparation and same-day notes | Meeting, Event & Stakeholder Operations | mcd-global-health
-action-item tracking to completion | Meeting, Event & Stakeholder Operations | mcd-global-health
-multi-stakeholder scheduling (Outlook, Calendly, Google Calendar) | Meeting, Event & Stakeholder Operations | mcd-global-health
-volunteer and intern recruitment and coordination | Meeting, Event & Stakeholder Operations | mcd-global-health
-Board-level facilitation | Meeting, Event & Stakeholder Operations | mcd-global-health
-primary liaison functions across federal agencies | Meeting, Event & Stakeholder Operations | mcd-global-health
-community organizations | Meeting, Event & Stakeholder Operations | mcd-global-health
-semi-structured interviewing with diverse and underrepresented populations | Research & Data Analysis | mcd-global-health
-thematic and observational coding | Research & Data Analysis | mcd-global-health
-statistical trend analysis (CDC SUDORS fatal overdose dashboard, SAMHSA DAS/SAES state estimates) | Research & Data Analysis | mcd-global-health
-End-to-end e-learning course design (Articulate Rise 360) | Instructional Design & Educational Content | mcd-global-health
-learner feedback evaluation (Jotform) | Instructional Design & Educational Content | mcd-global-health
-Multi-channel content strategy and execution (email, web, social, LinkedIn thought leadership) | Communications & Content Strategy | mcd-global-health
-brand identity and style guide development | Communications & Content Strategy | mcd-global-health
-policy briefs and executive correspondence | Communications & Content Strategy | mcd-global-health
-biopsychosocial and VI-SPDAT assessment | Case Management & Housing Services | mcd-global-health
-multi-program benefits navigation (Section 8 HCV, HUD-VASH, Emergency Housing Vouchers) | Case Management & Housing Services | mcd-global-health
-culturally responsive engagement with historically marginalized populations | Case Management & Housing Services | mcd-global-health
-CIWA-Ar and SOWS withdrawal screening (certified) | Direct Clinical & Behavioral Health | mcd-global-health
-chain-of-custody urinalysis screening | Direct Clinical & Behavioral Health | mcd-global-health
-acute crisis de-escalation | Direct Clinical & Behavioral Health | mcd-global-health
-Digital HEDIS and interoperability standards (FHIR) | Domain Knowledge | mcd-global-health
-population health principles and health literacy | Domain Knowledge | mcd-global-health
-EHR platforms (Kipu, Alleva, EPIC) | Tools & Technology | mcd-global-health
-Multi-Workstream Project Coordination (6+ concurrent federally funded workstreams) | Program & Project Coordination | asam
-Work Plans & Milestone Tracking | Program & Project Coordination | asam
-Deadline & Priority Management | Program & Project Coordination | asam
-Task Sequencing in High-Volume Periods | Program & Project Coordination | asam
-SOP & Template Development | Program & Project Coordination | asam
-Version Control & File Standards | Program & Project Coordination | asam
-Status Reporting Cadence | Program & Project Coordination | asam
-Risk Monitoring & Escalation | Program & Project Coordination | asam
-Post-Meeting Notes & Action-Item Tracking | Program & Project Coordination | asam
-Records Maintenance & Data Entry | Program & Project Coordination | asam
-Special Project Support | Program & Project Coordination | asam
-Inquiry Triage & Escalation to Subject Matter Experts | Learner Support, Customer Service & Stakeholder Engagement | asam
-Central Member Support Channel Management (3,200+ member network) | Learner Support, Customer Service & Stakeholder Engagement | asam
-Responsive Email-Based Support | Learner Support, Customer Service & Stakeholder Engagement | asam
-Technical Assistance & Troubleshooting (coaching provider teams, day-of presenter and attendee support) | Learner Support, Customer Service & Stakeholder Engagement | asam
-Plain-Language Communication | Learner Support, Customer Service & Stakeholder Engagement | asam
-Member Association Engagement | Learner Support, Customer Service & Stakeholder Engagement | asam
-Healthcare Provider Audience Support (CCBHCs, FQHCs, hospital systems) | Learner Support, Customer Service & Stakeholder Engagement | asam
-Accreditation & Quality Body Relationships | Learner Support, Customer Service & Stakeholder Engagement | asam
-Subject Matter Expert Coordination | Learner Support, Customer Service & Stakeholder Engagement | asam
-Advisory Committee & Work Group Facilitation | Learner Support, Customer Service & Stakeholder Engagement | asam
-Cross-Sector Partnership Building | Learner Support, Customer Service & Stakeholder Engagement | asam
-LMS Administration (LearnWorlds: learner access, enrollment, progress tracking, completion and certificate records, reporting) | LMS Administration, CRM & Instructional Design | asam
-Product & Course Setup | LMS Administration, CRM & Instructional Design | asam
-Pre-Deployment LMS Testing | LMS Administration, CRM & Instructional Design | asam
-CRM Database Management (HubSpot, Salesforce NPSP: record maintenance, deduplication, integration monitoring) | LMS Administration, CRM & Instructional Design | asam
-E-Learning Development (12-module course authored in Articulate Rise 360, concept through pre-launch) | LMS Administration, CRM & Instructional Design | asam
-Adult Learning Principles | LMS Administration, CRM & Instructional Design | asam
-Interactive Learning Components (knowledge checks, scenario-based activities, flashcards, assessments) | LMS Administration, CRM & Instructional Design | asam
-On-Demand Training & Toolkit Development | LMS Administration, CRM & Instructional Design | asam
-Instructional Video (Synthesia, Canva) | LMS Administration, CRM & Instructional Design | asam
-Section 508 & WCAG 2.1 Accessibility QA | LMS Administration, CRM & Instructional Design | asam
-Centralized Content Library Management | LMS Administration, CRM & Instructional Design | asam
-Zoom Webinar Facilitation (registration setup, polls, Q&A, chat, screen sharing) | Live & Virtual Events & Training Delivery | asam
-During- | Live & Virtual Events & Training Delivery | asam
-Post-Event Learner Technical Support | Live & Virtual Events & Training Delivery | asam
-Webinar & Office Hours Moderation | Live & Virtual Events & Training Delivery | asam
-Community of Practice & Peer-Learning Cohort Coordination | Live & Virtual Events & Training Delivery | asam
-Speaker & Faculty Onboarding | Live & Virtual Events & Training Delivery | asam
-Registration & Attendance Tracking (Airtable, Eventscribe/Cadium, XpressReg) | Live & Virtual Events & Training Delivery | asam
-Post-Session Feedback Surveys (Jotform, SurveyMonkey) | Live & Virtual Events & Training Delivery | asam
-National Conference Logistics (6,000+ attendees) | Live & Virtual Events & Training Delivery | asam
-Continuing Education Compliance Management (attendance verification, post-session evaluations, credit awarding to eligible participants) | Continuing Education, Grant & Regulatory Compliance | asam
-Completion Certificate Records | Continuing Education, Grant & Regulatory Compliance | asam
-Progress & Renewal Report Assembly | Continuing Education, Grant & Regulatory Compliance | asam
-Invoice & Expenditure Reconciliation | Continuing Education, Grant & Regulatory Compliance | asam
-Privacy & Confidentiality Compliance (HIPAA, 42 CFR Part 2, FERPA) | Continuing Education, Grant & Regulatory Compliance | asam
-Compliance Matrix & Checklist Development | Continuing Education, Grant & Regulatory Compliance | asam
-Medication for Opioid Use Disorder (MOUD/MAT) Frameworks | Domain Knowledge | asam
-DSM-5 Criteria & Severity Classification | Domain Knowledge | asam
-Recovery Support Frameworks | Domain Knowledge | asam
-Multi-workstream coordination (6+ concurrent projects) | Project & Program Coordination | ndi
-process and workflow standardization | Project & Program Coordination | ndi
-centralized content library management | Project & Program Coordination | ndi
-performance metrics and KPI tracking | Project & Program Coordination | ndi
-multi-priority management under deadline pressure | Project & Program Coordination | ndi
-structured agenda preparation and same-day documentation | Meeting & Event Operations | ndi
-registration and attendance tracking (Formstack-equivalent platforms) | Meeting & Event Operations | ndi
-presenter outreach and coordination | Meeting & Event Operations | ndi
-Multi-sector stakeholder management (federal agencies, healthcare organizations, nonprofits, housing authorities, landlords, community organizations) | Stakeholder & Partner Coordination | ndi
-primary liaison functions across complex multi-agency environments | Stakeholder & Partner Coordination | ndi
-benefits navigation (SSDI, SSI, State Disability, Section 8, HUD-VASH) | Stakeholder & Partner Coordination | ndi
-HUD and HMIS reporting standards | Accessibility & Regulatory Standards | ndi
-Technical and policy report writing | Writing & Communications | ndi
-grant narrative writing | Writing & Communications | ndi
-stakeholder and executive correspondence | Writing & Communications | ndi
-newsletter production and editorial management (8,000+ subscriber audience) | Writing & Communications | ndi
-accessible plain-language writing | Writing & Communications | ndi
-Monday.com-equivalent project software (Asana, Airtable) | Tools & Technology | ndi
-Zoom (webinar facilitation, polls, interactive features) | Tools & Technology | ndi
-independent request triage | Project & Program Management | partners-in-health
-risk escalation | Project & Program Management | partners-in-health
-executive calendar management with travel and hotel-block logistics | Meetings & Event Operations | partners-in-health
-presenter/vendor outreach and contracting | Meetings & Event Operations | partners-in-health
-volunteer and intern recruitment and scheduling | Meetings & Event Operations | partners-in-health
-Multi-sector stakeholder management (nonprofit, healthcare, academic, federal) | Stakeholder & Partnership Management | partners-in-health
-primary liaison across complex multi-stakeholder environments | Stakeholder & Partnership Management | partners-in-health
-cross-departmental follow-through | Stakeholder & Partnership Management | partners-in-health
-culturally responsive collaboration across diverse teams and countries | Stakeholder & Partnership Management | partners-in-health
-vendor communication and compliance assessment | Stakeholder & Partnership Management | partners-in-health
-Storytelling and editorial series development | Communications & Content | partners-in-health
-CMS-based web content management (Wix, HubSpot, Squarespace) | Communications & Content | partners-in-health
-SharePoint resource-library maintenance | Communications & Content | partners-in-health
-accessible and Section 508/WCAG-compliant writing | Communications & Content | partners-in-health
-deliverable and milestone tracking | Program & Event Coordination | amga
-presenter and speaker outreach and prep coordination | Program & Event Coordination | amga
-work group and advisory committee facilitation | Program & Event Coordination | amga
-executive calendar management with travel and hotel logistics | Program & Event Coordination | amga
-Primary liaison functions across multi-stakeholder environments | Membership & Stakeholder Management | amga
-member-facing communications and constituent services | Membership & Stakeholder Management | amga
-vendor communication and compliance assessment | Membership & Stakeholder Management | amga
-Multi-channel content strategy (LinkedIn, Facebook, Instagram, X) | Communications & Marketing | amga
-email marketing and audience segmentation (Mailchimp) | Communications & Marketing | amga
-brand identity and style guide development | Communications & Marketing | amga
-Canva design production | Communications & Marketing | amga
-Report development for sponsors | Reporting & Documentation | amga
-grantors | Reporting & Documentation | amga
-advisory and steering committees | Reporting & Documentation | amga
-database input | Reporting & Documentation | amga
-update | Reporting & Documentation | amga
-extraction | Reporting & Documentation | amga
-KPI structuring and tracking | Research & Program Evaluation | amga
-population health systems integration | Public Health & Policy | amga
-quality improvement frameworks | Public Health & Policy | amga
-Multi-workstream project coordination (6+ concurrent initiatives) across grant-funded nonprofit and public health programs at the national | Project & Program Management | governors-pha
-database management and centralized deliverable-tracking systems | Project & Program Management | governors-pha
-milestone and reporting-deadline tracking | Project & Program Management | governors-pha
-crisis response coordination and emergency logistics under resource constraints | Project & Program Management | governors-pha
-multi-priority management in fast-paced | Project & Program Management | governors-pha
-deadline-driven environments | Project & Program Management | governors-pha
-Executive and multi-stakeholder calendar management and scheduling | Administrative & Calendar Operations | governors-pha
-travel and hotel logistics coordination with reimbursement processing | Administrative & Calendar Operations | governors-pha
-deadline and action-item tracking | Administrative & Calendar Operations | governors-pha
-day-to-day operations support for distributed and remote teams | Administrative & Calendar Operations | governors-pha
-discretion with confidential and sensitive information | Administrative & Calendar Operations | governors-pha
-same-day meeting notes and action-item tracking to completion | Meetings & Event Operations | governors-pha
-scheduling | Meetings & Event Operations | governors-pha
-advisory committee facilitation | Meetings & Event Operations | governors-pha
-Multi-sector stakeholder management (federal, state, nonprofit, academic, and community-based) | Stakeholder & Partnership Management | governors-pha
-state and local government agencies | Stakeholder & Partnership Management | governors-pha
-funder and partner communications and stewardship | Stakeholder & Partnership Management | governors-pha
-multi-organization recruitment and onboarding | Stakeholder & Partnership Management | governors-pha
-vendor coordination and compliance assessment | Stakeholder & Partnership Management | governors-pha
-drafting memoranda | Communications & Content | governors-pha
-fact sheets | Communications & Content | governors-pha
-talking points | Communications & Content | governors-pha
-policy briefs for internal and external audiences | Communications & Content | governors-pha
-technical writing and plain-language translation for executive | Communications & Content | governors-pha
-public audiences | Communications & Content | governors-pha
-Online research and information synthesis for leadership and non-technical audiences | Research & Data Analysis | governors-pha
-policy research with state-by-state comparative mapping | Research & Data Analysis | governors-pha
-federal agency monitoring (SAMHSA, CDC, CMS, HUD) | Research & Data Analysis | governors-pha
-HIPAA and confidentiality compliance | Grant & Regulatory Compliance | governors-pha
-Public health policy research and synthesis | Public Health & Policy | governors-pha
-Health in All Policies framework | Public Health & Policy | governors-pha
-national membership association coordination and constituent services | Public Health & Policy | governors-pha
-Microsoft Office 365 (Word, Excel, PowerPoint, Outlook, Teams, SharePoint) | Tools & Platforms | governors-pha
-Multi-workstream coordination (6+ concurrent programs) | Program & Learning Coordination | mha
-workplan and timeline development and maintenance | Program & Learning Coordination | mha
-SOP and template development | Program & Learning Coordination | mha
-task prioritization under competing deadlines | Program & Learning Coordination | mha
-Faculty and subject-matter-expert recruitment and onboarding | Faculty, SME & Stakeholder Coordination | mha
-speaker agreements | Faculty, SME & Stakeholder Coordination | mha
-biographies | Faculty, SME & Stakeholder Coordination | mha
-disclosures and headshots | Faculty, SME & Stakeholder Coordination | mha
-agenda and prep-call coordination | Faculty, SME & Stakeholder Coordination | mha
-committee and advisory-group facilitation | Faculty, SME & Stakeholder Coordination | mha
-member- and learner-facing communications | Faculty, SME & Stakeholder Coordination | mha
-cross-functional handoffs to Marketing | Faculty, SME & Stakeholder Coordination | mha
-Member Experience | Faculty, SME & Stakeholder Coordination | mha
-Webinar and cohort-based program coordination | Program Delivery & Conference Education | mha
-national conference session and speaker logistics | Program Delivery & Conference Education | mha
-registration and scheduling | Program Delivery & Conference Education | mha
-continuing-education credit tracking and compliance | Program Delivery & Conference Education | mha
-learner completion and certificate records | Program Delivery & Conference Education | mha
-post-event closeout and reporting | Program Delivery & Conference Education | mha
-interactive content and assessment design | Instructional Design & E-Learning | mha
-learner feedback collection and synthesis | Instructional Design & E-Learning | mha
-Section 508/WCAG 2.1 accessible content design | Instructional Design & E-Learning | mha
-Technical and plain-language writing | Communications & Content | mha
-policy and stakeholder briefs | Communications & Content | mha
-brand-compliant asset production | Communications & Content | mha
-document formatting | Documentation & Administrative Support | air
-database and records maintenance | Documentation & Administrative Support | air
-centralized deliverable-tracking systems | Documentation & Administrative Support | air
-discretion with sensitive information | Compliance & Confidentiality | air
-Client service process refinement | Process Improvement & Quality | air
-standardized documentation systems | Process Improvement & Quality | air
-quality-review documentation | Process Improvement & Quality | air
-Independent and team-based execution in remote environments | Project Support & Client Services Coordination | air
-multi-stakeholder follow-through | Project Support & Client Services Coordination | air
-client service project coordination | Project Support & Client Services Coordination | air
-meeting coordination and facilitation | Project Support & Client Services Coordination | air
-timeline and deliverable tracking | Project Support & Client Services Coordination | air
-customer service mindset | Project Support & Client Services Coordination | air
-proactive client support | Project Support & Client Services Coordination | air
-Executive calendar and scheduling management | Executive & Administrative Support | nami
-gatekeeping and priority triage under pressure | Executive & Administrative Support | nami
-meeting facilitation and minute-taking | Executive & Administrative Support | nami
-correspondence drafting on behalf of senior leadership | Executive & Administrative Support | nami
-discretion and confidentiality with sensitive communications | Executive & Administrative Support | nami
-task prioritization and execution under fast-changing priorities | Project & Program Management | nami
-national webinar and community-of-practice moderation | Meetings & Stakeholder Coordination | nami
-agenda preparation and same-day action-item tracking | Meetings & Stakeholder Coordination | nami
-Board-level facilitation | Meetings & Stakeholder Coordination | nami
-multi-sector stakeholder management across federal | Meetings & Stakeholder Coordination | nami
-academic partners | Meetings & Stakeholder Coordination | nami
-Technical writing and policy briefs | Communications & Content | nami
-brand voice and presentation design | Communications & Content | nami
-Substance use disorder systems and treatment frameworks | Behavioral Health & Human Services Background | nami
-HIPAA and 42 CFR Part 2 confidentiality practice | Behavioral Health & Human Services Background | nami
+SSI/SSDI application support and appeals advocacy | Disability Benefits & Recovery Systems | behavioral-health-training-development
+disability-determination process navigation | Disability Benefits & Recovery Systems | behavioral-health-training-development
+Social Security Administration eligibility criteria | Disability Benefits & Recovery Systems | behavioral-health-training-development
+psychiatric and medical evidence coordination for benefits claims | Disability Benefits & Recovery Systems | behavioral-health-training-development
+recovery-oriented and person-centered service delivery | Disability Benefits & Recovery Systems | behavioral-health-training-development
+Curriculum and training material development using adult learning principles | Training & Technical Assistance | behavioral-health-training-development
+e-learning course design (Articulate Rise 360) | Training & Technical Assistance | behavioral-health-training-development
+coaching and technical assistance to provider agencies | Training & Technical Assistance | behavioral-health-training-development
+webinar and community-of-practice facilitation | Training & Technical Assistance | behavioral-health-training-development
+continuing-education compliance tracking | Training & Technical Assistance | behavioral-health-training-development
+feedback collection and curriculum refinement | Training & Technical Assistance | behavioral-health-training-development
+toolkit and resource development | Training & Technical Assistance | behavioral-health-training-development
+trauma-informed care and harm reduction | Behavioral Health & Clinical Practice | behavioral-health-training-development
+co-occurring disorders and person-first language | Behavioral Health & Clinical Practice | behavioral-health-training-development
+acute crisis de-escalation | Behavioral Health & Clinical Practice | behavioral-health-training-development
+EHR documentation (Kipu, Alleva) Program | Behavioral Health & Clinical Practice | behavioral-health-training-development
+2 CFR Part 200 and HHS Grants Policy Statement | Program Evaluation & Compliance | behavioral-health-training-development
+Section 508/WCAG 2.0/2.1/2.2 accessibility standards | Program Evaluation & Compliance | behavioral-health-training-development
+quality improvement processes | Program Evaluation & Compliance | behavioral-health-training-development
+Multi-sector stakeholder engagement (federal, healthcare, nonprofit, community) | Stakeholder & Partnership Management | behavioral-health-training-development
+provider and agency liaison functions | Stakeholder & Partnership Management | behavioral-health-training-development
+Technical writing for clinical and non-clinical audiences | Communication & Content | behavioral-health-training-development
+multi-workstream coordination (6+ concurrent) | Project & Program Management | federal-healthcare-project-coordination
+KPI and performance metrics identification and tracking | Project & Program Management | federal-healthcare-project-coordination
+structured status reporting | Project & Program Management | federal-healthcare-project-coordination
+grant renewal coordination | Grant Administration & Federal Compliance | federal-healthcare-project-coordination
+invoice processing and multi-vendor expense tracking (5-7 concurrent vendors) | Grant Administration & Federal Compliance | federal-healthcare-project-coordination
+Section 508 and WCAG 2.0-2.2 accessibility standards | Regulatory & Privacy Compliance | federal-healthcare-project-coordination
+NIST AI RMF 1.0 and Generative AI Profile | AI Governance & Emerging Technology | federal-healthcare-project-coordination
+Structured agenda preparation and same-day notes | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+action-item tracking to completion | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+multi-stakeholder scheduling (Outlook, Calendly, Google Calendar) | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+volunteer and intern recruitment and coordination | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+Board-level facilitation | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+primary liaison functions across federal agencies | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+community organizations | Meeting, Event & Stakeholder Operations | federal-healthcare-project-coordination
+semi-structured interviewing with diverse and underrepresented populations | Research & Data Analysis | federal-healthcare-project-coordination
+thematic and observational coding | Research & Data Analysis | federal-healthcare-project-coordination
+statistical trend analysis (CDC SUDORS fatal overdose dashboard, SAMHSA DAS/SAES state estimates) | Research & Data Analysis | federal-healthcare-project-coordination
+End-to-end e-learning course design (Articulate Rise 360) | Instructional Design & Educational Content | federal-healthcare-project-coordination
+learner feedback evaluation (Jotform) | Instructional Design & Educational Content | federal-healthcare-project-coordination
+Multi-channel content strategy and execution (email, web, social, LinkedIn thought leadership) | Communications & Content Strategy | federal-healthcare-project-coordination
+brand identity and style guide development | Communications & Content Strategy | federal-healthcare-project-coordination
+policy briefs and executive correspondence | Communications & Content Strategy | federal-healthcare-project-coordination
+biopsychosocial and VI-SPDAT assessment | Case Management & Housing Services | federal-healthcare-project-coordination
+multi-program benefits navigation (Section 8 HCV, HUD-VASH, Emergency Housing Vouchers) | Case Management & Housing Services | federal-healthcare-project-coordination
+culturally responsive engagement with historically marginalized populations | Case Management & Housing Services | federal-healthcare-project-coordination
+CIWA-Ar and SOWS withdrawal screening (certified) | Direct Clinical & Behavioral Health | federal-healthcare-project-coordination
+chain-of-custody urinalysis screening | Direct Clinical & Behavioral Health | federal-healthcare-project-coordination
+acute crisis de-escalation | Direct Clinical & Behavioral Health | federal-healthcare-project-coordination
+Digital HEDIS and interoperability standards (FHIR) | Domain Knowledge | federal-healthcare-project-coordination
+population health principles and health literacy | Domain Knowledge | federal-healthcare-project-coordination
+EHR platforms (Kipu, Alleva, EPIC) | Tools & Technology | federal-healthcare-project-coordination
+Multi-Workstream Project Coordination (6+ concurrent federally funded workstreams) | Program & Project Coordination | sud-education-learning-operations
+Work Plans & Milestone Tracking | Program & Project Coordination | sud-education-learning-operations
+Deadline & Priority Management | Program & Project Coordination | sud-education-learning-operations
+Task Sequencing in High-Volume Periods | Program & Project Coordination | sud-education-learning-operations
+SOP & Template Development | Program & Project Coordination | sud-education-learning-operations
+Version Control & File Standards | Program & Project Coordination | sud-education-learning-operations
+Status Reporting Cadence | Program & Project Coordination | sud-education-learning-operations
+Risk Monitoring & Escalation | Program & Project Coordination | sud-education-learning-operations
+Post-Meeting Notes & Action-Item Tracking | Program & Project Coordination | sud-education-learning-operations
+Records Maintenance & Data Entry | Program & Project Coordination | sud-education-learning-operations
+Special Project Support | Program & Project Coordination | sud-education-learning-operations
+Inquiry Triage & Escalation to Subject Matter Experts | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Central Member Support Channel Management (3,200+ member network) | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Responsive Email-Based Support | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Technical Assistance & Troubleshooting (coaching provider teams, day-of presenter and attendee support) | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Plain-Language Communication | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Member Association Engagement | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Healthcare Provider Audience Support (CCBHCs, FQHCs, hospital systems) | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Accreditation & Quality Body Relationships | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Subject Matter Expert Coordination | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Advisory Committee & Work Group Facilitation | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+Cross-Sector Partnership Building | Learner Support, Customer Service & Stakeholder Engagement | sud-education-learning-operations
+LMS Administration (LearnWorlds: learner access, enrollment, progress tracking, completion and certificate records, reporting) | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Product & Course Setup | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Pre-Deployment LMS Testing | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+CRM Database Management (HubSpot, Salesforce NPSP: record maintenance, deduplication, integration monitoring) | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+E-Learning Development (12-module course authored in Articulate Rise 360, concept through pre-launch) | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Adult Learning Principles | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Interactive Learning Components (knowledge checks, scenario-based activities, flashcards, assessments) | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+On-Demand Training & Toolkit Development | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Instructional Video (Synthesia, Canva) | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Section 508 & WCAG 2.1 Accessibility QA | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Centralized Content Library Management | LMS Administration, CRM & Instructional Design | sud-education-learning-operations
+Zoom Webinar Facilitation (registration setup, polls, Q&A, chat, screen sharing) | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+During- | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Post-Event Learner Technical Support | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Webinar & Office Hours Moderation | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Community of Practice & Peer-Learning Cohort Coordination | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Speaker & Faculty Onboarding | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Registration & Attendance Tracking (Airtable, Eventscribe/Cadium, XpressReg) | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Post-Session Feedback Surveys (Jotform, SurveyMonkey) | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+National Conference Logistics (6,000+ attendees) | Live & Virtual Events & Training Delivery | sud-education-learning-operations
+Continuing Education Compliance Management (attendance verification, post-session evaluations, credit awarding to eligible participants) | Continuing Education, Grant & Regulatory Compliance | sud-education-learning-operations
+Completion Certificate Records | Continuing Education, Grant & Regulatory Compliance | sud-education-learning-operations
+Progress & Renewal Report Assembly | Continuing Education, Grant & Regulatory Compliance | sud-education-learning-operations
+Invoice & Expenditure Reconciliation | Continuing Education, Grant & Regulatory Compliance | sud-education-learning-operations
+Privacy & Confidentiality Compliance (HIPAA, 42 CFR Part 2, FERPA) | Continuing Education, Grant & Regulatory Compliance | sud-education-learning-operations
+Compliance Matrix & Checklist Development | Continuing Education, Grant & Regulatory Compliance | sud-education-learning-operations
+Medication for Opioid Use Disorder (MOUD/MAT) Frameworks | Domain Knowledge | sud-education-learning-operations
+DSM-5 Criteria & Severity Classification | Domain Knowledge | sud-education-learning-operations
+Recovery Support Frameworks | Domain Knowledge | sud-education-learning-operations
+Multi-workstream coordination (6+ concurrent projects) | Project & Program Coordination | benefits-eligibility-program-coordination
+process and workflow standardization | Project & Program Coordination | benefits-eligibility-program-coordination
+centralized content library management | Project & Program Coordination | benefits-eligibility-program-coordination
+performance metrics and KPI tracking | Project & Program Coordination | benefits-eligibility-program-coordination
+multi-priority management under deadline pressure | Project & Program Coordination | benefits-eligibility-program-coordination
+structured agenda preparation and same-day documentation | Meeting & Event Operations | benefits-eligibility-program-coordination
+registration and attendance tracking (Formstack-equivalent platforms) | Meeting & Event Operations | benefits-eligibility-program-coordination
+presenter outreach and coordination | Meeting & Event Operations | benefits-eligibility-program-coordination
+Multi-sector stakeholder management (federal agencies, healthcare organizations, nonprofits, housing authorities, landlords, community organizations) | Stakeholder & Partner Coordination | benefits-eligibility-program-coordination
+primary liaison functions across complex multi-agency environments | Stakeholder & Partner Coordination | benefits-eligibility-program-coordination
+benefits navigation (SSDI, SSI, State Disability, Section 8, HUD-VASH) | Stakeholder & Partner Coordination | benefits-eligibility-program-coordination
+HUD and HMIS reporting standards | Accessibility & Regulatory Standards | benefits-eligibility-program-coordination
+Technical and policy report writing | Writing & Communications | benefits-eligibility-program-coordination
+grant narrative writing | Writing & Communications | benefits-eligibility-program-coordination
+stakeholder and executive correspondence | Writing & Communications | benefits-eligibility-program-coordination
+newsletter production and editorial management (8,000+ subscriber audience) | Writing & Communications | benefits-eligibility-program-coordination
+accessible plain-language writing | Writing & Communications | benefits-eligibility-program-coordination
+Monday.com-equivalent project software (Asana, Airtable) | Tools & Technology | benefits-eligibility-program-coordination
+Zoom (webinar facilitation, polls, interactive features) | Tools & Technology | benefits-eligibility-program-coordination
+independent request triage | Project & Program Management | nonprofit-marketing-communications
+risk escalation | Project & Program Management | nonprofit-marketing-communications
+executive calendar management with travel and hotel-block logistics | Meetings & Event Operations | nonprofit-marketing-communications
+presenter/vendor outreach and contracting | Meetings & Event Operations | nonprofit-marketing-communications
+volunteer and intern recruitment and scheduling | Meetings & Event Operations | nonprofit-marketing-communications
+Multi-sector stakeholder management (nonprofit, healthcare, academic, federal) | Stakeholder & Partnership Management | nonprofit-marketing-communications
+primary liaison across complex multi-stakeholder environments | Stakeholder & Partnership Management | nonprofit-marketing-communications
+cross-departmental follow-through | Stakeholder & Partnership Management | nonprofit-marketing-communications
+culturally responsive collaboration across diverse teams and countries | Stakeholder & Partnership Management | nonprofit-marketing-communications
+vendor communication and compliance assessment | Stakeholder & Partnership Management | nonprofit-marketing-communications
+Storytelling and editorial series development | Communications & Content | nonprofit-marketing-communications
+CMS-based web content management (Wix, HubSpot, Squarespace) | Communications & Content | nonprofit-marketing-communications
+SharePoint resource-library maintenance | Communications & Content | nonprofit-marketing-communications
+accessible and Section 508/WCAG-compliant writing | Communications & Content | nonprofit-marketing-communications
+deliverable and milestone tracking | Program & Event Coordination | association-membership-programs
+presenter and speaker outreach and prep coordination | Program & Event Coordination | association-membership-programs
+work group and advisory committee facilitation | Program & Event Coordination | association-membership-programs
+executive calendar management with travel and hotel logistics | Program & Event Coordination | association-membership-programs
+Primary liaison functions across multi-stakeholder environments | Membership & Stakeholder Management | association-membership-programs
+member-facing communications and constituent services | Membership & Stakeholder Management | association-membership-programs
+vendor communication and compliance assessment | Membership & Stakeholder Management | association-membership-programs
+Multi-channel content strategy (LinkedIn, Facebook, Instagram, X) | Communications & Marketing | association-membership-programs
+email marketing and audience segmentation (Mailchimp) | Communications & Marketing | association-membership-programs
+brand identity and style guide development | Communications & Marketing | association-membership-programs
+Canva design production | Communications & Marketing | association-membership-programs
+Report development for sponsors | Reporting & Documentation | association-membership-programs
+grantors | Reporting & Documentation | association-membership-programs
+advisory and steering committees | Reporting & Documentation | association-membership-programs
+database input | Reporting & Documentation | association-membership-programs
+update | Reporting & Documentation | association-membership-programs
+extraction | Reporting & Documentation | association-membership-programs
+KPI structuring and tracking | Research & Program Evaluation | association-membership-programs
+population health systems integration | Public Health & Policy | association-membership-programs
+quality improvement frameworks | Public Health & Policy | association-membership-programs
+Multi-workstream project coordination (6+ concurrent initiatives) across grant-funded nonprofit and public health programs at the national | Project & Program Management | public-health-multistakeholder-coordination
+database management and centralized deliverable-tracking systems | Project & Program Management | public-health-multistakeholder-coordination
+milestone and reporting-deadline tracking | Project & Program Management | public-health-multistakeholder-coordination
+crisis response coordination and emergency logistics under resource constraints | Project & Program Management | public-health-multistakeholder-coordination
+multi-priority management in fast-paced | Project & Program Management | public-health-multistakeholder-coordination
+deadline-driven environments | Project & Program Management | public-health-multistakeholder-coordination
+Executive and multi-stakeholder calendar management and scheduling | Administrative & Calendar Operations | public-health-multistakeholder-coordination
+travel and hotel logistics coordination with reimbursement processing | Administrative & Calendar Operations | public-health-multistakeholder-coordination
+deadline and action-item tracking | Administrative & Calendar Operations | public-health-multistakeholder-coordination
+day-to-day operations support for distributed and remote teams | Administrative & Calendar Operations | public-health-multistakeholder-coordination
+discretion with confidential and sensitive information | Administrative & Calendar Operations | public-health-multistakeholder-coordination
+same-day meeting notes and action-item tracking to completion | Meetings & Event Operations | public-health-multistakeholder-coordination
+scheduling | Meetings & Event Operations | public-health-multistakeholder-coordination
+advisory committee facilitation | Meetings & Event Operations | public-health-multistakeholder-coordination
+Multi-sector stakeholder management (federal, state, nonprofit, academic, and community-based) | Stakeholder & Partnership Management | public-health-multistakeholder-coordination
+state and local government agencies | Stakeholder & Partnership Management | public-health-multistakeholder-coordination
+funder and partner communications and stewardship | Stakeholder & Partnership Management | public-health-multistakeholder-coordination
+multi-organization recruitment and onboarding | Stakeholder & Partnership Management | public-health-multistakeholder-coordination
+vendor coordination and compliance assessment | Stakeholder & Partnership Management | public-health-multistakeholder-coordination
+drafting memoranda | Communications & Content | public-health-multistakeholder-coordination
+fact sheets | Communications & Content | public-health-multistakeholder-coordination
+talking points | Communications & Content | public-health-multistakeholder-coordination
+policy briefs for internal and external audiences | Communications & Content | public-health-multistakeholder-coordination
+technical writing and plain-language translation for executive | Communications & Content | public-health-multistakeholder-coordination
+public audiences | Communications & Content | public-health-multistakeholder-coordination
+Online research and information synthesis for leadership and non-technical audiences | Research & Data Analysis | public-health-multistakeholder-coordination
+policy research with state-by-state comparative mapping | Research & Data Analysis | public-health-multistakeholder-coordination
+federal agency monitoring (SAMHSA, CDC, CMS, HUD) | Research & Data Analysis | public-health-multistakeholder-coordination
+HIPAA and confidentiality compliance | Grant & Regulatory Compliance | public-health-multistakeholder-coordination
+Public health policy research and synthesis | Public Health & Policy | public-health-multistakeholder-coordination
+Health in All Policies framework | Public Health & Policy | public-health-multistakeholder-coordination
+national membership association coordination and constituent services | Public Health & Policy | public-health-multistakeholder-coordination
+Microsoft Office 365 (Word, Excel, PowerPoint, Outlook, Teams, SharePoint) | Tools & Platforms | public-health-multistakeholder-coordination
+Multi-workstream coordination (6+ concurrent programs) | Program & Learning Coordination | professional-education-programs
+workplan and timeline development and maintenance | Program & Learning Coordination | professional-education-programs
+SOP and template development | Program & Learning Coordination | professional-education-programs
+task prioritization under competing deadlines | Program & Learning Coordination | professional-education-programs
+Faculty and subject-matter-expert recruitment and onboarding | Faculty, SME & Stakeholder Coordination | professional-education-programs
+speaker agreements | Faculty, SME & Stakeholder Coordination | professional-education-programs
+biographies | Faculty, SME & Stakeholder Coordination | professional-education-programs
+disclosures and headshots | Faculty, SME & Stakeholder Coordination | professional-education-programs
+agenda and prep-call coordination | Faculty, SME & Stakeholder Coordination | professional-education-programs
+committee and advisory-group facilitation | Faculty, SME & Stakeholder Coordination | professional-education-programs
+member- and learner-facing communications | Faculty, SME & Stakeholder Coordination | professional-education-programs
+cross-functional handoffs to Marketing | Faculty, SME & Stakeholder Coordination | professional-education-programs
+Member Experience | Faculty, SME & Stakeholder Coordination | professional-education-programs
+Webinar and cohort-based program coordination | Program Delivery & Conference Education | professional-education-programs
+national conference session and speaker logistics | Program Delivery & Conference Education | professional-education-programs
+registration and scheduling | Program Delivery & Conference Education | professional-education-programs
+continuing-education credit tracking and compliance | Program Delivery & Conference Education | professional-education-programs
+learner completion and certificate records | Program Delivery & Conference Education | professional-education-programs
+post-event closeout and reporting | Program Delivery & Conference Education | professional-education-programs
+interactive content and assessment design | Instructional Design & E-Learning | professional-education-programs
+learner feedback collection and synthesis | Instructional Design & E-Learning | professional-education-programs
+Section 508/WCAG 2.1 accessible content design | Instructional Design & E-Learning | professional-education-programs
+Technical and plain-language writing | Communications & Content | professional-education-programs
+policy and stakeholder briefs | Communications & Content | professional-education-programs
+brand-compliant asset production | Communications & Content | professional-education-programs
+document formatting | Documentation & Administrative Support | client-service-project-support
+database and records maintenance | Documentation & Administrative Support | client-service-project-support
+centralized deliverable-tracking systems | Documentation & Administrative Support | client-service-project-support
+discretion with sensitive information | Compliance & Confidentiality | client-service-project-support
+Client service process refinement | Process Improvement & Quality | client-service-project-support
+standardized documentation systems | Process Improvement & Quality | client-service-project-support
+quality-review documentation | Process Improvement & Quality | client-service-project-support
+Independent and team-based execution in remote environments | Project Support & Client Services Coordination | client-service-project-support
+multi-stakeholder follow-through | Project Support & Client Services Coordination | client-service-project-support
+client service project coordination | Project Support & Client Services Coordination | client-service-project-support
+meeting coordination and facilitation | Project Support & Client Services Coordination | client-service-project-support
+timeline and deliverable tracking | Project Support & Client Services Coordination | client-service-project-support
+customer service mindset | Project Support & Client Services Coordination | client-service-project-support
+proactive client support | Project Support & Client Services Coordination | client-service-project-support
+Executive calendar and scheduling management | Executive & Administrative Support | executive-administrative-support
+gatekeeping and priority triage under pressure | Executive & Administrative Support | executive-administrative-support
+meeting facilitation and minute-taking | Executive & Administrative Support | executive-administrative-support
+correspondence drafting on behalf of senior leadership | Executive & Administrative Support | executive-administrative-support
+discretion and confidentiality with sensitive communications | Executive & Administrative Support | executive-administrative-support
+task prioritization and execution under fast-changing priorities | Project & Program Management | executive-administrative-support
+national webinar and community-of-practice moderation | Meetings & Stakeholder Coordination | executive-administrative-support
+agenda preparation and same-day action-item tracking | Meetings & Stakeholder Coordination | executive-administrative-support
+Board-level facilitation | Meetings & Stakeholder Coordination | executive-administrative-support
+multi-sector stakeholder management across federal | Meetings & Stakeholder Coordination | executive-administrative-support
+academic partners | Meetings & Stakeholder Coordination | executive-administrative-support
+Technical writing and policy briefs | Communications & Content | executive-administrative-support
+brand voice and presentation design | Communications & Content | executive-administrative-support
+Substance use disorder systems and treatment frameworks | Behavioral Health & Human Services Background | executive-administrative-support
+HIPAA and 42 CFR Part 2 confidentiality practice | Behavioral Health & Human Services Background | executive-administrative-support
 
 ## Notion Skills database (124 rows, single-source)
 

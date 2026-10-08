@@ -1,12 +1,12 @@
 ---
-id: cover-letter-asam
+id: cover-letter_sud-education-learning-operations
 type: cover-letter
-company_target: asam
+role_angle: sud-education-learning-operations
 date: 2026-09
 date_confidence: content
 status: active
-source_original: _raw/notion/documents/cover-letter-asam.md
-notes: Notion cover letter, kept verbatim except the Notion property lines (Role, Tailored, Type, Used For) and the page title; writing-style sample; date is a lower bound
+source_original: _raw/notion/documents/N-L02.md
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
 ---
 
 Dear Hiring Team,

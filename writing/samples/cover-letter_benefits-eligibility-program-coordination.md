@@ -1,12 +1,12 @@
 ---
-id: cover-letter-ndi
+id: cover-letter_benefits-eligibility-program-coordination
 type: cover-letter
-company_target: ndi
+role_angle: benefits-eligibility-program-coordination
 date: 2026-09
 date_confidence: content
 status: active
-source_original: _raw/notion/documents/cover-letter-ndi.md
-notes: Notion cover letter, kept verbatim except the Notion property lines (Role, Tailored, Type, Used For) and the page title; writing-style sample; date is a lower bound
+source_original: _raw/notion/documents/N-L06.md
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
 ---
 
 July 24, 2026

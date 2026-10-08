@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-population-health-coordinator_amga_v1
-role_target: population-health-coordinator
-company_target: amga
+id: 2026-05_tailored-association-membership-programs_general_v1
+role_target: association-membership-programs
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-population-health-coordinator
+version_group: tailored-association-membership-programs
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-amga.md
-notes: Notion tailored resume for AMGA (American Medical Group Association) (Coordinator, Population Health Initiatives & Health Equity); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Coordinator, Population Health Initiatives & Health Equity; tailored to AMGA (American Medical Group Association); Notion export
+source_original: _raw/notion/documents/N-R02.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: association program coordination; national association, healthcare and nonprofit; event and webinar logistics, membership communications, deliverable tracking; population health and health equity
 ---
 
 ## **Devika C. Dixit**

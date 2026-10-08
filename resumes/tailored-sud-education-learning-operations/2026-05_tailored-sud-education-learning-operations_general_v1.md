@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-federal-programs-specialist_asam_v1
-role_target: federal-programs-specialist
-company_target: asam
+id: 2026-05_tailored-sud-education-learning-operations_general_v1
+role_target: sud-education-learning-operations
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-federal-programs-specialist
+version_group: tailored-sud-education-learning-operations
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-asam.md
-notes: Notion tailored resume for ASAM (Specialist, Federal Programs); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Specialist, Federal Programs; tailored to ASAM; Notion export
+source_original: _raw/notion/documents/N-R03.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: SUD education and technical assistance; behavioral health and substance use disorder; LMS administration, continuing-education compliance, live Zoom event operations, learner support
 ---
 
 ## **Devika C. Dixit**

@@ -1,15 +1,15 @@
 ---
-id: 2026-05_tailored-program-coordinator-mobile-healthcare_mha_v1
-role_target: program-coordinator-mobile-healthcare
-company_target: mha
+id: 2026-05_tailored-professional-education-programs_general_v1
+role_target: professional-education-programs
+company_target: general
 date: 2026-05
 date_confidence: content
-version_group: tailored-program-coordinator-mobile-healthcare
+version_group: tailored-professional-education-programs
 version_no: 1
 status: active
-source_original: _raw/notion/documents/resume-mha.md
-notes: Notion tailored resume for MHA (Mobile Healthcare Association) (Program Coordinator); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
-keywords: Program Coordinator; tailored to MHA (Mobile Healthcare Association); Notion export
+source_original: _raw/notion/documents/N-R07.md
+notes: Tailored resume from the Notion workspace export (2026-10-08); date is a lower bound from content (NCMW end May 2026), not an exact date; user confirmed all Notion bullets accurate (2026-10-08)
+keywords: professional education program coordination; national membership association and public health; webinars, cohort learning programs, faculty and SME engagement, Asana workplans, continuing-education coordination
 ---
 
 ## **Devika C. Dixit**

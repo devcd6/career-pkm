@@ -99,6 +99,7 @@ The user's own rulings in their own words, with dates. A resolved conflict or a 
 - `writing/samples/`: 10 Notion cover letters (verbatim body, with frontmatter); `resumes/` gained 10 Notion tailored resumes (group names `tailored-<role>`; source_original points to `_raw/notion/documents/`).
 - `kb/stories.md`: the 15 STAR stories. `kb/skills.md` ends with a Notion Skills section.
 - Source paths for these claims start with `_raw/notion/`, not `resumes/`.
+- Tailored resumes and cover letters are named and indexed by role family, industry and content angle, never by employer or opening (`company_target: general`). Raw copies of the Notion documents are `N-R##` (resumes) and `N-L##` (letters).
 
 ## Other folders and files
 
