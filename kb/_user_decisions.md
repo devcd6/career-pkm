@@ -71,3 +71,6 @@ Not yet answered at Gate 1: which of 10/20 to keep; whether 26 is archived; whet
 
 # Style guide handling (2026-10-08), user's words
 - "This is ok but i do also run an avoid ai writing skill after the output is produced. Since this is just a knowledge base of me-not explicit tasks for claude to perform, is this okay?" -> The repo stays a knowledge base about the owner. writing/style-guide.md is descriptive (observed patterns, counts, file citations), not instructions; no cover-letter generation prompt is stored in the repo; the owner's own prompt and avoid-AI-writing step stay outside it. The verified parts of the claude.ai analysis were folded in as observations; unsupported claims are recorded under "Not part of this record".
+
+# Push authorization (2026-10-08), user's word
+- "push" -> The user authorized pushing branch claude/compassionate-faraday-kw5tuy to the remote, overriding CLAUDE.md hard rule 8 (no remote push) for this push only. The push includes personal data (contact details, resumes, cover letters, career profile) in resumes/, writing/, _raw/ and kb/. The rule itself is unchanged in CLAUDE.md; later pushes need a fresh instruction.
