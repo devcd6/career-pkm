@@ -6,10 +6,10 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L03.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
-Dear Governors Public Health Alliance Hiring Team,
+Dear Hiring Manager,
 
 Public health data has never been more abundant, yet a governor confronting an outbreak, a vaccine shortfall, or an emerging health threat often has no reliable way to learn what a neighboring state has already tried. That gap is rarely a shortage of evidence. It is a structural lack of communication between states solving overlapping versions of the same problem in isolation. The Governors Public Health Alliance, building the infrastructure for governors to share data, align responses, and coordinate directly across state lines instead of treating collaboration as an afterthought to each state's own planning, is the clearest example I have seen of a coalition building that lesson into its actual structure rather than leaving it to circumstance. That is exactly the kind of work I have spent my career doing in different forms, and it is why I am applying for the Program Associate role with the Alliance.
 

@@ -6,14 +6,11 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L05.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
-National Alliance on Mental Illness
 
-Programs & Services Department
-
-Dear NAMI Programs & Services Hiring Team,
+Dear Hiring Manager,
 
 Resources for mental health rarely fail to exist. NAMI has already built the peer-led and family-led programs, the research partnerships, and the national reach that most organizations in mental health advocacy spend decades trying to assemble. What usually determines whether any of that reaches a person in crisis is not the quality of the program design, it is whether the operational structure underneath it, the calendars, the deliverable timelines, the grant compliance, the flow of information between a Chief Program Officer and the National Directors executing the work, actually holds together well enough for the program to move from design to delivery. That is the layer I have spent my career working inside, and it is why I am applying for the Senior Administrative Coordinator, Programs & Services position.
 

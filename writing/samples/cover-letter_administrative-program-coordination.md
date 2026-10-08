@@ -6,13 +6,10 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L10.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
 September 8, 2026
-Hiring Team
-The Public Health Institute (PHI)
-National Program Office PESHU Childhood Cancer and the Environment Program (CCEP)
 
 Dear Hiring Manager,
 

@@ -6,16 +6,10 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L06.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
 July 24, 2026
-
-**Hiring Manager**
-
-**The National Disability Institute (NDI)**
-
-**Financial Empowerment Team**
 
 Dear Hiring Manager,
 

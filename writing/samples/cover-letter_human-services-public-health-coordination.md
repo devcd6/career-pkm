@@ -6,15 +6,12 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L08.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
 July 17, 2026
 
-APHSA Process Innovation Team
-American Public Human Services Association 901 N Glebe Rd, Suite 210 Arlington, VA 22203
-
-Dear APHSA Process Innovation Hiring Team,
+Dear Hiring Manager,
 
 People's needs rarely separate as cleanly as the systems built to meet them. Housing instability and loss, availability of basic needs resources, childcare, behavioral health disorders and substance use are often overlapping or confounding factors that mutually influence one another, yet agencies remain siloed in their service and resource delivery and often only focus on a slice of an individual’s life to fit within their program’s specialization and bounds. APHSA's ACCESS initiative, aligning modernization efforts across health, human services, and labor systems so a person's full picture does not get lost between them, is the clearest example I have seen of an association building that whole-person view into its actual methodology rather than treating it as a footnote. At a time where information is cheap and systems and specialized AI solutions saturate all domains of life and service delivery, I view the early insights from the ACCESS initiative as indication of APHSA’s goal of actual community integration and delivery over just development, with the heightened focus on improving coordination networks and interagency collaboration. That is exactly the type of bridge I’ve consciously and unconsciously been working towards throughout my career, and is why I’m extremely excited to be applying for the Implementation & Innovation Associate at APHSA.
 

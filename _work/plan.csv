@@ -1,26 +1,26 @@
 old_path,new_path,action,reason
-_raw/notion/documents/N-R01.md,resumes/tailored-client-service-project-support/2026-05_tailored-client-service-project-support_general_v1.md,copy,"Notion tailored resume (AIR - Project Assistant, Healthcare Transformations); AIR not in repo; novel bullets per dedupe report"
-_raw/notion/documents/N-R02.md,resumes/tailored-association-membership-programs/2026-05_tailored-association-membership-programs_general_v1.md,copy,"Notion tailored resume (AMGA - Coordinator, Population Health Initiatives & Health Equity); AMGA not in repo; novel bullets per dedupe report"
-_raw/notion/documents/N-R03.md,resumes/tailored-sud-education-learning-operations/2026-05_tailored-sud-education-learning-operations_general_v1.md,copy,"Notion tailored resume (ASAM - Specialist, Federal Programs); ASAM not in repo; novel bullets per dedupe report"
-_raw/notion/documents/N-R04.md,resumes/tailored-behavioral-health-training-development/2026-05_tailored-behavioral-health-training-development_general_v1.md,copy,Notion tailored resume (Altarum - Behavioral Health Training Specialist); ALTARUM not in repo; novel bullets per dedupe report
-_raw/notion/documents/N-R05.md,resumes/tailored-public-health-multistakeholder-coordination/2026-05_tailored-public-health-multistakeholder-coordination_general_v1.md,copy,Notion tailored resume (Governors Public Health Alliance - Program Associate); GOVERNORS-PHA not in repo; novel bullets per dedupe report
-_raw/notion/documents/N-R06.md,resumes/tailored-federal-healthcare-project-coordination/2026-05_tailored-federal-healthcare-project-coordination_general_v1.md,copy,"Notion tailored resume (MCD Global Health - Project Coordinator, EMR Modernization); MCD-GLOBAL-HEALTH not in repo; novel bullets per dedupe report"
-_raw/notion/documents/N-R07.md,resumes/tailored-professional-education-programs/2026-05_tailored-professional-education-programs_general_v1.md,copy,Notion tailored resume (MHA - Program Coordinator); MHA not in repo; novel bullets per dedupe report
-_raw/notion/documents/N-R08.md,resumes/tailored-executive-administrative-support/2026-05_tailored-executive-administrative-support_general_v1.md,copy,Notion tailored resume (NAMI - Senior Administrative Coordinator); NAMI not in repo; novel bullets per dedupe report
-_raw/notion/documents/N-R09.md,resumes/tailored-benefits-eligibility-program-coordination/2026-05_tailored-benefits-eligibility-program-coordination_general_v1.md,copy,"Notion tailored resume (NDI - Project Coordinator, Financial Empowerment); NDI not in repo; novel bullets per dedupe report"
-_raw/notion/documents/N-R10.md,resumes/tailored-nonprofit-marketing-communications/2026-05_tailored-nonprofit-marketing-communications_general_v1.md,copy,"Notion tailored resume (Partners in Health - Coordinator, Marketing and Communications); PARTNERS-IN-HEALTH not in repo; novel bullets per dedupe report"
-_raw/notion/documents/resume-aphsa.md,,skip,"duplicate of TA7 / 2026-05_tailored-human-services-public-health-coordinator_general_v1: 94-98% of bullets identical, only Notion metadata lines differ"
-_raw/notion/documents/resume-maven.md,,skip,"duplicate of TA6 / 2026-05_tailored-cme-program-coordinator_general_v1: 94-98% of bullets identical, only Notion metadata lines differ"
-_raw/notion/documents/resume-sostento-a.md,,skip,"duplicate of TA8 / 2026-05_tailored-public-health-grants-ccbhc_general_v2: 94-98% of bullets identical, only Notion metadata lines differ"
-_raw/notion/documents/resume-sostento-b.md,,skip,"duplicate of TA8 / 2026-05_tailored-public-health-grants-ccbhc_general_v2: 94-98% of bullets identical, only Notion metadata lines differ"
-_raw/notion/documents/resume-phi.md,,skip,"duplicate of TA4 / 2026-05_tailored-administrative-program-coordinator_general_v1: 94-98% of bullets identical, only Notion metadata lines differ"
-_raw/notion/documents/N-L08.md,writing/samples/cover-letter_human-services-public-health-coordination.md,copy,Notion cover letter for aphsa; writing-style sample
-_raw/notion/documents/N-L01.md,writing/samples/cover-letter_association-membership-programs.md,copy,Notion cover letter for amga; writing-style sample
-_raw/notion/documents/N-L09.md,writing/samples/cover-letter_public-health-grants-ccbhc.md,copy,Notion cover letter for sostento; writing-style sample
-_raw/notion/documents/N-L06.md,writing/samples/cover-letter_benefits-eligibility-program-coordination.md,copy,Notion cover letter for ndi; writing-style sample
-_raw/notion/documents/N-L04.md,writing/samples/cover-letter_federal-healthcare-project-coordination.md,copy,Notion cover letter for mcd-global-health; writing-style sample
-_raw/notion/documents/N-L03.md,writing/samples/cover-letter_public-health-multistakeholder-coordination.md,copy,Notion cover letter for governors-pha; writing-style sample
-_raw/notion/documents/N-L10.md,writing/samples/cover-letter_administrative-program-coordination.md,copy,Notion cover letter for phi; writing-style sample
-_raw/notion/documents/N-L07.md,writing/samples/cover-letter_nonprofit-marketing-communications.md,copy,Notion cover letter for partners-in-health; writing-style sample
-_raw/notion/documents/N-L02.md,writing/samples/cover-letter_sud-education-learning-operations.md,copy,Notion cover letter for asam; writing-style sample
-_raw/notion/documents/N-L05.md,writing/samples/cover-letter_executive-administrative-support.md,copy,Notion cover letter for nami; writing-style sample
+_raw/notion/documents/N-R01.md,resumes/tailored-client-service-project-support/2026-05_tailored-client-service-project-support_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R02.md,resumes/tailored-association-membership-programs/2026-05_tailored-association-membership-programs_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R03.md,resumes/tailored-sud-education-learning-operations/2026-05_tailored-sud-education-learning-operations_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R04.md,resumes/tailored-behavioral-health-training-development/2026-05_tailored-behavioral-health-training-development_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R05.md,resumes/tailored-public-health-multistakeholder-coordination/2026-05_tailored-public-health-multistakeholder-coordination_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R06.md,resumes/tailored-federal-healthcare-project-coordination/2026-05_tailored-federal-healthcare-project-coordination_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R07.md,resumes/tailored-professional-education-programs/2026-05_tailored-professional-education-programs_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R08.md,resumes/tailored-executive-administrative-support/2026-05_tailored-executive-administrative-support_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R09.md,resumes/tailored-benefits-eligibility-program-coordination/2026-05_tailored-benefits-eligibility-program-coordination_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R10.md,resumes/tailored-nonprofit-marketing-communications/2026-05_tailored-nonprofit-marketing-communications_general_v1.md,copy,Notion tailored resume; novel bullets per dedupe report
+_raw/notion/documents/N-R11.md,,skip,"duplicate of an existing tailored resume already in the repo: 94-98% of bullets identical, only Notion metadata lines differ"
+_raw/notion/documents/N-R12.md,,skip,"duplicate of an existing tailored resume already in the repo: 94-98% of bullets identical, only Notion metadata lines differ"
+_raw/notion/documents/N-R13.md,,skip,"duplicate of an existing tailored resume already in the repo: 94-98% of bullets identical, only Notion metadata lines differ"
+_raw/notion/documents/N-R14.md,,skip,"duplicate of an existing tailored resume already in the repo: 94-98% of bullets identical, only Notion metadata lines differ"
+_raw/notion/documents/N-R15.md,,skip,"duplicate of an existing tailored resume already in the repo: 94-98% of bullets identical, only Notion metadata lines differ"
+_raw/notion/documents/N-L08.md,writing/samples/cover-letter_human-services-public-health-coordination.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L01.md,writing/samples/cover-letter_association-membership-programs.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L09.md,writing/samples/cover-letter_public-health-grants-ccbhc.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L06.md,writing/samples/cover-letter_benefits-eligibility-program-coordination.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L04.md,writing/samples/cover-letter_federal-healthcare-project-coordination.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L03.md,writing/samples/cover-letter_public-health-multistakeholder-coordination.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L10.md,writing/samples/cover-letter_administrative-program-coordination.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L07.md,writing/samples/cover-letter_nonprofit-marketing-communications.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L02.md,writing/samples/cover-letter_sud-education-learning-operations.md,copy,Notion cover letter; writing-style sample
+_raw/notion/documents/N-L05.md,writing/samples/cover-letter_executive-administrative-support.md,copy,Notion cover letter; writing-style sample

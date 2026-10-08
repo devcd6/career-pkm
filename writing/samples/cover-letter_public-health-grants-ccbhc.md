@@ -6,7 +6,7 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L09.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
 ### **Devika C. Dixit**
@@ -17,9 +17,7 @@ Dallas, TX | (925) 719-8412 | [devikadixit25@gmail.com](mailto:devikadixit25@gma
 
 **July 10, 2026**
 
-**Sostento Inc.** 
-
-Dear Sostento Hiring Team,
+Dear Hiring Manager,
 
 In a time when information is cheap and data is everywhere, a lack of evidence rarely explains why care doesn't reach someone. The gap is usually a structural lack of cognizance: systems that were never built to notice how needs and barriers shift from one community to the next, or to listen closely enough to fold what they learn back into solutions built with a community, not just implemented on it. Sostento's model, building solutions alongside the frontline health workers who will use them rather than handing solutions down from a distance, is the first organization I've seen build that lesson into its actual process instead of treating it as an afterthought.
 

@@ -6,7 +6,7 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L04.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
 ## **Devika C. Dixit**
@@ -16,8 +16,6 @@ Dallas, Texas • devikadixit25@gmail.com • (925) 719-8412
 ---
 
 **July 21, 2026**
-
-Hiring Manager MCD Global Health EMR Modernization Team
 
 ---
 

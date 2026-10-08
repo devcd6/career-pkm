@@ -6,10 +6,10 @@ date: 2026-09
 date_confidence: content
 status: active
 source_original: _raw/notion/documents/N-L02.md
-notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines and page title; writing-style sample; date is a lower bound
+notes: Cover letter from the Notion workspace export, body kept verbatim except the Notion property lines, page title, recipient block and salutation (made generic, 2026-10-08); writing-style sample; date is a lower bound
 ---
 
-Dear Hiring Team,
+Dear Hiring Manager,
 
 The gap in addiction medicine is rarely a gap in what is known. The evidence on medications for substance use disorder is established, the continuing education exists, and federal funding supports it. What determines whether a clinician actually finishes that training, claims the credit, and walks away able to use it with a patient is whether someone was there when the login failed, the certificate did not generate, or the registration page did not make sense at ten at night before a shift. ASAM's education work treats that layer as part of the mission rather than an afterthought, and closing that particular gap between what exists and what reaches someone is the work I have spent my career doing from a few different distances.
 
