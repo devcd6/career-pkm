@@ -77,3 +77,6 @@ Not yet answered at Gate 1: which of 10/20 to keep; whether 26 is archived; whet
 
 # Style guide approval and push to main (2026-10-08), user's words
 - "approve writing style guide and push to main" -> writing/style-guide.md approved (status: approved, approved_by_user: true). The user explicitly authorized pushing to main, overriding CLAUDE.md rule 8 and the branch-only default for this push.
+
+# Notion vs GitHub comparison (2026-10-08), user's words
+- "compare notion to github. Ascertain no essential content is unmerged" -> Compared the Notion export zip to the repo. Database snapshots match the export row for row; writing samples replaced with exact export copies. Gaps found and fixed: summaries, skills lists and title wording from the 10 new Notion resumes (merged into kb/summaries.md S-22 to S-31, kb/skills.md, kb/roles/ncmw-project-coordinator.md, kb/education.md note). Still unmerged by the user's rulings: Master Career Profile and Record, Master Detailed Resume, Notes, application tracker, application-question documents, Education/Certifications database, Insights Discovery Profile.

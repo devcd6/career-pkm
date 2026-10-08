@@ -236,3 +236,7 @@ Items found in each file's certification list (CAPM in grants_v1 is in the summa
 2. CDC Federal Grants training: is the correct name `CDC Federal Grants Training Certification` or `CDC Foundation Federal Grants Management Training Series (Modules 1-3)`, and was it completed in June 2026 or earlier?
 3. Is Motivational Interviewing (OARS) a formal certification or training with a date, or a skill? Same question for Registered Alcohol and Drug Technician (RADT).
 4. Do you want completion years added for Google PM, Google Data Analytics, and Adult MHFA? No resume states them.
+
+## Notion tailored resumes (added 2026-10-08)
+
+The ten Notion tailored resumes in resumes/ (AIR, AMGA, ASAM, Altarum, Governors PHA, MCD Global Health, MHA, NAMI, NDI, Partners in Health) list the same two degrees: Bachelor of Arts in Communications, UC Santa Barbara, 2025, and Associates in Political Science & Communications, Santa Barbara City College, 2022. Layout differs (table rows, dash-separated lines); no new credential and no year conflict. Certifications appear inside their skills lists and are merged into kb/skills.md.

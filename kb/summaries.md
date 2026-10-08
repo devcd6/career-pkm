@@ -1,15 +1,15 @@
 ---
 id: kb-summaries
 type: summaries
-distinct_summaries: 21
-source_files: 32
+distinct_summaries: 31
+source_files: 42
 note_files: 29 resumes on disk; resumes/_archive/2026-04_project-coordinator_condensed-ats_v2.md is a byte-duplicate of the kept condensed-ats_v1 and is not cited
 ---
 # Summaries and headline paragraphs
 
 Every distinct SUMMARY paragraph across the resumes, verbatim (whitespace-normalised; markdown wrappers excluded, contact lines excluded). Identical paragraphs are grouped under one entry listing every source file. Entries are not merged; near-duplicates stay separate with a note on what differs. No resume carries a separate headline/tagline line apart from the SUMMARY paragraph. Version order is tentative.
 
-Contents: S-01 to S-21 (in order of first appearance by file path).
+Contents: S-01 to S-31 (in order of first appearance by file path).
 
 ## S-01
 
@@ -220,3 +220,103 @@ count: 1 file(s)
 > Mission-driven Project Coordinator with experience supporting frontline health workers, clinics, and multi-partner networks across grant-funded public health and behavioral health initiatives at the national, state, and community levels. Skilled in coordinating multiple concurrent workstreams, facilitating stakeholder and partner communications, and translating research and policy into accessible health education and implementation resources. Experienced in program evaluation, federal grant compliance, and audit-ready documentation, with a direct case management background serving uninsured, underinsured, and housing-insecure populations across multi-agency, multi-funder systems of care. Dedicated to advancing equitable healthcare access for historically marginalized, underrepresented, and under-resourced communities by supporting programs committed to eliminating systemic barriers to care through innovative and culturally responsive solutions and partnerships.
 
 notes: Single source. Same version group as tailored-public-health-grants-ccbhc_v1 by content similarity; wording differs, so kept as its own summary.
+
+## S-22
+
+target_role_framing: behavioral-health-training-specialist (altarum, Notion tailored resume)
+sources: [resumes/tailored-behavioral-health-training-specialist/2026-05_tailored-behavioral-health-training-specialist_altarum_v1.md]
+count: 1 file(s)
+
+> Behavioral health professional with 4+ years of experience spanning direct SSI/SSDI benefits navigation, recovery-oriented clinical care, and national-level training and technical assistance design for federally funded behavioral health programs. Skilled in developing and delivering training curricula using adult learning principles, coaching provider agencies and community organizations on implementation, and building feedback-driven quality improvement processes. Guided clients directly through SSI/SSDI application, appeals, and hearing processes while coordinating with medical providers and disability systems, developing firsthand fluency in disability-determination requirements alongside formal training-delivery expertise. Background includes authoring a 12-module SUD and recovery e-learning curriculum, moderating national CCBHC training webinars for clinical and non-clinical audiences, and partnering with a national training and technical assistance center to build implementation toolkits for provider networks. Brings working knowledge of trauma-informed care, harm reduction, and Motivational Interviewing (OARS), plus strong written and verbal communication skills for translating complex clinical and regulatory information into clear, person-centered training materials. Comfortable managing multiple concurrent training engagements independently and traveling to deliver in-person sessions. Committed to expanding equitable access to disability benefits and recovery-oriented behavioral health care for underserved populations, grounded in direct, on-the-ground experience helping low-income clients navigate complex federal systems toward more stable, sustainable outcomes.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-23
+
+target_role_framing: emr-modernization-coordinator (mcd-global-health, Notion tailored resume)
+sources: [resumes/tailored-emr-modernization-coordinator/2026-05_tailored-emr-modernization-coordinator_mcd-global-health_v1.md]
+count: 1 file(s)
+
+> Project Coordinator with experience supporting federally funded healthcare initiatives and building leadership team operations through project coordinating, meeting coordination, agenda preparation, schedule management, action-item tracking, and documentation control across multi-organization programs. Experienced with 2 CFR Part 200 (Uniform Guidance), SF-424A/SF-425 federal reporting, and the HHS Grants Policy Statement, with strong supportability for cross functional team collaboration, training logistics, and communications across large-scale initiatives. Proven ability to manage calendars, organize project logistics, and strengthen supportability for distributed teams while working independently in a remote environment and maintaining proactive communication with partners. Committed to advancing equitable access to quality healthcare through reliable operational coordination that helps rural and underserved communities benefit from stronger, more connected systems of care.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-24
+
+target_role_framing: federal-programs-specialist (asam, Notion tailored resume)
+sources: [resumes/tailored-federal-programs-specialist/2026-05_tailored-federal-programs-specialist_asam_v1.md]
+count: 1 file(s)
+
+> Mission-driven behavioral health programs specialist with background spanning direct care, public health communications research, and grant-funded non-profit and national Substance Use Disorder programming support. Skilled in customer service and learner support, live Zoom event operations, learning management system (LMS) administration, continuing education (CE) compliance, and technical assistance that builds community clinics and healthcare professionals' capacity to prevent and treat substance use disorders. Experienced in e-learning course instructional design and deployment in accordance with federal grant compliance standards. Detail-oriented and proficient in Microsoft Office 365, Zoom, HubSpot and Salesforce CRM, Asana, and Airtable. Committed to expanding access to evidence based, stigma-free, and person-centered health education that works to advance substance use disorder prevention, treatment, and recovery through responsive learner support and reliable program operations.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-25
+
+target_role_framing: financial-empowerment-coordinator (ndi, Notion tailored resume)
+sources: [resumes/tailored-financial-empowerment-coordinator/2026-05_tailored-financial-empowerment-coordinator_ndi_v1.md]
+count: 1 file(s)
+
+> Project coordinator with 3+ years supporting multiple concurrent grant-funded workstreams across nonprofit, academic, and behavioral health settings, including event and training logistics at national scale, federal grant compliance reporting, and cross-sector stakeholder coordination spanning government agencies, healthcare systems, and community-based organizations. Skilled in navigating complex benefits and eligibility systems (SSDI, SSI, State Disability, housing subsidy programs) on behalf of high-need populations, translating that same documentation discipline and multi-agency fluency into structured project tracking, deliverable management, and executive support. Committed to advancing equitable access to financial security and opportunity through reliable, detail-oriented coordination that helps individuals with disabilities and underserved communities navigate the systems meant to support them.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-26
+
+target_role_framing: marketing-communications-coordinator (partners-in-health, Notion tailored resume)
+sources: [resumes/tailored-marketing-communications-coordinator/2026-05_tailored-marketing-communications-coordinator_partners-in-health_v1.md]
+count: 1 file(s)
+
+> Detail-oriented project coordinator with 4+ years managing 6+ concurrent workstreams across local, state, and national nonprofit, healthcare, and grant-funded organizations. Adept at triaging incoming requests, maintaining centralized deliverable-tracking systems (Asana, Excel, Airtable), and setting goals responsive to shifts in funder timelines and public health priorities. Skilled in producing storytelling content across platforms and modalities, including editorial series, audience-targeted narratives, social media posts, and Section 508/WCAG-compliant digital assets. Experienced in facilitating cohesive information transfer and collaboration-building across internal teams, external stakeholders, and diverse partners through consistent SharePoint content and document library management and person-centered, culturally-aware communication practices. Committed to advancing equitable access to quality health care through reliable operational coordination and narrative storytelling that helps communities in need of support receive visibility in a manner that honors lived experiences and preserves dignity.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-27
+
+target_role_framing: population-health-coordinator (amga, Notion tailored resume)
+sources: [resumes/tailored-population-health-coordinator/2026-05_tailored-population-health-coordinator_amga_v1.md]
+count: 1 file(s)
+
+> Program coordinator with 4+ years supporting national association, healthcare, and nonprofit initiatives, skilled in event and webinar logistics, membership communications, deliverable tracking, and stakeholder reporting. Proficient in project management software, Adobe Creative Suite, Microsoft Office, CRM platforms, and Zoom, with a track record of quickly mastering new systems and producing timely, accurate work under deadline pressure. Committed to advancing equitable, data-informed population health outcomes through reliable program coordination that helps medical groups and health systems strengthen quality improvement and health equity initiatives nationwide.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-28
+
+target_role_framing: program-associate (governors-pha, Notion tailored resume)
+sources: [resumes/tailored-program-associate/2026-05_tailored-program-associate_governors-pha_v1.md]
+count: 1 file(s)
+
+> Mission-driven program coordinator with 4+ years of experience supporting multi-stakeholder public health and nonprofit initiatives at the national, state, and community levels. Skilled in executive calendar management, meeting documentation and action-item tracking, and drafting newsletters, briefs, and communications for federal agencies, partner organizations, and funders. Background spans a leading behavioral health membership association, statewide housing and community systems coordination, and academic research administration, building broad fluency in stakeholder communications, program operations, and careful stewardship of sensitive information. Proficient in Microsoft Office 365, Asana, and Airtable. Committed to advancing health equity and care access through collaborative cross-sector coordination of public health initiatives responsive to emerging challenges across systems of care.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-29
+
+target_role_framing: program-coordinator-mobile-healthcare (mha, Notion tailored resume)
+sources: [resumes/tailored-program-coordinator-mobile-healthcare/2026-05_tailored-program-coordinator-mobile-healthcare_mha_v1.md]
+count: 1 file(s)
+
+> Program coordinator with 4+ years of experience supporting national membership associations, professional education programming, and public health initiatives, including full-lifecycle coordination of webinars, cohort-based learning programs, and faculty and subject-matter-expert engagement for a 3,200+ member national network. Skilled in building and maintaining Asana-based workplans, timelines, and tracking systems that keep multi-workstream programs on schedule and audit-ready; coordinating registration, continuing-education compliance, and learner and participant records; and translating complex program, clinical, and policy content into clear, accessible member-facing materials. Experienced in faculty and speaker onboarding, biographies, disclosures, and agreements at national-conference scale, and in instructional design and LMS administration, having authored and deployed a 12-module e-learning course from concept through launch. Proficient in Asana, Airtable, LMS platforms, HubSpot CRM, Microsoft Office 365, Google Workspace, and Zoom. Committed to supporting programs that equip community health providers with tools and resources needed to expand equitable access to quality care for their communities.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-30
+
+target_role_framing: project-assistant-healthcare-transformations (air, Notion tailored resume)
+sources: [resumes/tailored-project-assistant-healthcare-transformations/2026-05_tailored-project-assistant-healthcare-transformations_air_v1.md]
+count: 1 file(s)
+
+> Mission-driven project coordination professional with experience supporting client service projects across federally funded, highly regulated health and human services environments. Skilled in scheduling and deliverable tracking, client and stakeholder communication, documentation and version control, and proactive administrative support across virtual, multi-stakeholder teams. Directly supported federal benefits and housing-subsidy clients through structured intake, documentation, and consistent follow-through, and coordinated 6+ concurrent CMS-adjacent grant workstreams for a 3,200+ member national health association. Adept at handling sensitive records with discretion (HIPAA, 42 CFR Part 2), refining client service processes and procedures, and delivering high-quality, detail-oriented support under deadline pressure. Committed to advancing equitable access to quality health care services through dependable, detail-driven coordination that equips public programs and providers with the tools and resources needed to serve their communities.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
+
+## S-31
+
+target_role_framing: senior-administrative-coordinator (nami, Notion tailored resume)
+sources: [resumes/tailored-senior-administrative-coordinator/2026-05_tailored-senior-administrative-coordinator_nami_v1.md]
+count: 1 file(s)
+
+> Mission-driven administrative and program operations coordinator with experience providing direct executive-level support and managing multiple concurrent workstreams across grant-funded behavioral health, public health, and nonprofit initiatives. Skilled in executive calendar and correspondence management, gatekeeping and priority triage on behalf of senior leadership, meeting and stakeholder-communication facilitation, and grant-deliverable and timeline tracking in fast-paced, federally regulated environments. Proven ability to design and produce complex documents and presentations, build centralized project-management systems in Asana and Airtable, and maintain discretion and professionalism across sensitive, multi-stakeholder communications involving federal officials, clinicians, and executive leadership. Brings applied knowledge of federal grant compliance (2 CFR Part 200, HHS Grants Policy Statement, SF-424A/425) and proficiency across Microsoft Office 365 and Adobe Creative Suite. Committed to advancing equitable access to mental & behavioral health resources and treatment through reliable, detail-driven operational coordination that expands program delivery & efficiency while centering inclusive, person-centered communication & dialogue.
+
+notes: Single source (Notion export, user-confirmed accurate 2026-10-08).
