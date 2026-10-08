@@ -44,9 +44,7 @@ Remote, DC Oct 2025– Apr 2026
 
 - Standardized workflows, documentation templates, and coordination systems across four crossfunctional teams, reducing deliverable turnaround time and decreasing revision cycles between teams to improve execution consistency across concurrent workstreams. 
 
-- Built and maintained a centralized document library encompassing SOPs, operational 
-
-   - documentation, and reusable content, cutting assembly time for recurring reporting cycles by approximately half and ensuring consistent cross-team access and version control. 
+- Built and maintained a centralized document library encompassing SOPs, operational documentation, and reusable content, cutting assembly time for recurring reporting cycles by approximately half and ensuring consistent cross-team access and version control. 
 
 - Coordinated end-to-end logistics for 18 national conference sessions serving 6,000+ attendees, 
 
@@ -58,9 +56,7 @@ managing presenter outreach, scheduling, prep calls, virtual platform setup, tec
 
 - Managed departmental document organization across active workstreams, including policies, procedures, and operational records, maintaining audit-ready standards and ensuring timely access for project managers and leadership. 
 
-- Collaborated with program leadership to define and maintain cross-functional communication 
-
-   - channels across four internal teams and 15+ external partner organizations, supporting consistent alignment on priorities, deadlines, and deliverable status. 
+- Collaborated with program leadership to define and maintain cross-functional communication channels across four internal teams and 15+ external partner organizations, supporting consistent alignment on priorities, deadlines, and deliverable status. 
 
 ## **UC SANTA BARBARA** 
 
@@ -80,9 +76,7 @@ Goleta, CA Jun 2021– Jan 2025
 
 - Supported IRB protocol development, grant proposal writing, and human subjects compliance documentation across concurrent studies, ensuring adherence to regulatory standards and contributing to audit-ready research administration. 
 
-- Developed PowerPoint presentations synthesizing complex study findings for lab meetings and external stakeholder briefings, translating research outcomes into accessible, structured materials for 
-
-academic and non-specialist audiences. 
+- Developed PowerPoint presentations synthesizing complex study findings for lab meetings and external stakeholder briefings, translating research outcomes into accessible, structured materials for academic and non-specialist audiences. 
 
 ## **SANCTUARY CENTERS** 
 
@@ -110,9 +104,7 @@ Santa Barbara, CA Sep 2022 – Nov 2023
 
 - Partnered with UCSB leadership to co-create two new HMIS and Coordinated Entry System access locations, expanding intake infrastructure and enabling 10–20 additional client enrollments per open house, reducing barriers to program participation across the service population. 
 
-- Secured permanent or semi-permanent housing placements for approximately 40% of emergent 
-
-   - clients through rapid triage, coordinated placement logistics, and sustained multi-agency coordination under constrained housing market conditions. 
+- Secured permanent or semi-permanent housing placements for approximately 40% of emergent clients through rapid triage, coordinated placement logistics, and sustained multi-agency coordination under constrained housing market conditions. 
 
 **AMERICAN SOCIETY OF ENGINEERS OF INDIAN ORIGIN (ASEI)** Marketing Specialist 
 
