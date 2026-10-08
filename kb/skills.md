@@ -1431,6 +1431,135 @@ procurement and expenditure tracking | 2026-05_tailored-public-health-grants-ccb
 HubSpot | 2026-05_tailored-public-health-grants-ccbhc_general_v2 | 2026-05_tailored-public-health-grants-ccbhc_general_v2 | ncmw | V32
 Microsoft Office 365 | 2026-05_tailored-public-health-grants-ccbhc_general_v2 | 2026-05_tailored-public-health-grants-ccbhc_general_v2 | - | V32 | listed-only
 
+## Notion Skills database (124 rows, single-source)
+
+Source: `_raw/notion/skills-database.md` (Notion Job Hunt Hub, Skills database). Skill names as written in Notion, with the roles linked in that row's 'Used in Jobs' relation ('-' = none linked). Not matched against the resume-derived lines above and not marked user-confirmed. Role links are Notion's, not verified here. One Notion row has no name and is listed as '(unnamed row)'.
+
+- Stakeholder Communications | -
+- Crisis Intervention | Casa Serena, NCMW
+- Referral & Resource Navigation | -
+- Spreadsheet Software | -
+- Data-Driven Insights | ASEI
+- Public Health Interventions | -
+- Project Planning | -
+- Data Visualization | ASEI
+- Data Analysis | NCMW, ASEI, UC Santa Barbara
+- Data Validation | UC Santa Barbara
+- Psychological Safety | -
+- Ggplot2 | ASEI
+- Mental Health First Aid | NCMW
+- Data Storytelling | ASEI
+- Federal grant compliance (2 CFR Part 200, SF-424A/425, HHS GPS) | NCMW
+- Board and executive-level facilitation | NCMW
+- Crisis de-escalation as sole first responder | Casa Serena
+- Volunteer and intern recruitment, training, and direction | Sanctuary Centers
+- Mixed-methods research design | UC Santa Barbara
+- Regulatory compliance translation (HIPAA, 42 CFR Part 2, FERPA, Section 508/WCAG) | NCMW, Sanctuary Centers, Casa Serena, ASEI, UC Santa Barbara
+- Housing First case management and Coordinated Entry System navigation | Sanctuary Centers
+- IRB protocol development and human subjects compliance | UC Santa Barbara
+- Newsletter production and editorial management (8,000+ subscribers) | NCMW
+- HMIS, Kipu EHR, Alleva EHR | Sanctuary Centers, Casa Serena
+- Environmental and horizon scanning | NCMW
+- Milestone and deliverable tracking | NCMW, UC Santa Barbara
+- Program evaluation framework and KPI design | NCMW
+- AI governance and compliance evaluation (OMB M-25-21/22, NIST AI RMF) | NCMW
+- Google Workspace (Docs, Sheets, Slides, Drive, Calendar, Forms) | NCMW, ASEI
+- Persuasive narrative writing for proposals and grant responses | NCMW
+- Structured-cadence status reporting | NCMW
+- Substance use disorder treatment systems and MAT/MOUD frameworks | Casa Serena, NCMW
+- Asana, Airtable, SharePoint, OneDrive | NCMW
+- Cross-functional team coordination and handoff management | NCMW, UC Santa Barbara
+- Perplexity AI | NCMW
+- Translating complex technical/regulatory information for non-specialist audiences | NCMW, UC Santa Barbara
+- Risk monitoring, assessment, and escalation | NCMW
+- Centralized deliverable and documentation systems (Asana, Airtable) | NCMW
+- End-to-end conference and event logistics at national scale | NCMW
+- Full project lifecycle management (initiation through closeout) | NCMW
+- Microsoft Office 365 (Word, Excel, PowerPoint, Outlook, Teams) | NCMW, ASEI
+- SOP development and process/workflow design | NCMW, Sanctuary Centers
+- Mailchimp, Hootsuite, Sprout Social | ASEI
+- Autonomous prioritization and escalation under pressure | NCMW
+- Canva, Adobe Creative Suite | ASEI, NCMW
+- Policy research and state-by-state legal mapping | NCMW
+- Instructional design and e-learning development (Articulate Rise 360) | NCMW
+- Cross-platform CRM and grant portal integration (HubSpot) | NCMW
+- Multi-workstream project coordination (6+ concurrent initiatives) | NCMW
+- Multi-stakeholder scheduling and calendar management | NCMW
+- LMS administration (LearnWorlds) | NCMW
+- Data visualization and CMS management (Wix, Squarespace) | ASEI
+- Trauma-informed, person-centered communication | Casa Serena, Sanctuary Centers
+- AI avatar and animated video production (Synthesia, HeyGen) | NCMW
+- Technical writing and policy brief authorship | NCMW
+- Culturally responsive outreach and engagement | UC Santa Barbara, ASEI
+- LLM-assisted research synthesis and prompt engineering | NCMW
+- Multi-priority management under pressure | NCMW
+- Thematic analysis and iterative coding | UC Santa Barbara
+- Statistical analysis (SPSS, R) | UC Santa Barbara
+- Political Communication | -
+- Health Communications | Sanctuary Centers, Casa Serena, NCMW, UC Santa Barbara
+- CDC NOA | -
+- Policy Analysis | -
+- Critical Thinking | Sanctuary Centers, NCMW, Casa Serena, UC Santa Barbara, ASEI
+- Health Policy | UC Santa Barbara, NCMW
+- Critical Analysis | NCMW, Sanctuary Centers
+- Persusasive Communication [sic] | -
+- Interpersonal Communications | -
+- Federal Grant Audit Compliance | UC Santa Barbara, NCMW
+- grant management | NCMW, UC Santa Barbara
+- Intergroup Communication | -
+- Political Thinking | -
+- Cross-sector recruitment | NCMW
+- User-centered Design | -
+- Regulatory Compliance | -
+- Adaptive Problem Solving | Sanctuary Centers, Casa Serena, NCMW
+- Strategic Thinking | -
+- Gap-Flagging | NCMW, UC Santa Barbara
+- Cross-functional stakeholder management | NCMW
+- Vendor Evaluation | -
+- Objectivity | NCMW
+- Partnership Building | -
+- Resource/Toolkit Development | -
+- Research Synthesis | -
+- Written Communication | -
+- Instructional Design | -
+- Equity | UC Santa Barbara, Sanctuary Centers, Casa Serena, NCMW
+- Agility | NCMW
+- Event Coordination | ASEI, NCMW
+- Proactive Risk Validation | -
+- Program Development | -
+- Project/program coordination | -
+- Process Standardization | -
+- Subject Matter Expert (SME) Coordination | -
+- Documentation Management | NCMW, Casa Serena, Sanctuary Centers, UC Santa Barbara
+- Process/continuous improvement | -
+- Multi-stakeholder coordination | NCMW, Sanctuary Centers
+- Plain-Language | -
+- Accessibility | NCMW, Sanctuary Centers
+- Literature Analysis | -
+- Composure Under Pressure | NCMW, Sanctuary Centers, Casa Serena
+- Remote Coordination | -
+- Crisis Management | NCMW, Casa Serena
+- Volunteer Management | -
+- Stakeholder Management | -
+- Transparency | -
+- Independent Judgement | -
+- Community-Partnership Building | Sanctuary Centers, UC Santa Barbara
+- Audience-Centered Content Creation | NCMW, UC Santa Barbara, Sanctuary Centers, ASEI
+- Relationship Management | -
+- Fixed-Deadline Management | NCMW, Sanctuary Centers
+- Executive Brief | NCMW
+- Resource Development | -
+- (unnamed row) | -
+- SSI/SDI benefits application navigation | Sanctuary Centers
+- Disability eligibility assessment | Sanctuary Centers
+- Psychiatric/medical evidence coordination for benefits claims | Sanctuary Centers
+- Training platform and attendee tracking administration | NCMW
+- Appeals and reconsideration advocacy | Sanctuary Centers
+- Continuing education (CE) compliance and credit administration | NCMW
+- Webinar and virtual training session moderation | NCMW
+- Cross-functional training liaison (SMEs, consultants, provider teams) | NCMW
+- Notion | -
+
 ## Differences
 
 Status or wording of the same skill that varies across versions (version order tentative; codes refer to the legend above). Items marked CONFLICT are logged in `_work/conflicts_skills.md`.

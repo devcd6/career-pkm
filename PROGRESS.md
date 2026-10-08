@@ -16,3 +16,10 @@
 
 ## Added 2026-10-06: archive pass
 - [x] 13 resumes with incomplete content or merged bullets moved to resumes/_archive (plan: _work/plan_archive.csv, user approved); statuses now active/archived only (user: treat all resumes equally); index shows raw file refs and keywords
+
+## Added 2026-10-08: Notion Job Hunt Hub import
+- [x] read-only snapshots in _raw/notion (master pages, writing samples, Job History, Responsibilities, Achievements, Skills, STAR Story Bank)
+- [x] merged into kb/roles (56 responsibilities, 18 achievements; 3 unmatched rows added as single-source blocks), kb/stories.md, kb/skills.md; user rulings in kb/_user_decisions.md
+- [ ] NOT imported by instruction: Documents & Application Material, Notes, application tracker
+- [ ] Not yet merged line by line: Master Career Profile sections 3 to 7 (projects, skills index) and the Master Career Record page (not yet snapshotted)
+- [ ] Push decision pending: CLAUDE.md rule 8 forbids pushing this repo; commits are local only

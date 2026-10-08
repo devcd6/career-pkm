@@ -91,6 +91,14 @@ The user's own rulings in their own words, with dates. A resolved conflict or a 
 - Dates in `TA4`, `TA6`, `TA7` and `TA8` are the user's authoritative dates.
 - The knowledge base records what the resumes say. It is not independent verification.
 
+## Notion sources (added 2026-10-08)
+
+- `_raw/notion/` holds read-only snapshots of pages and databases from the Notion Job Hunt Hub: the Master Career Profile and Master Detailed Resume pages, Writing Samples 1 and 2, and the Job History, Responsibilities, Achievements, Skills and STAR Story Bank databases. Each file's header gives the Notion URL and fetch date.
+- Not imported, by the user's instruction: the Documents & Application Material and Notes databases, and the application tracker.
+- In `kb/roles/*`, Notion rows appear as `(notion Responsibilities #N)` or `(notion Achievements #N)` lines under `variants:` of the claim they match, and the Notion file is added to that claim's `sources`. Rows with no match are separate `single-source` blocks. Notion's Employment type field is not used (no full-time/part-time on any role). Repo dates win.
+- `kb/stories.md`: the 15 STAR stories. `kb/skills.md` ends with a Notion Skills section.
+- Source paths for these claims start with `_raw/notion/`, not `resumes/`.
+
 ## Other folders and files
 
 - `scripts/`: index builder, plan applier, inventory tool.
