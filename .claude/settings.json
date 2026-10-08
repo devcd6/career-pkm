@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(/_raw/**)",
+      "Edit(/kb/**)",
+      "Edit(/resumes/**)",
+      "Edit(/writing/**)",
+      "Edit(/INDEX.md)",
+      "Edit(/PROGRESS.md)"
+    ]
+  }
+}
