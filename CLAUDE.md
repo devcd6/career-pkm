@@ -74,7 +74,7 @@ These govern building and editing the knowledge base.
 ## Application mode (job applications)
 
 Applies to sessions that tailor resumes or cover letters for a specific job.
-Workflow and rules: `HANDOFF.md`, the `apply` skill, `writing/preferences.md`.
+Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.md`.
 
 - Facts come only from `kb/` (load `kb/_views/claims.md`; regenerate with
   `python scripts/build_claims_view.py`). Cite claim IDs. Numbers are copied
