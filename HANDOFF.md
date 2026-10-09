@@ -80,7 +80,7 @@ Each step saves to applications/<YYYY-MM-DD>_<org>_<role>/ and also prints to ch
 2. Add settings.json deny rules and the CLAUDE.md application-mode section. CHECKPOINT: show the owner the proposed rule 8 wording.
 3. Copy and patch the skills; add the "apply" skill and preferences.md.
 4. Write check_application.py.
-5. Dry run on one real JD the owner supplies. CHECKPOINT: owner reviews the output and the diff before merging.
+5. Dry run on one real JD the owner supplies. CHECKPOINT: owner reviews the output and the diff before merging. Status (2026-10-09): two dry runs were done. The owner deleted the MAVEN test application; the AAMC application (`applications/2026-10-09_aamc_*`, including `application-answers.md`) is the remaining worked example and awaits owner review.
 
 ## Integrating outside skills and agents (GitHub or web)
 Goal: keep finding tools that improve the workflow without letting any of them touch the facts. Do this only when the owner asks, or at the end of a dry run to propose candidates. Never install from a search result silently.
@@ -96,6 +96,7 @@ Where to look (search with generic terms only, never resume or KB text): GitHub 
 
 Standing candidates and decisions:
 - Adopted: conorbronsdon/avoid-ai-writing (MIT), vendored in `.claude/skills/avoid-ai-writing/`. Detect mode on cover letters only. Never edit or rewrite mode on resume.md.
+- Adopted: mattpocock/skills, `skills/productivity` (MIT, commit 49dd158): grill-me, grilling, handoff, teach, to-questionnaire, wait-what, writing-for-agents, vendored in `.claude/skills/` at the owner's request on 2026-10-09. Deviations from the procedure above: files are unmodified (no "Project override" block in each skill), the vetting verdict is in `.claude/skills/VENDORED-mattpocock.md` instead of `applications/_tools/`, and all seven went in one commit. Cautions there: never run `teach` in the repo root; `handoff` text can hold personal data. Owner may ask for override blocks on `teach` and `handoff`, the two that write files.
 - Borrow ideas only: varunr89/resume-tailoring-skill (confidence-scored matching, checkpoints, stated gaps; it writes back to its library); career-ops (provenance check, labeled estimates, draft-only actions); Wasif0410/job-application-skills (forced-keyword flagging); Faizee-Asad/job-seeker-claude-skills (job tracker CSV and application-packet layout; unreviewed).
 - Skip: proficientlyjobs/proficiently-claude-skills (auto-apply, no truthfulness safeguards); Paramchoudhary resume-quantifier (fabrication risk).
 - Agents worth building locally rather than importing: a read-only `kb-auditor` agent that re-checks resume.md against claims-used.md and the claims view in a fresh context, and a `company-researcher` agent restricted to WebSearch and WebFetch with employer and role only. Define them in `.claude/agents/` with tool lists that exclude Write outside applications/.
@@ -106,4 +107,6 @@ Standing candidates and decisions:
 - Keep or vary refrain lines in cover letters.
 - Approve any new outside tool before it is vendored (see "Integrating outside skills and agents").
 - Review a proposed `check_application.py` change: treat a count written as a digit and as a word (4 and four) as the same value when comparing a bullet to its claim's `metrics`. The AAMC run lost a verified claim (A-ncmw-project-coordinator-119) to this mismatch. Not applied; the checker change needs the owner's approval.
+- Update `writing/style-guide.md` (owner only; `writing/` is read-only here): it still says the Insights Discovery profile was not imported. The owner supplied it on 2026-10-09; a summary for application use is in `applications/profile-insights.md`.
+- Decide whether `applications/profile-insights.md` and `applications/preferences.md` stay under `applications/` or move to `writing/`, and whether the AAMC `spec.json` stays.
 - Fill the empty `metrics` on verified claims that carry numbers in their canonical wording (list in each application's `proposals.md`). `kb/` is read-only for application sessions.
