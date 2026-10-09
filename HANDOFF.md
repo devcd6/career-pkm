@@ -14,10 +14,10 @@ Run the job-application workflows from the "[AUGUST] Job Search" claude.ai chats
 - The role files total about 884 KB, too big to read. Generate kb/_views/claims.md (id, canonical, tier, metrics for all 252 claims, about 20k tokens) and load that whole. Open a role file only to see variants for one claim ID.
 
 ## Hard rules (keep from CLAUDE.md)
-1. _raw/ is read-only. kb/, resumes/ and writing/ are also read-only for application sessions.
+1. _raw/ is read-only. kb/, resumes/ and writing/ are read-only for application sessions except for additive, user-approved root additions (see CLAUDE.md "Application mode").
 2. Never invent, inflate, round or merge facts. Numbers come only from a claim's metrics, copied exactly.
-3. New facts a session surfaces go to applications/<slug>/proposals.md. Only the owner can verify or promote them.
-4. Application sessions write only under applications/. Every session ends by confirming nothing outside applications/ changed.
+3. New facts a session surfaces go to applications/<slug>/proposals.md first. Only the owner can verify them; with the owner's in-session approval they may be added to root on the application branch (CLAUDE.md "Application mode").
+4. Application sessions write under applications/. Root changes are allowed only as approved additions, in a separate `kb:` commit. Every session ends by confirming the diff against main shows only applications/<slug>/ plus approved root paths.
 5. Update CLAUDE.md rule 8 (it forbids pushing, which no longer fits cloud sessions on a private repo). Ask the owner to approve the new wording.
 
 ## Cloud-session mechanics (verified in docs)

@@ -64,8 +64,38 @@ These govern building and editing the knowledge base.
 5. Only the user can mark a claim `verified`.
 6. Stop at every human gate listed in `PROGRESS.md` and wait for the user.
 7. Commit to git after each phase with a message naming the phase.
-8. Resumes contain personal data. Do not push this repo to a remote, and do
-   not paste file contents into web searches or external tools.
+8. Resumes contain personal data. Push only to the private remote
+   `devcd6/career-pkm`, and only to `apply/*` and `handoff/*` branches. Push to
+   `main` only on the user's explicit instruction for that push. Do not push to
+   any other remote, and do not paste file contents into web searches or
+   external tools.
+
+## Application mode (branches named `apply/<YYYY-MM-DD>_<org>_<role>`)
+
+Application work lives in `applications/<slug>/`. Facts come from `kb/` only.
+
+- New facts, bullets, content or context surfaced during an application go first
+  to `applications/<slug>/proposals.md`, each with its source (the user's words
+  or a resume/JD line).
+- Approval gate: write to root only after the user explicitly approves the item
+  in the same session. No approval, no root write.
+- Additive only. Allowed root targets: new `### A-...` blocks and new
+  `variants:` or bracketed alternatives in `kb/roles/*.md`; new entries in
+  `kb/skills.md`, `kb/summaries.md`, `kb/stories.md`, `kb/education.md`; new
+  files in `writing/samples/`; a new `kb/_user_decisions.md` entry quoting the
+  user's approval words and date; a new `kb/_conflicts.md` block when an
+  addition disagrees with an existing number, date, scope or employer detail
+  (never pick a winner).
+- Never: touch `_raw/`; edit or delete an existing `canonical`, tier or conflict
+  resolution; invent, round or merge facts; reorganize `resumes/`.
+- Tier of an approved addition is `single-source` (cite the application file and
+  the user's words). It is `verified` only when the user says it is accurate
+  (rule 5).
+- Root additions go in their own commit, `kb: add <what> (approved)`, separate
+  from `applications/` commits. Rebuild `INDEX.md` and lint in that commit.
+- Before finishing, `git diff --stat origin/main...HEAD` must show only
+  `applications/<slug>/` plus root paths covered by an approval entry in
+  `kb/_user_decisions.md` on the same branch.
 
 ## Conventions
 
