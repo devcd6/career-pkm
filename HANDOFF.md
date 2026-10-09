@@ -82,7 +82,26 @@ Each step saves to applications/<YYYY-MM-DD>_<org>_<role>/ and also prints to ch
 4. Write check_application.py.
 5. Dry run on one real JD the owner supplies. CHECKPOINT: owner reviews the output and the diff before merging.
 
+## Integrating outside skills and agents (GitHub or web)
+Goal: keep finding tools that improve the workflow without letting any of them touch the facts. Do this only when the owner asks, or at the end of a dry run to propose candidates. Never install from a search result silently.
+
+Vet before adopting (all must pass; write the verdict to `applications/_tools/<name>.md`):
+1. Source and license: public repo, license that permits copying (MIT, Apache-2.0). Record URL, commit hash and date. Prefer maintained repos with recent commits.
+2. Read the whole SKILL.md, agent file and every script. Reject or strip anything that fabricates or "quantifies" metrics, auto-applies to jobs, sends data to external services, writes back to a library or the KB, runs network or shell commands, or tells the model to ignore other instructions.
+3. Fit: it fills a gap in the five-step flow (research, JD analysis, tailoring, cover letter, check) or strengthens a check. Skip anything that duplicates a skill already here.
+4. Patch, do not wrap: copy the files into `.claude/skills/<name>/` (or `.claude/agents/`), add the same "Project override" block used in the other skills (claims-only facts and numbers, writes only under `applications/`, web use limited to employer and role, Notion is a tracker only, no em dashes), and add a `VENDORED.md` with source, commit and review date. Plugins in `enabledPlugins` do not load in cloud sessions, so vendor the files.
+5. Test on one existing application folder and run `python scripts/check_application.py` plus the end-of-session `git status` check before committing. Commit each tool on its own so it can be reverted. Never push to main.
+
+Where to look (search with generic terms only, never resume or KB text): GitHub topics and searches for "claude code skills" with job search, resume tailoring, ATS, cover letter, job description analysis, company research, and writing-quality or AI-pattern detection; the Anthropic skills repositories; claudemarketplaces.com and agentskill.work listings (pointers only, always read the source repo). Prefer the tools already reviewed in this file.
+
+Standing candidates and decisions:
+- Adopted: conorbronsdon/avoid-ai-writing (MIT), vendored in `.claude/skills/avoid-ai-writing/`. Detect mode on cover letters only. Never edit or rewrite mode on resume.md.
+- Borrow ideas only: varunr89/resume-tailoring-skill (confidence-scored matching, checkpoints, stated gaps; it writes back to its library); career-ops (provenance check, labeled estimates, draft-only actions); Wasif0410/job-application-skills (forced-keyword flagging); Faizee-Asad/job-seeker-claude-skills (job tracker CSV and application-packet layout; unreviewed).
+- Skip: proficientlyjobs/proficiently-claude-skills (auto-apply, no truthfulness safeguards); Paramchoudhary resume-quantifier (fabrication risk).
+- Agents worth building locally rather than importing: a read-only `kb-auditor` agent that re-checks resume.md against claims-used.md and the claims view in a fresh context, and a `company-researcher` agent restricted to WebSearch and WebFetch with employer and role only. Define them in `.claude/agents/` with tool lists that exclude Write outside applications/.
+
 ## Open items for the owner
 - Confirm NCMW bullet range 9-12.
 - Update the claude.ai project instructions to say the repo is the fact source and Notion is only the tracker. They still carry old numbers (17 vs 18 sessions, 5,000+ vs 6,000+, "all 50 states"). She pastes this in herself.
 - Keep or vary refrain lines in cover letters.
+- Approve any new outside tool before it is vendored (see "Integrating outside skills and agents").
