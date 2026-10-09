@@ -16,7 +16,7 @@ A membership of more than 60 academic health centers outside North America only 
 
 ## AAHCI is a membership organization. How would you approach building and maintaining relationships with AAHCI member institutions and their representatives?
 
-I would start by listening. In the first months I would learn each member institution's priorities and contacts, and ask the Regional Offices and the Senior Program Specialist where relationships are strong and where they have gone quiet. I would keep a simple shared record of every contact, request, and promise, so nothing depends on memory. At NCMW, a 3,200+ member association, I was a primary point of contact for member organizations seeking technical assistance and resources, and I wrote same-day meeting notes and tracked action items to completion. Trust comes from repetition: answer quickly, do what you said, and report back. I would also send members something useful with no ask attached, such as a peer example or a relevant event, and ask afterward what was worth their time.
+I would start by listening. In the first months I would learn each member institution's priorities and contacts, and ask the Regional Offices and the Senior Program Specialist where relationships are strong and where they have gone quiet. I would keep a simple shared record of every contact, request, and promise, so nothing depends on memory. At NCMW, a 3,200+ member association, I was a primary point of contact for member organizations seeking technical assistance and resources, and I wrote same-day meeting notes and tracked action items to completion. Trust comes from repetition: answer quickly, do what you said, and report back. I would also send members something useful with no ask attached, such as a peer example or a relevant event, and ask afterward what was worth their time. I would also thank contributors by name and say what their input changed, because recognition is part of the relationship, not an extra.
 
 ## Share any experience you have supporting virtual programs, such as webinars, virtual roundtables, or online meetings.
 
@@ -27,7 +27,9 @@ Virtual programming was the center of my NCMW role. I moderated national trainin
 1. "What would you do differently for members in different regions?" Answer from the third response: registrant location drives timing, local times in invitations, recordings. Say it is a plan, not experience.
 2. "Why international, with no international experience?" Use the gap sentence from the first response, then name what you will learn first: how the Regional Offices and members already work together.
 3. "Tell me about a time a partner dropped a commitment." No KB claim covers this. Tell the owner's own story if one exists, then add it to `proposals.md`.
-4. Ask them: how do the Regional Offices and the Senior Program Specialist divide member contact today?
+4. "Tell me about working with someone whose style is very different from yours." No KB claim covers this directly. Use `applications/profile-insights.md` (opposite-type notes) to choose a real example, then add it to `proposals.md`.
+5. Delivery: rehearse each answer aloud at 45 to 60 seconds with the frame in `applications/profile-insights.md` (one-sentence answer, one piece of evidence, one result, one bridge to the role).
+6. Ask them: how do the Regional Offices and the Senior Program Specialist divide member contact today?
 
 ## Open items for the owner
 
