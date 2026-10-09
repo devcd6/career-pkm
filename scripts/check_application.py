@@ -6,7 +6,7 @@ Usage:
     python scripts/check_application.py applications/<slug> --claims kb/_views/claims.md
 
 Errors (exit 1):
-  provenance   a number in resume.md or cover-letter.md that is not in any claim's metrics
+  provenance   a number in resume.md or cover-letter.md not in any claim's metrics; for resume bullets, not in the metrics of the claim(s) the bullet maps to
   titles       role title not one of the KB title variants (NCMW must be "Project Coordinator")
   dates        role dates differ from the KB role header
   counts       bullets per role outside the owner's ranges
@@ -42,7 +42,21 @@ MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?"
 DATE_RE = re.compile(rf"({MON})\s+(\d{{4}})\s*[-–—]+\s*(?:({MON})\s+(\d{{4}})|(Present|present|Current))")
 NUM_RE = re.compile(r"(?<![\w.])\$?\d[\d,]*(?:\.\d+)?[+%]?")
 WORDNUM = "two three four five six seven eight nine ten eleven twelve fifteen twenty thirty forty fifty hundred thousand dozen".split()
-SKIP_SECTIONS = ("education", "certification", "skill", "header")
+IDENT_RE = re.compile(
+    r"\bCFR\s*Part\s*\d+|\b\d+\s*CFR\b(?:\s*Part\s*\d+)?|\bPart\s*\d+|\bSection\s*\d+[\w/]*|\bWCAG\s*\d+(?:\.\d+)*"
+    r"|\bM-\d+-\d+|\bSF-\d+\w*|\bRMF\s*\d+(?:\.\d+)*|\bISO\s*\d+|\bNCT\d+|\bRise\s*\d+|\bOffice\s*365|\b[A-Z]{2,}-\d+\w*")
+SKIP_SECTIONS = ("education", "certification", "skill", "header", "publication")
+
+
+def numbers_in(text):
+    """Numeric tokens in text, ignoring dates, years and regulation/product identifiers."""
+    text = IDENT_RE.sub(" ", DATE_RE.sub(" ", text))
+    return [t for t in NUM_RE.findall(text) if not re.fullmatch(r"(19|20)\d\d", t)]
+
+
+def metric_tokens(claim):
+    m = claim.get("metrics", "")
+    return set(NUM_RE.findall(m)) | {w for w in re.findall(r"[a-z]+", m.lower()) if w in WORDNUM}
 
 
 def norm(s):
@@ -113,7 +127,8 @@ def main():
     if not claims:
         print("no claims loaded; run scripts/build_claims_view.py")
         return 2
-    allowed = set(RULING_NUMBERS)
+    base = set(RULING_NUMBERS)
+    allowed = set(base)
     for c in claims.values():
         allowed.update(NUM_RE.findall(c.get("metrics", "")))
         allowed.update(w for w in re.findall(r"[a-z]+", c.get("metrics", "").lower()) if w in WORDNUM)
@@ -121,6 +136,7 @@ def main():
     if extra.exists():
         ex = {l.strip() for l in extra.read_text(encoding="utf-8").splitlines() if l.strip()}
         allowed |= ex
+        base |= ex
         warns.append(f"allowed_numbers.txt in use ({', '.join(sorted(ex)) or 'empty'}); owner must review")
 
     docs = {n: (folder / n) for n in ("resume.md", "cover-letter.md")}
@@ -143,10 +159,10 @@ def main():
         for sname in order:
             if any(s in sname.lower() for s in SKIP_SECTIONS):
                 continue
-            body = "\n".join(l for l in sections[sname] if "@" not in l)
-            body = DATE_RE.sub(" ", body)
-            for tok in sorted(set(NUM_RE.findall(body))):
-                if re.fullmatch(r"(19|20)\d\d", tok) or tok in allowed:
+            body = "\n".join(l for l in sections[sname]
+                             if "@" not in l and not re.match(r"\s*[-*\u2022]\s", l))
+            for tok in sorted(set(numbers_in(body))):
+                if tok in allowed:
                     continue
                 err("provenance", f"resume.md [{sname}] number {tok!r} not in any claim's metrics")
         # roles
@@ -208,9 +224,8 @@ def main():
     cover = texts.get("cover-letter.md")
     if cover:
         body = "\n".join(l for l in cover.splitlines() if "@" not in l)
-        body = DATE_RE.sub(" ", body)
-        for tok in sorted(set(NUM_RE.findall(body))):
-            if not re.fullmatch(r"(19|20)\d\d", tok) and tok not in allowed:
+        for tok in sorted(set(numbers_in(body))):
+            if tok not in allowed:
                 err("provenance", f"cover-letter.md number {tok!r} not in any claim's metrics")
 
     # claims-used
@@ -233,6 +248,10 @@ def main():
             elif not any(i in claims for i in ids):
                 err("claims-used", f"no valid claim ID for bullet: {b[:70]}...")
             else:
+                ok = set().union(*(metric_tokens(claims[i]) for i in ids if i in claims)) | base
+                for tok in sorted(set(numbers_in(b))):
+                    if tok not in ok:
+                        err("provenance", f"bullet number {tok!r} not in metrics of {', '.join(ids)}: {b[:60]}...")
                 verb = re.match(r"[\w'-]+", b).group(0).lower()
                 canon = " ".join(claims[next(i for i in ids if i in claims)].get("canonical", "").split()[:14]).lower()
                 if verb not in re.findall(r"[\w'-]+", canon):
