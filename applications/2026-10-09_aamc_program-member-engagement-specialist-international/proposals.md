@@ -8,4 +8,4 @@ None of these changed the KB.
 4. **AI bullet.** See `match.md` open question 3 (A-ncmw-project-coordinator-87 or -86).
 5. **CAPM (CERT-04):** still listed in the KB as in progress with expected completion 05/2026, which has passed. Left off. Ask: completed, still in progress, or drop?
 6. **Summary closer.** The "Committed to advancing collaboration among member institutions..." sentence is a mission-tie line, not a fact. The wording is new, modeled on the KB closers in `applications/preferences.md`. Edit freely.
-7. **Check script:** no changes made to `scripts/check_application.py` for this application.
+7. **Check script:** no per-application exceptions were made. The checker itself was changed once with the owner's approval (2026-10-09): a word count in a claim's metrics also allows its digit.
