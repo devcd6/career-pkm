@@ -1,39 +1,61 @@
 # Application questions: AAMC, Program and Member Engagement Specialist, International
 
-Facts about the owner come from claims already in `claims-used.md` plus A-ncmw-project-coordinator-97, -98, -19, -35 and -39. No new facts. Employer details come from `research.md` (third-party summaries, unverified) and the JD.
+Facts about the owner come from claims already in `claims-used.md` plus A-ncmw-project-coordinator-97, -98, -19, -35 and -39, and Sanctuary Centers and UCSB lessons stated in the owner's cover letters. No new facts. Employer details come from `research.md` and the JD. Delivery notes are in `applications/profile-insights.md`.
 
-## Positioning (competitive map, used to shape the answers)
+## Positioning map (competitive cartographer)
 
-Likely applicants cluster in two places. One group has the degree and the global-health vocabulary (public health, global affairs) but little documented program execution. The other group has event logistics but no stake in the sector. Most answers from both groups say "passionate about global health" and stop there.
+Space: applicants for a member-engagement and program-support role at AAHCI, the international arm of the AAMC.
 
-The owner's open space is the intersection: member-association program execution for a healthcare-professional audience, backed by specific follow-through habits. That is a real fit for this role, whose duties are almost all execution (webinar and roundtable setup, speakers, registration, materials, follow-up, newsletter, SharePoint). The owner's weak side is the preferred qualification the cluster one holds: international and academic health center experience. So each answer (1) leads with an AAHCI detail only an informed applicant would know, (2) proves one claim with evidence, (3) names the gap in one sentence and says how it will be closed, and (4) avoids anything the KB cannot support.
+Axes: x = proof of running member programs (documented execution). y = closeness to the point of care (seeing what happens to an idea after the policy or program is written).
 
-Research notes behind the structure (vendor and career-center sources, so treat as coaching advice, not data): one verifiable employer detail beats general praise ([getmyfirstjob](https://core.getmyfirstjob.co.uk/advice/applying/application-form-answers)); name who the organization is and why it matters to you ([UNC career services](https://carolinampa.web.unc.edu/home/career-services/interview-questions/)); member relationships start with a personal first contact, segmentation and acting on feedback ([rasa.io](https://rasa.io/pushing-send/how-to-improve-member-engagement-an-actionable-guide-for-associations/), [vocalmeet](https://vocalmeet.com/?p=10472)); global virtual events work best when timing follows registrant location, invitations show local time, and sessions are recorded with a follow-up ([WebinarNinja](https://webinarninja.com/blog/webinar-time-zones/), [Webex guide](https://www.webex.com/content/dam/wbx/us/gated/whitepaper/best-practices-for-your-webinar-guide_cm-4646.pdf)).
+| Cluster | Where they sit | What their answers sound like |
+|---|---|---|
+| Public health and global affairs graduates | High sector vocabulary, thin execution record, little frontline contact | "Passionate about global health and cross-cultural collaboration" |
+| Event and association coordinators | High execution, no stake in the sector, far from care | "Experienced in logistics and stakeholder communication" |
+| Academic health center insiders | Sector fluent, execution inside one institution | "Familiar with the AHC environment" |
+| Devika | High execution (national association, 3,200+ members) and close to the point of care (Housing First case management, behavioral health program work, research participant liaison) | Specific follow-through, plus lessons from the receiving end |
+
+White space (intersection): the coordinator who has stood where an idea lands. She carries ideas between institutions, and she knows from direct service why an idea fails to land without coordination. No one else in the pool is likely to offer both. The owner's own phrase in the KB (S-03, S-13) is "how policy is written, how systems are designed, and how both play out at the point of care."
+
+Constraints turned into position: no international or academic health center experience. The answers name it once, then frame the owner as someone who arrives without assumptions and learns member practice first. No claim is made beyond the KB.
+
+Anti-patterns avoided: "passionate about global health" (me-too); listing every skill in the JD (Swiss Army knife); promising speed or vision a first-year specialist cannot deliver (ignoring constraints).
+
+## Values and mission alignment
+
+| AAMC / AAHCI | Owner's through-line (from her cover letters and KB) | Evidence |
+|---|---|---|
+| AAHCI mission: empower a global community of academic health center leaders to advance health and well-being through collaboration and excellence | Closing the gap between what already works and who gets access to it | NCMW national programming; Sanctuary document checklist |
+| AAMC aim: improve health through advancing academic medicine (older mission wording; check aamc.org) | Coordination decides whether services reach anyone | Sanctuary Centers, UCSB, NCMW arc |
+| Equity and access (AAMC commitments, per third-party summary) | Equitable access and person-centered work, a theme in nearly every KB summary | Sanctuary Centers, UCSB recruitment across diverse samples |
+| Collaboration among leaders | Method changes, message does not; learn first, assume second | UCSB outreach lesson; candor lines in cover letters |
+| Excellence | Reliable follow-through, quiet and documented | A-ncmw-18 (same-day notes, action items) |
 
 ## What interests you most about working with academic health centers and global health leaders?
 
-A membership of more than 60 academic health centers outside North America only works if someone makes it easy for them to learn from each other. That is what draws me to AAHCI. The Student Leadership Initiative puts students' ideas in front of academic health center leaders, and Leadership Perspectives carries those leaders' views between institutions. Behind both sit speakers, schedules, and follow-up that someone has to own. At the National Council for Mental Wellbeing I coordinated outreach and logistics across subject matter experts and federal and provider partners for webinars and conference programming, so healthcare professionals could use their expertise. I have not worked inside an academic health center or internationally. I would bring dependable execution, and I would ask members what they need before assuming I know.
+Good ideas in academic medicine rarely stall for lack of merit. They stall because nothing carries them from the institution that proved them to the next one that could use them. AAHCI's mission is to empower a global community of academic health center leaders through collaboration and excellence, and programs like the Student Leadership Initiative and Leadership Perspectives are how that carrying happens. Closing the gap between what already works and who can use it has been the thread through my work. At Sanctuary Centers, providing Housing First case management, I learned that services reach people only when the coordination behind them holds. At the National Council for Mental Wellbeing I coordinated outreach and logistics across subject matter experts and federal and provider partners for webinars and conference programming. I have not worked inside an academic health center or internationally, so I would start by learning how members already collaborate.
 
 ## AAHCI is a membership organization. How would you approach building and maintaining relationships with AAHCI member institutions and their representatives?
 
-I would start by listening. In the first months I would learn each member institution's priorities and contacts, and ask the Regional Offices and the Senior Program Specialist where relationships are strong and where they have gone quiet. I would keep a simple shared record of every contact, request, and promise, so nothing depends on memory. At NCMW, a 3,200+ member association, I was a primary point of contact for member organizations seeking technical assistance and resources, and I wrote same-day meeting notes and tracked action items to completion. Trust comes from repetition: answer quickly, do what you said, and report back. I would also send members something useful with no ask attached, such as a peer example or a relevant event, and ask afterward what was worth their time. I would also thank contributors by name and say what their input changed, because recognition is part of the relationship, not an extra.
+Trust with members comes from repetition, and I would build it in three steps. First, learn each institution before asking anything of it: its priorities, its programs, and the right contact, starting with what the Regional Offices and the Senior Program Specialist already know. Second, meet each member in the way that works for them. At UC Santa Barbara I learned that an outreach approach that works for one community can fall flat with another, so I change the method, not just the message. Third, keep promises small and visible. At NCMW, a 3,200+ member association, I was a primary point of contact for member organizations seeking technical assistance and resources, and I wrote same-day meeting notes and tracked action items to completion. I would also thank contributors by name, say what their input changed, and pass along what peer institutions are trying.
 
 ## Share any experience you have supporting virtual programs, such as webinars, virtual roundtables, or online meetings.
 
-Virtual programming was the center of my NCMW role. I moderated national training webinars, office hours, and community of practice calls in Zoom for CCBHC and FQHC healthcare professionals, handling setup, introductions, live polls, Q&A, and chat so the speaker could focus on content. Around each session I coordinated registration, scheduling, learning materials, and learner communications from planning to closeout, tracking registrations and attendance in Airtable. I also organized and facilitated virtual meetings in Microsoft Teams across four internal departments and 15+ external partner organizations, preparing agendas and following up on decisions and next steps. I have not run programs across time zones. For a global audience I would check where registrants are, show local times in every invitation, and record each session for members who cannot attend live.
+Virtual programming was the center of my NCMW role, and it is how a dispersed community stays connected. I moderated national training webinars, office hours, and community of practice calls in Zoom for CCBHC and FQHC healthcare professionals, handling setup, introductions, live polls, Q&A, and chat so speakers could focus on content. I coordinated registration, scheduling, learning materials, and learner communications from planning to closeout, tracking registrations and attendance in Airtable, and I organized virtual meetings in Microsoft Teams across four internal departments and 15+ external partner organizations. A global community adds a layer I have not run: time zones. My plan would be to check where registrants are, show local times in every invitation, and record each session for members who cannot join live.
 
 ## Interview follow-ups to prepare
 
-1. "What would you do differently for members in different regions?" Answer from the third response: registrant location drives timing, local times in invitations, recordings. Say it is a plan, not experience.
-2. "Why international, with no international experience?" Use the gap sentence from the first response, then name what you will learn first: how the Regional Offices and members already work together.
-3. "Tell me about a time a partner dropped a commitment." No KB claim covers this. Tell the owner's own story if one exists, then add it to `proposals.md`.
-4. "Tell me about working with someone whose style is very different from yours." No KB claim covers this directly. Use `applications/profile-insights.md` (opposite-type notes) to choose a real example, then add it to `proposals.md`.
-5. Delivery: rehearse each answer aloud at 45 to 60 seconds with the frame in `applications/profile-insights.md` (one-sentence answer, one piece of evidence, one result, one bridge to the role).
+1. "Why AAHCI, and why international, with no international experience?" Use the first answer's closing sentence, then say what you will learn first: how the Regional Offices and members already work together.
+2. "What would you do differently for members in different regions?" Use the UCSB lesson (change the method, not the message) plus the time-zone plan. Say it is a plan, not experience.
+3. "Tell me about a time a partner dropped a commitment." No KB claim covers this. Tell your own story if one exists, then add it to `proposals.md`.
+4. "Tell me about working with someone whose style is very different from yours." No KB claim covers this directly. See `applications/profile-insights.md` (opposite-type notes), choose a real example, then add it to `proposals.md`.
+5. Delivery: rehearse each answer aloud at 45 to 60 seconds: one-sentence answer, one piece of evidence, one result, one bridge to the role.
 6. Ask them: how do the Regional Offices and the Senior Program Specialist divide member contact today?
 
 ## Open items for the owner
 
-- Tense: the KB dates NCMW as Oct 2025 to May 2026, so these answers use past tense. The first draft used present tense for the webinar work.
-- Claim 19 (four internal departments and 15+ partners) has empty `metrics`. The numbers match its wording. Cut that sentence if you want strict checker compliance.
-- "Student Leadership Initiative", "Leadership Perspectives" and the 60+ figure come from AAMC pages via search summaries. Confirm before an interview.
+- Tense: the KB dates NCMW as Oct 2025 to May 2026, so the answers use past tense.
+- Claim 19 (four internal departments and 15+ partners) has empty `metrics`. The numbers match its wording. Cut that clause if you want strict checker compliance.
+- The Sanctuary Centers lesson in the first answer is your reflection from your cover letters, not a KB claim. The UCSB lesson in the second answer is the same. Keep them only if they read true.
+- "Student Leadership Initiative", "Leadership Perspectives" and the AAHCI mission wording come from AAMC pages via search summaries. The AAMC aim in the table is the 1988 statement and may have been superseded. Confirm on aamc.org before an interview.
 - Any international or cross-time-zone experience you have would replace the sentences that name the gap.
