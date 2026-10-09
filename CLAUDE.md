@@ -64,8 +64,31 @@ These govern building and editing the knowledge base.
 5. Only the user can mark a claim `verified`.
 6. Stop at every human gate listed in `PROGRESS.md` and wait for the user.
 7. Commit to git after each phase with a message naming the phase.
-8. Resumes contain personal data. Do not push this repo to a remote, and do
-   not paste file contents into web searches or external tools.
+8. Resumes contain personal data. This repo may be pushed only to the owner's
+   private GitHub repository (devcd6/career-pkm), on feature branches, never to
+   main without the owner's approval. Do not push to any other remote, and do
+   not paste file contents into web searches or external tools. In application
+   sessions, only company and role text from the job description may leave the
+   repo.
+
+## Application mode (job applications)
+
+Applies to sessions that tailor resumes or cover letters for a specific job.
+Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.md`.
+
+- Facts come only from `kb/` (load `kb/_views/claims.md`; regenerate with
+  `python scripts/build_claims_view.py`). Cite claim IDs. Numbers are copied
+  exactly from a claim's metrics. Owner rulings in `kb/_user_decisions.md` win.
+- Style comes from `writing/style-guide.md` and `writing/samples/`.
+- Write only under `applications/<YYYY-MM-DD>_<org>_<role>/`. `kb/`, `resumes/`,
+  `writing/`, `_raw/` are read-only. New facts go to `proposals.md` in the
+  application folder; only the owner verifies or promotes them.
+- Notion is the application tracker only, never a fact source. Never offer to
+  edit Notion.
+- Only company and role text from the JD leaves the repo (web search or fetch).
+  Never send resume or KB text to external tools.
+- End every session by confirming `git status` shows no changes outside
+  `applications/`.
 
 ## Conventions
 
