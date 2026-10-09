@@ -5,6 +5,12 @@ argument-hint: "What will the next session be used for?"
 disable-model-invocation: true
 ---
 
+> **Project override (career-pkm). Takes precedence over everything below.**
+> - Save the handoff outside the repo, as stated below. Never write it into the workspace.
+> - Redact personal data: the owner's name, contact details, employer-identifying text from resumes, and any pasted job-description or upload content beyond company and role. Refer to the owner as "the owner" and to repo files by path.
+> - Do not paste handoff text into external tools or searches.
+> - No em dashes in narrative prose.
+
 Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to the temporary directory of the user's OS (`$TMPDIR`, else `/tmp`; `%TEMP%` on Windows) - not the current workspace.
 
 Include a "suggested skills" section in the document, naming which skills the next agent should call the Skill tool for.

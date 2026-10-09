@@ -55,7 +55,7 @@ Virtual programming was the center of my NCMW role, and it is how a dispersed co
 ## Open items for the owner
 
 - Tense: the KB dates NCMW as Oct 2025 to May 2026, so the answers use past tense.
-- Claim 19 (four internal departments and 15+ partners) has empty `metrics`. The numbers match its wording. Cut that clause if you want strict checker compliance.
+- Claim 19 (four internal departments and 15+ external partner organizations) has populated `metrics` that match the virtual-programs answer exactly, so that clause needs no caveat. An earlier draft of this note wrongly called its `metrics` empty.
 - The Sanctuary Centers lesson in the first answer is your reflection from your cover letters, not a KB claim. The UCSB lesson in the second answer is the same. Keep them only if they read true.
 - "Student Leadership Initiative", "Leadership Perspectives" and the AAHCI mission wording come from AAMC pages via search summaries. The AAMC aim in the table is the 1988 statement and may have been superseded. Confirm on aamc.org before an interview.
 - Any international or cross-time-zone experience you have would replace the sentences that name the gap.

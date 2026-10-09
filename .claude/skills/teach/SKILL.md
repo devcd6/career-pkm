@@ -5,6 +5,12 @@ disable-model-invocation: true
 argument-hint: "What would you like to learn about?"
 ---
 
+> **Project override (career-pkm). Takes precedence over everything below.**
+> - Never run in the repo root or any directory inside this repo. `/teach` creates MISSION.md, lessons/, reference/, learning-records/, assets/ and notes in the current directory. Use a scratch directory outside the repo.
+> - Resume, KB and application text never goes into lessons, notes or web searches. Search only generic topic terms.
+> - Application sessions write only under `applications/`. Teaching material is not an application file.
+> - No em dashes in narrative prose.
+
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.
 
 ## Teaching Workspace

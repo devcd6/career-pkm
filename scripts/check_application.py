@@ -18,7 +18,8 @@ Errors (exit 1):
 Warnings: starting verb not among the claim's canonical wording; use of allowed_numbers.txt.
 
 Provenance borrows the idea (not the code) of career-ops. Numbers are compared as
-literal tokens ("6,000+" must appear as "6,000+" in a claim's metrics). Years and
+literal tokens ("6,000+" must appear as "6,000+" in a claim's metrics), except that a count
+written as a word in metrics ("four", two through twelve) also allows its digit ("4"). Years and
 dates are checked by the dates check instead. "4+" (years of experience) is an
 owner ruling in kb/_user_decisions.md and is always allowed. A reviewed list of extra
 numbers may go in <slug>/allowed_numbers.txt (one per line); the check reports its use.
@@ -42,6 +43,9 @@ MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?"
 DATE_RE = re.compile(rf"({MON})\s+(\d{{4}})\s*[-–—]+\s*(?:({MON})\s+(\d{{4}})|(Present|present|Current))")
 NUM_RE = re.compile(r"(?<![\w.])\$?\d[\d,]*(?:\.\d+)?[+%]?")
 WORDNUM = "two three four five six seven eight nine ten eleven twelve fifteen twenty thirty forty fifty hundred thousand dozen".split()
+# A count written as a word in a claim's metrics also allows its digit form in a bullet (owner approved 2026-10-09).
+# Limited to two through twelve; "one" is left out because it is also a pronoun.
+WORD_DIGITS = dict(zip("two three four five six seven eight nine ten eleven twelve".split(), map(str, range(2, 13))))
 IDENT_RE = re.compile(
     r"\bCFR\s*Part\s*\d+|\b\d+\s*CFR\b(?:\s*Part\s*\d+)?|\bPart\s*\d+|\bSection\s*\d+[\w/]*|\bWCAG\s*\d+(?:\.\d+)*"
     r"|\bM-\d+-\d+|\bSF-\d+\w*|\bRMF\s*\d+(?:\.\d+)*|\bISO\s*\d+|\bNCT\d+|\bRise\s*\d+|\bOffice\s*365|\b[A-Z]{2,}-\d+\w*")
@@ -56,7 +60,8 @@ def numbers_in(text):
 
 def metric_tokens(claim):
     m = claim.get("metrics", "")
-    return set(NUM_RE.findall(m)) | {w for w in re.findall(r"[a-z]+", m.lower()) if w in WORDNUM}
+    words = {w for w in re.findall(r"[a-z]+", m.lower()) if w in WORDNUM}
+    return set(NUM_RE.findall(m)) | words | {WORD_DIGITS[w] for w in words if w in WORD_DIGITS}
 
 
 def norm(s):
@@ -130,8 +135,7 @@ def main():
     base = set(RULING_NUMBERS)
     allowed = set(base)
     for c in claims.values():
-        allowed.update(NUM_RE.findall(c.get("metrics", "")))
-        allowed.update(w for w in re.findall(r"[a-z]+", c.get("metrics", "").lower()) if w in WORDNUM)
+        allowed |= metric_tokens(c)
     extra = folder / "allowed_numbers.txt"
     if extra.exists():
         ex = {l.strip() for l in extra.read_text(encoding="utf-8").splitlines() if l.strip()}
