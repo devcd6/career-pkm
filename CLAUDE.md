@@ -80,15 +80,30 @@ Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.m
   `python scripts/build_claims_view.py`). Cite claim IDs. Numbers are copied
   exactly from a claim's metrics. Owner rulings in `kb/_user_decisions.md` win.
 - Style comes from `writing/style-guide.md` and `writing/samples/`.
-- Write only under `applications/<YYYY-MM-DD>_<org>_<role>/`. `kb/`, `resumes/`,
-  `writing/`, `_raw/` are read-only. New facts go to `proposals.md` in the
-  application folder; only the owner verifies or promotes them.
+- Write under `applications/<YYYY-MM-DD>_<org>_<role>/`. `_raw/` is always
+  read-only. `kb/`, `resumes/`, `writing/` are read-only except for approved
+  additions (below). New facts go to `proposals.md` in the application folder
+  first; only the owner verifies them.
+- Approved additions to root (branches `apply/<YYYY-MM-DD>_<org>_<role>`): write
+  to root only after the user explicitly approves the item in the same session.
+  Additive only. Allowed targets: new `### A-...` blocks and new `variants:` or
+  bracketed alternatives in `kb/roles/*.md`; new entries in `kb/skills.md`,
+  `kb/summaries.md`, `kb/stories.md`, `kb/education.md`; new files in
+  `writing/samples/`; a new `kb/_user_decisions.md` entry quoting the user's
+  approval words and date; a new `kb/_conflicts.md` block when an addition
+  disagrees with an existing number, date, scope or employer detail (never pick
+  a winner). Never edit or delete an existing `canonical`, tier or conflict
+  resolution; never invent, round or merge facts. Tier is `single-source` (cite
+  the application file and the user's words), or `verified` only when the user
+  says it is accurate (rule 5). Put root additions in their own commit,
+  `kb: add <what> (approved)`, and rebuild `INDEX.md` and lint in it.
 - Notion is the application tracker only, never a fact source. Never offer to
   edit Notion.
 - Only company and role text from the JD leaves the repo (web search or fetch).
   Never send resume or KB text to external tools.
-- End every session by confirming `git status` shows no changes outside
-  `applications/`.
+- End every session by confirming `git diff --stat origin/main...HEAD` shows
+  only `applications/<slug>/` plus root paths covered by an approval entry in
+  `kb/_user_decisions.md` on the same branch.
 
 ## Conventions
 
