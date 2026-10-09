@@ -16,3 +16,12 @@ Slug: `applications/<YYYY-MM-DD>_<org>_<role>/` (lowercase, hyphens). Before sta
 5. **/check**. Run `python scripts/check_application.py applications/<slug>` and `node scripts/detect_ai_writing.js applications/<slug>/cover-letter.md` and the vendored `avoid-ai-writing` skill in detect mode on cover-letter.md (never rewrite or edit mode on resume.md), then confirm `git status` shows no change outside `applications/`. Report failures; do not weaken the checks.
 
 Rules that never bend: no invented, inflated, rounded or merged facts; new facts go to `proposals.md`; never offer to edit Notion; the owner marks anything verified.
+
+## Working notes from the MAVEN and AAMC runs
+- **Build, don't retype.** For step 3, write `applications/<slug>/spec.json` (claim numbers, bracket picks, verbs, summary, skills lines) and run `python scripts/build_application.py applications/<slug>`. It copies canonical wording verbatim and writes `resume.md` and `claims-used.md` with full claim IDs, which the checker requires. Pick the more conservative bracket option ("primary" over "sole") and list the choice in `proposals.md`.
+- **Numbers.** Copy the literal form from the metrics ("18+", "6,000+", "20 to 30"). If a bullet's number is missing from its claim's `metrics` (the KB has verified claims with empty `metrics`), list a second claim whose metrics carry it, or pick another claim. Do not edit the checker or add `allowed_numbers.txt` to get past it. Record the claim in `proposals.md` so the owner can fill its `metrics`.
+- **Cover letters.** Before finalizing, search earlier `applications/*/cover-letter.md` for sentences you reused. The owner's refrains (see `writing/style-guide.md`) may repeat; any other sentence should not.
+- **Research.** Names found in third-party directories are unverified; keep them out of the letter and say so in `research.md`. Program names that search cannot confirm are JD wording only.
+- **Title and filters.** The role title may appear only in the posting URL; note that in `keywords.md`. Put degree-field and eligibility questions in `match.md` for the owner.
+- **Paths.** The shell's working directory drifts between calls. Use absolute paths and re-run the checks from the repo root.
+- **Step 5 cost.** The vendored avoid-ai-writing detect pass needs its `references/patterns.md` read in full (about 745 lines). Run the script checks first and the skill pass once, on the final letter.

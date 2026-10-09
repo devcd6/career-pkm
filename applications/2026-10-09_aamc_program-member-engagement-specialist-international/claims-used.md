@@ -1,6 +1,6 @@
 # Claims used: AAMC, Program and Member Engagement Specialist, International
 
-Format: bullet | claim ID | tier | verb. Tier from kb/_views/claims.md. Bracket choices resolved to the option listed (first unless noted); value brackets dropped so the canonical value stands.
+Format: bullet | claim ID | tier | verb. Tier from kb/_views/claims.md. Verb options resolved as set in spec.json; value brackets dropped so the canonical value stands.
 
 
 ## NATIONAL COUNCIL FOR MENTAL WELLBEING

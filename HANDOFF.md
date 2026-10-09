@@ -105,3 +105,5 @@ Standing candidates and decisions:
 - Update the claude.ai project instructions to say the repo is the fact source and Notion is only the tracker. They still carry old numbers (17 vs 18 sessions, 5,000+ vs 6,000+, "all 50 states"). She pastes this in herself.
 - Keep or vary refrain lines in cover letters.
 - Approve any new outside tool before it is vendored (see "Integrating outside skills and agents").
+- Review a proposed `check_application.py` change: treat a count written as a digit and as a word (4 and four) as the same value when comparing a bullet to its claim's `metrics`. The AAMC run lost a verified claim (A-ncmw-project-coordinator-119) to this mismatch. Not applied; the checker change needs the owner's approval.
+- Fill the empty `metrics` on verified claims that carry numbers in their canonical wording (list in each application's `proposals.md`). `kb/` is read-only for application sessions.
