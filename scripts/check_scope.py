@@ -23,6 +23,12 @@ def git(*a):
 
 def main():
     base = sys.argv[1] if len(sys.argv) > 1 else "origin/main"
+    if subprocess.run(["git", "rev-parse", "--verify", "-q", base], capture_output=True).returncode:
+        remote, _, branch = base.partition("/")
+        subprocess.run(["git", "fetch", remote, branch], capture_output=True)
+        if subprocess.run(["git", "rev-parse", "--verify", "-q", base], capture_output=True).returncode:
+            print(f"ERROR cannot resolve base {base}")
+            return 2
     rows = [l.split("\t") for l in git("diff", "--numstat", f"{base}...HEAD").splitlines()]
     errors, root = [], []
     for add, dele, path in rows:
