@@ -1,5 +1,7 @@
 # HANDOFF: Build the application workflow in career-pkm
 
+Status (2026-10-10): scaffold built and merged to main. This file stays as the design record; current rules are in CLAUDE.md "Application mode".
+
 Owner: Devika C. Dixit. Repo: devcd6/career-pkm (private). Written 2026-10-08.
 Task for this session: read this file, then build the scaffold below on a new branch (no pushes to main). Stop at the checkpoints marked CHECKPOINT and wait for the owner.
 

@@ -29,3 +29,13 @@
 - [x] user ruled: leave Education/Certifications database, Deep Dive, company-title strings and Insights Discovery Profile out
 - [x] writing/style-guide.md rewritten as a descriptive record (still draft, awaiting owner approval); no generation prompt kept in repo
 - [x] index review 2026-10-08: INDEX.md regenerated and checked (43 resume versions, 5 roles, 252 claims, 0 open conflicts, 0 lint problems); Notion resumes and letters renamed to role/industry/angle names; raw staging copies renamed N-R##/N-L##; build_index.py extended (categories, KB, writing, Notion sections, pipe-safe cells)
+
+## Added 2026-10-09 to 2026-10-10: application workflow
+- [x] scaffold built and merged to main: claims view (kb/_views/claims.md), patched skills and slash commands in .claude/, applications/ folder, check_application.py, build_application.py, detect_ai_writing.js
+- [x] CLAUDE.md rule 8 rewritten (owner approved): push only to devcd6/career-pkm on feature branches, main only with owner approval
+- [x] CLAUDE.md "Application mode": application branches may add to root (kb/, writing/samples/) only after in-session owner approval, additive only, separate `kb: add <what> (approved)` commit; scripts/check_scope.py checks the diff against main
+- [x] .claude/settings.json deny list reduced by the owner to _raw and PROGRESS.md
+- [x] worked example: applications/2026-10-09_aamc_* (awaits owner review); MAVEN test application deleted by the owner
+- [x] 2026-10-10 branch cleanup: PR #3 closed; local handoff branch deleted
+- [ ] Remote branches claude/compassionate-faraday-kw5tuy, claude/testing10.9 and handoff/application-workflow still exist (fully merged); the git proxy blocked deletion, so the owner deletes them in GitHub
+- [ ] Target fields in CLAUDE.md still empty (owner)

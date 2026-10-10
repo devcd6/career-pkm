@@ -107,3 +107,11 @@ The user's own rulings in their own words, with dates. A resolved conflict or a 
 - `_work/`: working files and plans; not part of the reading path.
 - `PROGRESS.md`: checklist of project phases.
 - `CLAUDE.md`: project rules.
+
+## Application work (added 2026-10-10)
+
+- `applications/<YYYY-MM-DD>_<org>_<role>/`: one folder per job application (research, keywords, match, resume, claims-used, cover letter, proposals). `applications/preferences.md` holds the owner's tailoring preferences; `applications/profile-insights.md` summarizes the Insights Discovery profile for application use. Facts come from `kb/` only, with claim IDs cited.
+- `kb/_views/claims.md`: generated one-page view of all claims (id, canonical, tier, metrics). Regenerate with `python scripts/build_claims_view.py`; not hand-edited.
+- `.claude/commands/` and `.claude/skills/`: the five-step `apply` workflow (`/research`, `/analyze-jd`, `/tailor`, `/cover-letter`, `/check`) and the skills it uses. Rules for these sessions are in `CLAUDE.md` "Application mode" and `HANDOFF.md`.
+- `scripts/check_application.py` verifies an application folder against the KB; `scripts/check_scope.py` checks that an application branch changed only `applications/<slug>/` plus owner-approved root additions.
+- Application branches are named `apply/<YYYY-MM-DD>_<org>_<role>` and merge to `main` after owner review.
