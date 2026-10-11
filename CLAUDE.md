@@ -125,6 +125,9 @@ Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.m
 
 ## Target (fill in)
 
-- Target roles:
+- Target roles: Project Coordinator; Program Coordinator; Program Associate; Project Assistant / Project Specialist; Community Outreach / Public Education Coordinator; Coordinator, Marketing and Communications
 - Constraints (location, seniority, industries):
-- Name as it should appear on resumes:
+  - Location: Remote/Hybrid in USA; Remote/Hybrid in Texas, USA; Remote/Hyrbid/On-site within 50 miles of Dallas, Texas
+  - Seniority: New Grad or 1-3 years of experience
+  - Industries: Behavioral health and substance use nonprofits and membership associations; healthcare professional associations and medical education; public health    and health services consulting/research; academic medical centers and healthcare innovation; health policy and government-facing alliances; global health nonprofits
+- Name as it should appear on resumes: Devika C. Dixit
