@@ -128,3 +128,17 @@ Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.m
 - Target roles:
 - Constraints (location, seniority, industries):
 - Name as it should appear on resumes:
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues for devcd6/career-pkm. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-label vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context. See `docs/agents/domain.md`.
