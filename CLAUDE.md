@@ -70,6 +70,8 @@ These govern building and editing the knowledge base.
    not paste file contents into web searches or external tools. In application
    sessions, only company and role text from the job description may leave the
    repo.
+   GitHub Issues, issue comments and PR text count as external: never put
+   resume or KB text in them, only claim IDs and file paths.
 
 ## Application mode (job applications)
 
