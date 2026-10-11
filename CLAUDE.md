@@ -141,4 +141,4 @@ Default five-label vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, 
 
 ### Domain docs
 
-Single-context. See `docs/agents/domain.md`.
+Single-context, with this repo's real domain sources (the "Using this project as knowledge and context" section above, `kb/_user_decisions.md`, `kb/_conflicts.md`) listed in `docs/agents/domain.md`.

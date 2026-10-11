@@ -38,6 +38,15 @@ Multi-context repo (presence of `GLOSSARY-MAP.md` at the root):
         └── docs/adr/
 ```
 
+## This repo's domain sources
+
+This repo is a career knowledge base, not a software codebase, so its domain vocabulary and decisions live outside `GLOSSARY.md` and `docs/adr/`. Read these when they touch your topic:
+
+- **`CLAUDE.md`**, section "Using this project as knowledge and context": layers (`_raw/` -> `resumes/` -> `kb/`), tiers, bracket syntax, interpretation rules.
+- **`kb/_user_decisions.md`**: the owner's rulings. They win over everything else; do not contradict them.
+- **`kb/_conflicts.md`**: open conflicts are unsettled; do not state them as settled.
+- **`README.md`**: layout.
+
 ## Use the glossary's vocabulary
 
 When your output names a domain concept (in an issue title, a refactor proposal, a hypothesis, a test name), use the term as defined in `GLOSSARY.md`. Don't drift to synonyms the glossary explicitly avoids.

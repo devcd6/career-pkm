@@ -16,12 +16,14 @@ Infer the repo from `git remote -v`; `gh` does this automatically when run insid
 
 ## Repo-specific rules
 
-- This repo is private and holds personal data. Issue titles and bodies must never quote resume or KB text; refer to claim IDs and file paths only.
-- In cloud sessions the `gh` CLI is unavailable. Use the GitHub MCP tools (`mcp__github__*`) for the same operations.
+- This repo is private and holds personal data. Issue titles, bodies, comments and Wayfinder gist or answer text must never quote resume or KB text, including summaries of conflicts or claims. Refer to claim IDs and file paths only.
+- In cloud sessions `gh` works over REST (`gh api repos/{owner}/{repo}/...`) but GraphQL is blocked, so `gh issue list`/`view`/`label list` can fail with HTTP 403 and `gh auth status` reports a failed login. Use `gh api` for those, or the GitHub MCP tools (`mcp__github__*`). Where neither supports native dependencies or `--parent`, use the body-line fallbacks (`Blocked by:`, `Part of`).
 
 ## Pull requests as a triage surface
 
 **PRs as a request surface: no.** _(Set to `yes` if this repo treats external PRs as feature requests; `/triage` reads this flag.)_
+
+While the flag is `no`, skip every command in this section, including the external-PR listing, and do not read PRs from outside authors.
 
 When set to `yes`, PRs run through the same labels and states as issues, using the `gh pr` equivalents:
 
