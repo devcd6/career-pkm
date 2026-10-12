@@ -51,6 +51,25 @@ Three differentiators to lead with, each tied to the JD: (1) convenings at natio
 - Do not claim start-up founding experience; say what the KB shows.
 - Do not give numbers beyond the claims listed above.
 
+## Second pass: alternate axes and white-space test (generic cartographer method)
+
+The first map used operations depth against domain fluency. The method says to try a second axis pair to check the first result holds. The JD stresses anticipating conflicts, discretion and proactive prompting of leaders, so the second pair is task execution against judgment.
+
+| | Executes assigned tasks | Anticipates and escalates on its own |
+|---|---|---|
+| Wide scope (people, partners, deadlines, events) | Experienced assistant who works from instructions | White space: owns the whole picture and flags risk early |
+| Narrow scope (calendar and travel only) | Junior admin | Strong EA with narrow remit |
+
+Owner position, from the KB: triaged competing requests and escalated risk independently (A-ncmw-project-coordinator-06, -04); maintained an issues log of risks, decisions and action items (A-ncmw-project-coordinator-05); recurring status updates on progress, risks and upcoming deadlines (A-ncmw-project-coordinator-07). That sits in the wide scope, anticipating quadrant, which agrees with the first map.
+
+White-space test (viable, defensible, sustainable, aligned):
+- Viable: the JD asks for exactly this mix (pipelines, convenings, deadlines, executive support, AI context).
+- Defensible: the combination comes from several roles in the KB, not one claim, so it is hard to copy by adding a single skill.
+- Sustainable: it needs no claim the KB lacks, so it can be repeated in an interview without stretching.
+- Aligned: it matches the Center's subject (AI and youth wellbeing) through A-ncmw-project-coordinator-50 and -87 and the behavioral health roles.
+
+Result: both maps point to the same position. The weak spots in section 6 stay the same.
+
 ## Open items for the owner
 1. Any experience with travel-booking platforms, venues or catering not yet in the KB? Say it in your words and it goes in `proposals.md`.
 2. Do you want a separate interview-prep file built from these claims?
