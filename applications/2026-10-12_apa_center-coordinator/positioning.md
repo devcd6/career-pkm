@@ -18,21 +18,21 @@ Axes: executive and operations depth (x) against behavioral health and policy-re
 
 | | Lower domain fluency | Higher domain fluency |
 |---|---|---|
-| **Higher ops depth** | Career EA, event planner (crowded) | **White space: ops depth with domain fluency** |
-| **Lower ops depth** | Generalist admin | Recent graduate, lab coordinator (crowded) |
+| Higher ops depth | Career EA, event planner (crowded) | White space: ops depth with domain fluency |
+| Lower ops depth | Generalist admin | Recent graduate, lab coordinator (crowded) |
 
 ## 4. Where the owner sits (KB evidence)
-- **Executive and operations depth:** owned calendar and scheduling for senior executives, 20+ weekly touchpoints (A-ncmw-project-coordinator-25, -111); travel, air bookings and hotel accommodations for speakers (A-ncmw-project-coordinator-31); post-meeting notes and action tracking (A-ncmw-project-coordinator-18).
-- **Convenings:** NatCon26 track, 18+ sessions, 6,000+ attendees, 15+ organizations (A-ncmw-project-coordinator-27, -105).
-- **Partner and funder pipeline:** 50+ speakers and partner organizations recruited and onboarded (A-ncmw-project-coordinator-30, -115).
-- **Deadlines:** milestones and reporting deadlines across 6+ concurrent workstreams, 100% on-time deliverable completion (A-ncmw-project-coordinator-02, -04, -104).
-- **Domain fluency, including AI:** evaluated 5 edtech/AI vendor platforms against 30+ federal standards including NIST AI RMF (A-ncmw-project-coordinator-50, -87); behavioral health from direct care (Casa Serena claims above) through housing (Sanctuary Centers) to national association work.
-- **Research environment and academics:** three concurrent labs, meeting agendas, minutes and action items (A-ucsb-research-assistant-01, -24).
-- **Start-up conditions:** sole communications owner with no support staff (A-asei-marketing-specialist-01); standardizing workflows for a newly formed team (A-ncmw-project-coordinator-11).
-- **Discretion:** confidentiality with sensitive client and participant information (A-sanctuary-centers-housing-coordinator-13, A-ucsb-research-assistant-05, A-casa-serena-program-assistant-20).
+- Executive and operations depth: owned calendar and scheduling for senior executives, 20+ weekly touchpoints (A-ncmw-project-coordinator-25, -111); travel, air bookings and hotel accommodations for speakers (A-ncmw-project-coordinator-31); post-meeting notes and action tracking (A-ncmw-project-coordinator-18).
+- Convenings: NatCon26 track, 18+ sessions, 6,000+ attendees, 15+ organizations (A-ncmw-project-coordinator-27, -105).
+- Partner and funder pipeline: 50+ speakers and partner organizations recruited and onboarded (A-ncmw-project-coordinator-30, -115).
+- Deadlines: milestones and reporting deadlines across 6+ concurrent workstreams, 100% on-time deliverable completion (A-ncmw-project-coordinator-02, -04, -104).
+- Domain fluency, including AI: evaluated 5 edtech/AI vendor platforms against 30+ federal standards including NIST AI RMF (A-ncmw-project-coordinator-50, -87); behavioral health from direct care (Casa Serena claims above) through housing (Sanctuary Centers) to national association work.
+- Research environment and academics: three concurrent labs, meeting agendas, minutes and action items (A-ucsb-research-assistant-01, -24).
+- Start-up conditions: sole communications owner with no support staff (A-asei-marketing-specialist-01); standardizing workflows for a newly formed team (A-ncmw-project-coordinator-11).
+- Discretion: confidentiality with sensitive client and participant information (A-sanctuary-centers-housing-coordinator-13, A-ucsb-research-assistant-05, A-casa-serena-program-assistant-20).
 
 ## 5. White space and recommended position
-**Intersection white space:** an operations coordinator who has run convenings, pipelines and deadline trackers at national scale and understands both behavioral health practice and AI compliance. Most applicants will pick one side of the map.
+Intersection white space: an operations coordinator who has run convenings, pipelines and deadline trackers at national scale and understands both behavioral health practice and AI compliance. Most applicants will pick one side of the map.
 
 Suggested one-line position (for the interview, not a new fact): *a coordinator who keeps leaders' calendars, partners and deadlines moving, with working knowledge of behavioral health and AI governance from inside it.*
 
