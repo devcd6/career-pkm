@@ -19,7 +19,7 @@ Read first: `CLAUDE.md` (Application mode), `applications/preferences.md`, `writ
 
 ## Mode research (run before prep)
 Writes `applications/<slug>/interview-research.md` and prints it. Reuse `research.md`; do not repeat it.
-1. Company deep dive on five axes: mission and programs, recent moves, leadership and team, culture and work environment, likely challenges and peers. Employer-owned pages first. Every point sourced, or marked as JD wording only.
+1. Company research on five axes: mission and programs, recent moves, leadership and team, culture and work environment, likely challenges and peers. Employer-owned pages first. Every point sourced, or marked as JD wording only.
 2. Interview reviews. Search for reported interview experiences for the employer and the role title (review sites, forums, and the employer's own careers pages). For each source record: link, date, role, a short paraphrase of the questions and process reported, and a note that it is unverified third-party text. Give a source count. Never quote at length. Never invent a question or rating. Watch for name collisions with other organizations that share the acronym. If there are no reviews (a new entity may have none), say so plainly. Fallback, labeled as such: employer-wide reviews, then questions typical for the role type taken from the JD wording.
 3. Open questions for the owner (who is interviewing, any contacts), and what could not be confirmed.
 
