@@ -70,6 +70,8 @@ These govern building and editing the knowledge base.
    not paste file contents into web searches or external tools. In application
    sessions, only company and role text from the job description may leave the
    repo.
+   GitHub Issues, issue comments and PR text count as external: never put
+   resume or KB text in them, only claim IDs and file paths.
 
 ## Application mode (job applications)
 
@@ -131,3 +133,17 @@ Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.m
   - Seniority: New Grad or 1-3 years of experience
   - Industries: Behavioral health and substance use nonprofits and membership associations; healthcare professional associations and medical education; public health    and health services consulting/research; academic medical centers and healthcare innovation; health policy and government-facing alliances; global health nonprofits
 - Name as it should appear on resumes: Devika C. Dixit
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues for devcd6/career-pkm. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-label vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context, with this repo's real domain sources (the "Using this project as knowledge and context" section above, `kb/_user_decisions.md`, `kb/_conflicts.md`) listed in `docs/agents/domain.md`.
