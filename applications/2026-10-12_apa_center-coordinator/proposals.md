@@ -11,3 +11,7 @@ None of these changed the KB.
 2. **"Federally funded" wording.** The summary and an NCMW bullet say federally funded; the KB says grant-funded with federal funder requirements. Confirm or supply the funder detail.
 3. **Substance Use Continuum suffix.** The submitted NCMW title adds ", Substance Use Continuum". The KB title is "Project Coordinator" (owner ruling). Confirm whether to keep the suffix on future resumes.
 4. **Check scripts.** No per-application exceptions were made. `check_application.py` was not run on `submitted-resume.md` because it is a record of what was sent, not a KB-built resume; running it is deferred to open question 2 in `match.md`.
+5. **Empty `metrics` on A-ncmw-project-coordinator-25 and -111.** Both carry "20+" or "20-25+" weekly touchpoints in canonical wording but empty `metrics`, so `interview-prep.md` states the work without the number. Filling their `metrics` would allow the figure in answers.
+6. **Calendar and booking tools.** The submitted resume names Outlook, Calendly and Google Calendar; the claims view does not. Say in your words whether you used a travel-booking platform and which calendar tools, and it goes here as a proposed claim.
+7. **Lesson sentences in `interview-prep.md`.** The one-line lessons ending each answer are drafts in your style, not KB claims. Edit freely.
+8. **Executive-assistant framing.** The KB has no statement of your view on the role's executive-assistant focus. Run `gaps` mode to record it in your words.
