@@ -1,34 +1,34 @@
-member engagement
+Business Context | member engagement
 Program Specialist
-member institutions
+Business Context | member institutions
 member association
-international
-newsletter production
-Publication support
-social media content coordination
-SharePoint folder management
-website audits
+Domain Keyword | international
+Hard Skill | newsletter production
+Hard Skill | Publication support
+Hard Skill | social media content coordination
+Hard Skill | SharePoint folder management
+Hard Skill | website audits
 member recruitment communications
 outreach
 webinar
-virtual roundtable
-speaker identification
-background research
-registration
-scheduling
-materials development
-meeting follow-up
-participant communications
+Business Context | virtual roundtable
+Hard Skill | speaker identification
+Hard Skill | background research
+Hard Skill | registration
+Hard Skill | scheduling
+Hard Skill | materials development
+Hard Skill | meeting follow-up
+Business Context | participant communications
 tracking
 evaluation
-advisory panels
-working groups
-Regional Offices
-process improvements
-special projects
+Business Context | advisory panels
+Business Context | working groups
+Business Context | Regional Offices
+Business Context | process improvements
+Business Context | special projects
 operational support
 virtual activities
-public health
-global affairs
-health systems administration
-artificial intelligence
+Domain Keyword | public health
+Domain Keyword | global affairs
+Domain Keyword | health systems administration
+Domain Keyword | artificial intelligence

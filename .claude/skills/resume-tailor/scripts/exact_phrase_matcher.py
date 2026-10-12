@@ -9,7 +9,10 @@ Usage:
     python exact_phrase_matcher.py --jd jd.txt --resume resume.md --phrases keywords.txt
     python exact_phrase_matcher.py --jd jd.txt --suggest 30
 
-keywords.txt: one phrase per line ('#' starts a comment). --suggest lists
+keywords.txt: one phrase per line ('#' starts a comment). A line may carry a
+category: 'Hard Skill | data entry' (categories: Title Keyword, Hard Skill, Action
+Keyword, Business Context, Domain Keyword, Hard Filter, Forced; others are treated
+as part of the phrase). Plain lines are 'Uncategorized'. --suggest lists
 frequent exact 1-3 word phrases from the JD to help choose phrases; it does
 not judge fit.
 """
@@ -25,6 +28,19 @@ STOP = {
     "as", "is", "are", "be", "will", "the", "this", "that", "it", "its", "our", "your",
     "we", "you", "who", "from", "have", "has", "can", "may", "all", "any", "not",
 }
+
+
+CATEGORIES = {"title keyword", "hard skill", "action keyword", "business context",
+              "domain keyword", "hard filter", "forced"}
+
+
+def parse_line(line):
+    """'Category | phrase' or 'phrase' -> (category, phrase); '#' starts a comment."""
+    line = line.split("#", 1)[0].strip()
+    cat, sep, rest = line.partition("|")
+    if sep and cat.strip().lower() in CATEGORIES:
+        return cat.strip().title(), rest.strip()
+    return "Uncategorized", line
 
 
 def norm(text):
@@ -66,19 +82,19 @@ def main():
     resume = norm(Path(a.resume).read_text(encoding="utf-8"))
     rows = []
     for line in Path(a.phrases).read_text(encoding="utf-8").splitlines():
-        ph = line.split("#", 1)[0].strip()
+        cat, ph = parse_line(line)
         if ph:
-            rows.append({"phrase": ph, "in_jd": count(ph, jd), "in_resume": count(ph, resume)})
+            rows.append({"category": cat, "phrase": ph, "in_jd": count(ph, jd), "in_resume": count(ph, resume)})
     if a.json:
         print(json.dumps(rows, indent=2))
         return 0
     for r in rows:
         if r["in_jd"] == 0:
             print(f"NOT IN JD  {r['phrase']}")
-    print(f"{'phrase':40} jd  resume")
+    print(f"{'category':18} {'phrase':40} jd  resume")
     for r in rows:
         flag = "" if r["in_resume"] else "  <- missing from resume"
-        print(f"{r['phrase']:40} {r['in_jd']:<3} {r['in_resume']}{flag}")
+        print(f"{r['category']:18} {r['phrase']:40} {r['in_jd']:<3} {r['in_resume']}{flag}")
     return 0
 
 
