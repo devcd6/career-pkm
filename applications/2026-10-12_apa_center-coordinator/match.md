@@ -24,8 +24,8 @@ Retrospective: the owner had already applied. This compares the resume as submit
 | Speaking opportunities | A-ncmw-project-coordinator-30, -32 (speaker recruitment); no claim about tracking pitches or applications for the owner's own speaking |
 | AI context | A-ncmw-project-coordinator-50, -87 (AI vendor evaluation against federal standards) |
 
-## Provenance flag: the Casa Serena section (needs the owner's answer)
-The Casa Serena Treatment Centers section of the submitted resume (title: Residential Behavioral Health Technician, Sept 2021 to Aug 2022) lists ten bullets that repeat the NCMW Project Coordinator bullets almost word for word: VP and Senior Advisor gatekeeping, 20-25+ weekly touchpoints for two senior leaders, 50+ speakers and faculty travel, 50+ partner engagements, HubSpot CRM, status-report cadence, AI vendor evaluation. The KB's Casa Serena claims (A-casa-serena-program-assistant-01 to -30) describe direct residential care on PM and overnight shifts, withdrawal screenings, medication observation, crisis response and EHR documentation. NCMW dates are Oct 2025 to May 2026, after Casa Serena ended, and the claims view lists none of the submitted Casa Serena bullets for that employer. This looks like a paste or template error, but I did not assume. See open question 1.
+## Provenance flag: the Casa Serena section (resolved by the owner 2026-10-12)
+The submitted resume's Casa Serena Treatment Centers section (Residential Behavioral Health Technician, Sept 2021 to Aug 2022) repeated ten NCMW Project Coordinator bullets almost word for word. The owner confirmed this was a paste error and gave the four bullets it should have carried (quoted in `proposals.md`). Each maps to existing Casa Serena claims: crisis response to A-casa-serena-program-assistant-11 and -12; audit-ready documentation to -22 and -30 (also -20); discharge planning to -15 and -17; treatment-team observations to -13, -14 and -16. `submitted-resume.md` is kept as sent, with the error. Since the owner has an interview, the interviewer may have seen the repeated NCMW wording under Casa Serena.
 
 ## Other checks against the KB (not exhaustive; a bullet-by-bullet claim mapping needs the build step)
 - Summary says "6+ concurrent federally funded workstreams". The KB says "grant-funded" (A-ncmw-project-coordinator-01) with "federal funder requirements". Whether every one is federally funded is not stated in the claims view.
@@ -41,7 +41,6 @@ The Casa Serena Treatment Centers section of the submitted resume (title: Reside
 5. **Tracking speaking pitches and applications:** no claim.
 
 ## Open questions for the owner
-1. The Casa Serena section: is it a paste error? What should the file record, the submitted text as sent, or a corrected version? What Casa Serena bullets do you want from the KB if you reapply or send an update?
-2. Do you want the rest of the workflow run on this retrospective folder (a KB-built `resume.md` and `claims-used.md`, then `cover-letter.md` and checks), or only research, keywords and match?
-3. Was a cover letter submitted? If so, paste it so it can be filed.
-4. Confirm the date to use in the folder name (I used 2026-10-12, today) and whether the NCMW "Substance Use Continuum" suffix was intended.
+1. The four corrected bullets are condensed from KB claims, not copied canonical wording. Record them in `proposals.md` only (done), or also promote them as new variants in `kb/roles/casa-serena-program-assistant.md`? That would need your approval in a root commit.
+2. Do you want to send APA a corrected resume before the interview, or only be ready to explain the Casa Serena section?
+3. Confirm the NCMW title suffix and the "federally funded" wording (see `proposals.md`).
