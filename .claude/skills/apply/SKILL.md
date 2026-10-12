@@ -15,6 +15,8 @@ Slug: `applications/<YYYY-MM-DD>_<org>_<role>/` (lowercase, hyphens). Before sta
 4. **/cover-letter** (`cover-letter.md`). Use `cover-letter-generator` with `writing/style-guide.md` and the two closest samples in `writing/samples/`. Frame gaps honestly here. Numbers only from claim metrics.
 5. **/check**. Run `python scripts/check_application.py applications/<slug>` and `node scripts/detect_ai_writing.js applications/<slug>/cover-letter.md` and the vendored `avoid-ai-writing` skill in detect mode on cover-letter.md (never rewrite or edit mode on resume.md), then run `python scripts/check_scope.py`: the diff against main may show only `applications/<slug>/` plus approved root additions. Report failures; do not weaken the checks.
 
+Optional after step 5, only when the owner asks: `/interview-prep <slug>` (skill `interview-prep`: prep, gaps, debrief).
+
 Rules that never bend: no invented, inflated, rounded or merged facts; new facts go to `proposals.md` first, and reach root (`kb/`, `writing/samples/`) only after the owner's in-session approval, additive only, in a separate `kb: add <what> (approved)` commit with a `kb/_user_decisions.md` entry quoting the approval (CLAUDE.md "Application mode"); never offer to edit Notion; the owner marks anything verified.
 
 ## Working notes from the dry runs (MAVEN, since deleted by the owner, and AAMC)
