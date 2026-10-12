@@ -15,7 +15,16 @@ Errors (exit 1):
   spacing      blank line between bullets or skill lines, or two blank lines in a row
   summary      summary does not end with a "Committed to" / "Dedicated to" sentence
   claims-used  a resume bullet missing from claims-used.md, or mapped to an unknown claim ID
-Warnings: starting verb not among the claim's canonical wording; use of allowed_numbers.txt.
+  verbs-bracket a bullet's starting verb is not one of the claim's leading bracketed alternatives
+  duplicates   two bullets in different roles are near-identical (word overlap >= 0.85)
+  forced       a "Forced" keyword (keywords.txt line "Forced | phrase") is missing from resume.md
+  hard-filters match.md has no "Hard filters" section
+Warnings: starting verb not among the claim's canonical wording; use of allowed_numbers.txt;
+  near-duplicate bullets (0.70 to 0.85); summary/skills terms not found in the KB;
+  keywords missing from resume.md.
+Reports (never gate): keyword coverage by category (keywords.txt, optional "Category | phrase"
+  lines; --baseline FILE compares against another resume), Hard filters checklist from match.md,
+  claims whose canonical wording has a number their metrics lack (--metrics-debt lists all).
 
 Provenance borrows the idea (not the code) of career-ops. Numbers are compared as
 literal tokens ("6,000+" must appear as "6,000+" in a claim's metrics), except that a count
@@ -120,13 +129,91 @@ def bullets_of(lines):
     return [re.sub(r"^\s*[-*•]\s+", "", l).strip() for l in lines if re.match(r"\s*[-*•]\s+", l)]
 
 
+CATEGORIES = ["title keyword", "hard skill", "action keyword", "business context", "domain keyword", "hard filter", "forced"]
+
+
+def read_keywords(path):
+    """keywords.txt lines: 'phrase' or 'Category | phrase'. Returns [(category, phrase)]."""
+    out = []
+    if not path.exists():
+        return out
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        cat, _, rest = line.partition("|")
+        if rest and cat.strip().lower() in CATEGORIES:
+            out.append((cat.strip().title(), rest.strip()))
+        else:
+            out.append(("Uncategorized", line))
+    return out
+
+
+def has_phrase(text, phrase):
+    return re.search(r"(?<!\w)" + re.escape(phrase) + r"(?!\w)", text, re.I) is not None
+
+
+def coverage(kws, text):
+    by = {}
+    for cat, ph in kws:
+        hit, tot = by.setdefault(cat, [[], []])
+        (hit if has_phrase(text, ph) else tot).append(ph)
+    return by
+
+
+def kb_corpus():
+    parts = []
+    for rel in ("kb/skills.md", "kb/education.md", "kb/summaries.md"):
+        f = ROOT / rel
+        if f.exists():
+            parts.append(f.read_text(encoding="utf-8"))
+    d = ROOT / "kb" / "roles"
+    if d.exists():
+        parts += [f.read_text(encoding="utf-8") for f in sorted(d.glob("*.md"))]
+    return norm(" ".join(parts))
+
+
+def split_items(text):
+    items, depth, cur = [], 0, ""
+    for ch in text:
+        depth += ch == "(" 
+        depth -= ch == ")" and depth > 0
+        if ch in ",;" and depth == 0:
+            items.append(cur)
+            cur = ""
+        else:
+            cur += ch
+    items.append(cur)
+    return [re.sub(r"^and\s+", "", i.strip(" .")) for i in items if i.strip(" .")]
+
+
+def skill_terms(lines):
+    terms = []
+    for l in lines:
+        m = re.match(r"\s*\**[^:*]+:\**\s*(.+)", l)
+        if m:
+            terms += split_items(m.group(1))
+    return terms
+
+
+def wordset(b):
+    return set(re.findall(r"[a-z0-9']+", b.lower()))
+
+
+def md_section(text, key):
+    m = re.search(rf"^#+\s*\**[^\n]*{key}[^\n]*\n(.*?)(?=^#+\s|\Z)", text, re.I | re.S | re.M)
+    return m.group(1).strip() if m else None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder")
     ap.add_argument("--claims", default=str(ROOT / "kb" / "_views" / "claims.md"))
+    ap.add_argument("--baseline", help="another resume to compare keyword coverage against")
+    ap.add_argument("--metrics-debt", action="store_true", help="list every claim whose wording has a number its metrics lack")
     a = ap.parse_args()
     folder = Path(a.folder)
-    errors, warns = [], []
+    errors, warns, reports = [], [], []
     err = lambda k, m: errors.append(f"[{k}] {m}")
     roles, claims = load_claims(Path(a.claims))
     if not claims:
@@ -260,6 +347,101 @@ def main():
                 canon = " ".join(claims[next(i for i in ids if i in claims)].get("canonical", "").split()[:14]).lower()
                 if verb not in re.findall(r"[\w'-]+", canon):
                     warns.append(f"verb {verb!r} not in claim wording start: {b[:60]}...")
+
+    # verbs vs leading bracket group of the mapped claim
+    if resume:
+        _lines = cu.read_text(encoding="utf-8").splitlines() if cu.exists() else []
+        for rid, b in all_bullets:
+            nb = norm(b)
+            hit = next((l for l in _lines if nb in norm(l)), None)
+            ids = [i for i in re.findall(r"A-[\w-]+", hit or "") if i in claims]
+            if not ids:
+                continue
+            g = re.match(r"\[([^\]]+)\]", claims[ids[0]].get("canonical", ""))
+            if g and "|" in g.group(1):
+                opts = {o.strip().split()[0].lower() for o in g.group(1).split("|") if o.strip()}
+                verb = re.match(r"[\w'-]+", b).group(0).lower()
+                if verb not in opts:
+                    err("verbs-bracket", f"{rid}: {verb!r} not among {sorted(opts)} for {ids[0]}")
+
+        # near-duplicate bullets across roles
+        for i, (r1, b1) in enumerate(all_bullets):
+            for r2, b2 in all_bullets[i + 1:]:
+                if r1 == r2:
+                    continue
+                w1, w2 = wordset(b1), wordset(b2)
+                j = len(w1 & w2) / max(1, len(w1 | w2))
+                if j >= 0.85:
+                    err("duplicates", f"{r1} / {r2} near-identical ({j:.2f}): {b1[:60]}...")
+                elif j >= 0.70:
+                    warns.append(f"{r1} / {r2} similar bullets ({j:.2f}): {b1[:60]}...")
+
+        # summary and skills terms not in the KB
+        corpus = kb_corpus()
+        if corpus:
+            skey = next((n for n in order if "skill" in n.lower()), None)
+            terms = skill_terms(sections[skey]) if skey else []
+            sumkey = next((n for n in order if "summary" in n.lower()), None)
+            if sumkey:
+                stext = " ".join(sections[sumkey])
+                terms += [t for t in re.findall(r"(?<![.!?] )(?<!^)\b[A-Z][A-Za-z0-9&/+-]*(?: [A-Z][A-Za-z0-9&/+-]*)*", stext)
+                          if len(t) > 3]
+            seen, miss = set(), []
+            for t in terms:
+                core = norm(re.sub(r"\s*\([^)]*\)", "", t))
+                if core and core not in seen:
+                    seen.add(core)
+                    if core not in corpus:
+                        miss.append(t)
+            if miss:
+                warns.append(f"{len(miss)} summary/skills term(s) not found in kb/skills.md, education.md, summaries.md or kb/roles/: "
+                             + "; ".join(miss[:25]) + (" ..." if len(miss) > 25 else "") + " (owner review)")
+
+        # keyword coverage
+        kws = read_keywords(folder / "keywords.txt")
+        if kws:
+            cov = coverage(kws, resume)
+            base_cov = None
+            if a.baseline and Path(a.baseline).exists():
+                base_cov = coverage(kws, Path(a.baseline).read_text(encoding="utf-8"))
+            reports.append("Keyword coverage (exact phrase, not a fit score):")
+            for cat, (hit, miss) in cov.items():
+                line = f"  {cat}: {len(hit)}/{len(hit) + len(miss)}"
+                if base_cov:
+                    line += f" (baseline {len(base_cov[cat][0])})"
+                reports.append(line)
+                if miss:
+                    reports.append(f"    missing: {'; '.join(miss)}")
+                if cat == "Forced" and miss:
+                    for ph in miss:
+                        err("forced", f"forced keyword missing from resume.md: {ph!r}")
+            n_miss = sum(len(m) for c, (h, m) in cov.items() if c not in ("Forced", "Hard Filter"))
+            if n_miss:
+                warns.append(f"{n_miss} keyword phrase(s) not in resume.md (see coverage report)")
+
+    # hard filters checklist from match.md
+    mm = folder / "match.md"
+    if resume:
+        if not mm.exists():
+            warns.append("match.md not found; hard filters not checked")
+        else:
+            hf = md_section(mm.read_text(encoding="utf-8"), "Hard filter")
+            if not hf:
+                err("hard-filters", 'match.md has no "Hard filters" section')
+            else:
+                reports.append("Hard filters (from match.md, confirm each before submitting):")
+                reports += ["  " + l for l in hf.splitlines() if l.strip()]
+
+    # metrics debt
+    debt = [cid for cid, c in claims.items()
+            if c.get("canonical") and set(numbers_in(re.sub(r"\[[^\]]*\]", " ", c["canonical"]))) - metric_tokens(c) - RULING_NUMBERS]
+    if a.metrics_debt:
+        reports.append(f"Metrics debt: {len(debt)} claim(s) have a number in their wording that metrics lacks: " + ", ".join(debt))
+    else:
+        reports.append(f"Metrics debt: {len(debt)} claim(s) (run with --metrics-debt to list)")
+
+    for r in reports:
+        print(r)
 
     for w in warns:
         print("WARN ", w)
