@@ -2,8 +2,8 @@
 
 None of these changed the KB.
 
-1. **Residence.** The JD requires living primarily in Tarrant County and working from the office daily. The resume header says Dallas, TX. Tell me your situation and I will adjust the letter. I did not change the header.
-2. **Texas driver's license, vehicle, work authorization, languages.** None are in the KB, so none are claimed. Give them in your words and they go here as proposed facts for you to verify.
+1. **Residence and license (answered 2026-10-12).** Owner lives in Keller, TX (Tarrant County) and holds a Texas driver's license. The resume header here says Keller, TX; the letter says both. Still open: vehicle insurance, reliable transportation, work authorization without sponsorship, and languages. None are claimed.
+2. **Header.** `scripts/build_application.py` hard-codes Dallas, TX. I edited this folder's `resume.md` only. Rebuilding would restore Dallas. If Keller is your standing address, the script's HEADER needs your approval to change.
 3. **Tarrant County exposure.** If you have any Fort Worth or Tarrant County agency, volunteer or community exposure, give it in your words. The letter currently names the gap.
 4. **Empty `metrics` on verified claims that carry numbers in canonical wording** (KB-wide issue):
    - A-ncmw-project-coordinator-68 (involuntary commitment laws, "50 states and DC (51 jurisdictions)") cannot pass the number check alone, so the resume uses A-ncmw-project-coordinator-73 and -49 in that slot instead. Filling its `metrics` would let it be used.
@@ -17,3 +17,5 @@ None of these changed the KB.
 10. **Date line omitted** from the letter because the checker reads a date's day number as an unsupported figure. Add the date when you send it.
 11. **CAPM (CERT-04):** still listed in the KB as in progress with expected completion 05/2026, which has passed. Left off. Completed, in progress, or drop?
 12. **Fundraising and special events** are each named twice in the JD. The resume covers fundraising through A-ncmw-49 only (volunteer fundraisers on giving portals). A-ncmw-45 to -48 (GiveWP, Donorspring, Salesforce NPSP) are available if you want a heavier fundraising signal; NCMW is at its 14-bullet maximum, so one bullet would have to come out.
+13. **UWTC details in the letter come from third-party search results** (Community Fund, Veterans Fund, Women United Fund; four focus areas; research and data). Confirm against unitedwaytarrant.org before sending.
+14. **New letter claims** (all from claims): Veterans via HUD-VASH (A-sanctuary-08), evaluation data (A-ucsb-18), 8,000+ newsletter (A-ncmw-77), volunteer fundraisers (A-ncmw-49).

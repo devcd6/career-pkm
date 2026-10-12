@@ -1,6 +1,6 @@
 ## **DEVIKA C. DIXIT**
 
-Dallas, TX | (925) 719-8412 | devikadixit25@gmail.com | LinkedIn: linkedin.com/in/devikadixittexas
+Keller, TX | (925) 719-8412 | devikadixit25@gmail.com | LinkedIn: linkedin.com/in/devikadixittexas
 
 ## **SUMMARY**
 

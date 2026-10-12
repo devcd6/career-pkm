@@ -4,8 +4,8 @@
 17 of the 47 listed JD phrases appear in `resume.md`; 30 do not (see `keywords.md`). The duties map well to the claims; the misses are mostly UWTC-specific names and duty wording the KB phrases differently.
 
 ## Hard filters (need your answers)
-- **Residence:** the JD says the person "must reside primarily in Tarrant County" and work from the office daily. The resume header says Dallas, TX. Dallas is outside Tarrant County. I changed nothing in the header. Tell me where you live or plan to live and I will handle it in the letter.
-- **Texas driver's license, vehicle insurance, reliable transportation:** not in the KB. Not claimed.
+- **Residence:** met. Owner said (2026-10-12) she lives in Keller, in Tarrant County. The resume header in this folder now reads Keller, TX (edited in `resume.md` only; the shared build script still says Dallas).
+- **Texas driver's license:** met, per the owner (2026-10-12). Vehicle insurance and reliable transportation were not stated; the letter claims only the license.
 - **Work authorization (no sponsorship):** not in the KB. Not claimed.
 - **Degree (preferred):** BA in Communications, UC Santa Barbara, 2025 (EDU-01). Not Social Work or Human Services; "or related discipline" and the "2 years may substitute for the degree" line apply. 4+ years of experience is your standing ruling.
 - **2 to 5 years related experience:** 4+ years (ruling), NCMW grant-funded coordination, Sanctuary Centers (via United Way) service-agency work.
@@ -35,9 +35,7 @@
 7. **"MS Office":** the skills line names Microsoft Office 365 (Word, Excel, PowerPoint, Outlook), which covers the tools but not the exact phrase.
 
 ## Open questions for the owner
-1. Where do you live, and will you relocate to Tarrant County?
-2. Texas driver's license and a vehicle? Authorized to work in the U.S. without sponsorship?
+1. Vehicle insurance and reliable transportation? Authorized to work in the U.S. without sponsorship?
 3. Any Tarrant County or Fort Worth agency, volunteer or community exposure to add (in your words)? It would go to `proposals.md`, not the KB.
 4. Any languages besides English?
-5. Do you want the Dallas header kept, or changed? I did not touch it.
 6. Keep or vary the refrain ("Systems built in isolation from each other cost real people real time") in the letter? I kept it.
