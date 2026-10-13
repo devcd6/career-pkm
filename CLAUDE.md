@@ -18,6 +18,7 @@ describes the layout. Follow `sources` in a `kb/` claim to `resumes/`, then
 
 Reading `kb/roles/*.md` (one file per employer role; achievements are `### A-...`
 blocks):
+
 - `canonical` is the drafted wording; `variants` hold every original wording;
   `metrics` list the numbers; `notes` explain differences.
 - `tier`: `verified` = confirmed by the user; `consistent` = 2+ versions agree;
@@ -38,6 +39,7 @@ blocks):
   summary statements with their source resumes.
 
 Interpretation rules:
+
 - All active resumes carry equal weight; ignore any notion of "latest" or
   "superseded". `resumes/_archive/` holds files set aside for incomplete content
   or merged bullets; they remain valid sources for the wording they contain.
@@ -65,12 +67,14 @@ These govern building and editing the knowledge base.
 5. Only the user can mark a claim `verified`.
 6. Stop at every human gate listed in `PROGRESS.md` and wait for the user.
 7. Commit to git after each phase with a message naming the phase.
-8. Resumes contain personal data. This repo may be pushed only to the owner's
-   private GitHub repository (devcd6/career-pkm), on feature branches, never to
-   main without the owner's approval. Do not push to any other remote, and do
-   not paste file contents into web searches or external tools. In application
-   sessions, only company and role text from the job description may leave the
-   repo.
+8. Resumes contain personal data. This repository may be pushed only to the
+   owner's private GitHub repository `devcd6/career-pkm`, on feature branches;
+   never to `main` without owner approval. The separate private repository
+   `devcd6/career-applications` is owner-approved for application files only;
+   its initial content is approved for direct commit to `main` on 2026-10-13.
+   Never push `career-pkm` content to that remote or to other remotes. Do not
+   paste file contents into web searches or external tools. In application
+   sessions, only company and role text from the JD may leave the repo.
    GitHub Issues, issue comments and PR text count as external: never put
    resume or KB text in them, only claim IDs and file paths.
 
@@ -148,7 +152,7 @@ conflicts with this file, this file wins.
 - Constraints (location, seniority, industries):
   - Location: Remote/Hybrid in USA; Remote/Hybrid in Texas, USA; Remote/Hyrbid/On-site within 50 miles of Dallas, Texas
   - Seniority: New Grad or 1-3 years of experience
-  - Industries: Behavioral health and substance use nonprofits and membership associations; healthcare professional associations and medical education; public health    and health services consulting/research; academic medical centers and healthcare innovation; health policy and government-facing alliances; global health nonprofits
+  - Industries: Behavioral health and substance use nonprofits and membership associations; healthcare professional associations and medical education; public health and health services consulting/research; academic medical centers and healthcare innovation; health policy and government-facing alliances; global health nonprofits
 - Name as it should appear on resumes: Devika C. Dixit
 
 ## Agent skills
