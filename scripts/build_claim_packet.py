@@ -85,7 +85,7 @@ def parse_education(path=EDUCATION):
         body = text[heading.end():end]
         fields = {}
         for line in body.splitlines():
-            if line == "variants:" or line.startswith("variants (:"):
+            if line == "variants:" or line.startswith("variants ("):
                 break
             match = re.match(r"^([a-z][a-z _-]*):\s*(.*)$", line)
             if match and match.group(1) != "sources":
@@ -145,7 +145,11 @@ def build_packet(selected_ids, summaries=(), education=(), skills=(), rulings=()
         raise ValueError("duplicate skill in selection")
 
     decision_log = DECISIONS.read_text(encoding="utf-8")
-    unknown_rulings = [ruling for ruling in rulings if ruling not in decision_log]
+    log_lines = [re.sub(r"^\s*(?:[-*]|\d+\.)\s+", "", line).strip() for line in decision_log.splitlines()]
+    unknown_rulings = [
+        ruling for ruling in rulings
+        if not ruling.strip() or (f'"{ruling}"' not in decision_log and ruling.strip() not in log_lines)
+    ]
     if unknown_rulings:
         raise ValueError("unknown ruling(s): " + "; ".join(unknown_rulings))
     if len(rulings) != len(set(rulings)):
@@ -231,7 +235,8 @@ def main(argv=None):
         validate_output_path(args.out)
         packet = build_packet(selected_ids, summaries, education, args.skill, args.ruling)
         args.out.parent.mkdir(parents=True, exist_ok=True)
-        args.out.write_text(packet, encoding="utf-8")
+        with open(args.out, "w", encoding="utf-8", newline="") as handle:
+            handle.write(packet)
     except (OSError, ValueError) as error:
         print(f"error: {error}", file=sys.stderr)
         return 2

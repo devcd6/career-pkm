@@ -108,6 +108,32 @@ class ClaimPacketTests(unittest.TestCase):
                 self.assertNotEqual(0, result.returncode)
                 self.assertIn(expected, (result.stdout + result.stderr).lower())
 
+    def test_rejects_blank_or_fragment_rulings(self):
+        for ruling in ("", "  ", "NCMW end date", "the"):
+            with self.subTest(ruling=ruling):
+                result = self.build_packet(CLAIM_ID, "--ruling", ruling)
+                self.assertNotEqual(0, result.returncode)
+                self.assertIn("unknown ruling", (result.stdout + result.stderr).lower())
+
+    def test_packet_uses_lf_line_endings(self):
+        self.assertEqual(0, self.build_packet().returncode)
+        self.assertNotIn(b"\r", self.output.read_bytes())
+
+    def test_parenthesised_variants_block_ends_education_fields(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import build_claim_packet
+
+        with tempfile.TemporaryDirectory() as tmp:
+            edu = Path(tmp) / "education.md"
+            edu.write_text(
+                "### PUB-01 A title\n\ntier: consistent\n\n"
+                "variants (raw text as exported):\n- x\ndate: 1999-01-01\n",
+                encoding="utf-8",
+            )
+            entry = build_claim_packet.parse_education(edu)["PUB-01"]
+        self.assertEqual("consistent", entry["tier"])
+        self.assertNotIn("date", entry)
+
     def test_rejects_packet_output_outside_knowledge_repo(self):
         outside = Path(self.temp_dir.name).parent.parent / f"outside-{Path(self.temp_dir.name).name}.md"
 
