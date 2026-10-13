@@ -1,6 +1,6 @@
 # Plan: Thriveworks, Care Partnerships Associate
 
-Status: **waiting for owner approval.** No `spec.json` and no build until you approve or edit this file. All claim IDs are from `kb/_views/claims.md`; the prefix `A-ncmw-project-coordinator-` is shortened to `ncmw-`, `A-sanctuary-centers-housing-coordinator-` to `sc-`, `A-ucsb-research-assistant-` to `ucsb-`, `A-asei-marketing-specialist-` to `asei-`, `A-casa-serena-program-assistant-` to `cs-`. The builder will write full IDs.
+Status: **revised 2026-10-13 after owner feedback (asei-28 chosen; NCMW provider-engagement check; ncmw-41 added). Waiting for owner approval.** No `spec.json` and no build until you approve or edit this file. All claim IDs are from `kb/_views/claims.md`; the prefix `A-ncmw-project-coordinator-` is shortened to `ncmw-`, `A-sanctuary-centers-housing-coordinator-` to `sc-`, `A-ucsb-research-assistant-` to `ucsb-`, `A-asei-marketing-specialist-` to `asei-`, `A-casa-serena-program-assistant-` to `cs-`. The builder will write full IDs.
 
 ## Positioning
 Lead with relationship and outreach work, not project administration: a point of contact for a 3,200+ member network, 50+ external speakers and partner organizations recruited across sectors, referral and handoff coordination in clinical settings, and CRM data work. Bullets with the strongest "outreach, data, follow-through" fit go first in each role. Titles, dates and employers are copied from the claims view headers (Project Coordinator, NCMW, 2025-10 to 2026-05, etc.).
@@ -24,10 +24,10 @@ In, in this order:
 10. ncmw-46 (consistent) Salesforce NPSP data integrity.
 11. ncmw-48 (consistent) weekly reconciliation feeding leadership dashboards.
 12. ncmw-73 (consistent) trend analysis of CDC and SAMHSA data, recommendations adopted by leadership.
-13. ncmw-18 (verified) post-meeting follow-through, action items to completion. Bracket picks: "primary" and "lead" (conservative; not "sole").
+13. ncmw-41 (consistent) primary liaison with local provider teams seeking implementation assistance (added after the owner's check that NCMW members were providers and practitioners; replaces ncmw-18).
 
 Cut, with reason: ncmw-01, -02, -109 (near-duplicate cluster with -104; -104 chosen because it is verified and names CRM), ncmw-105, -115, -116 (near-duplicates of -30 and -27), ncmw-44 (long, overlaps -101), ncmw-22 and -24 as bullets (used only for the number), ncmw-45, -47 (Salesforce detail overlaps -46, -48), ncmw-99 (overlaps -97), ncmw-50 to -64 (compliance and e-learning build; not the JD), ncmw-67 to -76 (policy research), ncmw-77 to -80 (publications; kept in the Publications section only).
-Verbs: unique within the role: Served as (-101), Recruited (-30), Delivered (-27), Triaged (-104), Moderated (-97), Coordinated (-98), Aligned (-106), Standardized (-11), Partnered (-82), Maintained (-46), Supported (-48), Applied (-73), Served as (-18 would repeat -101; use the claim's own verb in the bracket plan: "Served as primary ... lead"). If the builder reports a repeated verb, I will swap -18 for -22 (consistent).
+Verbs: unique within the role (builder will confirm): Served as (-101), Recruited (-30), Delivered (-27), Triaged (-104), Moderated (-97), Coordinated (-98), Aligned (-106), Standardized (-11), Partnered (-82), Maintained (-46), Supported (-48), Applied (-73), Served as (-41; -101 starts "Delivered" in the claim and -27 "Delivered" too, so the builder will flag the repeat and I will vary one with the claim's brackets or swap -101 for -44). ncmw-18 (verified) is cut; ncmw-106 carries follow-through.
 
 ### Sanctuary Centers, Housing Case Manager | Housing & Basic Needs Services Coordinator (range 8 to 11; plan uses 10)
 In: sc-09 (verified; "primary" over "sole"), sc-07 (verified; "four", owner ruling), sc-34 (verified; clinic to housing liaison, appointment tracking), sc-35 (verified; incarceration to community treatment coordination), sc-19 (verified; two new access locations, 10-20 additional clients per session), sc-32 (verified; plain-language portal help), sc-33 (verified; centralized intake process), sc-13 (consistent; HMIS documentation to HUD, County, CenCal Health requirements), sc-21 (consistent; "Managed"; zero housing losses), sc-23 (consistent; 100% housing retention).
@@ -38,9 +38,9 @@ In: ucsb-01 (consistent; "Coordinated"; three labs, three published studies), uc
 Cut: ucsb-09 and -10 (near-duplicates of -31), -20 (compliance), -11 to -16 (methods detail), -21 to -26.
 
 ### ASEI, Marketing Specialist | Digital Content & Outreach Coordinator | Communications & Outreach Coordinator (range 4 to 7; plan uses 6)
-In: asei-04 (verified; tailored outreach, 35% and 45% metrics), asei-06 (verified; Member Spotlight, 20+, 35%, 50%, 45%), asei-30 (verified; tracking and trend analysis), asei-24 (verified; partnering with volunteers and chapter leaders), asei-20 (verified; 3+ concurrent projects), asei-01 (consistent; sole communications owner; "and marketing" bracket dropped).
+In: asei-04 (verified; tailored outreach, 35% and 45% metrics), asei-06 (verified; Member Spotlight, 20+, 35%, 50%, 45%), asei-30 (verified; tracking and trend analysis), asei-28 (tier shows single-source in the claims view; the owner's Gate 3 "confirm all" ruling treats it as verified, and she chose it 2026-10-13; the builder will print the tier as the KB lists it), asei-20 (verified; 3+ concurrent projects), asei-01 (consistent; sole communications owner; "and marketing" bracket dropped).
 Cut: asei-02, -03, -05, -25 (near-duplicates of -06 and -04 on channels and growth), asei-07 and -16 (analytics; -30 chosen as verified), asei-28 (single-source relationships bullet; fits the JD but tier is single-source, offered below), asei-09 to -15, -17 to -19, -21 to -23, -26, -27, -29, -31 to -33.
-Option: swap asei-24 for asei-28 (single-source, "built relationships with volunteers, sponsors, and internal leaders"). It fits "build relationships" more directly. Your call.
+asei-24 is cut (overlaps asei-28 on volunteers and chapter leaders).
 
 ### Casa Serena, Residential Behavioral Health Technician | Program Assistant (range 4 to 6; plan uses 5)
 In: cs-17 (consistent; discharge operations, provider-to-provider communication, referral management), cs-15 (consistent; discharge planning and community linkage), cs-13 (consistent; liaison to interdisciplinary care team), cs-12 (consistent; sole first responder, up to 15 residents at a time), cs-22 (verified; audit-ready documentation, "no compliance deficiencies" bracket kept as written).
@@ -50,14 +50,14 @@ Note: the APA resume repeated NCMW bullets under Casa Serena by mistake (see tha
 ## Real gaps and where they are framed (cover letter only, never the resume)
 1. No direct sales or business development role. Candor paragraph; pivot to measurable outreach (50+ speakers and partner organizations, 35% increase in female membership applications) and relationship work.
 2. Salesforce is NPSP fundraising data, not a referral pipeline. Stated plainly in the letter if mentioned; resume says "Salesforce NPSP".
-3. No accepted-insurance education or territory planning experience. Letter: learning-first stance; references CenCal Health work only as exposure.
+3. No accepted-insurance education, territory planning, or referral-source outreach to physician offices; provider-organization engagement at NCMW (ncmw-41, -97, -101) is the framing. No re-engagement claim.  Letter: learning-first stance; references CenCal Health work only as exposure.
 4. Patient Referral Dashboard: Thriveworks's tool; the letter may name it as the adoption task she would take on, supported by webinar and office-hours claims.
 
 ## For proposals.md
 Already listed there: empty metrics on ncmw-101, bracket picks, Salesforce wording, sales experience, branch/slug naming, research limits.
 
 ## Decisions I need from you
-1. Approve, or edit, the 13/10/6/6/5 bullet picks. Bullet counts are within your ranges.
-2. asei-24 or asei-28 (single-source)?
-3. The mission-tie closer wording.
-4. Do you have any sales, referral-source or account-management work to add in your words (match.md open question 1)?
+1. Approve or edit the revised bullet picks (NCMW 13, Sanctuary 10, UCSB 6, ASEI 6, Casa Serena 5).
+2. The mission-tie closer wording.
+3. Any example of re-engaging a lapsed member, speaker, volunteer or partner? None found in the KB; the letter will not claim it.
+4. Any sales, referral-source or account-management work to add in your words, and your Salesforce use in your own words.
