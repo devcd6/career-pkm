@@ -61,3 +61,9 @@ Already listed there: empty metrics on ncmw-101, bracket picks, Salesforce wordi
 2. The mission-tie closer wording.
 3. Any example of re-engaging a lapsed member, speaker, volunteer or partner? None found in the KB; the letter will not claim it.
 4. Any sales, referral-source or account-management work to add in your words, and your Salesforce use in your own words.
+
+## Build log (2026-10-13, owner approved the plan)
+- Point-of-contact bullet: built from ncmw-24 (consistent, metrics carry 3,200+) instead of ncmw-101, so no second-claim workaround was needed. ncmw-101 stays unused.
+- ncmw-11 (Growth team) was dropped from the build: its trailing bracket leaves a stray space before the final period in `build_application.py`, and fixing the script is outside the allowed scope for an application branch. Replaced with ncmw-19 (verified-adjacent, consistent; virtual meetings across four internal departments and 15+ external partner organizations). The Growth team link can go in the cover letter or be restored by editing the script on a separate branch.
+- ncmw-30 was paired with ncmw-27 so the 6,000+ attendee figure is in metrics.
+- Patient Referral Dashboard moved from Forced to Business Context in keywords.txt (Thriveworks's own tool; cannot be experience).

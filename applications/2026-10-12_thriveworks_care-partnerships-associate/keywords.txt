@@ -33,4 +33,3 @@ Domain Keyword | insurance
 Hard Filter | 2–5 years of experience
 Hard Filter | Bachelor's degree
 Forced | Salesforce
-Forced | Patient Referral Dashboard

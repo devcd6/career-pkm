@@ -32,7 +32,7 @@ Preferred, not requirements: "Salesforce strongly preferred"; the Bachelor's deg
 Ranking basis: repeated in the JD first, then the "How Success Is Measured" list and the section headings.
 
 ## Forced keywords
-Salesforce and Patient Referral Dashboard are named in the success measures. Salesforce is the only one the KB can carry (A-ncmw-project-coordinator-46, -48). Patient Referral Dashboard is Thriveworks's own tool and cannot appear on the resume as experience; the cover letter may name it as the thing she would learn.
+Forced list: Salesforce, named in the success measures and carried by the KB (A-ncmw-project-coordinator-46, -48). Patient Referral Dashboard was first listed as Forced and then moved to Business Context on 2026-10-13: it is Thriveworks's own tool, so it cannot appear on the resume as experience. The cover letter may name it as the adoption task she would take on.
 
 ## Claim coverage (rank_claims.py, advisory)
 KB support by category: Title 0/2, Hard Skill 3/8, Action 4/7, Business Context 2/10, Domain 1/5, Forced 1/2. Phrases no claim contains: referral data, account and activity information, outbound outreach, relationship-building, problem-solving, Educate, Prioritize, Collaborate, referral partners, referral partnerships, referral pathways, referral process, trusted point of contact, healthcare organizations, territory, behavioral healthcare, mental healthcare, health systems, insurance. Several of these are JD wording the KB expresses differently (for example "primary point of contact"); the verbs are not forced into bullets, because claim wording stays intact.
