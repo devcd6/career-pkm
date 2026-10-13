@@ -20,7 +20,7 @@ Checks last run clean: `check_application.py` (0 errors, 1 warning that 26 keywo
 
 ## Open items for the owner
 - Confirm or edit the reflection sentences in the letter and the four candor statements (`proposals.md` items 7 and 8).
-- Optional: any sales, referral-source, account-management or re-engagement example, and her Salesforce use in her own words. These would go to `proposals.md` first.
+- Optional: any sales, referral-source, account-management or re-engagement example, and how the owner used Salesforce, in the owner's own words. These would go to `proposals.md` first.
 - Optional: verify employer details on the live Thriveworks site before quoting beyond the JD.
 - Whether to keep or vary the owner's refrain line in the letter (kept once).
 
