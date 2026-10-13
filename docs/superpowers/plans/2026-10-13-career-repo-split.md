@@ -118,12 +118,12 @@
 - `career-pkm` reads the packet, then joins it with local claims, stories, user decisions, and on-demand web research.
 - Career Q&A starts with the local KB and adds dated external sources when the question needs current career strategy, skills development, professional development, credential, or industry information. It saves new research only when requested.
 
-- [ ] **Step 1: Add failing tests** for complete and incomplete interview-packet generation and intake, including source and claim references.
-- [ ] \*\*Step 2: Run `python -m unittest discover -s tests -p "test_build_interview_packet.py" -v` in the application repository and `python -m unittest discover -s tests -p "test_interview_intake.py" -v` in `career-pkm`; confirm assertions fail because the packet behaviors are missing.
-- [ ] **Step 3: Implement packet generation and intake** without adding a database or external retrieval service.
-- [ ] **Step 4: Add the career-advisor entry point** with explicit fact, inference, and external-research labeling and privacy boundaries.
-- [ ] **Step 5: Rerun both focused test commands and `python scripts/check_interview_prep.py kb/interviews/<application-slug>`** against the migrated example.
-- [ ] **Step 6: Commit** the interview and career-query phase.
+- [x] **Step 1: Add failing tests** for complete and incomplete interview-packet generation and intake, including source and claim references.
+- [x] **Step 2: Run `python -m unittest discover -s tests -p "test_build_interview_packet.py" -v` in the application repository and `python -m unittest discover -s tests -p "test_interview_intake.py" -v` in `career-pkm`; confirm assertions fail because the packet behaviors are missing.
+- [x] **Step 3: Implement packet generation and intake** without adding a database or external retrieval service.
+- [x] **Step 4: Add the career-advisor entry point** with explicit fact, inference, and external-research labeling and privacy boundaries.
+- [x] **Step 5: Rerun both focused test commands and `python scripts/check_interview_prep.py kb/interviews/<application-slug>`** against the migrated example.
+- [x] **Step 6: Commit** the interview and career-query phase.
 
 ### Task 5: Transfer Files and Remove Stale Ownership
 
