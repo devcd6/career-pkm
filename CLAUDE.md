@@ -104,6 +104,7 @@ Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.m
   edit Notion.
 - Only company and role text from the JD leaves the repo (web search or fetch).
   Never send resume or KB text to external tools.
+- At the start of an application session, read `applications/<slug>/handoff.md` if it exists (the `SessionStart` hook prints it on web; read the file yourself if it did not appear). It is a redacted summary of the last session, never a fact source. Write a fresh one at the end (`apply` step 5).
 - End every session by confirming `git diff --stat origin/main...HEAD` shows
   only `applications/<slug>/` plus root paths covered by an approval entry in
   `kb/_user_decisions.md` on the same branch.
