@@ -4,5 +4,17 @@
       "Edit(/_raw/**)",
       "Edit(/PROGRESS.md)"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/scripts/session_start_handoff.sh"
+          }
+        ]
+      }
+    ]
   }
 }
