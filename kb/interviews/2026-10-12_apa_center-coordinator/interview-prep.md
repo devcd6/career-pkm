@@ -31,40 +31,42 @@ Q: What questions do you have for us? [inferred]
 ## Best-fit answers
 Format: result first, claim and story IDs, KB rating, one lesson sentence. Wording stays close to canonical claim text. Lesson sentences are drafts in plain first person, not KB claims; edit freely.
 
-### Calendars, travel, competing priorities. Rating: strong for calendars and conference travel; partial for booking platforms
-I owned the full calendar and scheduling operations for the senior executives of the Substance Use Continuum, and I handled competing priorities and last-minute shifts proactively (fact, A-ncmw-project-coordinator-25, verified). I ran the same work alongside cross-functional meetings across four internal departments and 15+ external partner organizations, producing agendas, same-day notes and action-item tracking to completion (fact, A-ncmw-project-coordinator-111, verified). On travel, I handled presenter communications, air bookings, hotel accommodations and onsite reservations for the national conference track (fact, A-ncmw-project-coordinator-31, verified).
+### Calendars, travel, competing priorities. Rating: strong
+I owned the full calendar and scheduling operations for the senior executives of the Substance Use Continuum, and I handled competing priorities and last-minute shifts proactively (fact, A-ncmw-project-coordinator-25, verified). I ran the same work alongside cross-functional meetings across four internal departments and 15+ external partner organizations, producing agendas, same-day notes and action-item tracking to completion (fact, A-ncmw-project-coordinator-111, verified). My invitations went out through Outlook with an email that stated dates, time zones, meeting links, agendas and preparation instructions across 20-25+ weekly touchpoints, because partners often moved invitations into other calendars (fact, A-ncmw-project-coordinator-121, single-source; the figure is confirmed accurate by the owner). On travel, I handled presenter communications, air bookings, hotel accommodations and onsite reservations for the national conference track (fact, A-ncmw-project-coordinator-31, verified). Speaker travel for 50+ external speakers and faculty ran through a partner travel company and internal teams, tracked in a travel tracker (fact, A-ncmw-project-coordinator-123, single-source). For executives I booked flights through airline booking channels and hotels through Booking.com and Hilton's official booking system, then built a printable itinerary, sent boarding passes to their phones and set Outlook reminders (fact, A-ncmw-project-coordinator-124, single-source).
 Lesson: A calendar stays clean when I settle the conflict before the leader sees it.
-KB limit: the KB does not name a travel-booking platform and gives no touchpoint count in `metrics` for the two calendar claims. Do not state a weekly number from memory; the submitted resume gives a range, and the KB carries it only in brackets in the calendar claim.
+KB limit: the three claims on invitations, speaker travel and executive travel were added 2026-10-13 as `single-source` from the owner's words. The KB gives no count of bookings (she said "no number"). Do not state one.
 
 ### External deadlines. Rating: strong
 I tracked milestones and deliverables across concurrent workstreams and escalated delays early (fact, A-ncmw-project-coordinator-04). I sustained 100% on-time deliverables across 6+ grant-funded workstreams while federal timelines shifted, using Asana, Excel and Airtable trackers linked to HubSpot CRM and SharePoint (fact, A-ncmw-project-coordinator-104, verified). I also assembled grant renewal responses and progress and final reports for funders (fact, A-ncmw-project-coordinator-16, A-ncmw-project-coordinator-17). Story: S001.
 Lesson: When a funder sets the date, the tracker has to be the thing that stays steady.
 KB limit: these are grant deadlines. The KB has no claim on tracking policy submissions or speaking opportunities specifically.
 
-### Partner and funder pipelines. Rating: strong for partners and speakers; partial for "prompting leaders"
-I recruited and onboarded 50+ external speakers and partner organizations, including accreditation and quality bodies, payers and federal agencies (fact, A-ncmw-project-coordinator-30, verified). I managed biographies, agreements, scheduling and disclosures for the faculty and subject-matter experts (fact, A-ncmw-project-coordinator-115, verified). Story: S004 (adapting the pitch by sector).
+### Partner and funder pipelines. Rating: strong
+I recruited and onboarded 50+ external speakers and partner organizations, including accreditation and quality bodies, payers and federal agencies (fact, A-ncmw-project-coordinator-30, verified). I managed biographies, agreements, scheduling and disclosures for the faculty and subject-matter experts (fact, A-ncmw-project-coordinator-115, verified). When a follow-up was overdue, I told the senior leader the relationship context, what was last discussed, the outstanding action and why the timing mattered, and I prepared the next-step correspondence (fact, A-ncmw-project-coordinator-126, single-source). Story: S004 (adapting the pitch by sector).
 Lesson: Each partner type needs a different ask, so I track what each one needs before I reach out.
-KB limit: no claim says I prompted a leader to engage a funder. Say what the KB supports (recruiting, onboarding, tracking). Do not claim a prompting system.
+KB limit: the follow-up claim is `single-source` (added 2026-10-13). She helped manage the pipeline behind 50+ engagements; she did not describe an automatic prompting system, so do not claim one.
 
 ### Largest convening. Rating: strong
 At NatCon26 I delivered end-to-end logistics for 18+ national conference sessions with 6,000+ attendees across 15+ organizations, covering presenter contracting, scheduling, prep calls, platform setup and post-event follow-up (fact, A-ncmw-project-coordinator-27, verified). I onboarded 50+ speakers and faculty for the track and tracked registration in Eventscribe (Cadmium) (fact, A-ncmw-project-coordinator-105, verified). Stories: S004 and S012.
 Lesson: A fixed date makes every handoff the risk, so I write down each prep meeting.
-KB limit: the KB has no claim on venue, catering or printed and physical materials (Known gap 3).
+KB limit: the KB has no claim on venue, catering or printed and physical materials. The owner confirmed 2026-10-13 that venue contracting, conference-wide catering and hotel block negotiations at NatCon26 were handled by the broader events team and partners; her part was the sessions and participants. For hands-on in-person work, use the open-house events with UC Santa Barbara leadership (fact, A-sanctuary-centers-housing-coordinator-19; story S009).
 
 ### Why this role and this Center. Rating: partial (no KB statement of the owner's motive)
 The KB supports the through-line in `kb/summaries.md` and my work on AI compliance: I evaluated 5 edtech and AI vendor platforms against 30+ federal standards covering grants, privacy, accessibility, AI governance and security (fact, A-ncmw-project-coordinator-50, consistent). I also built internal expertise in assessing vendors against OMB M-25-21, OMB M-25-22 and NIST AI RMF (fact, A-ncmw-project-coordinator-87). Story: S003.
 Lesson: I want to support the people who hold technology to a standard.
-KB limit: the Center's own mission wording was not found (packet Role research). Her reason for choosing this role is not in the KB; add it in her words via `gaps` mode.
+Her reasons, in her words (unverified proposal, `proposals.md`, 2026-10-13; not a KB claim): the human-centered, behavioral-science approach to AI; her direct work evaluating AI vendors against federal standards; and the chance to build the operational foundation of a new Center. She also says she sees executive assistance as a core operational function and wants to own it. Say these as motive, never as a fact about the Center.
+KB limit: the Center's own mission wording was not found (packet Role research). The reasons above are her statements, not claims.
 
-### Founding-phase pace. Rating: partial
-I standardized workflows, documentation templates and coordination systems across a newly formed team to reduce friction at handoffs (fact, A-ncmw-project-coordinator-11, verified). I also served as the sole communications owner of a national nonprofit with no dedicated support staff (fact, A-asei-marketing-specialist-01, consistent). Story: S001.
-Lesson: When no process exists, I build the smallest one that works and then repeat it.
-KB limit: no claim is of founding an organization (Known gap 2).
+### Founding-phase pace. Rating: strong for building process in a new team; none for founding an organization
+I standardized workflows, documentation templates and coordination systems across a newly formed team to reduce friction at handoffs (fact, A-ncmw-project-coordinator-11, verified). When work moved into Asana, I built workflows linking Excel and Airtable tracking to Asana, HubSpot and the grant portal, checked by hand that time-sensitive assignments reached their owners, and recorded changes as they happened. That gave leadership one view across 6+ concurrent workstreams with 100% on-time deliverable completion (fact, A-ncmw-project-coordinator-125, single-source). I also served as the sole communications owner of a national nonprofit with no dedicated support staff (fact, A-asei-marketing-specialist-01, consistent). Story: S001.
+Lesson: When no process exists, I capture the facts first and add a system only when it is needed.
+KB limit: no claim is of founding an organization (Known gap 2). Her six-step intake-to-reporting process is in `proposals.md`, not in a claim.
 
 ### Sensitive information. Rating: partial to strong
 I supported IRB protocol development and human subjects compliance documentation (fact, A-ucsb-research-assistant-20, verified). I maintained real-time HMIS documentation in line with HUD, county and Medi-Cal managed care reporting requirements (fact, A-sanctuary-centers-housing-coordinator-13, consistent). I kept EHR documentation audit-ready under HIPAA and 42 CFR Part 2 with no compliance deficiencies (fact, A-casa-serena-program-assistant-22, verified).
+For travel and partner information, I kept the internal record separate from what each traveler or meeting participant received, and I kept sensitive details out of widely shared task descriptions and invitations (fact, A-ncmw-project-coordinator-127, single-source).
 Lesson: I treat private information as the default and share only what the task needs.
-KB limit: these are client and research records. No claim covers confidential partner or funder scheduling information as such.
+KB limit: the information-separation claim is `single-source` (added 2026-10-13); the other three are client and research records.
 
 ### Trouble near a fixed date. Rating: strong via story, with a caution
 When a panelist dropped out days before the event, I restructured the panel around the remaining speakers, and both sessions ran as scheduled (fact, S012). In a different setting I led multi-agency crisis response during a voucher shortage and secured temporary housing for all affected clients with zero housing losses (fact, A-sanctuary-centers-housing-coordinator-21, consistent; S007).
@@ -73,8 +75,10 @@ KB limit: S012 is `single-source`, and its session count differs from the canoni
 
 ### Annual calendar and master tracker. Rating: partial
 Closest evidence: I designed structured trackers for milestones, outputs and reporting deadlines (fact, A-ncmw-project-coordinator-09) and managed a content calendar across all platforms (fact, A-asei-marketing-specialist-09).
+Her plan for the Center, in her words (proposal, not a claim): one annual master calendar with views for executive meetings, Center-hosted convenings, funding and policy deadlines, speaking opportunities and preparation milestones, so leadership can see what decisions are coming due.
+Speaking opportunities: she did not run a formal speaking-opportunity submission pipeline for an executive. She has done speaker recruitment and onboarding and deadline tracking (fact, A-ncmw-project-coordinator-30, A-ncmw-project-coordinator-104). Her proposed lifecycle (identification through confirmed engagement) is a plan.
 Lesson: I start a master tracker by listing every date that someone else sets.
-KB limit: neither is a Center-wide annual calendar, and the KB names no booking platform (Known gaps 1 and 4).
+KB limit: neither claim is a Center-wide annual calendar. Say "I would build it" for the plan and do not describe it as past work.
 
 ### AI and young people. Rating: partial
 Same evidence as the "why this role" answer (A-ncmw-project-coordinator-50, A-ncmw-project-coordinator-87). Relevant work with young or family topics: I managed participant-facing operations on sensitive family mental health studies (fact, A-ucsb-research-assistant-06, verified).
@@ -97,30 +101,31 @@ Probes are answered only from claims. A probe the KB cannot answer is listed und
 | Deadlines across stakeholders | S001 | A-ncmw-project-coordinator-01, A-ncmw-project-coordinator-02, A-ncmw-project-coordinator-104 | strong |
 | Convenings and run-of-show | S004 | A-ncmw-project-coordinator-27, A-ncmw-project-coordinator-30, A-ncmw-project-coordinator-105 | strong |
 | Calm under a fixed date | S012 | A-ncmw-project-coordinator-27 | strong (single-source) |
-| Calendar and travel for executives | none | A-ncmw-project-coordinator-25, A-ncmw-project-coordinator-111, A-ncmw-project-coordinator-31 | partial (no story) |
-| Start-up pace, limited infrastructure | S001 | A-ncmw-project-coordinator-11, A-asei-marketing-specialist-01 | partial |
+| Calendar and travel for executives | none | A-ncmw-project-coordinator-25, A-ncmw-project-coordinator-111, A-ncmw-project-coordinator-31, A-ncmw-project-coordinator-121, A-ncmw-project-coordinator-123, A-ncmw-project-coordinator-124 | strong (no story) |
+| Start-up pace, limited infrastructure | S001 | A-ncmw-project-coordinator-11, A-ncmw-project-coordinator-125, A-asei-marketing-specialist-01 | strong for new-team process; none for founding |
 | AI and compliance interest | S003 | A-ncmw-project-coordinator-50, A-ncmw-project-coordinator-87 | partial |
-| Discretion | none | A-ucsb-research-assistant-20, A-casa-serena-program-assistant-22 | partial (no story) |
-| Travel-booking platforms | none | none | none |
-| Venue, catering, physical materials | none | none | none |
+| Discretion | none | A-ncmw-project-coordinator-127, A-ucsb-research-assistant-20, A-casa-serena-program-assistant-22 | strong (no story) |
+| Travel-booking platforms | none | A-ncmw-project-coordinator-124 | partial (named channels, no dedicated travel-booking platform) |
+| Venue, catering, physical materials | S009 | A-sanctuary-centers-housing-coordinator-19 | partial (open houses only; NatCon26 venue and catering done by others) |
 | Annual calendar and master tracker | none | A-ncmw-project-coordinator-09, A-asei-marketing-specialist-09 | partial |
-| Speaking pitches and applications | none | none | none |
-| Prompting leaders to engage partners | none | A-ncmw-project-coordinator-30 | partial |
+| Speaking pitches and applications | none | A-ncmw-project-coordinator-30, A-ncmw-project-coordinator-104 | none for a submission pipeline |
+| Prompting leaders to engage partners | none | A-ncmw-project-coordinator-30, A-ncmw-project-coordinator-126 | strong |
 
 ## Gap answers
 Each states what the KB shows and what it does not, with a pivot.
-1. Executive assistant title or booking platforms: "I have not worked under an executive assistant title, and I cannot name a booking platform I have used. I have owned calendars and conference travel logistics for senior leaders (A-ncmw-project-coordinator-25, A-ncmw-project-coordinator-31), and I learn new tools fast." Do not claim a tool. The "learns new tools fast" line is not a KB claim; use it only if she agrees it is true, or cut it.
-2. Founding-phase organization: "I have not founded an organization. I worked in a newly formed program team where I standardized workflows (A-ncmw-project-coordinator-11), and I was sole owner of communications at a national nonprofit (A-asei-marketing-specialist-01)."
-3. Venue, catering, physical materials: "My conference work was session and presenter logistics, mostly on the content and speaker side (A-ncmw-project-coordinator-27, A-ncmw-project-coordinator-33). I have not run venue or catering." Pivot to run-of-show and attendee coordination.
-4. Annual calendar and master tracker: "I have built trackers for milestones and deadlines (A-ncmw-project-coordinator-09). I have not owned a Center-wide annual calendar." Pivot to the deadline-tracker claim.
-5. Speaking pitches and applications: no claim. Say it is new to me and pivot to speaker recruitment (A-ncmw-project-coordinator-30). Do not describe any speaking-pitch work.
+1. Executive assistant title or booking platforms: "I have not held an executive assistant title. I have run executive calendars and travel for senior leaders: I booked executive flights directly and hotels through Booking.com and Hilton's booking system, and speaker travel went through a partner travel company (A-ncmw-project-coordinator-124, A-ncmw-project-coordinator-123). I have not used a dedicated corporate travel-booking platform." The EA title is still a gap. The booking channels are now backed by A-ncmw-project-coordinator-123 and A-ncmw-project-coordinator-124.
+2. Founding-phase organization: "I have not founded an organization. I worked in a newly formed program operations team where I built the tracking and reporting workflows (A-ncmw-project-coordinator-125, A-ncmw-project-coordinator-11), and I was sole owner of communications at a national nonprofit (A-asei-marketing-specialist-01)."
+3. Venue, catering, physical materials: "At NatCon26 the venue, conference-wide catering and hotel blocks were handled by the broader events team and partners. My part was the sessions and participants in my track: room and session needs, speaker arrival times, materials and last-minute changes (A-ncmw-project-coordinator-27, A-ncmw-project-coordinator-33). For hands-on in-person work I ran open-house enrollment events with UC Santa Barbara leadership (A-sanctuary-centers-housing-coordinator-19; S009)." The NatCon26 detail beyond the claims is her statement in `proposals.md`.
+4. Annual calendar and master tracker: "I have built trackers for milestones and deadlines (A-ncmw-project-coordinator-09). I have not owned a Center-wide annual calendar. I would build one master calendar with views for executive meetings, convenings, funding and policy deadlines, speaking opportunities and preparation milestones." The second half is a plan, not a past fact.
+5. Speaking pitches and applications: "I have not run a formal speaking-opportunity submission pipeline for an executive. I have recruited and onboarded speakers and tracked external deadlines by working back from the submission date (A-ncmw-project-coordinator-30, A-ncmw-project-coordinator-104)." Do not describe past pitch or application work.
 
 ### Known issues in submitted documents
 - **Casa Serena section.** The submitted resume repeated ten National Council bullets under Casa Serena by mistake. Plain explanation to say aloud: "That section was a paste error on my part. My Casa Serena role was a residential behavioral health technician role, where I served as first responder in crises, kept audit-ready documentation, helped plan discharges and gave treatment team observations." Claim support: A-casa-serena-program-assistant-11, A-casa-serena-program-assistant-12, A-casa-serena-program-assistant-22, A-casa-serena-program-assistant-30, A-casa-serena-program-assistant-15, A-casa-serena-program-assistant-17, A-casa-serena-program-assistant-13, A-casa-serena-program-assistant-14, A-casa-serena-program-assistant-16. The interviewer may already have seen the repeated wording (`match.md`).
-- **"Federally funded."** The summary and one National Council bullet say 6+ concurrent federally funded workstreams. The KB says grant-funded with federal funder requirements (A-ncmw-project-coordinator-01). Unconfirmed in the KB. Safer wording aloud: "grant-funded, with federal funder requirements."
+- **"Federally funded."** The summary and one National Council bullet say 6+ concurrent federally funded workstreams. The KB says grant-funded with federal funder requirements (A-ncmw-project-coordinator-01). The owner said 2026-10-13 that both wordings are correct. She named no funders. Either wording is acceptable aloud; if asked which funders, say you will check rather than guess.
 - **Title suffix.** The resume says "Project Coordinator, Substance Use Continuum". The owner ruling title is "Project Coordinator"; the suffix is a team name.
-- **Weekly touchpoint figure.** The resume gives a weekly range; the KB carries it in brackets with no metrics entry. If asked, describe the work without a number unless she confirms a figure.
-- **Tool names.** Outlook, Calendly and Google Calendar appear in the resume but not in the claims view (packet proposals list).
+- **Weekly touchpoint figure.** The owner confirmed 2026-10-13 that 20-25+ weekly touchpoints is accurate; it is now in the metrics of A-ncmw-project-coordinator-121 (single-source). The two older calendar claims (A-ncmw-project-coordinator-25 and A-ncmw-project-coordinator-111) still hold it only in brackets.
+- **Tool names.** Outlook, Calendly and Google Calendar are now in A-ncmw-project-coordinator-121.
+- **Vice President and Senior Advisor.** The resume names them in brackets; the owner confirmed 2026-10-13 they are two people. Do not say it was one person. A-ncmw-project-coordinator-122 says "two senior program leaders" and does not assign titles.
 
 ## Values fit
 | Employer wording (JD or external) | Her through-line | Evidence |
@@ -141,13 +146,14 @@ Each states what the KB shows and what it does not, with a pivot.
 
 ## Cheat sheet
 Likeliest questions, one result-first line each.
-- Calendars: I owned full calendar and scheduling for senior executives (A-ncmw-project-coordinator-25).
+- Calendars: I owned full calendar and scheduling for senior executives, 20-25+ weekly touchpoints (A-ncmw-project-coordinator-25, A-ncmw-project-coordinator-121).
+- Travel: speaker travel through a partner travel company; executive flights and hotels booked directly with a printable itinerary (A-ncmw-project-coordinator-123, A-ncmw-project-coordinator-124).
 - Deadlines: 100% on-time across 6+ grant-funded workstreams (A-ncmw-project-coordinator-104).
 - Pipelines: recruited and onboarded 50+ speakers and partner organizations (A-ncmw-project-coordinator-30).
 - Convening: 18+ sessions, 6,000+ attendees at NatCon26 (A-ncmw-project-coordinator-27).
 - Pace: standardized workflows in a newly formed team (A-ncmw-project-coordinator-11).
 - Discretion: audit-ready records with no compliance deficiencies (A-casa-serena-program-assistant-22).
-- Do not claim: booking platforms, venue or catering, founding an organization, speaking-pitch tracking, "federally funded" as settled.
+- Do not claim: a dedicated travel-booking platform, venue or catering at NatCon26, founding an organization, a speaking-pitch pipeline, a count of bookings, or that the VP and Senior Advisor were one person.
 - Casa Serena: say "paste error" first, then the true role.
 - Three questions to ask: (1) What would a successful first year look like for a founding-phase Center? (2) How will the Executive Director and Scientific Director divide the coordinator's time? (3) Which convening is the Center planning first, and who attends?
 
