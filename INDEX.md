@@ -1,6 +1,6 @@
 # Career knowledge base index
 
-Generated 2026-10-08 by scripts/build_index.py. Do not edit by hand.
+Generated 2026-10-13 by scripts/build_index.py. Do not edit by hand.
 
 ## Resume categories
 
@@ -90,7 +90,7 @@ Resumes are grouped by role family and content angle (role, industry, emphasis),
 
 | role | employer | dates | achievements | open conflicts |
 |------|----------|-------|--------------|----------------|
-| [Project Coordinator](kb/roles/ncmw-project-coordinator.md) | National Council for Mental Wellbeing | 2025-10 to 2026-05 | 120 | 0 |
+| [Project Coordinator](kb/roles/ncmw-project-coordinator.md) | National Council for Mental Wellbeing | 2025-10 to 2026-05 | 127 | 0 |
 | [Housing Case Manager / Housing & Basic Needs Services Coordinator](kb/roles/sanctuary-centers-housing-coordinator.md) | Sanctuary Centers (via United Way) | 2022-09 to 2023-11 | 37 | 0 |
 | [Residential Behavioral Health Technician / Program Assistant / Behavioral Health Program Assistant](kb/roles/casa-serena-program-assistant.md) | Casa Serena Treatment Centers | 2021-09 to 2022-08 | 30 | 0 |
 | [Research Assistant / Research Project Coordinator / Clinical Research Project Coordinator](kb/roles/ucsb-research-assistant.md) | UC Santa Barbara | 2021-06 to 2025-01 | 32 | 0 |
@@ -100,30 +100,13 @@ Resumes are grouped by role family and content angle (role, industry, emphasis),
 
 | file | contents | size |
 |------|----------|------|
-| [kb/roles/](kb/roles/) | one file per employer role, achievement blocks | 252 claims |
+| [kb/roles/](kb/roles/) | one file per employer role, achievement blocks | 259 claims |
 | [kb/skills.md](kb/skills.md) | skills, tools, certifications by category, plus Notion skills | 20 sections |
 | [kb/education.md](kb/education.md) | degrees, publication, certifications | 10 items |
 | [kb/summaries.md](kb/summaries.md) | every distinct summary paragraph | 31 summaries |
 | [kb/stories.md](kb/stories.md) | STAR stories (single-source, user-confirmed) | 15 stories |
 | [kb/_conflicts.md](kb/_conflicts.md) | disagreements and their resolutions | 64 entries, 64 resolved |
 | [kb/_user_decisions.md](kb/_user_decisions.md) | the owner's own rulings, dated | log |
-
-## Writing
-
-- [Style guide](writing/style-guide.md): descriptive record of how the owner writes; status approved.
-
-| cover letter sample | role / angle | date |
-|---------------------|--------------|------|
-| [cover-letter_administrative-program-coordination.md](writing/samples/cover-letter_administrative-program-coordination.md) | administrative-program-coordination | 2026-09 |
-| [cover-letter_association-membership-programs.md](writing/samples/cover-letter_association-membership-programs.md) | association-membership-programs | 2026-09 |
-| [cover-letter_benefits-eligibility-program-coordination.md](writing/samples/cover-letter_benefits-eligibility-program-coordination.md) | benefits-eligibility-program-coordination | 2026-09 |
-| [cover-letter_executive-administrative-support.md](writing/samples/cover-letter_executive-administrative-support.md) | executive-administrative-support | 2026-09 |
-| [cover-letter_federal-healthcare-project-coordination.md](writing/samples/cover-letter_federal-healthcare-project-coordination.md) | federal-healthcare-project-coordination | 2026-09 |
-| [cover-letter_human-services-public-health-coordination.md](writing/samples/cover-letter_human-services-public-health-coordination.md) | human-services-public-health-coordination | 2026-09 |
-| [cover-letter_nonprofit-marketing-communications.md](writing/samples/cover-letter_nonprofit-marketing-communications.md) | nonprofit-marketing-communications | 2026-09 |
-| [cover-letter_public-health-grants-ccbhc.md](writing/samples/cover-letter_public-health-grants-ccbhc.md) | public-health-grants-ccbhc | 2026-09 |
-| [cover-letter_public-health-multistakeholder-coordination.md](writing/samples/cover-letter_public-health-multistakeholder-coordination.md) | public-health-multistakeholder-coordination | 2026-09 |
-| [cover-letter_sud-education-learning-operations.md](writing/samples/cover-letter_sud-education-learning-operations.md) | sud-education-learning-operations | 2026-09 |
 
 ## Notion snapshots (reference, read-only)
 
@@ -133,6 +116,6 @@ Resumes are grouped by role family and content angle (role, industry, emphasis),
 
 - Resume versions organized: 43
 - Roles in KB: 5
-- Achievements: 252
+- Achievements: 259
 - Open conflicts: 0 (see [kb/_conflicts.md](kb/_conflicts.md))
 - Lint problems: 0

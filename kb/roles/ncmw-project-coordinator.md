@@ -1630,3 +1630,70 @@ sources: [resumes/tailored-client-service-project-support/2026-05_tailored-clien
 variants:
 - (notion client-service-project-support_v1) Enforced document version control, formatting, and filing standards across 6+ concurrent grant deliverables, maintaining audit-ready consistency across federal submissions
 notes: Single wording from the Notion tailored resume in the client-service-project-support group; no close existing claim (best match A-ncmw-project-coordinator-03, score 0.34). Tier verified on the user's word that Notion bullets are accurate (2026-10-08). Role assigned from the resume section or closest match.
+
+### A-ncmw-project-coordinator-121
+canonical: Sent meeting invitations through Outlook with accompanying emails stating dates, time zones, meeting links, agendas and preparation instructions, and communicated important changes directly instead of relying on an updated invitation, across 20-25+ weekly touchpoints involving internal departments, federal partners, subject-matter experts and advisory groups; used Calendly and Google Calendar to coordinate availability with external stakeholders on other scheduling systems
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: [20-25+ weekly touchpoints]
+variants:
+- (owner, 2026-10-13) I made sure meeting invitations were accompanied by clear information about the date, time zone, location or Teams link, purpose, and any action required. For important changes, I would communicate the update directly rather than relying exclusively on a modified calendar invitation.
+- (owner, 2026-10-13) I also used Calendly and Google Calendar for availability coordination when working with external stakeholders who had different scheduling systems.
+notes: The owner confirmed on 2026-10-13 that the figure "20 to 25 or more weekly touchpoints" is accurate (reply: "accurate"). The figure already appears in brackets on A-ncmw-project-coordinator-25 and -111, whose metrics are empty. Those claims were not edited. Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-122
+canonical: Supported two senior program leaders by managing their schedules, coordinating stakeholders, preparing for meetings, drafting correspondence, and tracking commitments so that none fell through the cracks
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-13) I supported a Vice President and Senior Advisor, and a significant part of my work involved managing their schedules, coordinating stakeholders, preparing meetings, drafting correspondence, and making sure commitments didn't fall through the cracks.
+notes: The submitted APA resume names "Vice President and Senior Advisor". The owner confirmed on 2026-10-13 that these were two people (reply: "2 people"). The canonical omits the titles because the KB has no wording that assigns each title to one person. Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-123
+canonical: Coordinated travel and accommodation logistics for 50+ external speakers and faculty across a national conference cycle through a partner travel company and internal teams, keeping a travel tracker of traveler, session, travel dates, air and lodging status, reimbursement instructions, itinerary delivery and last verified update
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: [50+ external speakers and faculty]
+variants:
+- (owner, 2026-10-13) I coordinated travel and accommodation logistics for more than 50 external speakers and faculty during our national conference cycle, as well as executive travel-related arrangements.
+- (owner, 2026-10-13) For conference travel, we primarily worked with a partner travel company and multiple internal teams responsible for bookings, hotel accommodations, registrations, and expenses.
+notes: Related: A-ncmw-project-coordinator-31 and -30. The owner gave no count of bookings ("no number"). Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-124
+canonical: Booked executive travel directly, using airline booking channels for flights and Booking.com and Hilton's official booking system for hotels, and prepared consolidated printable itineraries, sent boarding passes to travelers' phones, and set Outlook reminders for key travel milestones
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-13) For executive travel that I booked directly, I used airline booking channels for flights and platforms such as Booking.com and Hilton's official booking system for hotel reservations.
+- (owner, 2026-10-13) For executives, I organized confirmed flight, hotel, meeting, and transportation details into a concise, printable travel itinerary.
+notes: Closes the booking-platform wording gap named in the APA interview packet (Known gap 1) as far as the owner's words go. No travel-booking platform beyond those named was stated. Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-125
+canonical: Built workflows connecting Excel and Airtable tracking with Asana, HubSpot and the grant portal in a newly formed program operations structure, manually verifying that time-sensitive Asana assignments reached their owners during the system transition, and recording changes such as revised deadlines, partner instructions and ownership shifts as they occurred and reconciling them across systems, feeding leadership reporting on progress, deadlines and risks across 6+ concurrent workstreams and sustaining 100% on-time deliverable completion
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: [6+ concurrent workstreams, 100% on-time deliverable completion]
+variants:
+- (owner, 2026-10-13) I helped build more structured workflows connecting Excel and Airtable tracking with Asana, HubSpot, and our grant portal.
+- (owner, 2026-10-13) leadership had much better visibility across six or more concurrent workstreams, and we maintained 100% on-time deliverable completion even as external timelines changed.
+notes: Related: A-ncmw-project-coordinator-104, -02, -11, -07 and story S001. The owner described the funding as both "federally funded" and "grant-funded" (reply: "both correct"); the canonical avoids both words. Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-126
+canonical: Flagged outstanding partner and funder follow-ups to senior leaders with the relationship context, what was last discussed, the outstanding action and why the timing mattered, prepared the information or correspondence for the next step, and included open commitments in leadership status reporting across 50+ external engagements
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: [50+ external engagements]
+variants:
+- (owner, 2026-10-13) I would provide the context of the relationship, what had last been discussed, the outstanding action, and why the timing mattered. Where appropriate, I could also prepare the information or correspondence needed to make that next step easier.
+notes: Related: A-ncmw-project-coordinator-115 and -30. The owner said she helped manage the pipeline behind more than 50 external engagements; she did not describe a system that prompts leaders automatically. Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-127
+canonical: Kept an internal administrative record of travel and logistics changes separate from the information shared with travelers and meeting participants, limiting sensitive personal or logistical details in widely accessible task descriptions and meeting invitations, and checking recipients and document-sharing permissions
+tier: single-source
+sources: [kb/interviews/2026-10-12_apa_center-coordinator/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-13) I approached that by separating the internal administrative record from the information shared with the traveler or other participants.
+notes: Related: A-ucsb-research-assistant-20 and A-casa-serena-program-assistant-22 (confidentiality in research and clinical records). Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
