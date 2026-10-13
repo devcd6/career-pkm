@@ -1,7 +1,8 @@
 # Career knowledge base project
 
 Goal: turn a folder of messy resume versions into one structured, source-cited
-career knowledge base. Use the `resume-kb` skill for the workflow.
+career knowledge base. The `resume-kb` skill was used to build the knowledge base
+(it is not vendored in this repo). For job applications, use the `apply` skill.
 
 ## Using this project as knowledge and context
 

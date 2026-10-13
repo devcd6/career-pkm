@@ -1,47 +1,47 @@
-Community Investment Programs
+Domain Keyword | Community Investment Programs
 Programs Assistant
-CI Cabinet
-regional meetings
-meeting minutes
-calendar invitations
-data entry
-correspondence
+Business Context | CI Cabinet
+Business Context | regional meetings
+Hard Skill | meeting minutes
+Hard Skill | calendar invitations
+Hard Skill | data entry
+Hard Skill | correspondence
 presentations
 reports
 memos
-databases
-shared file drives
-service agencies
-resource listings
+Hard Skill | databases
+Hard Skill | shared file drives
+Business Context | service agencies
+Hard Skill | resource listings
 data collection
 data management
-community-level data
+Domain Keyword | community-level data
 program development
 evaluation
-volunteers
+Domain Keyword | volunteers
 interns
 marketing
-progress reports
+Hard Skill | progress reports
 grant
 allocation
-site visits
+Business Context | site visits
 trainings
-committee meetings
+Business Context | committee meetings
 round tables
-special events
+Business Context | special events
 fundraising
 outreach
 customer service
-MS Office
+Hard Skill | MS Office
 Excel
 Outlook
-grant monitoring
+Hard Skill | grant monitoring
 research
 time management
 attention to detail
 learn new platforms
 networking
-Tarrant County
+Domain Keyword | Tarrant County
 local agencies
-strategic plan
-annual budget
+Business Context | strategic plan
+Business Context | annual budget
