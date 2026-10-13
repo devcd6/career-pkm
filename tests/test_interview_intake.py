@@ -58,13 +58,30 @@ class IntakeTests(unittest.TestCase):
             "no claims mapping": PACKET.replace(f"- {CLAIM_ID}", "- none"),
             "no gaps": PACKET.replace("- No grant writing.", ""),
             "no sources": PACKET.replace("https://example.org/about", "example"),
-            "extra file section": PACKET + "\n## Cover letter\ntext\n",
+            "duplicate section": PACKET + "\n## Known gaps\n- again\n",
         }
         for name, text in cases.items():
             with self.subTest(name):
                 r = self.intake(text)
                 self.assertNotEqual(r.returncode, 0)
                 self.assertFalse(self.dest.exists())
+
+    def test_embedded_headings_and_annotated_claim_lines(self):
+        text = PACKET.replace("- No grant writing.", "## Experience\n- No grant writing.").replace(
+            f"- {CLAIM_ID}", f"- {CLAIM_ID} | note\n* A-ncmw-project-coordinator-24")
+        r = self.intake(text)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+    def test_annotated_unknown_claim_id_rejected(self):
+        r = self.intake(PACKET.replace(f"- {CLAIM_ID}", f"- {CLAIM_ID}\n- A-ncmw-project-coordinator-99999 | note"))
+        self.assertNotEqual(r.returncode, 0)
+        self.assertIn("99999", r.stdout)
+
+    def test_existing_interview_directory_allowed(self):
+        (self.dest / "2026-10-13_org_role").mkdir(parents=True)
+        (self.dest / "2026-10-13_org_role" / "proposals.md").write_text("x", encoding="utf-8")
+        r = self.intake()
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
     def test_unknown_claim_id_rejected(self):
         r = self.intake(PACKET.replace(CLAIM_ID, "A-ncmw-project-coordinator-99999"))

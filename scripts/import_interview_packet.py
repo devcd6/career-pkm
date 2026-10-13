@@ -4,9 +4,9 @@
 Usage: python scripts/import_interview_packet.py <packet.md> [--claims kb/_views/claims.md]
                                                   [--dest-root kb/interviews]
 
-Validates the packet contract (front matter `slug` and `created`; exactly the sections Job
+Validates the packet contract (front matter `slug` and `created`; the sections Job
 description, Submitted resume, Claims used, Role research, Known gaps, in that order, none empty;
-claim IDs listed as `- A-...`; a source URL or "No external sources." under Role research), checks
+claim IDs anywhere in the Claims used section; a source URL or "No external sources." under Role research), checks
 every claim ID against the claims view, then stores the packet unchanged at
 <dest-root>/<slug>/packet.md. Nothing is stored if any check fails, and an existing import is never
 overwritten. The packet's contents are never sent anywhere.
@@ -22,14 +22,14 @@ import check_application as ca  # noqa: E402
 
 SECTIONS = ["Job description", "Submitted resume", "Claims used", "Role research", "Known gaps"]
 SLUG_RE = re.compile(r"^\d{4}-\d{2}-\d{2}_[a-z0-9][a-z0-9-]*_[a-z0-9][a-z0-9-]*$")
-CLAIM_ID_RE = re.compile(r"^- (A-[a-z0-9]+(?:-[a-z0-9]+)*-\d+)\s*$")
+CLAIM_ID_RE = re.compile(r"\bA-[a-z0-9]+(?:-[a-z0-9]+)*-\d+\b")
 URL_RE = re.compile(r"https?://\S+")
 
 
 def parse(text):
     meta, sections, order, cur = {}, {}, [], None
     for line in text.splitlines():
-        if line.startswith("## "):
+        if line.startswith("## ") and line[3:].strip() in SECTIONS:
             cur = line[3:].strip()
             order.append(cur)
             sections[cur] = []
@@ -50,9 +50,9 @@ def validate(text, known_claims):
         errs.append(f"slug {slug!r} must look like YYYY-MM-DD_org_role (lowercase letters, digits, hyphens)")
     if not meta.get("created"):
         errs.append("missing front matter key: created")
-    for name in order:
-        if name not in SECTIONS:
-            errs.append(f"unknown section: {name}")
+    for name in SECTIONS:
+        if order.count(name) > 1:
+            errs.append(f"duplicate section: {name}")
     for name in SECTIONS:
         if name not in sections:
             errs.append(f"missing section: {name}")
@@ -60,7 +60,7 @@ def validate(text, known_claims):
             errs.append(f"empty section: {name}")
     if not errs and order != SECTIONS:
         errs.append("sections out of order")
-    ids = [m.group(1) for m in (CLAIM_ID_RE.match(l) for l in sections.get("Claims used", "").splitlines()) if m]
+    ids = CLAIM_ID_RE.findall(sections.get("Claims used", ""))
     if "Claims used" in sections:
         if not ids:
             errs.append("Claims used has no claim IDs (lines like '- A-...')")
@@ -97,7 +97,7 @@ def main():
     if errs:
         print(f"{len(errs)} error(s); nothing imported")
         return 1
-    dest.parent.mkdir(parents=True)
+    dest.parent.mkdir(parents=True, exist_ok=True)
     with open(dest, "w", encoding="utf-8", newline="") as f:
         f.write(text)
     print(f"imported {dest}")

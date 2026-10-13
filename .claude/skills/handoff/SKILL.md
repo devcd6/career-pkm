@@ -6,7 +6,7 @@ disable-model-invocation: true
 ---
 
 > **Project override (career-pkm). Takes precedence over everything below.**
-> - Save location depends on the branch. On an application branch (any branch other than `main`, `master` or `tooling/*`), save the redacted handoff to `applications/<slug>/handoff.md`, overwriting the previous one, start it with a dated header, commit it with the application, and run `python scripts/check_handoff.py` on it (it must pass). The `SessionStart` hook (`scripts/session_start_handoff.sh`) prints it at the start of the next web session. On any other branch, save outside the repo as stated below and never write it into the workspace.
+> - Save the redacted handoff outside the repo as stated below and never write it into the workspace. Application sessions (and their `handoff.md` files and checks) now live in the `career-applications` repository.
 > - Cloud sessions: when `CLAUDE_CODE_REMOTE=true` and the branch is not an application branch, the temp directory is destroyed with the container and a new web session starts from a fresh clone, so the saved file will not reach the next session. Say so in the reply and offer to save the redacted handoff on a tooling or application branch (pushing it to main still needs the owner's approval). Never claim a handoff will be found by the next session unless it is committed.
 > - Redact personal data: the owner's name, contact details, employer-identifying text from resumes, and any pasted job-description or upload content beyond company and role. Refer to the owner as "the owner" and to repo files by path.
 > - Do not paste handoff text into external tools or searches.

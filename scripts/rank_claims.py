@@ -59,7 +59,10 @@ def main():
     if not kws:
         print(f"no keywords found or file is empty: {keywords_path}")
         return 2
-    jd = ca.norm(jd_path.read_text(encoding="utf-8")) if jd_path.exists() else ""
+    if not jd_path.exists():
+        print(f"job description not found: {jd_path}")
+        return 2
+    jd = ca.norm(jd_path.read_text(encoding="utf-8"))
     roles, claims = ca.load_claims(Path(a.claims))
     labelled = [(c, p, "stated" if (not jd or ca.has_phrase(jd, p)) else "not-in-jd") for c, p in kws]
 
