@@ -80,6 +80,9 @@ def norm(s):
 def load_claims(path):
     roles, claims, cur = {}, {}, None
     for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("# "):
+            cur = None
+            continue
         if line.startswith("## "):
             cur = {"id": line[3:].strip()}
             roles[cur["id"]] = cur
@@ -208,14 +211,22 @@ def md_section(text, key):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder")
-    ap.add_argument("--claims", default=str(ROOT / "kb" / "_views" / "claims.md"))
+    ap.add_argument("--claims", help="application-facts packet (default: <folder>/application-facts.md)")
     ap.add_argument("--baseline", help="another resume to compare keyword coverage against")
     ap.add_argument("--metrics-debt", action="store_true", help="list every claim whose wording has a number its metrics lack")
     a = ap.parse_args()
     folder = Path(a.folder)
+    claims_path = Path(a.claims) if a.claims else folder / "application-facts.md"
+    if not claims_path.exists() and (folder / "claims-packet.md").exists():
+        claims_path = folder / "claims-packet.md"
+    if not claims_path.exists() and (ROOT / "kb" / "_views" / "claims.md").exists():
+        claims_path = ROOT / "kb" / "_views" / "claims.md"
+    if not claims_path.exists():
+        print(f"no application-facts packet found: {claims_path}")
+        return 2
     errors, warns, reports = [], [], []
     err = lambda k, m: errors.append(f"[{k}] {m}")
-    roles, claims = load_claims(Path(a.claims))
+    roles, claims = load_claims(claims_path)
     if not claims:
         print("no claims loaded; run scripts/build_claims_view.py")
         return 2

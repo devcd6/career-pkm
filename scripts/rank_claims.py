@@ -2,6 +2,7 @@
 """Advisory claim ranking for one application. Writes no facts and no bullets.
 
 Usage:
+    python scripts/rank_claims.py --jd jd.md --keywords keywords.txt --out rank.md
     python scripts/rank_claims.py applications/<slug> [--top 12] [--out rank.md]
 
 Reads <slug>/keywords.txt ("Category | phrase" lines, see exact_phrase_matcher.py) and
@@ -31,17 +32,33 @@ WEIGHT = {"Forced": 4, "Title Keyword": 3, "Hard Skill": 3, "Business Context": 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("folder")
+    ap.add_argument("folder", nargs="?", help="legacy application folder containing jd.md and keywords.txt")
+    ap.add_argument("--jd", help="job description file (direct knowledge-repo mode)")
+    ap.add_argument("--keywords", help="exact keyword list (direct knowledge-repo mode)")
     ap.add_argument("--claims", default=str(ROOT / "kb" / "_views" / "claims.md"))
     ap.add_argument("--top", type=int, default=12)
-    ap.add_argument("--out", help="save the report as this file name inside the application folder")
+    ap.add_argument("--out", help="save the report to this path (direct mode) or inside the application folder")
     a = ap.parse_args()
-    folder = Path(a.folder)
-    kws = ca.read_keywords(folder / "keywords.txt")
+
+    if a.folder:
+        if a.jd or a.keywords:
+            ap.error("use either an application folder or --jd and --keywords")
+        folder = Path(a.folder)
+        keywords_path = folder / "keywords.txt"
+        jd_path = folder / "jd.md"
+        out_path = folder / Path(a.out).name if a.out else None
+    else:
+        if not a.jd or not a.keywords:
+            ap.error("provide an application folder or both --jd and --keywords")
+        folder = None
+        keywords_path = Path(a.keywords)
+        jd_path = Path(a.jd)
+        out_path = Path(a.out) if a.out else None
+
+    kws = ca.read_keywords(keywords_path)
     if not kws:
-        print("no keywords.txt found or it is empty")
+        print(f"no keywords found or file is empty: {keywords_path}")
         return 2
-    jd_path = folder / "jd.md"
     jd = ca.norm(jd_path.read_text(encoding="utf-8")) if jd_path.exists() else ""
     roles, claims = ca.load_claims(Path(a.claims))
     labelled = [(c, p, "stated" if (not jd or ca.has_phrase(jd, p)) else "not-in-jd") for c, p in kws]
@@ -53,7 +70,7 @@ def main():
         score = sum(WEIGHT.get(c, 1) for c, p, l in hits if l == "stated")
         scored[cid] = (score, hits)
 
-    out = [f"# Claim ranking: {folder.name}", "",
+    out = [f"# Claim ranking: {folder.name if folder else jd_path.stem}", "",
            "Advisory. Not a fit score. Owner chooses; bullets come from spec.json.", ""]
     for rid, role in roles.items():
         ids = [c for c, cl in claims.items() if cl["role"] == rid]
@@ -101,8 +118,9 @@ def main():
     out += [f"- {c}: {h}/{t}" for c, (h, t) in cov.items()]
     text = "\n".join(out)
     print(text)
-    if a.out:
-        (folder / Path(a.out).name).write_text(text + "\n", encoding="utf-8")
+    if out_path:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(text + "\n", encoding="utf-8")
     return 0
 
 

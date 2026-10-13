@@ -5,27 +5,28 @@ allowed-tools: Read,Write,WebSearch,WebFetch
 metadata:
   category: Research & Analysis
   pairs-with:
-  - skill: career-biographer
-    reason: Position career narratives competitively
-  - skill: research-analyst
-    reason: Deep market research backing
+    - skill: career-biographer
+      reason: Position career narratives competitively
+    - skill: research-analyst
+      reason: Deep market research backing
   tags:
-  - competitive-analysis
-  - market
-  - positioning
-  - strategy
-  - differentiation
+    - competitive-analysis
+    - market
+    - positioning
+    - strategy
+    - differentiation
 ---
 
 > **Project override (career-pkm). Takes precedence over everything below.**
-> - Facts come only from `kb/_views/claims.md` (claim IDs, canonical wording, tier, metrics) and `kb/` rulings in `kb/_user_decisions.md`. Never invent, inflate, round, estimate, or merge facts. Numbers are copied exactly from a claim's `metrics`.
+>
+> - Facts about the owner come only from the imported `application-facts.md`. Never invent, inflate, round, estimate, or merge facts. Numbers are copied exactly from packet metrics.
 > - Do not add skills, tools, credentials, scope or outcomes the KB lacks. Where the job asks for something the KB does not show, state it as a real gap and ask the owner. Frame gaps in the cover letter, never with resume overreach.
-> - Write output only under `applications/<YYYY-MM-DD>_<org>_<role>/`. `kb/`, `resumes/`, `writing/`, `_raw/` are read-only. New facts go to `proposals.md` in that folder.
+> - Write output only under `applications/<YYYY-MM-DD>_<org>_<role>/`. Treat `application-facts.md` as read-only. New facts go to `proposals.md` in that folder for owner review in `career-pkm`.
 > - Web search or fetch may use only the employer and role named in the job description. Never send resume or KB text to any external tool.
 > - Notion is the application tracker only. It is not a fact source, and never offer to edit it.
 > - No em dashes in narrative prose. Follow `applications/preferences.md` and `writing/style-guide.md`.
 > - Generic examples, placeholder numbers and sample names in this skill are illustrative only. They are not the owner's facts.
-> - On request only. Use only KB facts about the owner; never web research about her.
+> - On request only. Use only packet facts about the owner; never web research about her or include private career details in web queries.
 
 # Competitive Cartographer
 
@@ -52,12 +53,14 @@ Cartographer:
 ## When to Use
 
 **Use when:**
+
 - User asks "how do I stand out?" or "what makes me different?"
 - Launching product/service and need positioning strategy
 - Feeling lost in crowded market
 - Considering pivot or repositioning
 
 **Do NOT use when:**
+
 - User needs market size or TAM estimates
 - Financial projections or fundraising strategy
 - Specific feature-by-feature comparison
@@ -65,83 +68,90 @@ Cartographer:
 
 ## The 6-Step Process
 
-| Step | Action |
-|------|--------|
-| 1. Define Space | Domain, user's offer, background, goals |
-| 2. Identify Players | Direct, adjacent, aspirational competitors |
+| Step                   | Action                                              |
+| ---------------------- | --------------------------------------------------- |
+| 1. Define Space        | Domain, user's offer, background, goals             |
+| 2. Identify Players    | Direct, adjacent, aspirational competitors          |
 | 3. Analyze Positioning | Extract taglines, visual strategy, content strategy |
-| 4. Create Map | Plot on 2D axes, identify clusters |
-| 5. Find White Space | Viable, defensible, sustainable, aligned gaps |
-| 6. Recommend Strategy | Headline, differentiators, visual/content direction |
+| 4. Create Map          | Plot on 2D axes, identify clusters                  |
+| 5. Find White Space    | Viable, defensible, sustainable, aligned gaps       |
+| 6. Recommend Strategy  | Headline, differentiators, visual/content direction |
 
 ## Common Anti-Patterns
 
 ### Me-Too Positioning
-| What it looks like | Why it's wrong |
-|--------------------|----------------|
-| "We're like Airbnb but for X" | Invites comparison where you'll lose |
+
+| What it looks like                                              | Why it's wrong                       |
+| --------------------------------------------------------------- | ------------------------------------ |
+| "We're like Airbnb but for X"                                   | Invites comparison where you'll lose |
 | **Instead**: Find unique angle that makes comparison irrelevant |
 
 ### Swiss Army Knife Syndrome
-| What it looks like | Why it's wrong |
-|--------------------|----------------|
-| "We do everything for everyone" | In crowded markets, specialists beat generalists |
+
+| What it looks like                              | Why it's wrong                                   |
+| ----------------------------------------------- | ------------------------------------------------ |
+| "We do everything for everyone"                 | In crowded markets, specialists beat generalists |
 | **Instead**: Pick one thing you'll be known for |
 
 ### Feature Parity Race
-| What it looks like | Why it's wrong |
-|--------------------|----------------|
-| "All competitor features plus one more" | Mature competitors will always out-feature you |
+
+| What it looks like                                            | Why it's wrong                                 |
+| ------------------------------------------------------------- | ---------------------------------------------- |
+| "All competitor features plus one more"                       | Mature competitors will always out-feature you |
 | **Instead**: Different approach/philosophy, not more features |
 
 ### Ignoring Your Constraints
-| What it looks like | Why it's wrong |
-|--------------------|----------------|
-| Positioning as enterprise when solo founder | Can't deliver on promise, credibility destroyed |
+
+| What it looks like                                                                    | Why it's wrong                                  |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Positioning as enterprise when solo founder                                           | Can't deliver on promise, credibility destroyed |
 | **Instead**: Position where constraints become advantages ("boutique", "founder-led") |
 
 ## Types of White Space
 
-| Type | Example |
-|------|---------|
-| **Intersection** | "Technical depth + warm personality" (most pick one) |
+| Type                      | Example                                                          |
+| ------------------------- | ---------------------------------------------------------------- |
+| **Intersection**          | "Technical depth + warm personality" (most pick one)             |
 | **Under-served Audience** | "Mid-market companies" (everyone targets enterprise or startups) |
-| **Contrarian** | "Slow and thoughtful" (when everyone races to launch fast) |
+| **Contrarian**            | "Slow and thoughtful" (when everyone races to launch fast)       |
 
 ## Best Practices
 
 **Start with User, Not Market**
+
 1. What's genuinely unique about user?
 2. What do they do better than anyone?
 3. What do they want to be known for?
 4. Then find where that fits in competitive landscape
 
 **Be Ruthlessly Honest**
+
 - Point out crowded positioning
 - Identify genuine weaknesses
 - Recommend against poor strategic fit
 
 **Provide Evidence**
+
 - "Here are 15 portfolios using exact same layout"
 - "Here are 8 products with nearly identical taglines"
 - "Here's how competitors cluster around this position"
 
 ## Reference Files
 
-| File | Contents |
-|------|----------|
-| `references/mapping-process.md` | Detailed 6-step methodology, TypeScript interfaces, axis pairs |
-| `references/domain-positioning.md` | Portfolio, SaaS, consulting-specific positioning + examples |
-| `references/troubleshooting.md` | Common issues, validation methods, best practices checklist |
+| File                               | Contents                                                       |
+| ---------------------------------- | -------------------------------------------------------------- |
+| `references/mapping-process.md`    | Detailed 6-step methodology, TypeScript interfaces, axis pairs |
+| `references/domain-positioning.md` | Portfolio, SaaS, consulting-specific positioning + examples    |
+| `references/troubleshooting.md`    | Common issues, validation methods, best practices checklist    |
 
 ## Integration with Other Skills
 
-| Skill | Integration |
-|-------|-------------|
-| **design-archivist** | Visual pattern database informs differentiation strategy |
-| **vibe-matcher** | Translate positioning into emotional/visual direction |
-| **career-biographer** | Competitive context informs personal brand positioning |
+| Skill                 | Integration                                              |
+| --------------------- | -------------------------------------------------------- |
+| **design-archivist**  | Visual pattern database informs differentiation strategy |
+| **vibe-matcher**      | Translate positioning into emotional/visual direction    |
+| **career-biographer** | Competitive context informs personal brand positioning   |
 
 ---
 
-*Transform competitive chaos into strategic clarity.*
+_Transform competitive chaos into strategic clarity._

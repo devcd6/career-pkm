@@ -6,22 +6,23 @@ metadata:
   gated: true
   category: Business & Monetization
   pairs-with:
-  - skill: career-biographer
-    reason: Get structured career data
-  - skill: job-application-optimizer
-    reason: Tailor CVs to specific roles
+    - skill: career-biographer
+      reason: Get structured career data
+    - skill: job-application-optimizer
+      reason: Tailor CVs to specific roles
   tags:
-  - resume
-  - ats
-  - career
-  - pdf
-  - latex
+    - resume
+    - ats
+    - career
+    - pdf
+    - latex
 ---
 
 > **Project override (career-pkm). Takes precedence over everything below.**
-> - Facts come only from `kb/_views/claims.md` (claim IDs, canonical wording, tier, metrics) and `kb/` rulings in `kb/_user_decisions.md`. Never invent, inflate, round, estimate, or merge facts. Numbers are copied exactly from a claim's `metrics`.
-> - Do not add skills, tools, credentials, scope or outcomes the KB lacks. Where the job asks for something the KB does not show, state it as a real gap and ask the owner. Frame gaps in the cover letter, never with resume overreach.
-> - Write output only under `applications/<YYYY-MM-DD>_<org>_<role>/`. `kb/`, `resumes/`, `writing/`, `_raw/` are read-only. New facts go to `proposals.md` in that folder.
+>
+> - Facts come only from the imported `application-facts.md`. Never invent, inflate, round, estimate, or merge facts. Numbers are copied exactly from packet metrics.
+> - Do not add skills, tools, credentials, scope or outcomes the packet lacks. Where the job asks for something the packet does not show, state it as a real gap and ask the owner.
+> - Write output only under `applications/<YYYY-MM-DD>_<org>_<role>/`. Treat `application-facts.md` as read-only. New facts go to `proposals.md` in that folder.
 > - Web search or fetch may use only the employer and role named in the job description. Never send resume or KB text to any external tool.
 > - Notion is the application tracker only. It is not a fact source, and never offer to edit it.
 > - No em dashes in narrative prose. Follow `applications/preferences.md` and `writing/style-guide.md`.
@@ -39,6 +40,7 @@ Works with: career-biographer, competitive-cartographer, web-design-expert, typo
 ## Production Implementation Available!
 
 **GitHub**: [github.com/erichowens/cv-creator](https://github.com/erichowens/cv-creator)
+
 - Status: Production-ready (~2,000 LOC)
 - ATS Score: 95/100 achieved
 - Deploy: `npm install && npm run example`
@@ -64,16 +66,18 @@ CV Creator:
 ## Core Capabilities
 
 ### 1. Multi-Format Generation
-| Format | Use Case |
-|--------|----------|
-| PDF | Email applications, job boards, print |
-| DOCX | Recruiter submissions, editable |
-| JSON Resume | Developer portfolios, programmatic |
-| HTML | Portfolio websites, responsive |
-| Markdown | Version control, git-based management |
-| LaTeX | Academic CVs (optional) |
+
+| Format      | Use Case                              |
+| ----------- | ------------------------------------- |
+| PDF         | Email applications, job boards, print |
+| DOCX        | Recruiter submissions, editable       |
+| JSON Resume | Developer portfolios, programmatic    |
+| HTML        | Portfolio websites, responsive        |
+| Markdown    | Version control, git-based management |
+| LaTeX       | Academic CVs (optional)               |
 
 ### 2. ATS Optimization Engine
+
 - Keyword analysis and matching from job descriptions
 - Formatting validation (single-column, standard fonts)
 - Scoring system (0-100) with specific recommendations
@@ -81,27 +85,28 @@ CV Creator:
 
 ### 3. Template System
 
-| Template | Best For |
-|----------|----------|
-| **Modern Minimalist** | Tech roles (Engineers, Data Scientists) |
-| **Professional Traditional** | Finance, Legal, Senior Executives |
-| **Creative Hybrid** | Design Engineers, UX Researchers |
-| **Academic CV** | PhD, Professors, Researchers |
+| Template                     | Best For                                |
+| ---------------------------- | --------------------------------------- |
+| **Modern Minimalist**        | Tech roles (Engineers, Data Scientists) |
+| **Professional Traditional** | Finance, Legal, Senior Executives       |
+| **Creative Hybrid**          | Design Engineers, UX Researchers        |
+| **Academic CV**              | PhD, Professors, Researchers            |
 
 ## ATS Score Breakdown
 
-| Category | Points | Criteria |
-|----------|--------|----------|
-| Formatting | 30 | Single-column, standard fonts, no graphics |
-| Structure | 20 | Summary, Skills, Experience, Education present |
-| Content | 30 | Proper lengths, skills count, metrics in bullets |
-| Keywords | 20 | Job description coverage (or 15 for general) |
+| Category   | Points | Criteria                                         |
+| ---------- | ------ | ------------------------------------------------ |
+| Formatting | 30     | Single-column, standard fonts, no graphics       |
+| Structure  | 20     | Summary, Skills, Experience, Education present   |
+| Content    | 30     | Proper lengths, skills count, metrics in bullets |
+| Keywords   | 20     | Job description coverage (or 15 for general)     |
 
 **Target**: 85+ out of 100
 
 ## When to Use
 
 **Use for:**
+
 - Creating resume from career-biographer data
 - Optimizing resume for specific job posting
 - Generating multiple resume variants
@@ -109,6 +114,7 @@ CV Creator:
 - Multi-format export
 
 **Do NOT use for:**
+
 - Cover letters (different format)
 - Portfolio websites (use web-design-expert)
 - LinkedIn profile optimization
@@ -118,46 +124,51 @@ CV Creator:
 ## Anti-Patterns
 
 ### Anti-Pattern: Creative Resume for Tech Roles
+
 **What it looks like**: Colorful infographics, skill bars, profile photo, two-column layout
 **Why wrong**: ATS systems can't parse graphics or complex layouts
 **Instead**: Use Minimalist template with clean, single-column text format
 
 ### Anti-Pattern: Generic Objective Statement
+
 **What it looks like**: "Seeking a challenging role in a growth-oriented company..."
 **Why wrong**: Wastes space, provides no information
 **Instead**: Professional summary with specific metrics and target role
 
 ### Anti-Pattern: Listing Every Technology Ever Used
+
 **What it looks like**: 40+ skills including outdated technologies
 **Why wrong**: Dilutes expertise, unclear proficiency
 **Instead**: List 15-20 most relevant skills for target role
 
 ### Anti-Pattern: Responsibilities Without Outcomes
+
 **What it looks like**: "Managed a team", "Worked on backend systems"
 **Why wrong**: Doesn't show impact or value
 **Instead**: "Led team of 5 to deliver microservices migration, reducing deployment time by 70%"
 
 ### Anti-Pattern: Inconsistent Formatting
+
 **What it looks like**: Mixed date formats, different bullet styles, varying fonts
 **Why wrong**: Looks unprofessional, confuses ATS parsers
 **Instead**: Strict consistency throughout
 
 ## Troubleshooting Quick Reference
 
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| ATS Score &lt;70 | Complex formatting, graphics | Switch to Minimalist, remove images |
-| Keyword Coverage &lt;60% | Not tailoring to job description | Extract keywords, add to Core Skills |
-| Exceeds 2 pages | Too verbose, old roles included | Consolidate old roles, limit bullets |
-| Generic summary | No positioning insights | Include specific metric, state target role |
-| Long bullets | Trying to explain entire project | Split into multiple bullets, focus on outcome |
+| Issue                    | Cause                            | Fix                                           |
+| ------------------------ | -------------------------------- | --------------------------------------------- |
+| ATS Score &lt;70         | Complex formatting, graphics     | Switch to Minimalist, remove images           |
+| Keyword Coverage &lt;60% | Not tailoring to job description | Extract keywords, add to Core Skills          |
+| Exceeds 2 pages          | Too verbose, old roles included  | Consolidate old roles, limit bullets          |
+| Generic summary          | No positioning insights          | Include specific metric, state target role    |
+| Long bullets             | Trying to explain entire project | Split into multiple bullets, focus on outcome |
 
 ## Length Guidelines
 
-| Experience | Pages |
-|------------|-------|
-| Entry-level (0-3 years) | 1 page |
-| Mid-level (3-10 years) | 1-2 pages |
+| Experience               | Pages       |
+| ------------------------ | ----------- |
+| Entry-level (0-3 years)  | 1 page      |
+| Mid-level (3-10 years)   | 1-2 pages   |
 | Senior-level (10+ years) | 2 pages max |
 
 **Never exceed 2 pages**, even for very senior roles.

@@ -21,12 +21,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import check_application as ca  # noqa: E402
-import check_interview_prep as cip  # noqa: E402
 
 TAG_RE = re.compile(r"\[(src: *[^\]]+|unverified: *[^\]]+|JD|inferred|not found)\]")
 PART_RE = re.compile(r"^## Part (\d)\b.*$", re.M)
+BASIC_SECTIONS = ("Company snapshot", "Role context", "Language to mirror")
 
 
 def sections(text, rx):
@@ -50,6 +48,46 @@ def bullets(block):
     return [ln.strip() for ln in block.splitlines() if re.match(r"\s*[-*] ", ln)]
 
 
+def section(text, name):
+    match = re.search(rf"^## {re.escape(name)}\s*$", text, re.M)
+    if not match:
+        return None
+    next_heading = re.search(r"^## ", text[match.end():], re.M)
+    end = match.end() + next_heading.start() if next_heading else len(text)
+    return text[match.end():end]
+
+
+def check_basic_research(text):
+    errors, warnings = [], []
+    if "—" in text:
+        errors.append("[dashes] em dash found")
+    for heading in (*BASIC_SECTIONS, "Source ledger", "Questions and unknowns"):
+        if section(text, heading) is None:
+            errors.append(f"[sections] no '{heading}' heading")
+
+    ledger = section(text, "Source ledger") or ""
+    for heading in BASIC_SECTIONS:
+        body = section(text, heading)
+        if body is None:
+            continue
+        for bullet in bullets(body):
+            tags = TAG_RE.findall(bullet)
+            if len(tags) != 1:
+                errors.append(f"[tags] {heading}: {len(tags)} tags in: {bullet[:70]}")
+            for tag in tags:
+                if tag.startswith("src"):
+                    url = re.sub(r"^src: *", "", tag).strip()
+                    if url not in ledger:
+                        warnings.append(f"{heading}: {url} not in source ledger")
+
+    for warning in warnings:
+        print("WARN", warning)
+    for error in errors:
+        print("ERROR", error)
+    print(f"{len(errors)} errors, {len(warnings)} warnings")
+    return 1 if errors else 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder")
@@ -61,6 +99,15 @@ def main():
         print(f"error: {f} not found")
         return 1
     text = f.read_text(encoding="utf-8")
+    if section(text, "Company snapshot") is not None:
+        return check_basic_research(text)
+    if not (ROOT / "kb" / "_views" / "claims.md").exists() or not (ROOT / "kb" / "stories.md").exists():
+        print("error: legacy research layout requires KB sources; use the basic company brief format")
+        return 2
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import check_application as ca  # noqa: E402
+    import check_interview_prep as cip  # noqa: E402
+
     _, claims = ca.load_claims(Path(args.claims))
     sids = cip.story_ids(Path(args.stories))
     allowed = set(ca.RULING_NUMBERS)

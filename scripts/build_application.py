@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build resume.md and claims-used.md for an application from kb/_views/claims.md.
+"""Build resume.md and claims-used.md from an application-facts packet.
 
 Usage:
-    python scripts/build_application.py applications/<slug>            # reads <slug>/spec.json
+    python scripts/build_application.py applications/<slug>            # reads the local application-facts.md
     python scripts/build_application.py applications/<slug> --check    # report only, write nothing
 
 The spec holds the choices (which claims, which bracket options, which verb); this script
@@ -20,30 +20,18 @@ spec.json:
              as for a count alternative after a plain noun).
              Value brackets such as "6+ [six]" and groups after a number are dropped.
              verb: the starting verb; must match the first word of the bullet.
-Header, publication, education and certification lines are fixed KB text below.
+Legacy folders without an application-facts packet retain their existing fixed resume tail during migration.
 """
 import argparse
+import calendar
 import json
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-
-ROLE_META = {  # role id -> (employer heading, title, location and dates line, claim id prefix)
-    "ncmw-project-coordinator": ("NATIONAL COUNCIL FOR MENTAL WELLBEING", "Project Coordinator",
-                                 "Remote, DC  Oct 2025 - May 2026", "A-ncmw-project-coordinator-"),
-    "ucsb-research-assistant": ("UC SANTA BARBARA", "Research Assistant",
-                                "Goleta, CA  Jun 2021 - Jan 2025", "A-ucsb-research-assistant-"),
-    "sanctuary-centers-housing-coordinator": ("SANCTUARY CENTERS (via United Way)",
-                                              "Housing & Basic Needs Services Coordinator",
-                                              "Santa Barbara, CA  Sept 2022 - Nov 2023",
-                                              "A-sanctuary-centers-housing-coordinator-"),
-    "asei-marketing-specialist": ("AMERICAN SOCIETY OF ENGINEERS OF INDIAN ORIGIN (ASEI)", "Marketing Specialist",
-                                  "Remote, TX  Jan 2021 - Sept 2022", "A-asei-marketing-specialist-"),
-    "casa-serena-program-assistant": ("CASA SERENA TREATMENT CENTERS", "Behavioral Health Program Assistant",
-                                      "Santa Barbara, CA  Sept 2021 - Aug 2022", "A-casa-serena-program-assistant-"),
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import check_application as ca  # noqa: E402
 
 HEADER = """## **DEVIKA C. DIXIT**
 
@@ -56,7 +44,7 @@ Dallas, TX | (925) 719-8412 | devikadixit25@gmail.com | LinkedIn: linkedin.com/i
 ## **WORK EXPERIENCE**
 """
 
-TAIL = """## **PUBLICATIONS**
+LEGACY_TAIL = """## **PUBLICATIONS**
 
 Plante, A., & Dixit, D. C. (2026, April 22). *Chasing the High: Why Gambling Disorder Belongs in the Addiction Conversation*. National Council for Mental Wellbeing. https://www.thenationalcouncil.org/gambling-disorder-and-addiction/
 
@@ -101,37 +89,164 @@ def resolve(canon, pick):
     return re.sub(r"\s+,", ",", re.sub(r"\s{2,}", " ", "".join(out))).strip()
 
 
+def claim_id_for_number(role_id, number, claims):
+    wanted = str(int(number))
+    matches = [
+        claim_id for claim_id, claim in claims.items()
+        if claim["role"] == role_id and claim_id.rsplit("-", 1)[-1].lstrip("0") == wanted
+    ]
+    return matches[0] if len(matches) == 1 else None
+
+
+def format_month(value):
+    if value.lower() == "present":
+        return "Present"
+    match = re.fullmatch(r"(\d{4})-(\d{2})", value)
+    if not match:
+        return value
+    year, month = match.groups()
+    return f"{calendar.month_abbr[int(month)]} {year}"
+
+
+def format_dates(value):
+    start, separator, end = value.partition(" to ")
+    if not separator:
+        return value
+    return f"{format_month(start)} - {format_month(end)}"
+
+
+def top_section(text, heading):
+    match = re.search(rf"^# {re.escape(heading)}\s*$", text, re.MULTILINE)
+    if not match:
+        return None
+    next_heading = re.search(r"^# (?!#)", text[match.end():], re.MULTILINE)
+    end = match.end() + next_heading.start() if next_heading else len(text)
+    return text[match.end():end]
+
+
+def packet_entries(section, heading_pattern):
+    if section is None:
+        return {}
+    headings = list(re.finditer(heading_pattern, section, re.MULTILINE))
+    entries = {}
+    for index, heading in enumerate(headings):
+        end = headings[index + 1].start() if index + 1 < len(headings) else len(section)
+        fields = {}
+        for line in section[heading.end():end].splitlines():
+            key, separator, value = line.partition(": ")
+            if separator:
+                fields[key] = value
+        title = heading.group(2) if heading.lastindex and heading.lastindex > 1 else ""
+        entries[heading.group(1)] = {"title": title, **fields}
+    return entries
+
+
+def parse_application_facts(text):
+    summaries = packet_entries(top_section(text, "Selected summaries"), r"^### (S-\d{2})\s*$")
+    education = packet_entries(
+        top_section(text, "Selected education and credentials"),
+        r"^### ((?:EDU|CERT|PUB)-\d+) (.+)$",
+    )
+    skills_section = top_section(text, "Selected skills") or ""
+    skills = [line[2:].split(" | source:", 1)[0] for line in skills_section.splitlines() if line.startswith("- ")]
+    return summaries, education, skills
+
+
+def render_packet_tail(education, skills):
+    publications = [entry for entry_id, entry in education.items() if entry_id.startswith("PUB-")]
+    degrees = [entry for entry_id, entry in education.items() if entry_id.startswith("EDU-")]
+    credentials = [entry["title"] for entry_id, entry in education.items() if entry_id.startswith("CERT-")]
+    lines = []
+
+    if publications:
+        lines.extend(["## **PUBLICATIONS**", ""])
+        for entry in publications:
+            author = entry.get("authors", "")
+            date = entry.get("date", "")
+            title = entry.get("title", entry["title"])
+            publisher = entry.get("publisher", "")
+            url = entry.get("url", "")
+            lines.append(f"{author} ({date}). *{title}*. {publisher}. {url}".strip())
+            lines.append("")
+
+    if degrees:
+        lines.extend(["## **EDUCATION**", ""])
+        for entry in degrees:
+            lines.extend([
+                f"**{entry.get('institution', '')}**",
+                entry.get("degree", entry["title"]),
+                f"{entry.get('location', '')}  {entry.get('end', '')}".strip(),
+                "",
+            ])
+
+    lines.extend(["## **CERTIFICATIONS & SKILLS**", ""])
+    lines.append(f"**Certifications & Training:** {', '.join(credentials)}")
+    lines.extend(skills)
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder")
+    ap.add_argument("--claims", type=Path, help="packet or legacy claims view (default: <folder>/application-facts.md)")
     ap.add_argument("--check", action="store_true", help="validate the spec, write nothing")
     args = ap.parse_args()
     folder = Path(args.folder)
     spec = json.loads((folder / "spec.json").read_text())
-    claims = load_claims()
+    claims_path = args.claims or folder / "application-facts.md"
+    if not claims_path.exists() and (folder / "claims-packet.md").exists():
+        claims_path = folder / "claims-packet.md"
+    if not claims_path.exists() and (ROOT / "kb" / "_views" / "claims.md").exists():
+        claims_path = ROOT / "kb" / "_views" / "claims.md"
+    if not claims_path.exists():
+        print(f"ERROR application-facts packet not found: {claims_path}")
+        return 2
+    packet_text = claims_path.read_text(encoding="utf-8")
+    is_application_packet = packet_text.startswith("# Application facts packet\n")
+    roles, claims = ca.load_claims(claims_path)
+    summaries, education, packet_skills = parse_application_facts(packet_text) if is_application_packet else ({}, {}, [])
 
     resume = [HEADER.format(summary=spec["summary"])]
     used = [f"# {spec['title']}\n",
-            "Format: bullet | claim ID | tier | verb. Tier from kb/_views/claims.md. Verb options resolved as "
+            "Format: bullet | claim ID | tier | verb. Tier from application-facts.md. Verb options resolved as "
             "set in spec.json; value brackets dropped so the canonical value stands.\n"]
     problems = []
+    if is_application_packet:
+        summary_source = spec.get("summary_source")
+        if summary_source not in summaries:
+            problems.append("summary_source must name a summary ID in application-facts.md")
+        for skill_line in spec.get("skills", []):
+            if not any(skill in skill_line for skill in packet_skills):
+                problems.append(f"skills line is not supported by selected packet skills: {skill_line}")
     for role, bullets in spec["roles"].items():
-        employer, title, line, prefix = ROLE_META[role]
+        role_meta = roles.get(role)
+        if not role_meta:
+            problems.append(f"unknown role {role} in claims packet")
+            continue
+        employer = role_meta.get("employer", "").upper()
+        title = role_meta.get("title", "").split("|")[0].strip()
+        line = f"{role_meta.get('location', '')}  {format_dates(role_meta.get('dates', ''))}".strip()
         resume.append(f"## **{employer}**\n\n{title}\n{line}\n")
         used.append(f"\n## {employer}")
         for b in bullets:
-            ids = [f"{prefix}{n:02d}" for n in b["claims"]]
+            ids = [claim_id_for_number(role, n, claims) for n in b["claims"]]
+            if any(claim_id is None for claim_id in ids):
+                problems.append(f"unknown claim number(s) in {role}: {b['claims']}")
+                continue
             missing = [i for i in ids if i not in claims]
             if missing:
                 problems.append(f"unknown claim {missing}")
                 continue
-            text = resolve(claims[ids[0]]["canon"], b.get("pick", {}))
+            text = resolve(claims[ids[0]]["canonical"], b.get("pick", {}))
             if not text.startswith(b["verb"]):
                 problems.append(f"{ids[0]}: bullet starts '{text.split()[0]}', spec verb is '{b['verb']}'")
             resume.append(f"- {text}")
             used.append(f"- {text} | {', '.join(ids)} | {claims[ids[0]]['tier']} | {b['verb']}")
         resume.append("")
-    resume.append(TAIL.format(skills="\n".join(spec["skills"])))
+    if is_application_packet:
+        resume.append(render_packet_tail(education, spec["skills"]))
+    else:
+        resume.append(LEGACY_TAIL.format(skills="\n".join(spec["skills"])))
 
     for p in problems:
         print("ERROR", p)
