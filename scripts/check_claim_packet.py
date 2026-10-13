@@ -1,11 +1,58 @@
 #!/usr/bin/env python3
-"""Verify a claims packet against the current generated claims view."""
+"""Verify an application-facts packet against the current career knowledge sources."""
 import argparse
 import re
 import sys
 from pathlib import Path
 
-from build_claim_packet import CLAIMS_VIEW, ROLE_FIELDS, parse_claims
+from build_claim_packet import (
+    CERTIFICATE_FIELDS,
+    CLAIMS_VIEW,
+    EDUCATION_FIELDS,
+    EDUCATION,
+    PACKET_DIR,
+    PUBLICATION_FIELDS,
+    ROLE_FIELDS,
+    SKILLS,
+    SUMMARIES,
+    DECISIONS,
+    parse_claims,
+    parse_education,
+    parse_skills,
+    parse_summaries,
+    validate_output_path,
+)
+
+
+def single_heading_section(text, heading):
+    match = re.search(rf"^# {re.escape(heading)}\s*$", text, re.MULTILINE)
+    if not match:
+        return None
+    next_heading = re.search(r"^# (?!#)", text[match.end():], re.MULTILINE)
+    end = match.end() + next_heading.start() if next_heading else len(text)
+    return text[match.end():end]
+
+
+def entry_blocks(section, pattern):
+    if section is None:
+        return {}
+    headings = list(re.finditer(pattern, section, re.MULTILINE))
+    entries = {}
+    for index, heading in enumerate(headings):
+        end = headings[index + 1].start() if index + 1 < len(headings) else len(section)
+        fields = {}
+        for line in section[heading.end():end].splitlines():
+            key, separator, value = line.partition(": ")
+            if separator:
+                fields[key] = value
+        entries[heading.group(1)] = {"title": heading.group(2) if heading.lastindex > 1 else "", **fields}
+    return entries
+
+
+def list_entries(section):
+    if section is None:
+        return []
+    return [line[2:].split(" | source:", 1)[0] for line in section.splitlines() if line.startswith("- ")]
 
 
 def validate(packet_path, source_path=CLAIMS_VIEW):
@@ -15,8 +62,8 @@ def validate(packet_path, source_path=CLAIMS_VIEW):
     source_roles, source_claims, _ = parse_claims(source_text)
     errors = []
 
-    if not packet_text.startswith("# Claims packet\n"):
-        errors.append("missing '# Claims packet' heading")
+    if not packet_text.startswith("# Application facts packet\n"):
+        errors.append("missing '# Application facts packet' heading")
     if not packet_order:
         errors.append("packet contains no claims")
     if len(packet_order) != len(set(packet_order)):
@@ -52,6 +99,58 @@ def validate(packet_path, source_path=CLAIMS_VIEW):
             if packet_role.get(field) != source_role.get(field):
                 errors.append(f"role {role_id} {field} mismatch")
 
+    packet_summaries = entry_blocks(
+        single_heading_section(packet_text, "Selected summaries"),
+        r"^### (S-\d{2})\s*$",
+    )
+    source_summaries = parse_summaries(SUMMARIES)
+    if len(re.findall(r"^### S-", packet_text, re.MULTILINE)) != len(packet_summaries):
+        errors.append("packet contains malformed or duplicate summary headings")
+    for summary_id, entry in packet_summaries.items():
+        if summary_id not in source_summaries:
+            errors.append(f"unknown summary ID: {summary_id}")
+        elif entry.get("summary") != source_summaries[summary_id]:
+            errors.append(f"summary {summary_id} summary mismatch")
+        if entry.get("source") != f"kb/summaries.md#{summary_id}":
+            errors.append(f"summary {summary_id} source mismatch")
+
+    packet_education = entry_blocks(
+        single_heading_section(packet_text, "Selected education and credentials"),
+        r"^### ((?:EDU|CERT|PUB)-\d+) (.+)$",
+    )
+    source_education = parse_education(EDUCATION)
+    if len(re.findall(r"^### (?:EDU|CERT|PUB)-", packet_text, re.MULTILINE)) != len(packet_education):
+        errors.append("packet contains malformed or duplicate education headings")
+    for entry_id, entry in packet_education.items():
+        source = source_education.get(entry_id)
+        if source is None:
+            errors.append(f"unknown education ID: {entry_id}")
+            continue
+        if entry.get("title") != source["title"]:
+            errors.append(f"education {entry_id} title mismatch")
+        fields = (EDUCATION_FIELDS if entry_id.startswith("EDU-") else
+                  CERTIFICATE_FIELDS if entry_id.startswith("CERT-") else PUBLICATION_FIELDS)
+        for field in fields:
+            if field in entry and entry[field] != source.get(field):
+                errors.append(f"education {entry_id} {field} mismatch")
+        if entry.get("source") != f"kb/education.md#{entry_id}":
+            errors.append(f"education {entry_id} source mismatch")
+
+    known_skills = set(parse_skills(SKILLS))
+    for skill in list_entries(single_heading_section(packet_text, "Selected skills")):
+        if skill not in known_skills:
+            errors.append(f"unknown skill: {skill}")
+
+    decisions = DECISIONS.read_text(encoding="utf-8")
+    for ruling in list_entries(single_heading_section(packet_text, "Selected owner rulings")):
+        if ruling not in decisions:
+            errors.append(f"unknown ruling: {ruling}")
+
+    try:
+        validate_output_path(packet_path)
+    except ValueError as error:
+        errors.append(str(error))
+
     return errors
 
 
@@ -69,7 +168,7 @@ def main(argv=None):
 
     for error in errors:
         print(f"ERROR {error}")
-    print(f"claims packet check: {'FAILED' if errors else 'ok'} ({len(errors)} error(s))")
+    print(f"application-facts packet check: {'FAILED' if errors else 'ok'} ({len(errors)} error(s))")
     return 1 if errors else 0
 
 
