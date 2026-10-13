@@ -2,20 +2,18 @@
 """Advisory claim ranking for one application. Writes no facts and no bullets.
 
 Usage:
-    python scripts/rank_claims.py --jd jd.md --keywords keywords.txt --out rank.md
-    python scripts/rank_claims.py applications/<slug> [--top 12] [--out rank.md]
+    python scripts/rank_claims.py --jd jd.md --keywords keywords.txt [--top 12] --out rank.md
 
-Reads <slug>/keywords.txt ("Category | phrase" lines, see exact_phrase_matcher.py) and
-<slug>/jd.md, then scores every claim in kb/_views/claims.md by exact, whole-word,
+Reads the keyword file ("Category | phrase" lines) and the JD, then scores every claim in kb/_views/claims.md by exact, whole-word,
 case-insensitive phrase hits in its canonical wording (bracket alternatives all count).
 
 Weights by category: Forced 4, Title Keyword 3, Hard Skill 3, Business Context 2,
 Domain Keyword 2, Action Keyword 1, Uncategorized 1, Hard Filter 0 (eligibility, not matchable).
-Label per phrase: "stated" (appears in jd.md, weighted) or "not-in-jd" (weight 0, listed so the
+Label per phrase: "stated" (appears in the JD, weighted) or "not-in-jd" (weight 0, listed so the
 owner sees it). The score ranks claims for the owner and agent to choose from; it is not a fit
 percentage. Per role the report shows tier, matched phrases and near-duplicate clusters
 (word overlap >= 0.70). It also lists phrases that no claim in the KB contains: real gaps.
-Selection stays with the owner; bullets are built from spec.json by build_application.py.
+Selection stays with the owner, who passes the chosen IDs to build_claim_packet.py.
 """
 import argparse
 import re
@@ -32,28 +30,16 @@ WEIGHT = {"Forced": 4, "Title Keyword": 3, "Hard Skill": 3, "Business Context": 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("folder", nargs="?", help="legacy application folder containing jd.md and keywords.txt")
-    ap.add_argument("--jd", help="job description file (direct knowledge-repo mode)")
-    ap.add_argument("--keywords", help="exact keyword list (direct knowledge-repo mode)")
+    ap.add_argument("--jd", required=True, help="job description file")
+    ap.add_argument("--keywords", required=True, help="exact keyword list")
     ap.add_argument("--claims", default=str(ROOT / "kb" / "_views" / "claims.md"))
     ap.add_argument("--top", type=int, default=12)
-    ap.add_argument("--out", help="save the report to this path (direct mode) or inside the application folder")
+    ap.add_argument("--out", help="save the report to this path")
     a = ap.parse_args()
 
-    if a.folder:
-        if a.jd or a.keywords:
-            ap.error("use either an application folder or --jd and --keywords")
-        folder = Path(a.folder)
-        keywords_path = folder / "keywords.txt"
-        jd_path = folder / "jd.md"
-        out_path = folder / Path(a.out).name if a.out else None
-    else:
-        if not a.jd or not a.keywords:
-            ap.error("provide an application folder or both --jd and --keywords")
-        folder = None
-        keywords_path = Path(a.keywords)
-        jd_path = Path(a.jd)
-        out_path = Path(a.out) if a.out else None
+    keywords_path = Path(a.keywords)
+    jd_path = Path(a.jd)
+    out_path = Path(a.out) if a.out else None
 
     kws = ca.read_keywords(keywords_path)
     if not kws:
@@ -73,8 +59,8 @@ def main():
         score = sum(WEIGHT.get(c, 1) for c, p, l in hits if l == "stated")
         scored[cid] = (score, hits)
 
-    out = [f"# Claim ranking: {folder.name if folder else jd_path.stem}", "",
-           "Advisory. Not a fit score. Owner chooses; bullets come from spec.json.", ""]
+    out = [f"# Claim ranking: {jd_path.stem}", "",
+           "Advisory. Not a fit score. Owner chooses; the owner selects claim IDs for the packet.", ""]
     for rid, role in roles.items():
         ids = [c for c, cl in claims.items() if cl["role"] == rid]
         ranked = sorted(ids, key=lambda c: (-scored[c][0], c))
