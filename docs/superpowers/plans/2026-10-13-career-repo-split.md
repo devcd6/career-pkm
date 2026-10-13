@@ -14,10 +14,11 @@
 
 - Keep `_raw/` read-only and preserve its contents and history.
 - Do not change, verify, round, merge, or otherwise rewrite career facts or claims without the owner's approval.
-- Keep both repositories private; do not create or push a remote repository until the owner explicitly approves its name and hosting.
+- Keep both repositories private. Creation of `devcd6/career-applications` is owner-approved; do not push content without separate owner instruction.
 - Update the current push allowlist in `CLAUDE.md` only after the second private remote is explicitly approved; keep all other remotes prohibited.
 - Never include private resume, claim, STAR-story, or career-history text in web queries or external services.
-- A claims packet contains only owner-selected claims, canonical wording, tier, allowed metrics, and needed role-header facts.
+- An application-facts packet contains only selected claim, summary, skills, education/credential, and role-header facts with source IDs or exact source wording; standing owner preferences remain in the application repo.
+- The packet exporter writes only inside `career-pkm/_work/application-packets/`; the owner copies the completed packet into the application repo.
 - An interview packet contains only the JD, submitted resume, claim mapping, role-specific research with sources, and known gaps.
 - Do not copy the full `career-pkm` Git history into the application repository.
 - Before any move, write the file-level plan, wait for owner approval, and run `scripts/apply_plan.py` in dry-run mode first. Its path guard must not be bypassed.
@@ -25,9 +26,9 @@
 
 ## Review Focus
 
-- A claim packet includes only selected IDs, and each copied canonical line, tier, and metrics value exactly matches the current claims view.
+- Every claim, summary, education item, credential, and skills entry in an application-facts packet matches its canonical KB source exactly and retains its source ID or exact wording.
 - Unknown, duplicate, or malformed claim IDs fail validation rather than producing a partial packet.
-- The application checker works from the imported packet without a local `kb/` directory or full claims view.
+- The application builder and checker work from the imported application-facts packet without a local `kb/` directory or full KB view.
 - The interview workflow rejects packets missing the submitted-resume or claim-mapping sections and keeps reported questions linked to dated sources.
 - Transfer validation detects a missing, extra, or byte-different file before any original is removed.
 
@@ -45,37 +46,37 @@
 **Interfaces:**
 
 - Consumes: explicit claim IDs and the generated `kb/_views/claims.md`.
-- Produces: `python scripts/build_claim_packet.py --claims <id,id,...> --out <file>`; a Markdown packet containing only those claims and the role-header facts required to interpret them.
-- Validator: `python scripts/check_claim_packet.py <packet>`; nonzero for unknown/duplicate IDs, missing fields, canonical/tier/metrics mismatches, or unselected claims.
-
-- [ ] **Step 1: Add failing unit tests** for exact claim copying, exact metrics preservation, unknown and duplicate IDs, and missing packet fields.
-- [ ] **Step 2: Run `python -m unittest discover -s tests -p "test_claim_packet.py" -v`** and confirm the expected failures.
-- [ ] **Step 3: Implement the exporter and validator** with the standard library only; keep selection explicit rather than silently choosing claims.
-- [ ] **Step 4: Rerun the focused unit tests** and then `python -m unittest discover -s tests -v`.
-- [ ] **Step 5: Commit** the packet contract phase.
+- Produces: `python scripts/build_claim_packet.py --claims <id,id,...> --out <file>` plus optional repeated `--summary <id>`, `--education <id,id,...>`, `--skill <exact wording>`, and `--ruling <exact text>` selections; output must remain under `_work/application-packets/` in `career-pkm`.
+- Validator: `python scripts/check_claim_packet.py <packet>`; nonzero for unknown/duplicate IDs, missing fields, source wording mismatches, extra entries, or an output path outside the KB repo.
+- [x] **Step 1: Add failing unit tests** for exact claim/summary/education copying, selected skill entries, exact metrics preservation, unknown and duplicate IDs, missing fields, and rejected output paths outside the KB repo.
+- [x] **Step 2: Run `python -m unittest discover -s tests -p "test_claim_packet.py" -v`** and confirm the expected failures.
+- [x] **Step 3: Implement the exporter and validator** with the standard library only; keep selection explicit rather than silently choosing claims.
+- [x] **Step 4: Rerun the focused unit tests** and then `python -m unittest discover -s tests -v`.
+- [x] **Step 5: Commit** the packet contract phase.
 
 ### Task 2: Separate Knowledge and Application Workflows
 
 **Files:**
 
-- Modify: `.claude/skills/apply/SKILL.md`, `.claude/skills/company-research/SKILL.md`, `.claude/commands/research.md`
-- Modify: `scripts/check_application.py`, `scripts/check_research.py`, `scripts/rank_claims.py`
+- Modify: `.claude/skills/apply/SKILL.md`, `.claude/skills/company-research/SKILL.md`, `.claude/skills/job-description-analyzer/SKILL.md`, `.claude/skills/resume-ats-optimizer/SKILL.md`, `.claude/skills/resume-bullet-writer/SKILL.md`, `.claude/skills/resume-section-builder/SKILL.md`, `.claude/skills/resume-tailor/SKILL.md`, `.claude/skills/cover-letter-generator/SKILL.md`, `.claude/skills/career-biographer/SKILL.md`, `.claude/skills/competitive-cartographer/SKILL.md`, `.claude/skills/cv-creator/SKILL.md`, `.claude/commands/research.md`
+- Modify: `scripts/build_application.py`, `scripts/check_application.py`, `scripts/check_research.py`, `scripts/rank_claims.py`
 - Create: `tests/test_application_packet.py`
 - Test: the new application-packet tests and existing application/research validators
 
 **Interfaces:**
 
-- Application tailoring accepts the claims packet as its evidence source; it does not require a local `kb/` tree or full claims view.
+- Application tailoring accepts `application-facts.md` as its career evidence source; it does not require a local `kb/` tree or full KB views.
 - `rank_claims.py` remains in `career-pkm`; it ranks claims locally from a JD and exact keyword list, and the owner selects IDs for export.
 - Career and interview-prep workflows are handled in Task 4 using the generated interview packet and canonical facts from the local KB.
 - Basic role-specific company research stays with application records and covers mission, programs, role context, and sourced language only; reusable employer and industry research and future interview prep live in `career-pkm`.
 
-- [ ] **Step 1: Write failing tests** for application validation from an imported claims packet.
-- [ ] **Step 2: Run `python -m unittest discover -s tests -p "test_application_packet.py" -v`** and confirm assertions fail because packet-based validation is not implemented.
-- [ ] **Step 3: Implement the smallest path and input changes** needed to remove cross-repo path assumptions.
-- [ ] **Step 4: Update root instructions, glossary, handoff, commands, and skills** so each repo has one clear owner for each workflow and one authoritative copy of each rule.
-- [ ] **Step 5: Run focused tests, `python scripts/build_index.py --check`, `python scripts/build_claims_view.py --check`, and all applicable application/research/interview validators.**
+- [x] **Step 1: Write failing tests** for application validation from an imported application-facts packet.
+- [x] **Step 2: Run `python -m unittest discover -s tests -p "test_application_packet.py" -v`** and confirm the intended failures.
+- [x] **Step 3: Implement the smallest path and input changes** needed to remove cross-repo path assumptions.
+- [x] **Step 4: Update application skills and commands** so tailoring reads only the packet and application research stays role-specific; root KB documentation cleanup remains in Task 5.
+- [x] **Step 5: Run focused tests, `python scripts/build_index.py --check`, `python scripts/build_claims_view.py --check`, and all applicable application/research/interview validators.**
 - [ ] **Step 6: Commit** the workflow-separation phase.
+- [x] **Step 6: Commit** the workflow-separation phase (`d1f9f02`).
 
 ### Task 3: Prepare the Application Repository
 
@@ -93,13 +94,14 @@
 
 **Interfaces:**
 
-- Receives: the application-specific file inventory and the claims packet contract from Tasks 1 and 2.
+- Receives: the application-specific file inventory and application-facts packet contract from Tasks 1 and 2.
 - Produces: a private application repository with fresh history and no `_raw/`, `resumes/`, or full `kb/` copy.
 
 - [ ] **Step 1: Complete the ownership audit** for every command, skill, script, settings hook, and documentation pointer; record any ambiguous ownership for owner decision.
-- [ ] **Step 2: Obtain explicit owner approval** for the exact repository name, hosting, and remote creation before creating a remote.
+- [x] **Step 2: Use the owner-approved private GitHub repository name** `devcd6/career-applications`.
 - [ ] **Step 3: Create the new repository** with only the selected application files and updated app-specific guidance; do not copy full history.
-- [ ] **Step 4: Run the application checks** in the new repository using a representative imported claims packet.
+- [ ] **Step 3: Create the new private repository** with only the selected application files and updated app-specific guidance; do not copy full history. Requires authenticated GitHub CLI (`gh auth status` currently reports no login).
+- [ ] **Step 4: Run the application checks** in the new repository using a representative imported `application-facts.md` packet.
 - [ ] **Step 5: Commit** the new repository bootstrap phase after the owner confirms its privacy and contents.
 
 ### Task 4: Build the Interview Handoff and Knowledge Query Path
@@ -118,7 +120,7 @@
 - Career Q&A starts with the local KB and adds dated external sources when the question needs current career strategy, skills development, professional development, credential, or industry information. It saves new research only when requested.
 
 - [ ] **Step 1: Add failing tests** for complete and incomplete interview-packet generation and intake, including source and claim references.
-- [ ] **Step 2: Run `python -m unittest discover -s tests -p "test_build_interview_packet.py" -v` in the application repository and `python -m unittest discover -s tests -p "test_interview_intake.py" -v` in `career-pkm`; confirm assertions fail because the packet behaviors are missing.
+- [ ] \*\*Step 2: Run `python -m unittest discover -s tests -p "test_build_interview_packet.py" -v` in the application repository and `python -m unittest discover -s tests -p "test_interview_intake.py" -v` in `career-pkm`; confirm assertions fail because the packet behaviors are missing.
 - [ ] **Step 3: Implement packet generation and intake** without adding a database or external retrieval service.
 - [ ] **Step 4: Add the career-advisor entry point** with explicit fact, inference, and external-research labeling and privacy boundaries.
 - [ ] **Step 5: Rerun both focused test commands and `python scripts/check_interview_prep.py kb/interviews/<application-slug>`** against the migrated example.
