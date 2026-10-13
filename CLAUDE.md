@@ -90,6 +90,17 @@ Job applications are produced in the separate private repository `devcd6/career-
 - Additions to `kb/` need the owner's explicit in-session approval, are additive only (never edit an existing `canonical`, tier or conflict resolution), and go in their own commit, `kb: add <what> (approved)`, with `INDEX.md` rebuilt and linted in it. Tier is `single-source`, or `verified` only when the owner says it is accurate (rule 5).
 - Notion is a tracker only, never a fact source. Never offer to edit Notion.
 
+## Repository tooling
+
+Standard-library Python in `scripts/`, tests in `tests/` (`python -m unittest discover -s tests`).
+
+- Generated, never hand-edited: `INDEX.md` (`build_index.py`, also lints; `--check` verifies) and `kb/_views/claims.md` (`build_claims_view.py`, `--check`). Rebuild after any `kb/` or `resumes/` change.
+- Outbound: `rank_claims.py` (advisory ranking from `--jd` and `--keywords`) -> `build_claim_packet.py` (explicit IDs only; writes only under `_work/application-packets/`) -> `check_claim_packet.py`.
+- Inbound: `import_interview_packet.py` validates a packet (five sections, known claim IDs, source URL) and stores it unchanged at `kb/interviews/<slug>/packet.md`; it never overwrites. `check_interview_prep.py kb/interviews/<slug>` checks an `interview-prep.md`.
+- Maintenance: `inventory.py` (read-only resume analysis), `apply_plan.py` (approved move plans; dry run unless `--apply`; path guard stays on). `_work/plan.csv` is the last approved manifest, kept as history.
+- `check_application.py` remains only as the shared claims-view loader (`load_claims`, `norm`, `has_phrase`) imported by three scripts. Do not delete it; its application checks now live in `career-applications`.
+- Gotchas: write generated files with `newline=""` (LF only, even on Windows); plain `python` may be the Microsoft Store stub, so put the real interpreter first on `PATH`; `kb/interviews/` and `kb/research/` are created on first use.
+
 ## Superpowers plugin
 
 The Superpowers plugin (brainstorming, plans, TDD, debugging, worktrees,
