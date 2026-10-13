@@ -1,6 +1,6 @@
 # Career knowledge base
 
-Terms for the career-pkm repo, which turns the owner's resume versions into a source-cited knowledge base and uses it to prepare job applications and interviews.
+Terms for the career-pkm repo, which turns the owner's resume versions into a source-cited knowledge base and uses it to supply job applications (via packets) and prepare interviews.
 
 ## Language
 
@@ -17,11 +17,11 @@ How well a claim is supported: `verified` (the owner confirmed it), `consistent`
 _Avoid_: Confidence, rating
 
 **Proposal**:
-An unverified new fact, in the owner's words, recorded in an application's `proposals.md`. It becomes a claim only with the owner's explicit in-session approval and a separate `kb:` commit.
+An unverified new fact, in the owner's words, recorded in a `proposals.md` (in the application repository or `kb/interviews/<slug>/`). It becomes a claim only with the owner's explicit in-session approval and a separate `kb:` commit.
 _Avoid_: Suggestion, draft claim
 
 **Application**:
-One job application's folder under `applications/<date>_<org>_<role>/`, holding the job description, research, analysis, resume, letter and any interview prep for that role.
+One job application's folder in the `career-applications` repository, holding the job description, research, analysis, resume and letter for that role. Interview prep for it lives here under `kb/interviews/<slug>/`.
 _Avoid_: Job, submission
 
 **Gate**:

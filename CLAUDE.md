@@ -2,7 +2,7 @@
 
 Goal: turn a folder of messy resume versions into one structured, source-cited
 career knowledge base. The `resume-kb` skill was used to build the knowledge base
-(it is not vendored in this repo). For job applications, use the `apply` skill.
+(it is not vendored in this repo). Job applications live in `devcd6/career-applications`; interviews and career questions use `interview-prep` and `career-advisor` here.
 
 ## Using this project as knowledge and context
 
@@ -78,40 +78,17 @@ These govern building and editing the knowledge base.
    GitHub Issues, issue comments and PR text count as external: never put
    resume or KB text in them, only claim IDs and file paths.
 
-## Application mode (job applications)
+## Interview and career-advice mode
 
-Applies to sessions that tailor resumes or cover letters for a specific job.
-Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.md`.
+Job applications are produced in the separate private repository `devcd6/career-applications`; this repository does not hold application folders, tailoring skills, or application checks.
 
-- Facts come only from `kb/` (load `kb/_views/claims.md`; regenerate with
-  `python scripts/build_claims_view.py`). Cite claim IDs. Numbers are copied
-  exactly from a claim's metrics. Owner rulings in `kb/_user_decisions.md` win.
-- Style comes from `writing/style-guide.md` and `writing/samples/`.
-- Write under `applications/<YYYY-MM-DD>_<org>_<role>/`. `_raw/` is always
-  read-only. `kb/`, `resumes/`, `writing/` are read-only except for approved
-  additions (below). New facts go to `proposals.md` in the application folder
-  first; only the owner verifies them.
-- Approved additions to root (branches `apply/<YYYY-MM-DD>_<org>_<role>`): write
-  to root only after the user explicitly approves the item in the same session.
-  Additive only. Allowed targets: new `### A-...` blocks and new `variants:` or
-  bracketed alternatives in `kb/roles/*.md`; new entries in `kb/skills.md`,
-  `kb/summaries.md`, `kb/stories.md`, `kb/education.md`; new files in
-  `writing/samples/`; a new `kb/_user_decisions.md` entry quoting the user's
-  approval words and date; a new `kb/_conflicts.md` block when an addition
-  disagrees with an existing number, date, scope or employer detail (never pick
-  a winner). Never edit or delete an existing `canonical`, tier or conflict
-  resolution; never invent, round or merge facts. Tier is `single-source` (cite
-  the application file and the user's words), or `verified` only when the user
-  says it is accurate (rule 5). Put root additions in their own commit,
-  `kb: add <what> (approved)`, and rebuild `INDEX.md` and lint in it.
-- Notion is the application tracker only, never a fact source. Never offer to
-  edit Notion.
-- Only company and role text from the JD leaves the repo (web search or fetch).
-  Never send resume or KB text to external tools.
-- At the start of an application session, read `applications/<slug>/handoff.md` if it exists (the `SessionStart` hook prints it on web; read the file yourself if it did not appear). It is a redacted summary of the last session, never a fact source. Write a fresh one at the end (`apply` step 5).
-- End every session by confirming `git diff --stat origin/main...HEAD` shows
-  only `applications/<slug>/` plus root paths covered by an approval entry in
-  `kb/_user_decisions.md` on the same branch.
+- Application-facts packets: `python scripts/rank_claims.py` ranks claims locally from a JD and keyword list; the owner selects IDs and runs `python scripts/build_claim_packet.py`, which writes only under `_work/application-packets/`. The owner copies the packet into the application repository.
+- Interview handoff: the owner brings an interview packet from the application repository and runs `python scripts/import_interview_packet.py <packet.md>`, which stores it at `kb/interviews/<slug>/packet.md`. Use the `interview-prep` skill from there. Write only inside `kb/interviews/<slug>/`.
+- Career questions: use the `career-advisor` skill. Save reusable research only on request, as dated notes in `kb/research/employers/` or `kb/research/industries/`.
+- Facts come only from `kb/`; cite claim IDs; copy numbers exactly from `metrics`; owner rulings in `kb/_user_decisions.md` win. Label statements as fact, inference, or external (URL and date).
+- Only public text (employer, role, program, credential, industry names) may leave the repo in web searches or fetches. Never send resume or KB text to external tools.
+- Additions to `kb/` need the owner's explicit in-session approval, are additive only (never edit an existing `canonical`, tier or conflict resolution), and go in their own commit, `kb: add <what> (approved)`, with `INDEX.md` rebuilt and linted in it. Tier is `single-source`, or `verified` only when the owner says it is accurate (rule 5).
+- Notion is a tracker only, never a fact source. Never offer to edit Notion.
 
 ## Superpowers plugin
 
@@ -121,12 +98,11 @@ conflicts with this file, this file wins.
 
 - Use it only for tooling work on `tooling/*` branches (`scripts/`, `.claude/`,
   `CLAUDE.md`, tests).
-- Do not use it in application mode or on knowledge-base work. The `apply`
-  skill, its `plan.md` approval gate and the Hard rules replace its
+- Do not use it on knowledge-base or interview work. The Hard rules replace its
   brainstorm, plan and finish steps there.
 - Never let it create worktrees or branches, change the designated branch, push,
   or open a PR without the owner's instruction. Rules 2, 4, 6 and 8 still apply.
-- Superpowers output and plans stay out of `applications/`, `kb/` and `writing/`.
+- Superpowers output and plans stay out of `kb/`.
 
 ## Conventions
 
