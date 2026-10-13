@@ -108,10 +108,10 @@ The user's own rulings in their own words, with dates. A resolved conflict or a 
 - `PROGRESS.md`: checklist of project phases.
 - `CLAUDE.md`: project rules.
 
-## Application work (added 2026-10-10)
+## Application work (moved 2026-10-13)
 
-- `applications/<YYYY-MM-DD>_<org>_<role>/`: one folder per job application (research, keywords, match, resume, claims-used, cover letter, proposals). `applications/preferences.md` holds the owner's tailoring preferences; `applications/profile-insights.md` summarizes the Insights Discovery profile for application use. Facts come from `kb/` only, with claim IDs cited.
-- `kb/_views/claims.md`: generated one-page view of all claims (id, canonical, tier, metrics). Regenerate with `python scripts/build_claims_view.py`; not hand-edited.
-- `.claude/commands/` and `.claude/skills/`: the five-step `apply` workflow (`/research`, `/analyze-jd`, `/tailor`, `/cover-letter`, `/check`) and the skills it uses. Rules for these sessions are in `CLAUDE.md` "Application mode" and `HANDOFF.md`.
-- `scripts/check_application.py` verifies an application folder against the KB; `scripts/check_scope.py` checks that an application branch changed only `applications/<slug>/` plus owner-approved root additions.
-- Application branches are named `apply/<YYYY-MM-DD>_<org>_<role>` and merge to `main` after owner review.
+Application folders, tailoring skills and checks now live in the private repository `devcd6/career-applications`. This repository keeps the knowledge base and exports to it:
+
+- `scripts/rank_claims.py` and `scripts/build_claim_packet.py` produce an application-facts packet under `_work/application-packets/`.
+- `scripts/import_interview_packet.py` stores an interview handoff packet at `kb/interviews/<slug>/packet.md`; the `interview-prep` and `career-advisor` skills work from there. `scripts/check_interview_prep.py` validates an `interview-prep.md`.
+- `scripts/check_application.py` stays only as the shared claims-view loader used by those scripts.

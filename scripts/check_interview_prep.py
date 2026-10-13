@@ -2,8 +2,8 @@
 """Check an interview-prep.md against the knowledge base.
 
 Usage:
-    python scripts/check_interview_prep.py applications/<slug>
-    python scripts/check_interview_prep.py applications/<slug> --claims kb/_views/claims.md
+    python scripts/check_interview_prep.py kb/interviews/<slug>
+    python scripts/check_interview_prep.py kb/interviews/<slug> --claims kb/_views/claims.md
 
 Reads <slug>/interview-prep.md. Errors (exit 1):
   provenance   a number not found in any claim's metrics (years, dates, claim and story IDs,
