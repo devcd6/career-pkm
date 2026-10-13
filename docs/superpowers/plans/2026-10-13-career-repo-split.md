@@ -60,7 +60,7 @@
 
 - Modify: `.claude/skills/apply/SKILL.md`, `.claude/skills/company-research/SKILL.md`, `.claude/skills/job-description-analyzer/SKILL.md`, `.claude/skills/resume-ats-optimizer/SKILL.md`, `.claude/skills/resume-bullet-writer/SKILL.md`, `.claude/skills/resume-section-builder/SKILL.md`, `.claude/skills/resume-tailor/SKILL.md`, `.claude/skills/cover-letter-generator/SKILL.md`, `.claude/skills/career-biographer/SKILL.md`, `.claude/skills/competitive-cartographer/SKILL.md`, `.claude/skills/cv-creator/SKILL.md`, `.claude/commands/research.md`
 - Modify: `scripts/build_application.py`, `scripts/check_application.py`, `scripts/check_research.py`, `scripts/rank_claims.py`
-- Create: `tests/test_application_packet.py`
+- Create: `tests/test_application_packet.py` and `tests/test_rank_claims.py` (the former is copied to the app repo; the latter remains with the KB).
 - Test: the new application-packet tests and existing application/research validators
 
 **Interfaces:**
