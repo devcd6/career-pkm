@@ -109,6 +109,21 @@ Workflow and rules: `HANDOFF.md`, the `apply` skill, `applications/preferences.m
   only `applications/<slug>/` plus root paths covered by an approval entry in
   `kb/_user_decisions.md` on the same branch.
 
+## Superpowers plugin
+
+The Superpowers plugin (brainstorming, plans, TDD, debugging, worktrees,
+finishing-a-branch skills) may be enabled on the owner's account. Where it
+conflicts with this file, this file wins.
+
+- Use it only for tooling work on `tooling/*` branches (`scripts/`, `.claude/`,
+  `CLAUDE.md`, tests).
+- Do not use it in application mode or on knowledge-base work. The `apply`
+  skill, its `plan.md` approval gate and the Hard rules replace its
+  brainstorm, plan and finish steps there.
+- Never let it create worktrees or branches, change the designated branch, push,
+  or open a PR without the owner's instruction. Rules 2, 4, 6 and 8 still apply.
+- Superpowers output and plans stay out of `applications/`, `kb/` and `writing/`.
+
 ## Conventions
 
 - Naming: `YYYY-MM_<role-family>_<company-or-general>_v<N>.md`
