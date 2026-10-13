@@ -97,12 +97,11 @@
 - Receives: the application-specific file inventory and application-facts packet contract from Tasks 1 and 2.
 - Produces: a private application repository with fresh history and no `_raw/`, `resumes/`, or full `kb/` copy.
 
-- [ ] **Step 1: Complete the ownership audit** for every command, skill, script, settings hook, and documentation pointer; record any ambiguous ownership for owner decision.
+- [x] **Step 1: Complete the ownership audit** for every command, skill, script, settings hook, and documentation pointer; record any ambiguous ownership for owner decision.
 - [x] **Step 2: Use the owner-approved private GitHub repository name** `devcd6/career-applications`.
-- [ ] **Step 3: Create the new repository** with only the selected application files and updated app-specific guidance; do not copy full history.
-- [ ] **Step 3: Create the new private repository** with only the selected application files and updated app-specific guidance; do not copy full history. Requires authenticated GitHub CLI (`gh auth status` currently reports no login).
-- [ ] **Step 4: Run the application checks** in the new repository using a representative imported `application-facts.md` packet.
-- [ ] **Step 5: Commit** the new repository bootstrap phase after the owner confirms its privacy and contents.
+- [x] **Step 3: Create the new private repository** with only the selected application files and updated app-specific guidance; do not copy full history.
+- [x] **Step 4: Run the application checks** in the new repository using a representative imported `application-facts.md` packet; verify 4 tests and all manifest hashes.
+- [x] **Step 5: Commit** the new repository bootstrap phase directly to private `main` (`46cb3fd`, `14bf83a`) and verify `origin/main` matches `14bf83a`.
 
 ### Task 4: Build the Interview Handoff and Knowledge Query Path
 
@@ -136,10 +135,10 @@
 - Update: `CLAUDE.md` (including the private-remote allowlist), `README.md`, `GLOSSARY.md`, `HANDOFF.md`, `PROGRESS.md`, `.claude/settings.json`, and `scripts/build_index.py` in `career-pkm` after the app repository is verified.
 - Test: file manifest/hash comparison and repository validators
 
-- [ ] **Step 1: Produce the exact path-by-path `_work/plan.csv`** with in-repository staging destinations; do not use globs or external paths that `apply_plan.py` rejects.
-- [ ] **Step 2: Stop for owner approval of that exact manifest.**
-- [ ] **Step 3: Run `python scripts/apply_plan.py _work/plan.csv`** and inspect the dry run; apply only after the approved plan validates.
-- [ ] **Step 4: Transfer staged files to the approved application repository** and compare relative paths, file counts, and SHA-256 hashes.
+- [x] **Step 1: Produce the exact path-by-path `_work/plan.csv`** with in-repository staging destinations; do not use globs or external paths that `apply_plan.py` rejects.
+- [x] **Step 2: Stop for owner approval of that exact manifest.**
+- [x] **Step 3: Run `python scripts/apply_plan.py _work/plan.csv`** in dry-run mode, then apply the approved copy-only plan.
+- [x] **Step 4: Transfer staged files to the approved application repository** and verify 108 manifest paths with matching SHA-256 hashes.
 - [ ] **Step 5: Stop for owner approval before removing the source and staging copies.** Keep every original until the destination verification passes.
 - [ ] **Step 6: Update generated indexes and remove stale single-repo instructions, then search all tracked files for old ownership/path assumptions.**
 - [ ] **Step 7: Run all KB, packet, application, research, interview-prep, handoff, and scope checks; document the known United Way `SUMMARY` error without changing submitted content unless approved.**
