@@ -75,7 +75,7 @@
 - [x] **Step 3: Implement the smallest path and input changes** needed to remove cross-repo path assumptions.
 - [x] **Step 4: Update application skills and commands** so tailoring reads only the packet and application research stays role-specific; root KB documentation cleanup remains in Task 5.
 - [x] **Step 5: Run focused tests, `python scripts/build_index.py --check`, `python scripts/build_claims_view.py --check`, and all applicable application/research/interview validators.**
-- [ ] **Step 6: Commit** the workflow-separation phase.
+- [x] **Step 6: Commit** the workflow-separation phase (`d1f9f02`).
 - [x] **Step 6: Commit** the workflow-separation phase (`d1f9f02`).
 
 ### Task 3: Prepare the Application Repository
