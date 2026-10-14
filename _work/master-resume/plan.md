@@ -6,6 +6,12 @@ Owner: Devika C. Dixit. Status: awaiting approval. No resume text written yet.
 - kb/roles/*.md (5 roles, 259 claim blocks), kb/skills.md, kb/education.md, kb/summaries.md
 - kb/_user_decisions.md rulings win. Open conflicts are none (all resolved). Existing KB files are read-only.
 
+## Added sources (owner instruction, this session): user-generated or verified claims in proposals
+- `kb/interviews/2026-10-12_apa_center-coordinator/proposals.md`: its promoted answers are already KB claims A-ncmw-project-coordinator-121 to -127 (tier `single-source`; owner approved promotion, did not call each one accurate). They are used from `kb/roles/`, flagged as single-source. The raw answers are not used directly. Items the owner left unresolved there (a federally funded claim, the "Vice President and Senior Advisor" title, 20-25+ weekly touchpoints whose `metrics` are empty) stay out of bullets or use the KB wording only.
+- `applications/2026-10-12_apa_center-coordinator/proposals.md` item 1: four Casa Serena bullets in the owner's own words (she corrected the submitted resume). Not in the KB. They go into the Casa Serena section marked as owner-provided wording, mapped to the claims it names (-11, -12, -22, -30, -20, -15, -17, -13, -14, -16), and listed in `proposals.md` for her to decide on promotion.
+- The other three applications' proposals.md contain process notes and unverified suggestions, no owner-written claims; nothing is taken from them.
+- Nothing is written to `kb/` or to either repository's source material.
+
 ## Outputs (all under _work/master-resume/)
 - master-resume.md: single-column, plain text, single-spaced, Markdown, no page cap (per applications/preferences.md).
 - claims-used.md: every bullet mapped to its claim ID(s); numbers copied exactly from `metrics`.
