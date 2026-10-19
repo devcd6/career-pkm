@@ -593,3 +593,30 @@ sources: [resumes/tailored-professional-education-programs/2026-05_tailored-prof
 variants:
 - (notion professional-education-programs_v1) Strengthened integrated treatment planning by facilitating case-conference scheduling, agendas, and action-item follow-through with clinical and medical partners.
 notes: Single wording from the Notion tailored resume in the professional-education-programs group; no close existing claim (best match A-sanctuary-centers-housing-coordinator-11, score 0.5). Tier verified on the user's word that Notion bullets are accurate (2026-10-08). Role assigned from the resume section or closest match.
+
+### A-sanctuary-centers-housing-coordinator-38
+canonical: Served a Veteran client base, navigating VA benefits and eligibility for services
+tier: single-source
+sources: [kb/interviews/2026-10-19_yale-presseau-cv/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-19) Ensure inclusion of veteran client base, navigation of VA benefits and eligibility for services ... and HUD-Vash for sanctuary centers.
+notes: Owner-stated in session. Related: A-sanctuary-centers-housing-coordinator-07 and -08 (HUD-VASH). Promoted 2026-10-19 on the owner's instruction ("promote to kb"). Tier single-source: the owner has not said the wording is accurate (rule 5).
+
+### A-sanctuary-centers-housing-coordinator-39
+canonical: Collaborated with the VA and other veterans services on behalf of Veteran clients
+tier: single-source
+sources: [kb/interviews/2026-10-19_yale-presseau-cv/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-19) for sanctuary centers, include that I worked with VA and other veterans services on behalf of veteran clients.
+notes: Owner-stated in session. Related: A-sanctuary-centers-housing-coordinator-38, -08. Promoted 2026-10-19 on the owner's instruction ("promote to kb"). Tier single-source (rule 5).
+
+### A-sanctuary-centers-housing-coordinator-40
+canonical: Collaborated on the sharing of VA client information with general SUD and social services programs
+tier: single-source
+sources: [kb/interviews/2026-10-19_yale-presseau-cv/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-19) collaboration on sharing of VA client information with general SUD and social services programs
+notes: Owner-stated in session; no consent or privacy-rule detail was given, so none is stated. Related: A-sanctuary-centers-housing-coordinator-38, -39. Promoted 2026-10-19 on the owner's instruction ("promote to kb"). Tier single-source (rule 5).

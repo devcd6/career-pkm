@@ -1,6 +1,6 @@
 # Career knowledge base index
 
-Generated 2026-10-13 by scripts/build_index.py. Do not edit by hand.
+Generated 2026-10-19 by scripts/build_index.py. Do not edit by hand.
 
 ## Resume categories
 
@@ -90,8 +90,8 @@ Resumes are grouped by role family and content angle (role, industry, emphasis),
 
 | role | employer | dates | achievements | open conflicts |
 |------|----------|-------|--------------|----------------|
-| [Project Coordinator](kb/roles/ncmw-project-coordinator.md) | National Council for Mental Wellbeing | 2025-10 to 2026-05 | 127 | 0 |
-| [Housing Case Manager / Housing & Basic Needs Services Coordinator](kb/roles/sanctuary-centers-housing-coordinator.md) | Sanctuary Centers (via United Way) | 2022-09 to 2023-11 | 37 | 0 |
+| [Project Coordinator](kb/roles/ncmw-project-coordinator.md) | National Council for Mental Wellbeing | 2025-10 to 2026-05 | 128 | 0 |
+| [Housing Case Manager / Housing & Basic Needs Services Coordinator](kb/roles/sanctuary-centers-housing-coordinator.md) | Sanctuary Centers (via United Way) | 2022-09 to 2023-11 | 40 | 0 |
 | [Residential Behavioral Health Technician / Program Assistant / Behavioral Health Program Assistant](kb/roles/casa-serena-program-assistant.md) | Casa Serena Treatment Centers | 2021-09 to 2022-08 | 30 | 0 |
 | [Research Assistant / Research Project Coordinator / Clinical Research Project Coordinator](kb/roles/ucsb-research-assistant.md) | UC Santa Barbara | 2021-06 to 2025-01 | 32 | 0 |
 | [Marketing Specialist / Digital Content & Outreach Coordinator / Communications & Outreach Coordinator](kb/roles/asei-marketing-specialist.md) | American Society of Engineers of Indian Origin (ASEI) | 2021-01 to 2022-09 | 33 | 0 |
@@ -100,7 +100,7 @@ Resumes are grouped by role family and content angle (role, industry, emphasis),
 
 | file | contents | size |
 |------|----------|------|
-| [kb/roles/](kb/roles/) | one file per employer role, achievement blocks | 259 claims |
+| [kb/roles/](kb/roles/) | one file per employer role, achievement blocks | 263 claims |
 | [kb/skills.md](kb/skills.md) | skills, tools, certifications by category, plus Notion skills | 20 sections |
 | [kb/education.md](kb/education.md) | degrees, publication, certifications | 10 items |
 | [kb/summaries.md](kb/summaries.md) | every distinct summary paragraph | 31 summaries |
@@ -116,6 +116,6 @@ Resumes are grouped by role family and content angle (role, industry, emphasis),
 
 - Resume versions organized: 43
 - Roles in KB: 5
-- Achievements: 259
+- Achievements: 263
 - Open conflicts: 0 (see [kb/_conflicts.md](kb/_conflicts.md))
 - Lint problems: 0
