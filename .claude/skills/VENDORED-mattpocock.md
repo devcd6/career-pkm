@@ -10,5 +10,5 @@ Project cautions:
 - teach writes MISSION.md, lessons/, reference/, learning-records/, assets/ into the current directory. The override says to run it outside the repo, in a scratch directory.
 - handoff writes to $TMPDIR, outside the repo. Handoff text can contain resume or KB content: redact personal data, and do not paste it into external tools.
 - grilling and grill-me ask questions only; the owner's answers still go to proposals.md, not the KB.
-- wait-what expects GLOSSARY.md; this repo has none, so it falls back to plain re-pitching.
-- Application sessions still write only under applications/. These skills do not change that rule.
+- wait-what reads the repo-root `GLOSSARY.md`; keep it current with the repo vocabulary.
+- Application sessions live in the `career-applications` repository and keep their own write rules there. These skills do not change them.

@@ -96,14 +96,17 @@ The user's own rulings in their own words, with dates. A resolved conflict or a 
 - `_raw/notion/` holds read-only snapshots of pages and databases from the Notion Job Hunt Hub: the Master Career Profile and Master Detailed Resume pages, Writing Samples 1 and 2, and the Job History, Responsibilities, Achievements, Skills and STAR Story Bank databases. Each file's header gives the Notion URL and fetch date.
 - Not imported, by the user's instruction: the Documents & Application Material and Notes databases, and the application tracker.
 - In `kb/roles/*`, Notion rows appear as `(notion Responsibilities #N)` or `(notion Achievements #N)` lines under `variants:` of the claim they match, and the Notion file is added to that claim's `sources`. Rows with no match are separate `single-source` blocks. Notion's Employment type field is not used (no full-time/part-time on any role). Repo dates win.
-- `writing/samples/`: 10 Notion cover letters (verbatim body, with frontmatter); `resumes/` gained 10 Notion tailored resumes (group names `tailored-<role>`; source_original points to `_raw/notion/documents/`).
+- `resumes/` gained 10 Notion tailored resumes (group names `tailored-<role>`; source_original points to `_raw/notion/documents/`).
 - `kb/stories.md`: the 15 STAR stories. `kb/skills.md` ends with a Notion Skills section.
 - Source paths for these claims start with `_raw/notion/`, not `resumes/`.
 - Tailored resumes and cover letters are named and indexed by role family, industry and content angle, never by employer or opening (`company_target: general`). Raw copies of the Notion documents are `N-R##` (resumes) and `N-L##` (letters).
 
 ## Other folders and files
 
-- `scripts/`: index builder, plan applier, inventory tool.
+- `scripts/`: index and claims-view builders (`--check` verifies), plan applier, inventory tool, `rank_claims.py` / `build_claim_packet.py` / `check_claim_packet.py` (outbound packets), `import_interview_packet.py` / `check_interview_prep.py` (interview packets in). `check_application.py` is only the shared loader and keyword helpers.
+- `tests/`: `python -m unittest discover -s tests`.
+- `kb/_views/`: generated claims view. `kb/interviews/<slug>/`: imported interview packets and prep. `kb/research/`: dated employer and industry notes (created on first use).
+- `docs/`: agent docs (`docs/agents/`) and the archived split design and plan (`docs/superpowers/`, superseded in part by ADR 0001 in `career-applications`).
 - `_work/`: working files and plans; not part of the reading path.
 - `PROGRESS.md`: checklist of project phases.
 - `CLAUDE.md`: project rules.
@@ -112,6 +115,6 @@ The user's own rulings in their own words, with dates. A resolved conflict or a 
 
 Application folders, tailoring skills and checks now live in the private repository `devcd6/career-applications`. This repository keeps the knowledge base and exports to it:
 
-- `scripts/rank_claims.py` and `scripts/build_claim_packet.py` produce an application-facts packet under `_work/application-packets/`.
+- `/build-packet <slug>` (or `scripts/rank_claims.py` then `scripts/build_claim_packet.py`) produces an application-facts packet under `_work/application-packets/`; after the owner approves the selection it pushes that one file to the Opening's branch in `career-applications` (ADR 0001).
 - `scripts/import_interview_packet.py` stores an interview handoff packet at `kb/interviews/<slug>/packet.md`; the `interview-prep` and `career-advisor` skills work from there. `scripts/check_interview_prep.py` validates an `interview-prep.md`.
 - `scripts/check_application.py` stays only as the shared claims-view loader used by those scripts.

@@ -94,15 +94,32 @@ def parse_education(path=EDUCATION):
     return entries
 
 
-def parse_skills(path=SKILLS):
-    names = []
+SKILL_FLAGS = ("listed-only", "user-confirmed")
+
+
+def parse_skill_flags(path=SKILLS):
+    """Skill lines read 'skill | first_seen | last_seen | roles | sources [| listed-only] [| user-confirmed]'.
+    Only lines whose second field is a resume stem (YYYY-MM_...) count, which skips prose and the later bullet lists."""
+    skills = {}
     for line in path.read_text(encoding="utf-8").splitlines():
-        if " | " not in line or line.startswith(("#", "|")):
+        fields = [f.strip() for f in line.split(" | ")]
+        if len(fields) < 5 or not re.match(r"\d{4}-\d{2}_", fields[1]):
             continue
-        name = line.split(" | ", 1)[0].strip()
-        if name:
-            names.append(name)
-    return names
+        name = fields[0]
+        flags = [f for f in fields[5:] if f in SKILL_FLAGS]
+        known = skills.setdefault(name, [])
+        known.extend(f for f in flags if f not in known)
+    return skills
+
+
+def parse_skills(path=SKILLS):
+    return list(parse_skill_flags(path))
+
+
+def match_skill(skill, names):
+    """Case-insensitive match (kb/skills.md says so); returns the file's spelling or None."""
+    lowered = {name.lower(): name for name in names}
+    return lowered.get(skill.strip().lower())
 
 
 def validate_output_path(path):
@@ -137,10 +154,11 @@ def build_packet(selected_ids, summaries=(), education=(), skills=(), rulings=()
     if len(education) != len(set(education)):
         raise ValueError("duplicate education ID in selection")
 
-    available_skills = parse_skills()
-    unknown_skills = [skill for skill in skills if skill not in available_skills]
+    skill_flags = parse_skill_flags()
+    unknown_skills = [skill for skill in skills if match_skill(skill, skill_flags) is None]
     if unknown_skills:
         raise ValueError("unknown skill(s): " + "; ".join(unknown_skills))
+    skills = [match_skill(skill, skill_flags) for skill in skills]
     if len(skills) != len(set(skills)):
         raise ValueError("duplicate skill in selection")
 
@@ -207,7 +225,10 @@ def build_packet(selected_ids, summaries=(), education=(), skills=(), rulings=()
 
     if skills:
         lines.extend(["# Selected skills", ""])
-        lines.extend(f"- {skill} | source: kb/skills.md" for skill in skills)
+        lines.extend(
+            f"- {skill} | source: kb/skills.md" + "".join(f" | {flag}" for flag in skill_flags[skill])
+            for skill in skills
+        )
         lines.append("")
 
     if rulings:

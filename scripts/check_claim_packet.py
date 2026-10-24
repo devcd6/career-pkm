@@ -18,7 +18,7 @@ from build_claim_packet import (
     DECISIONS,
     parse_claims,
     parse_education,
-    parse_skills,
+    parse_skill_flags,
     parse_summaries,
     validate_output_path,
 )
@@ -136,7 +136,7 @@ def validate(packet_path, source_path=CLAIMS_VIEW):
         if entry.get("source") != f"kb/education.md#{entry_id}":
             errors.append(f"education {entry_id} source mismatch")
 
-    known_skills = set(parse_skills(SKILLS))
+    known_skills = parse_skill_flags(SKILLS)
     for skill in list_entries(single_heading_section(packet_text, "Selected skills")):
         if skill not in known_skills:
             errors.append(f"unknown skill: {skill}")
