@@ -1697,3 +1697,12 @@ metrics: []
 variants:
 - (owner, 2026-10-13) I approached that by separating the internal administrative record from the information shared with the traveler or other participants.
 notes: Related: A-ucsb-research-assistant-20 and A-casa-serena-program-assistant-22 (confidentiality in research and clinical records). Promoted 2026-10-13 on the owner's instruction ("update interview-prep and promoto to kb") from her gaps-session answers in kb/interviews/2026-10-12_apa_center-coordinator/proposals.md. Tier single-source: she approved the promotion but did not state that each statement is accurate. Condensed from her words; numbers only as she stated them.
+
+### A-ncmw-project-coordinator-128
+canonical: Collaborated with veteran-led ibogaine advocacy groups, such as Americans for Ibogaine
+tier: single-source
+sources: [kb/interviews/2026-10-19_yale-presseau-cv/proposals.md]
+metrics: []
+variants:
+- (owner, 2026-10-19) Include collaboration with verteran led ibogaine  advocacy groups, such as americans for ibograine in ncmw.
+notes: Owner-stated in session; no resume version carries it. Related: A-ncmw-project-coordinator-67, -69 and -75 (ibogaine environmental scan and policy briefing). _raw/notion/master-career-profile.md (not merged into kb) lists Americans for Ibogaine representatives as NatCon26 session speakers and the group as a surveyed advocacy organization; it does not describe this collaboration. Promoted 2026-10-19 on the owner's instruction ("promote to kb"). Tier single-source: the owner has not said the wording is accurate (rule 5).
