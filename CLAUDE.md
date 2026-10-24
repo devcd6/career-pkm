@@ -77,8 +77,9 @@ These govern building and editing the knowledge base.
    Selection proposal, `/build-packet` pushes that Opening's single
    `application-facts.md` to the Opening's branch in `career-applications`,
    never to `main`, with a commit message of claim IDs and paths only. Do not
-   paste file contents into web searches or external tools. In application
-   sessions, only company and role text from the JD may leave the repo.
+   paste file contents into web searches or external tools. In any
+   session here, only public text (employer, role, program, credential, industry
+   names) may leave the repo.
    GitHub Issues, issue comments and PR text count as external: never put
    resume or KB text in them, only claim IDs and file paths.
 
@@ -87,7 +88,7 @@ These govern building and editing the knowledge base.
 Job applications are produced in the separate private repository `devcd6/career-applications`; this repository does not hold application folders, tailoring skills, or application checks.
 
 - Application-facts packets: `python scripts/rank_claims.py` ranks claims locally from a JD and keyword list; the owner selects IDs and runs `python scripts/build_claim_packet.py`, which writes only under `_work/application-packets/`. `/build-packet <slug>` runs this sequence: it fetches the JD and keywords, proposes a selection, waits for the owner's approval, builds and checks the packet, and pushes that one file to the Opening's branch in `career-applications` (rule 8). Copying the file by hand remains valid.
-- Interview handoff: the owner brings an interview packet from the application repository and runs `python scripts/import_interview_packet.py <packet.md>`, which stores it at `kb/interviews/<slug>/packet.md`. Use the `interview-prep` skill from there. Write only inside `kb/interviews/<slug>/`.
+- Interview handoff: the owner brings an interview packet from the application repository and runs `python scripts/import_interview_packet.py <packet.md>`, which stores it at `kb/interviews/<slug>/packet.md`. Use the `interview-prep` skill from there. Write only inside `kb/interviews/<slug>/` (debrief logs go to the gitignored `_work/interview-local/`).
 - Career questions: use the `career-advisor` skill. Save reusable research only on request, as dated notes in `kb/research/employers/` or `kb/research/industries/`.
 - Facts come only from `kb/`; cite claim IDs; copy numbers exactly from `metrics`; owner rulings in `kb/_user_decisions.md` win. Label statements as fact, inference, or external (URL and date).
 - Only public text (employer, role, program, credential, industry names) may leave the repo in web searches or fetches. Never send resume or KB text to external tools.
@@ -102,7 +103,7 @@ Standard-library Python in `scripts/`, tests in `tests/` (`python -m unittest di
 - Outbound: `rank_claims.py` (advisory ranking from `--jd` and `--keywords`) -> `build_claim_packet.py` (explicit IDs only; writes only under `_work/application-packets/`) -> `check_claim_packet.py`.
 - Inbound: `import_interview_packet.py` validates a packet (five sections, known claim IDs, source URL) and stores it unchanged at `kb/interviews/<slug>/packet.md`; it never overwrites. `check_interview_prep.py kb/interviews/<slug>` checks an `interview-prep.md`.
 - Maintenance: `inventory.py` (read-only resume analysis), `apply_plan.py` (approved move plans; dry run unless `--apply`; path guard stays on). `_work/plan.csv` is the last approved manifest, kept as history.
-- `check_application.py` remains only as the shared claims-view loader (`load_claims`, `norm`, `has_phrase`) imported by three scripts. Do not delete it; its application checks now live in `career-applications`.
+- `check_application.py` remains only as the shared claims-view loader and keyword helpers (`load_claims`, `norm`, `has_phrase`, `variant_phrase`, `read_keywords`) imported by three scripts. Do not delete it; its application checks now live in `career-applications`. `rank_claims.py` reports exact misses with inflected/hyphenated near-matches, skills and summary hits, and a hard-filter lookup; it stays advisory.
 - Gotchas: write generated files with `newline=""` (LF only, even on Windows); plain `python` may be the Microsoft Store stub, so put the real interpreter first on `PATH`; `kb/interviews/` and `kb/research/` are created on first use.
 
 ## Superpowers plugin
@@ -124,7 +125,7 @@ conflicts with this file, this file wins.
 - Naming: `YYYY-MM_<role-family>_<company-or-general>_v<N>.md`
 - Dates in KB files: `YYYY-MM` or `present`
 - Frontmatter: flat `key: value`, lists as `[a, b]`
-- Schema details: see the skill's `references/schema.md`
+- Schema details: the skill's `references/schema.md` is not vendored; `README.md` and the `kb/` files show the layout
 
 ## User overrides to conflict rules (take precedence over the skill's conflict-rules.md)
 
@@ -137,7 +138,7 @@ conflicts with this file, this file wins.
 - NCMW role title is always "Project Coordinator". "Junior Project Coordinator"
   and similar variants are not conflicts; record them only as title variants.
 
-## Target (fill in)
+## Target
 
 - Target roles: Project Coordinator; Program Coordinator; Program Associate; Project Assistant / Project Specialist; Community Outreach / Public Education Coordinator; Coordinator, Marketing and Communications
 - Constraints (location, seniority, industries):

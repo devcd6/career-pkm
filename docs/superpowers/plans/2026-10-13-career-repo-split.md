@@ -1,3 +1,5 @@
+> **Superseded in part by ADR 0001 (accepted 2026-10-24, `devcd6/career-applications` `docs/adr/0001-packet-delivery-by-push.md`).** The owner no longer has to copy the Packet: `/build-packet` pushes the one approved `application-facts.md` to the Opening's branch (CLAUDE.md rule 8). Statements below that the owner copies packets, or that there is no automatic cross-repository write, describe the original design.
+
 # Career Repository Split Implementation Plan
 
 > **For agentic workers:** Use this plan task-by-task. The owner must approve the file-level migration manifest before any content is moved or removed.

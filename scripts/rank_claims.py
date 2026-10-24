@@ -28,6 +28,52 @@ WEIGHT = {"Forced": 4, "Title Keyword": 3, "Hard Skill": 3, "Business Context": 
           "Domain Keyword": 2, "Action Keyword": 1, "Uncategorized": 1, "Hard Filter": 0}
 
 
+def kb_reference_lines():
+    """(file, line number, label, text) for skills, summaries and education lines, so tool and skill phrases are not reported as gaps."""
+    rows = []
+    for rel in ("kb/skills.md", "kb/summaries.md", "kb/education.md"):
+        f = ROOT / rel
+        if not f.exists():
+            continue
+        heading = ""
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            if line.startswith("## ") or line.startswith("### "):
+                heading = line.lstrip("# ").split()[0] if line.lstrip("# ") else ""
+            if rel == "kb/skills.md":
+                fields = [x.strip() for x in line.split(" | ")]
+                if len(fields) < 5 or not re.match(r"\d{4}-\d{2}_", fields[1]):
+                    continue
+                rows.append((rel, n, fields[0][:60], fields[0]))
+            elif line.strip() and not line.startswith(("#", "sources:", "count:")):
+                rows.append((rel, n, heading, line))
+    return rows
+
+
+def hard_filter_block(filters):
+    out = ["## Hard filters (owner decides; advisory lookup only)"]
+    if not filters:
+        return out + ["- none", ""]
+    education = (ROOT / "kb" / "education.md").read_text(encoding="utf-8") if (ROOT / "kb" / "education.md").exists() else ""
+    decisions = (ROOT / "kb" / "_user_decisions.md").read_text(encoding="utf-8").splitlines() if (ROOT / "kb" / "_user_decisions.md").exists() else []
+    for _, phrase in filters:
+        low = phrase.lower()
+        notes = []
+        degree = re.search(r"associate|bachelor|master|doctor|degree|diploma", low)
+        if degree:
+            word = degree.group(0) if degree.group(0) not in ("degree", "diploma") else "(?:associate|bachelor|master)"
+            notes += [f"kb/education.md {m.group(1)}" for m in re.finditer(rf"^### (EDU-\d+[^\n]*{word}[^\n]*)", education, re.I | re.M)]
+            if not notes:
+                notes.append("no matching EDU heading; check kb/education.md")
+        if re.search(r"\byears?\b", low):
+            notes += [f"kb/_user_decisions.md:{n} (years ruling)" for n, l in enumerate(decisions, 1) if re.search(r"\d\+?\s*years|years of experience", l, re.I)][:2]
+            notes.append("compare the role dates in the packet; owner decides")
+        if re.search(r"background|clearance|public trust|citizen|authoriz|eligib|visa|sponsor|license|certif", low) and not notes:
+            notes.append("eligibility: no KB source, owner answers")
+        out.append(f"- {phrase} | " + ("; ".join(notes) if notes else "owner decides"))
+    out.append("")
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--jd", required=True, help="job description file")
@@ -42,6 +88,7 @@ def main():
     out_path = Path(a.out) if a.out else None
 
     kws = ca.read_keywords(keywords_path)
+    ca_unknown = ca.unknown_category_lines(keywords_path)
     if not kws:
         print(f"no keywords found or file is empty: {keywords_path}")
         return 2
@@ -91,20 +138,35 @@ def main():
             out.append(f"  near-duplicates, pick one: {', '.join(g)}")
         out.append("")
 
-    corpus = ca.norm(" ".join(re.sub(r"[\[\]|]", " ", c.get("canonical", "")) for c in claims.values()))
+    claim_text = {cid: re.sub(r"[\[\]|]", " ", cl.get("canonical", "")) for cid, cl in claims.items()}
+    corpus = " ".join(claim_text.values())
     gap = [(c, p) for c, p in kws if c != "Hard Filter" and not ca.has_phrase(corpus, p)]
-    out.append("## Phrases no claim contains (real gaps unless the JD wording differs)")
-    out += [f"- {p} [{c}]" for c, p in gap] or ["- none"]
+    kb_lines = kb_reference_lines()
+    out.append("## No exact match in any claim (check the notes before treating these as gaps)")
+    for c, p in gap:
+        notes = []
+        near = [cid for cid, t in claim_text.items() if ca.variant_phrase(t, p)]
+        if near:
+            notes.append("inflected or hyphenated form in " + ", ".join(near[:3]) + (f" (+{len(near) - 3})" if len(near) > 3 else ""))
+        found = [f"{rel}:{n} {label}" for rel, n, label, t in kb_lines if ca.has_phrase(t, p) or ca.variant_phrase(t, p)]
+        if found:
+            notes.append("in " + "; ".join(found[:3]) + " (skill or summary wording, not a claim)")
+        out.append(f"- {p} [{c}]" + (" | " + " | ".join(notes) if notes else " | no match found"))
+    if not gap:
+        out.append("- none")
     out.append("")
+    out += hard_filter_block([(c, p) for c, p in kws if c == "Hard Filter"])
     cov = {}
     for c, p, l in labelled:
         if c == "Hard Filter":
             continue
         d = cov.setdefault(c, [0, 0])
         d[1] += 1
-        d[0] += any(ca.has_phrase(re.sub(r"[\[\]|]", " ", cl.get("canonical", "")), p) for cl in claims.values())
+        d[0] += any(ca.has_phrase(t, p) for t in claim_text.values())
     out.append("## KB support by category (phrases found in at least one claim)")
     out += [f"- {c}: {h}/{t}" for c, (h, t) in cov.items()]
+    for line in ca_unknown:
+        out.append(f"WARNING: unknown keyword category, treated as Uncategorized: {line}")
     text = "\n".join(out)
     print(text)
     if out_path:
