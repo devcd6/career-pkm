@@ -1,0 +1,9 @@
+# Proposals: merged master resume (unverified; the owner decides what to promote)
+
+Nothing here changed `kb/`. Files: `master-resume-merged.md`, `claims-used-merged.md`.
+
+1. **Merged wording needs your review.** 107 bullets (NCMW 56, UCSB 13, Sanctuary 16, ASEI 13, Casa Serena 9) each combine 1 to 4 source claims. The merged sentences are new combinations, not KB canonical wording. A script checked that every number in each bullet appears in its source claims and that no distinctive word is absent from them; the only flags were harmless verb forms (serving, using, sending) and trailing punctuation. Every claim from the 204-bullet version is used somewhere (`claims-used-merged.md`).
+2. **Tier mix.** Merged bullets can combine verified and consistent or single-source claims; `claims-used-merged.md` lists the tiers per bullet. A bullet is only as verified as its weakest source.
+3. **ATS integration.** Each role ends with a `Keywords:` line of the Skills & Keywords terms that appear literally in that role's bullets. The full Skills & Keywords section stays at the end. 54 of 229 listed terms appear literally in the experience; the rest come from your earlier resumes and no claim here evidences them. I did not add keywords the claims do not support.
+4. **Judgement calls in merges.** Two ASEI bullets keep "6+ digital platforms" and "six-plus digital channels" side by side because the claims word them differently. The Sanctuary "10+ partner organizations" bullet now also names CenCal Health from the 5+ claim. The Casa Serena documentation bullet combines your wording with the Kipu/Alleva EMR claim.
+5. **Same open items as before:** Recovery Ready course claims (A-ncmw-project-coordinator-63, -65, -118), empty `metrics` on claims with numbers, CAPM status, contact line, "federally funded" wording.
