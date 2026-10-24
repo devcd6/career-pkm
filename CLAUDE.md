@@ -72,7 +72,11 @@ These govern building and editing the knowledge base.
    never to `main` without owner approval. The separate private repository
    `devcd6/career-applications` is owner-approved for application files only;
    its initial content is approved for direct commit to `main` on 2026-10-13.
-   Never push `career-pkm` content to that remote or to other remotes. Do not
+   Never push `career-pkm` content to that remote or to other remotes, with one
+   exception (ADR 0001, accepted 2026-10-24): after the owner approves a
+   Selection proposal, `/build-packet` pushes that Opening's single
+   `application-facts.md` to the Opening's branch in `career-applications`,
+   never to `main`, with a commit message of claim IDs and paths only. Do not
    paste file contents into web searches or external tools. In application
    sessions, only company and role text from the JD may leave the repo.
    GitHub Issues, issue comments and PR text count as external: never put
@@ -82,7 +86,7 @@ These govern building and editing the knowledge base.
 
 Job applications are produced in the separate private repository `devcd6/career-applications`; this repository does not hold application folders, tailoring skills, or application checks.
 
-- Application-facts packets: `python scripts/rank_claims.py` ranks claims locally from a JD and keyword list; the owner selects IDs and runs `python scripts/build_claim_packet.py`, which writes only under `_work/application-packets/`. The owner copies the packet into the application repository.
+- Application-facts packets: `python scripts/rank_claims.py` ranks claims locally from a JD and keyword list; the owner selects IDs and runs `python scripts/build_claim_packet.py`, which writes only under `_work/application-packets/`. `/build-packet <slug>` runs this sequence: it fetches the JD and keywords, proposes a selection, waits for the owner's approval, builds and checks the packet, and pushes that one file to the Opening's branch in `career-applications` (rule 8). Copying the file by hand remains valid.
 - Interview handoff: the owner brings an interview packet from the application repository and runs `python scripts/import_interview_packet.py <packet.md>`, which stores it at `kb/interviews/<slug>/packet.md`. Use the `interview-prep` skill from there. Write only inside `kb/interviews/<slug>/`.
 - Career questions: use the `career-advisor` skill. Save reusable research only on request, as dated notes in `kb/research/employers/` or `kb/research/industries/`.
 - Facts come only from `kb/`; cite claim IDs; copy numbers exactly from `metrics`; owner rulings in `kb/_user_decisions.md` win. Label statements as fact, inference, or external (URL and date).

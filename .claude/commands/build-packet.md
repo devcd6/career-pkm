@@ -1,0 +1,11 @@
+---
+description: Build and deliver the application-facts Packet for one Opening (Gate 1 is your approval of the Selection proposal)
+---
+Build the Packet for the Opening `$ARGUMENTS` (the folder name under `applications/` in `devcd6/career-applications`, for example `2026-10-24_hjf_education-coordinator-i-mps-cdp`). Facts come only from `kb/`; follow CLAUDE.md rules 3 to 5 and 8.
+
+1. **Fetch the public inputs.** With the GitHub tools, read `applications/<slug>/jd.md` and `applications/<slug>/keywords.txt` from `devcd6/career-applications` on the Opening's branch (the branch named in the Packet request; `main` if it has none). Save them in the scratchpad directory, not in the repo. Read nothing else from that repository.
+2. **Rank.** `python scripts/rank_claims.py --jd <jd.md> --keywords <keywords.txt> --top 12`.
+3. **Selection proposal.** Print the ranked claims as claim IDs grouped by role (ID, tier, matched phrases; no claim text), then the "Phrases no claim contains" list, then the proposed summary ID, education/credential IDs, skills and owner rulings from `kb/summaries.md`, `kb/education.md`, `kb/skills.md` and `kb/_user_decisions.md`. Recommend a selection. **Stop. Gate 1: wait for the owner to reply "approve" or "drop X, add Y".** Never build before that reply.
+4. **Build.** `python scripts/build_claim_packet.py --claims <ids> --summary <id> --education <ids> [--skill ...] [--ruling ...] --out _work/application-packets/<slug>/application-facts.md`, then `python scripts/check_claim_packet.py _work/application-packets/<slug>/application-facts.md`. Fix failures; never weaken the check.
+5. **Deliver (ADR 0001, CLAUDE.md rule 8).** Push only that one file to `applications/<slug>/application-facts.md` on the Opening's branch in `devcd6/career-applications`, never to `main`. If the file exists there, report it and stop rather than overwrite. Commit message: `packet: <slug>` plus the file path and the selected claim IDs. No resume, KB or packet text in the commit, a PR or a comment.
+6. **Finish.** Commit the local copy under `_work/application-packets/<slug>/` here, and tell the owner to resume with `/apply <slug>` in `career-applications`.
